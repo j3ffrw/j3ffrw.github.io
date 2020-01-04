@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Tech notes and other stuff</title>
+    <link>/categories/windows/</link>
+    <description>Recent content in Windows on Tech notes and other stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jul 2013 10:51:36 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>convert a bootable ISO-13346 (UDF) to ISO-9660</title>
+      <link>/p452/</link>
+      <pubDate>Mon, 22 Jul 2013 10:51:36 +0000</pubDate>
+      
+      <guid>/p452/</guid>
+      <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR when using an iso file to install a guest OS(Windows 7)
+mkdir -p isos/mountp cp udfimage.iso isos cd isos geteltorito udfimage.iso &amp;amp;gt; boot.bin mount -o loop -t auto udfimage.iso mountp cp -r mountp udfimagecontents cp boot.bin udfimagecontents mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents reference: http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</description>
+    </item>
+    
+    <item>
+      <title>allow non-admin users to run programs to as administrator</title>
+      <link>/p289/</link>
+      <pubDate>Mon, 04 Feb 2013 08:21:52 +0000</pubDate>
+      
+      <guid>/p289/</guid>
+      <description>use RunasSpc to allow non-admin users to run programs at elevated rights without your password. free for private use.
+link: http://www.robotronic.de/guidance.html</description>
+    </item>
+    
+    <item>
+      <title>Removing multiple devices in Windows</title>
+      <link>/p192/</link>
+      <pubDate>Sun, 07 Oct 2012 03:46:14 +0000</pubDate>
+      
+      <guid>/p192/</guid>
+      <description>Device Remover
+http://www.pro-it-education.de/software/deviceremover/</description>
+    </item>
+    
+  </channel>
+</rss>

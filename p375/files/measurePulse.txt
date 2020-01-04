@@ -1,0 +1,237 @@
+' {$STAMP BS2e}
+' {$PBASIC 2.5}
+
+irPulse VAR Word
+irPulse2 VAR Word
+i VAR Word
+k VAR Word
+j VAR Byte
+temp VAR Byte
+temp1 VAR Byte
+startIndex VAR Byte
+endIndex VAR Byte
+startLowMin VAR Word
+startLowMax VAR Word
+startHighMin VAR Word
+startHighMax VAR Word
+bitCount VAR Byte
+lowThreshold VAR Word
+highThreshold VAR Word
+
+' alias for sorting and swapping values at scratchpad ram
+lowestIndex VAR temp
+cntr2 VAR temp1
+currentLowestValue VAR startLowMin
+
+pulseNumber CON 29
+
+temp2 VAR irPulse.BIT0
+
+  DEBUG ? startLowMin
+  DEBUG ? startLowMax
+
+  DEBUG "Enter low bit max width(in cycles) threshold: "
+  DEBUGIN DEC5 lowThreshold
+
+  DEBUG "Press a key to decode ", CR
+
+  MAIN:
+
+    GOSUB MEASURE_NUM_BITS
+
+    GOSUB DECODE
+
+    GOSUB GET_RAW_OUTPUT
+
+  GOTO MAIN
+
+  END
+
+DECODE:
+
+  LOOP5:
+
+  i = 0
+  k = 0
+  IF IN13 = 1 THEN
+    GOTO LOOP5
+  ENDIF
+
+  RCTIME 13, 0, irPulse
+  RCTIME 13, 1, irPulse2 ' get second start bit
+
+  IF irPulse < startLowMin OR irPulse > startLowMax THEN
+     GOTO LOOP5
+  ENDIF
+
+  ' measure width 32 pulses and toggle bit to 1 if pulse in above threshold
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT0 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT1 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT2 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT3 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT4 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT5 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT6 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.LOWBYTE.BIT7 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT0 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT1 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT2 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT3 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT4 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT5 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT6 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN i.HIGHBYTE.BIT7 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT0 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT1 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT2 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT3 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT4 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT5 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT6 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.LOWBYTE.BIT7 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT0 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT1 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT2 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT3 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT4 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT5 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT6 = 1
+  RCTIME 13, 1, irPulse
+  IF irPulse > lowThreshold THEN k.HIGHBYTE.BIT7 = 1
+
+  DEBUG "LSB to MSB: ", IBIN8 k.HIGHBYTE, " ", IBIN8 k.LOWBYTE, " ", IBIN8 i.HIGHBYTE, " ", IBIN8 i.LOWBYTE," ", HEX4 k, HEX4 i,CR
+
+  irPulse = k
+
+  GOSUB REVERSE_BITS
+
+  k = irPulse2
+
+  irPulse = i
+
+  GOSUB REVERSE_BITS
+
+  i = irPulse2
+
+  DEBUG "MSB to LSB: ", IBIN8 i.HIGHBYTE, " ", IBIN8 i.LOWBYTE, " ", IBIN8 k.HIGHBYTE, " ", IBIN8 k.LOWBYTE," ", HEX4 i, HEX4 k,CR
+
+ RETURN
+
+ REVERSE_BITS:
+    irPulse2 = 0
+    FOR temp = 0 TO 15
+      irPulse2 = irPulse2 << 1
+      irPulse2 = irPulse2 + irPulse.BIT0(temp)
+    NEXT
+ RETURN
+
+
+  MEASURE_NUM_BITS:
+
+  LOOP2:
+  bitCount = 0
+
+  IF IN13 = 1 THEN
+    GOTO LOOP2
+  ENDIF
+
+  ' measure start bit
+  RCTIME 13, 0, irPulse
+
+  ' check if start bit if within boundaries
+  IF irPulse < startLowMin OR irPulse > startLowMax THEN
+     GOTO LOOP2
+  ENDIF
+
+  SECONDBIT:
+  IF IN13 = 1 THEN GOTO SECONDBIT
+
+  LOOP4:
+
+  ' count number of pulses after the startbit
+  COUNT 13,100, bitCount
+
+  GOTO RESULT
+
+  LOOP3:
+
+  ' count each pulse one by one
+  RCTIME 13, 1, irPulse
+
+  IF irPulse < highThreshold THEN
+    bitCount = bitCount + 1
+  ELSE
+     GOTO RESULT
+  ENDIF
+
+  GOTO LOOP3
+
+  RESULT:
+
+  DEBUG "Bit Count: ", DEC bitCount , CR
+
+RETURN
+
+GET_RAW_OUTPUT:
+
+  FIRSTBIT:
+
+  IF IN13 = 1 THEN
+    GOTO FIRSTBIT
+  ENDIF
+
+  ' measure start bit
+  RCTIME 13, 0, irPulse
+
+  ' check if start bit if within boundaries
+  IF irPulse < startLowMin OR irPulse > startLowMax THEN
+     GOTO FIRSTBIT
+  ENDIF
+
+  SECONDBIT1:
+  IF IN13 = 1 THEN GOTO SECONDBIT1
+
+  FOR temp = 0 TO 62 STEP 2
+    RCTIME 13, 1, irPulse
+    PUT temp, Word irPulse
+  NEXT
+
+  DEBUG "Raw output(uS): "
+  FOR temp = 0 TO 62 STEP 2
+    GET temp, Word irPulse
+    DEBUG DEC irPulse, " , "
+  NEXT
+
+
+RETURN

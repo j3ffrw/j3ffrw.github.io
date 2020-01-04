@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="core">
+<meta name="description"
+    content="Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
+This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
+Network diagram:
+Requirements:
+Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
+Freeradius &amp;ndash; 1.6.7 pfsense package
+Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/p385/" />
+
+
+<title>
+    
+    Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise. :: Tech notes and other stuff 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.">
+<meta itemprop="description" content="Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
+This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
+Network diagram:
+Requirements:
+Pfsense &ndash; for this demonstration i was using 2.1-BETA1
+Freeradius &ndash; 1.6.7 pfsense package
+Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt.">
+
+
+<meta itemprop="datePublished" content="2013-05-02T11:27:16&#43;00:00" />
+<meta itemprop="dateModified" content="2013-05-02T11:27:16&#43;00:00" />
+<meta itemprop="wordCount" content="262">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise."/>
+<meta name="twitter:description" content="Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
+This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
+Network diagram:
+Requirements:
+Pfsense &ndash; for this demonstration i was using 2.1-BETA1
+Freeradius &ndash; 1.6.7 pfsense package
+Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
+
+
+
+<meta property="article:section" content="Linux" />
+<meta property="article:section" content="Networks" />
+
+<meta property="article:published_time" content="2013-05-02 11:27:16 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello world</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/p385/">Pfsense + Freeradius + dd-wrt WPA2 Enterprise.</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.</p>
+
+<p>This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.</p>
+
+<p>Network diagram:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p385/WPA2-pfsense.png" 
+  
+  alt="">
+
+
+<p>Requirements:</p>
+
+<p>Pfsense &ndash; for this demonstration i was using 2.1-BETA1</p>
+
+<p>Freeradius &ndash; 1.6.7 pfsense package</p>
+
+<p>Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt. (any AP should work as long it is capable using WPA Ent.)</p>
+
+<p>Any WPA/WPA2 compliant client. &ndash; Laptop with Windows 7.</p>
+
+<p>Procedure:</p>
+
+<p>A: Generate Certificates Needed.</p>
+
+<ol>
+<li><p>Login to pfsense web interface and go to Certificate Manager.</p></li>
+
+<li><p>Create CA.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A1.CreateCA_hu5bf845949f0d89ffa1f63fdf5e62a11f_44209_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A1.CreateCA.png" 
+  
+  alt="">
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A2.CASummarry_hu5ebafed1352d6c7c99d4de2c096acdc3_18158_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A2.CASummarry.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create Server Certificate.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A3.CreateServerCert_hu7eb116afbc36ae32935e7a2afcfe5954_54944_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A3.CreateServerCert.png" 
+  
+  alt="">
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A4.CertificateSummary_hu26a948b5868c2c1779a20c2a99607394_36620_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A4.CertificateSummary.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>B: Configure Freeraduis on pfsense.</p>
+
+<ol>
+<li><p>Go to Services -&gt; Freeradius.</p></li>
+
+<li><p>Create a User. username: wifiUser1 password: 123456<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p385/B1.CreateUser.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B2.CreateNASClient_hu10cc05f9203509bc2eeba96b8d6d7d45_30603_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B2.CreateNASClient.png" 
+  
+  alt="">
+<br />
+On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B3.NASClientSummary_hu7356433fe47c1f66c29b1e514ea3c4ff_25798_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B3.NASClientSummary.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create an interface.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B4.CreateInterface_huf22f8b557e191f5a31825a8d5eb09946_44256_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B4.CreateInterface.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Configure EAP.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B5.ConfigureEAP_hu67cd0cd55a071c11cfbcc5ac30ac4fc2_52357_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B5.ConfigureEAP.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>C. Configure Access Point<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/C1.AccessPointWPA2_hu632746057e76736781ef5feb659575a7_43627_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/C1.AccessPointWPA2.png" 
+  
+  alt="">
+</p>
+
+<p>D. Import of CA.crt to Windows 7</p>
+
+<ol>
+<li><p>Export CA.crt from pfsense Certificate Manager.</p></li>
+
+<li><p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/D1.importCaCrt_huffd458e457b3aa0ff96b58c429c1dd25_80463_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/D1.importCaCrt.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>Once you connect to your Access point you just configured windows will require you to enter a Username and Password, use the one we have made above. You will also get a warning stating that the Certificate is invalid or is unknown, just select Connect on that part since were using a self-signed certificate.</p>
+
+<p>References:</p>
+
+<p><a href="http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS">http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS</a></p>
+
+<p><a href="http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2">http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

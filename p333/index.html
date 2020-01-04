@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="core">
+<meta name="description"
+    content="v.1 using iterative solution
+todo:
+v.2 shorten code.
+v.3 use recursion
+import java.util.logging.Level; import java.util.logging.Logger; /* * To change this template, choose Tools | Templates * and open the template in the editor. * even: right side move. * odd: left side move. */ /** * * @author Jefferson M. Fermo * * Iterative solution of tower of Hanoi. * * */ public class Hanoi { private Peg[] pegs; private final int NUMBEROFTOWERS = 3; private boolean directionOfMoveIsRight = false; private long numberOfMoves = 0; private int discCount = 0; int currentPeg = 0; int lastPegMove = 0; int moves = 0; public Hanoi(int discCount) throws Exception { this." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/p333/" />
+
+
+<title>
+    
+    Tower of hanoi v.1 :: Tech notes and other stuff 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Tower of hanoi v.1">
+<meta itemprop="description" content="v.1 using iterative solution
+todo:
+v.2 shorten code.
+v.3 use recursion
+import java.util.logging.Level; import java.util.logging.Logger; /* * To change this template, choose Tools | Templates * and open the template in the editor. * even: right side move. * odd: left side move. */ /** * * @author Jefferson M. Fermo * * Iterative solution of tower of Hanoi. * * */ public class Hanoi { private Peg[] pegs; private final int NUMBEROFTOWERS = 3; private boolean directionOfMoveIsRight = false; private long numberOfMoves = 0; private int discCount = 0; int currentPeg = 0; int lastPegMove = 0; int moves = 0; public Hanoi(int discCount) throws Exception { this.">
+
+
+<meta itemprop="datePublished" content="2013-02-21T10:30:08&#43;00:00" />
+<meta itemprop="dateModified" content="2013-02-21T10:30:08&#43;00:00" />
+<meta itemprop="wordCount" content="971">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tower of hanoi v.1"/>
+<meta name="twitter:description" content="v.1 using iterative solution
+todo:
+v.2 shorten code.
+v.3 use recursion
+import java.util.logging.Level; import java.util.logging.Logger; /* * To change this template, choose Tools | Templates * and open the template in the editor. * even: right side move. * odd: left side move. */ /** * * @author Jefferson M. Fermo * * Iterative solution of tower of Hanoi. * * */ public class Hanoi { private Peg[] pegs; private final int NUMBEROFTOWERS = 3; private boolean directionOfMoveIsRight = false; private long numberOfMoves = 0; private int discCount = 0; int currentPeg = 0; int lastPegMove = 0; int moves = 0; public Hanoi(int discCount) throws Exception { this."/>
+
+
+
+<meta property="article:section" content="Programming" />
+
+<meta property="article:published_time" content="2013-02-21 10:30:08 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello world</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/p333/">Tower of hanoi v.1</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>v.1 using iterative solution</p>
+
+<p>todo:</p>
+
+<p>v.2 shorten code.</p>
+
+<p>v.3 use recursion</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.logging.Level<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.logging.Logger<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e"> * To change this template, choose Tools | Templates
+</span><span style="color:#75715e"> * and open the template in the editor.
+</span><span style="color:#75715e"> * even: right side move.
+</span><span style="color:#75715e"> * odd: left side move.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> *
+</span><span style="color:#75715e"> * @author Jefferson M. Fermo 
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> * Iterative solution of tower of Hanoi.
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Hanoi</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> Peg<span style="color:#f92672">[]</span> pegs<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> NUMBEROFTOWERS <span style="color:#f92672">=</span> 3<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">long</span> numberOfMoves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> discCount <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">int</span> currentPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+    <span style="color:#66d9ef">int</span> lastPegMove <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">int</span> moves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Hanoi</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> discCount<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discCount</span> <span style="color:#f92672">=</span> discCount<span style="color:#f92672">;</span>
+        
+        <span style="color:#75715e">// (N^2)-1
+</span><span style="color:#75715e"></span>        numberOfMoves <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">long</span><span style="color:#f92672">)</span> Math<span style="color:#f92672">.</span><span style="color:#a6e22e">pow</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> discCount<span style="color:#f92672">)-</span>1<span style="color:#f92672">;</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;moves: &#34;</span> <span style="color:#f92672">+</span> numberOfMoves<span style="color:#f92672">);</span>
+        
+        
+        <span style="color:#75715e">// determine the movement of disc based on its quantity.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>discCount <span style="color:#f92672">%</span> 2 <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;odd&#34;</span><span style="color:#f92672">);</span>
+            directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;even&#34;</span><span style="color:#f92672">);</span>
+            directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>            
+        
+        pegs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Peg<span style="color:#f92672">[</span>NUMBEROFTOWERS<span style="color:#f92672">];</span>
+        
+        <span style="color:#75715e">// create pegs with slots equal to the total number of disc.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> NUMBEROFTOWERS<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            pegs<span style="color:#f92672">[</span>cntr<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Peg<span style="color:#f92672">(</span>discCount<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> discCount<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            Disc disc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Disc<span style="color:#f92672">(</span>discCount<span style="color:#f92672">-</span>cntr<span style="color:#f92672">);</span>
+            
+            pegs<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">populatePeg</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Initial content&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Peg peg1 <span style="color:#f92672">:</span> pegs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>peg1<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;**************&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#75715e">//System.out.println(&#34;next peg transfer disc #&#34; + nextPeg(pegs[1]).getPegNumber());
+</span><span style="color:#75715e"></span>        
+        
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">solve</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>moves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> moves <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> numberOfMoves<span style="color:#f92672">;</span> <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            
+            Peg peg <span style="color:#f92672">=</span> pegs<span style="color:#f92672">[</span>currentPeg<span style="color:#f92672">];</span>
+            
+            moveDiscFromPeg<span style="color:#f92672">(</span>peg<span style="color:#f92672">);</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 0 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 2 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 0<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                currentPeg <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 0 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 1 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 0<span style="color:#f92672">)){</span>
+                currentPeg <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 1 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 2 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 1<span style="color:#f92672">)){</span>
+                currentPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Peg peg1 <span style="color:#f92672">:</span> pegs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>peg1<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+    <span style="color:#f92672">}</span>
+    
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">moveDiscFromPeg</span><span style="color:#f92672">(</span>Peg currentPeg<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+    
+        <span style="color:#66d9ef">int</span> invalidNextPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">int</span> movesMade <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        Peg peg <span style="color:#f92672">=</span> currentPeg<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">int</span> lastPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#75715e">// there are only 2 possible moves in a 3 tower.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>invalidNextPeg <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>         
+            
+            Peg nextPeg <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">(</span>peg<span style="color:#f92672">);</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> nextPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> movesMade<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            
+            <span style="color:#75715e">//System.out.println(&#34;is move legal? &#34; + currentPeg.getPegNumber() + &#34;, &#34; + nextPeg.getPegNumber());
+</span><span style="color:#75715e"></span>            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>isNextMoveLegal<span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">,</span> nextPeg<span style="color:#f92672">)){</span>
+                
+                moveDisk<span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">,</span> nextPeg<span style="color:#f92672">);</span>
+                                
+                moves<span style="color:#f92672">++;</span>
+                
+                invalidNextPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+                
+                lastPegMove <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">();</span>
+                
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                
+                invalidNextPeg<span style="color:#f92672">++;</span>
+                
+            <span style="color:#f92672">}</span>
+            
+            peg <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">;</span>            
+        <span style="color:#f92672">}</span>
+    
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;last peg: &#34;</span> <span style="color:#f92672">+</span> lastPeg<span style="color:#f92672">);</span>
+            
+        
+        <span style="color:#66d9ef">return</span> movesMade<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * Checks if the move is legal from source to destination peg.
+</span><span style="color:#75715e">     * A move is legal if the following has been met:
+</span><span style="color:#75715e">     * 1. source peg contains a disc and destination peg is empty.
+</span><span style="color:#75715e">     * 2. disc at the top of destination peg is bigger than the disc on top of source peg. Both pegs are not empty.
+</span><span style="color:#75715e">     * A move is considered invalid if:
+</span><span style="color:#75715e">     * 3. source peg does not contain a disc and destination contains a disc.
+</span><span style="color:#75715e">     * 4. disc at the top of destination peg is smaller than the disc on top of source peg. Both pegs are not empty.
+</span><span style="color:#75715e">     * 5. both pegs does not contain a disc.
+</span><span style="color:#75715e">     * 
+</span><span style="color:#75715e">     * @param sourcePeg Peg where disc will be taken
+</span><span style="color:#75715e">     * @param destPeg   Peg where disc will be placed
+</span><span style="color:#75715e">     * @return  returns true if move is legal based on rule #1 and #2
+</span><span style="color:#75715e">     */</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isNextMoveLegal</span><span style="color:#f92672">(</span>Peg sourcePeg<span style="color:#f92672">,</span> Peg destPeg<span style="color:#f92672">){</span>
+        
+        <span style="color:#75715e">// rule #1
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+        <span style="color:#75715e">// rule #3    
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            Disc sourceDisk <span style="color:#f92672">=</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">();</span>
+            Disc destDisk <span style="color:#f92672">=</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">();</span>
+            
+            <span style="color:#75715e">//rule #2
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>destDisk<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;</span> sourceDisk<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+            <span style="color:#75715e">//rule #4
+</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#75715e">//rule #5    
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">private</span> Peg <span style="color:#a6e22e">nextPeg</span><span style="color:#f92672">(</span>Peg currentPeg<span style="color:#f92672">){</span>
+    
+        <span style="color:#66d9ef">int</span> pegNumber <span style="color:#f92672">=</span> currentPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">();</span>
+        
+        <span style="color:#66d9ef">int</span> nextPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>directionOfMoveIsRight<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> pegNumber <span style="color:#f92672">+</span> 1<span style="color:#f92672">;</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>tmp <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> 3<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> tmp<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> pegNumber <span style="color:#f92672">-</span> 1<span style="color:#f92672">;</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>tmp <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> tmp<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">return</span> pegs<span style="color:#f92672">[</span>nextPegNumber<span style="color:#f92672">];</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">moveDisk</span><span style="color:#f92672">(</span>Peg sourcePeg<span style="color:#f92672">,</span> Peg destinationPeg<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+    
+        Disc disc <span style="color:#f92672">=</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getDisk</span><span style="color:#f92672">();</span>
+        
+        destinationPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">putDisc</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">);</span>        
+        
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * @param args the command line arguments
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">// create 3 towers(default) with disc from 1 to 25 ascending.
+</span><span style="color:#75715e"></span>            Hanoi hanoi <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Hanoi<span style="color:#f92672">(</span>25<span style="color:#f92672">);</span>
+            
+            hanoi<span style="color:#f92672">.</span><span style="color:#a6e22e">solve</span><span style="color:#f92672">();</span>
+            
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>Hanoi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span>Level<span style="color:#f92672">.</span><span style="color:#a6e22e">SEVERE</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">,</span> ex<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Peg</span><span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> Disc<span style="color:#f92672">[]</span> disc<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> topIndex <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> discCount <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> pegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> myPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    Peg<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> discCount<span style="color:#f92672">){</span>
+        disc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Disc<span style="color:#f92672">[</span>discCount<span style="color:#f92672">];</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discCount</span> <span style="color:#f92672">=</span> discCount<span style="color:#f92672">;</span>
+        myPegNumber <span style="color:#f92672">=</span> pegNumber<span style="color:#f92672">++;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Disc <span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">(){</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> disc<span style="color:#f92672">[</span>topIndex<span style="color:#f92672">];</span>
+        <span style="color:#f92672">}</span>
+        
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> topIndex<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> Disc <span style="color:#a6e22e">getDisk</span><span style="color:#f92672">(){</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            Disc disk <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">];</span>
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+            topIndex<span style="color:#f92672">--;</span>
+            <span style="color:#66d9ef">return</span> disk<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">populatePeg</span><span style="color:#f92672">(</span>Disc disc<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> discCount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            topIndex<span style="color:#f92672">++;</span>
+            
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> disc<span style="color:#f92672">;</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Added disk #&#34;</span> <span style="color:#f92672">+</span> disc<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; at :&#34;</span> <span style="color:#f92672">+</span> topIndex <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">);</span>
+            
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Exception<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Peg overflowed with disk&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">putDisc</span><span style="color:#f92672">(</span>Disc disc<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> discCount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            topIndex<span style="color:#f92672">++;</span>
+            
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> disc<span style="color:#f92672">;</span>
+            <span style="color:#75715e">//System.out.print(&#34;Added disk #&#34; + disc + &#34; at P&#34; + myPegNumber + &#34;:&#34; + topIndex + &#34;\n&#34;);
+</span><span style="color:#75715e"></span>            
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Exception<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Peg overflowed with disk&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> myPegNumber<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">(){</span>
+    
+        StringBuilder string <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder<span style="color:#f92672">();</span>
+        
+        string <span style="color:#f92672">=</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\nPeg #&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>myPegNumber<span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\t&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> topIndex<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            string <span style="color:#f92672">=</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">[</span>cntr<span style="color:#f92672">].</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#75715e">//string = string.append(&#34;\n&#34;);
+</span><span style="color:#75715e"></span>        
+        <span style="color:#66d9ef">return</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Disc</span><span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">int</span> size<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Disc</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> number<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        size <span style="color:#f92672">=</span> number<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">(){</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">+</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+<span style="color:#f92672">}</span></code></pre></div>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

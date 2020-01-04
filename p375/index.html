@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="core">
+<meta name="description"
+    content="Purpose: Remote control decoder
+Status: * Decoding part &amp;ndash; done.
+ Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
+  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
+ 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
+ 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/p375/" />
+
+
+<title>
+    
+    Basic Stamp 2e IR Remote Decoder :: Tech notes and other stuff 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Basic Stamp 2e IR Remote Decoder">
+<meta itemprop="description" content="Purpose: Remote control decoder
+Status: * Decoding part &ndash; done.
+ Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
+  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
+ 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
+ 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.">
+
+
+<meta itemprop="datePublished" content="2013-04-30T14:05:40&#43;00:00" />
+<meta itemprop="dateModified" content="2013-04-30T14:05:40&#43;00:00" />
+<meta itemprop="wordCount" content="395">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Basic Stamp 2e IR Remote Decoder"/>
+<meta name="twitter:description" content="Purpose: Remote control decoder
+Status: * Decoding part &ndash; done.
+ Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
+  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
+ 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
+ 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0."/>
+
+
+
+<meta property="article:section" content="Embedded Systems" />
+
+<meta property="article:published_time" content="2013-04-30 14:05:40 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello world</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/p375/">Basic Stamp 2e IR Remote Decoder</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Purpose: Remote control decoder</p>
+
+<p>Status: * Decoding part &ndash; done.</p>
+
+<ul>
+<li>Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.<br />
+<br /></li>
+</ul>
+
+<p>BOM:</p>
+
+<ul>
+<li>1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e<br /></li>
+<li>1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V<br /></li>
+<li>1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.3V<br /></li>
+<li>1 TSOP312.., 314.. package THT; row single; pin spacing 0.1in (2.54mm); pins 3<br /></li>
+<li>1 Infrared LED -  5mm package 5 mm [THT]; leg yes; color Infrared (940nm)<br /></li>
+<li>1 150 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 150Ω; pin spacing 400 mil<br /></li>
+<li>3 220 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 220Ω; pin spacing 400 mil<br /></li>
+<li>1 470 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 470Ω; pin spacing 400 mil<br /></li>
+<li>1 Rotary Potentiometer (Small) maximum resistance 10kΩ<br /></li>
+<li>1 555 Timer package DIP8 [THT]<br />
+<br /></li>
+</ul>
+
+<p>Schematic</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_500x0_resize_box_2.png 500w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_800x0_resize_box_2.png 800w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_1200x0_resize_box_2.png 1200w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_1500x0_resize_box_2.png 1500w 
+  '
+  
+    src="/p375/bs2e_IR_decoder_schem.png" 
+  
+  alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_800x0_resize_q75_box.jpg 800w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_1200x0_resize_q75_box.jpg 1200w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_1500x0_resize_q75_box.jpg 1500w 
+  '
+  
+    src="/p375/bs2eIRDecoder.jpg" 
+  
+  alt="">
+
+
+<p>Captured IR code using a IR phototransistor connected to a PC/Laptop sound card.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/Captured-IR-code-using-audacity_hu997c5ce4aa21b5e387e865adb42e67b5_38867_500x0_resize_box_2.png 500w
+  
+  
+    , /p375/Captured-IR-code-using-audacity_hu997c5ce4aa21b5e387e865adb42e67b5_38867_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p375/Captured-IR-code-using-audacity.png" 
+  
+  alt="">
+
+
+<p>Sample decoding session using Basic Stamp Editor debug terminal.</p>
+
+<pre><code>Measuring Start bit:
+Press several random keys 15 times at least 1 second apart
+15 of 15
+Start pulse range: uS , units
+LOW: 2916us - 3672us , 1474-1842
+High: 4104us - 4104us , 2059-2062
+Skip pulse histogram:[Y/n] n
+Press a several random keys repeatedly
+00: Width units         0       Width us        0-36     60
+12: Width units         216     Width us        432-468  25
+13: Width units         234     Width us        468-504  37
+14: Width units         252     Width us        504-540  12
+15: Width units         270     Width us        540-576  2
+16: Width units         288     Width us        576-612  3
+17: Width units         306     Width us        612-648  6
+43: Width units         774     Width us        1548-1584       20
+44: Width units         792     Width us        1584-1620       204
+45: Width units         810     Width us        1620-1656       14
+62: Width units         1116    Width us        2232-2268       105
+Enter low bit max width (in cycles,see histogram): 288
+Enter high bit max width (in cycles,see histogram): 810
+Press a key to decode
+Bit Count: 32
+LSB to MSB: %11111101 %00000010 %00000111 %00000111 FD020707
+Transmit code LSB-&gt;MSB:[Y/n] n
+Retransmit code LSB-&gt;MSB:[Y/n] n
+Bit Count: 32
+LSB to MSB: %11111011 %00000100 %00000111 %00000111 FB040707
+Transmit code LSB-&gt;MSB:[Y/n] n
+Retransmit code LSB-&gt;MSB:[Y/n] n
+Bit Count: 33
+LSB to MSB: %11111011 %00000100 %00000111 %00000111 FB040707
+Transmit code LSB-&gt;MSB:[Y/n]
+</code></pre>
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Source Code
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+				<li>
+					<a href="/posts/2013-04-30-basic-stamp-2e-ir-remote-decoder/files/bs2e_IrRemote.txt" >
+						bs2e_IrRemote.txt
+					</a>
+					(3 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/posts/2013-04-30-basic-stamp-2e-ir-remote-decoder/files/measurePulse.txt" >
+						measurePulse.txt
+					</a>
+					(5 ko)
+				</li>
+			
+		
+	
+	<div>
+	
+</section>
+
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

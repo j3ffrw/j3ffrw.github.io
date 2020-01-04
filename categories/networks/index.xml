@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networks on Tech notes and other stuff</title>
+    <link>/categories/networks/</link>
+    <description>Recent content in Networks on Tech notes and other stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 May 2013 11:27:16 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/networks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.</title>
+      <link>/p385/</link>
+      <pubDate>Thu, 02 May 2013 11:27:16 +0000</pubDate>
+      
+      <guid>/p385/</guid>
+      <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
+This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
+Network diagram:
+Requirements:
+Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
+Freeradius &amp;ndash; 1.6.7 pfsense package
+Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>
+    </item>
+    
+    <item>
+      <title>Dell T110 IPMI 2.0 SOL with CentOS 6.3</title>
+      <link>/p366/</link>
+      <pubDate>Fri, 22 Mar 2013 11:20:20 +0000</pubDate>
+      
+      <guid>/p366/</guid>
+      <description>IPMI:
+ Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
+ Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
+ Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
+ Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
+ Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
+ Set Username and password.
+ Press Esc key and select Save option.
+  BIOS:
+ Enter Dell&amp;rsquo;s BIOS. (F2)
+ Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Ruckus zap tool installation and testing</title>
+      <link>/p217/</link>
+      <pubDate>Thu, 08 Nov 2012 18:31:19 +0000</pubDate>
+      
+      <guid>/p217/</guid>
+      <description>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
+Mac
+Windows
+For Linux: you have to compile from source. Open terminal and execute the following commands
+svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+ Run zapd on both PC/Laptop,you should see something like the following.
+zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer.</description>
+    </item>
+    
+    <item>
+      <title>zPerf 1.0 (wip)</title>
+      <link>/p201/</link>
+      <pubDate>Thu, 08 Nov 2012 11:11:29 +0000</pubDate>
+      
+      <guid>/p201/</guid>
+      <description>Purpose:
+ Provides a GUI Frontend for Ruckus amazing Zap tool
+ Visualize Zap tool results using charts.
+  Feature:
+ Generate CDF graph from zap result file.
+ Save graph to image file
+  Requirements:
+ jre6 or higher
+ Ruckus zap tool
+  Download zperf archive: zPerf
+How to use:
+ Extract zperf archive.
+ Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
+    </item>
+    
+    <item>
+      <title>when certs are revoke</title>
+      <link>/p166/</link>
+      <pubDate>Tue, 17 Jul 2012 02:08:50 +0000</pubDate>
+      
+      <guid>/p166/</guid>
+      <description>Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port Re-using SSL/TLS context Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port LZO compression initialized Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS\_ERROR: BIO read tls\_read\_plaintext error: error:140890B2:SSL routines:SSL3\_GET\_CLIENT\_CERTIFICATE:no certificate returned Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS object -&amp;gt; incoming plaintext read error Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS handshake failed </description>
+    </item>
+    
+  </channel>
+</rss>

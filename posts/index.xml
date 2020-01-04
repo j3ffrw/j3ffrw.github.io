@@ -1,0 +1,3794 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tech notes and other stuff</title>
+        <link>/posts/</link>
+        <description>Recent content on Tech notes and other stuff</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 01 Jan 2014 04:31:26 +0000</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How to use Chipkit’s Max32 as USB Adapter for Xbee radios</title>
+            <link>/p485/</link>
+            <pubDate>Wed, 01 Jan 2014 04:31:26 +0000</pubDate>
+            
+            <guid>/p485/</guid>
+            <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
+Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu)  Ref:
+Arduino Uno to Xbee
+  Parallax XBee USB Adapter Board
+http://www.parallax.com/product/32400
+Using X-CTU on linux
+http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html
+Chipkit Max32 Schematics
+http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf</description>
+            <content type="html"><![CDATA[<p>Here&rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p485/chipkit_hu322110e4b308626005dc210585e452ed_139432_500x0_resize_q75_box.jpg 500w
+  
+  
+  
+  '
+  
+    src="/p485/chipkit.jpg" 
+  
+  alt="">
+
+
+<pre><code>Xbee   to   Max32 
+DOUT ------ 1(TX0)
+DIN  ------ 0(RX0)
+VCC  ------ 3.3V
+GND  ------ GND
+RST to GND ( This is to deactivate the max32 mcu)
+</code></pre>
+
+<p>Ref:</p>
+
+<p>Arduino Uno to Xbee</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/dEIP_JmjlmE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Parallax XBee USB Adapter Board</p>
+
+<p><a href="http://www.parallax.com/product/32400">http://www.parallax.com/product/32400</a></p>
+
+<p>Using X-CTU on linux</p>
+
+<p><a href="http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html">http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html</a></p>
+
+<p>Chipkit Max32 Schematics</p>
+
+<p><a href="http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf">http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Online Electronics Shop/Seller in the Philippines</title>
+            <link>/p479/</link>
+            <pubDate>Sat, 21 Dec 2013 18:25:03 +0000</pubDate>
+            
+            <guid>/p479/</guid>
+            <description>www.e-gizmo.com
+www.circuit-help.com.ph
+www.innovationph.com/
+www.relixtechnologies.com/ http://www.tipidpc.com/useritems.php?username=relixtech
+www.gadgetpinas.ph http://www.tipidpc.com/useritems.php?username=SOMASEGAR (Arduino&amp;#8217;s and raspberry pi)
+http://www.dynamodo.com
+http://nipahut.com.ph/index.html
+http://ph.element14.com/
+http://depmechatronics.wordpress.com/
+http://www.newportelec.com/ic.html
+http://www.dynamodo.com/</description>
+            <content type="html"><![CDATA[<p>www.e-gizmo.com</p>
+
+<p>www.circuit-help.com.ph</p>
+
+<p>www.innovationph.com/</p>
+
+<p>www.relixtechnologies.com/ <a href="http://www.tipidpc.com/useritems.php?username=relixtech">http://www.tipidpc.com/useritems.php?username=relixtech</a></p>
+
+<p>www.gadgetpinas.ph <a href="http://www.tipidpc.com/useritems.php?username=SOMASEGAR">http://www.tipidpc.com/useritems.php?username=SOMASEGAR</a> (Arduino&#8217;s and raspberry pi)</p>
+
+<p><a href="http://www.dynamodo.com">http://www.dynamodo.com</a></p>
+
+<p><a href="http://nipahut.com.ph/index.html">http://nipahut.com.ph/index.html</a></p>
+
+<p><a href="http://ph.element14.com/">http://ph.element14.com/</a></p>
+
+<p><a href="http://depmechatronics.wordpress.com/">http://depmechatronics.wordpress.com/</a></p>
+
+<p><a href="http://www.newportelec.com/ic.html">http://www.newportelec.com/ic.html</a></p>
+
+<p><a href="http://www.dynamodo.com/">http://www.dynamodo.com/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>a random thought</title>
+            <link>/p470/</link>
+            <pubDate>Sun, 24 Nov 2013 13:12:31 +0000</pubDate>
+            
+            <guid>/p470/</guid>
+            <description> </description>
+            <content type="html"><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p470/random-thought_huf810df5c56d8431158576140b5be56ce_609165_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p470/random-thought_huf810df5c56d8431158576140b5be56ce_609165_800x0_resize_q75_box.jpg 800w
+  
+  
+    , /p470/random-thought_huf810df5c56d8431158576140b5be56ce_609165_1200x0_resize_q75_box.jpg 1200w
+  
+  
+    , /p470/random-thought_huf810df5c56d8431158576140b5be56ce_609165_1500x0_resize_q75_box.jpg 1500w 
+  '
+  
+    src="/p470/random-thought.jpg" 
+  
+  alt="">
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>Things to backup in linux after installation</title>
+            <link>/p460/</link>
+            <pubDate>Sat, 02 Nov 2013 04:46:11 +0000</pubDate>
+            
+            <guid>/p460/</guid>
+            <description>Partition
+mkdir ~/backup; cd ~/backup sfdisk -d /dev/sdx &amp;gt; sfdisk_dump fdisk -l /dev/sda &amp;gt; fdisk_listing LVM metadata backup
+vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup
+LUKS header
+ locate partition(s) with luks
+using blkid
+fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done
+or
+using cryptsetup
+fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do cryptsetup isLuks $line; if [ $?</description>
+            <content type="html"><![CDATA[<p><strong>Partition</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir ~/backup; cd ~/backup
+sfdisk -d /dev/sdx &gt; sfdisk_dump
+fdisk -l /dev/sda &gt; fdisk_listing</code></pre></div>
+
+<p><strong>LVM metadata backup</strong></p>
+
+<p><code>vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup</code></p>
+
+<p><strong>LUKS header</strong></p>
+
+<ol>
+<li><p>locate partition(s) with luks<br />
+using blkid<br />
+<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done</code><br />
+or<br />
+using cryptsetup<br />
+<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do cryptsetup isLuks $line; if [ $? = 0 ]; then echo &quot;luks found on $line&quot;; fi done</code></p></li>
+
+<li><p>actual backup<br />
+<code>cryptsetup luksHeaderBackup --header-backup-file luksHeaderBackup /dev/sdx#</code></p></li>
+</ol>
+
+<p>NOTE: be sure to secure luksHeader by encrypting it using gpg -c luksHeaderBackup</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>convert a bootable ISO-13346 (UDF) to ISO-9660</title>
+            <link>/p452/</link>
+            <pubDate>Mon, 22 Jul 2013 10:51:36 +0000</pubDate>
+            
+            <guid>/p452/</guid>
+            <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR when using an iso file to install a guest OS(Windows 7)
+mkdir -p isos/mountp cp udfimage.iso isos cd isos geteltorito udfimage.iso &amp;amp;gt; boot.bin mount -o loop -t auto udfimage.iso mountp cp -r mountp udfimagecontents cp boot.bin udfimagecontents mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents reference: http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</description>
+            <content type="html"><![CDATA[<p>this is useful when you virtualbox is complaining about <a href="https://www.virtualbox.org/ticket/10666" title="VBOX_E_IPRT_ERROR">VBOX_E_IPRT_ERROR</a> when using an iso file to install a guest OS(Windows 7)</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p isos/mountp
+cp udfimage.iso isos
+cd isos
+geteltorito udfimage.iso &amp;gt; boot.bin
+mount -o loop -t auto udfimage.iso mountp
+cp -r mountp udfimagecontents
+cp boot.bin udfimagecontents
+mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents</code></pre></div>
+
+<p>reference: <a href="http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/">http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>generating(self-signed) and enabling SSL in Apache</title>
+            <link>/p443/</link>
+            <pubDate>Wed, 19 Jun 2013 03:55:08 +0000</pubDate>
+            
+            <guid>/p443/</guid>
+            <description>#generate SSL cert for apache
+openssl version
+OpenSSL 1.0.0-fips 29 Mar 2010
+cd /etc/pki/tls/certs openssl genrsa -out mycert.pem 2048 ls -alh mycert.* openssl req -new -key mycert.pem -out mycert.csr ls -alh mycert.* openssl x509 -req -days 365 -in mycert.csr -signkey mycert.pem -out mycert.crt ls -alh mycert.* cp mycert.pem mycert.csr /etc/pki/tls/private/ # A single SSL enabled virtual host
+httpd-2.2.15-28.el6.centos.i686
+mySslEnabledVirtHost.conf
+LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000) SSLSessionCacheTimeout 300 SSLMutex default SSLRandomSeed startup file:/dev/urandom 256 SSLRandomSeed connect builtin SSLCryptoDevice builtin &amp;lt;VirtualHost _default_:443&amp;gt; SSLEngine on SSLCertificateFile /etc/pki/tls/certs/mycert.</description>
+            <content type="html"><![CDATA[<p>#generate SSL cert for apache</p>
+
+<p>openssl version</p>
+
+<p>OpenSSL 1.0.0-fips 29 Mar 2010</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /etc/pki/tls/certs
+openssl genrsa -out mycert.pem <span style="color:#ae81ff">2048</span>
+ls -alh mycert.*
+openssl req -new -key mycert.pem -out mycert.csr
+ls -alh mycert.*
+openssl x509 -req -days <span style="color:#ae81ff">365</span> -in mycert.csr -signkey mycert.pem -out mycert.crt
+ls -alh mycert.*
+cp mycert.pem mycert.csr /etc/pki/tls/private/</code></pre></div>
+
+<p># A single SSL enabled virtual host</p>
+
+<p>httpd-2.2.15-28.el6.centos.i686</p>
+
+<p>mySslEnabledVirtHost.conf</p>
+
+<pre><code>LoadModule ssl_module modules/mod_ssl.so
+Listen 443
+SSLPassPhraseDialog  builtin
+SSLSessionCache         shmcb:/var/cache/mod_ssl/scache(512000)
+SSLSessionCacheTimeout  300
+SSLMutex default
+SSLRandomSeed startup file:/dev/urandom  256
+SSLRandomSeed connect builtin
+SSLCryptoDevice builtin
+
+&lt;VirtualHost _default_:443&gt;
+        SSLEngine on
+        SSLCertificateFile /etc/pki/tls/certs/mycert.crt
+        SSLCertificateKeyFile /etc/pki/tls/private/mycert.pem
+        &lt;Directory /var/www/myweb&gt;
+                AllowOverride All
+        &lt;/Directory&gt;
+        DocumentRoot /var/www/myweb
+        ServerName subdomain.mydomain.com:443
+&lt;/VirtualHost&gt;
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Election day fixing day.</title>
+            <link>/p404/</link>
+            <pubDate>Wed, 15 May 2013 06:57:28 +0000</pubDate>
+            
+            <guid>/p404/</guid>
+            <description>What better things to do during election day than fixing things up.
+List of things to fix:
+ Canon EF-S 18-55mm 3.6-5.6 IS stock lens &amp;#8211; problem: auto focus kaput
+ Quantaray LD 70-300mm &amp;#8211; problem: auto focus kaput.
+  Let&amp;rsquo;s start off with quantaray.
+This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.
+The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right were all strip, I don&amp;rsquo;t know what cause this, since the lens is not mine and was borrowed from my uncle.</description>
+            <content type="html"><![CDATA[<p>What better things to do during election day than fixing things up.</p>
+
+<p>List of things to fix:</p>
+
+<ol>
+<li><p>Canon EF-S 18-55mm 3.6-5.6 IS stock lens &#8211; problem: auto focus kaput</p></li>
+
+<li><p>Quantaray LD 70-300mm &#8211; problem: auto focus kaput.</p></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/election-day-fixing-day_hu5978d8821e3db87e7381c8c7fe743d7f_375738_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/election-day-fixing-day_hu5978d8821e3db87e7381c8c7fe743d7f_375738_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/election-day-fixing-day.jpg" 
+  
+  alt="">
+
+
+<p>Let&rsquo;s start off with quantaray.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/quantaray-cover-removed_huecc5ceb98e843f04c405416c25e51750_244741_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/quantaray-cover-removed_huecc5ceb98e843f04c405416c25e51750_244741_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/quantaray-cover-removed.jpg" 
+  
+  alt="">
+
+
+<p>This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/gears-shreded_hu3ec09bbb00f921429e894090398ddc88_106124_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/gears-shreded_hu3ec09bbb00f921429e894090398ddc88_106124_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/gears-shreded.jpg" 
+  
+  alt="">
+
+
+<p>The cause of the problem was that the gear&rsquo;s upper tooth on the right were all strip, I don&rsquo;t know what cause this, since the lens is not mine and was borrowed from my uncle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/gears-when-swap_hu4085ce3bbe25486a0bd701aae5c06a03_186295_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/gears-when-swap_hu4085ce3bbe25486a0bd701aae5c06a03_186295_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/gears-when-swap.jpg" 
+  
+  alt="">
+
+
+<p>A workaround is to swap the gears position since both are identical and the second gear position seems to not use those tooth anyway.</p>
+
+<figure >
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/testshot1-70mm_hueee7d4dbb828d1f1f138be10e6c5d856_403642_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/testshot1-70mm_hueee7d4dbb828d1f1f138be10e6c5d856_403642_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/testshot1-70mm.jpg" 
+  
+  alt="">
+
+
+    <figcaption>
+      <p>Test shot @70mm</p>
+  </figcaption>
+</figure>
+
+
+<figure >
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/testsho1-300mm_huadf7171d7df809410041b3bb0df77101_429957_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/testsho1-300mm_huadf7171d7df809410041b3bb0df77101_429957_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/testsho1-300mm.jpg" 
+  
+  alt="">
+
+
+    <figcaption>
+      <p>Test shot @300mm</p>
+  </figcaption>
+</figure>
+
+
+<figure >
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/testshot2-17mm_hu0f589d1361129208149be2cd12560f85_292355_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/testshot2-17mm_hu0f589d1361129208149be2cd12560f85_292355_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/testshot2-17mm.jpg" 
+  
+  alt="">
+
+
+    <figcaption>
+      <p>@17mm on a different lens</p>
+  </figcaption>
+</figure>
+
+
+<p><figure >
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p404/testshot2-300mm_hu74768ab4e80115e1d04353939592b795_511296_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p404/testshot2-300mm_hu74768ab4e80115e1d04353939592b795_511296_800x0_resize_q75_box.jpg 800w
+  
+  
+  '
+  
+    src="/p404/testshot2-300mm.jpg" 
+  
+  alt="">
+
+
+    <figcaption>
+      <p>Test shot @300mm</p>
+  </figcaption>
+</figure>
+<br />
+As for the canon lens the Focus FPC has split into two and needs replacement.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.</title>
+            <link>/p385/</link>
+            <pubDate>Thu, 02 May 2013 11:27:16 +0000</pubDate>
+            
+            <guid>/p385/</guid>
+            <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
+This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
+Network diagram:
+Requirements:
+Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
+Freeradius &amp;ndash; 1.6.7 pfsense package
+Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>
+            <content type="html"><![CDATA[<p>Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.</p>
+
+<p>This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.</p>
+
+<p>Network diagram:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p385/WPA2-pfsense.png" 
+  
+  alt="">
+
+
+<p>Requirements:</p>
+
+<p>Pfsense &ndash; for this demonstration i was using 2.1-BETA1</p>
+
+<p>Freeradius &ndash; 1.6.7 pfsense package</p>
+
+<p>Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt. (any AP should work as long it is capable using WPA Ent.)</p>
+
+<p>Any WPA/WPA2 compliant client. &ndash; Laptop with Windows 7.</p>
+
+<p>Procedure:</p>
+
+<p>A: Generate Certificates Needed.</p>
+
+<ol>
+<li><p>Login to pfsense web interface and go to Certificate Manager.</p></li>
+
+<li><p>Create CA.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A1.CreateCA_hu5bf845949f0d89ffa1f63fdf5e62a11f_44209_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A1.CreateCA.png" 
+  
+  alt="">
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A2.CASummarry_hu5ebafed1352d6c7c99d4de2c096acdc3_18158_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A2.CASummarry.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create Server Certificate.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A3.CreateServerCert_hu7eb116afbc36ae32935e7a2afcfe5954_54944_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A3.CreateServerCert.png" 
+  
+  alt="">
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/A4.CertificateSummary_hu26a948b5868c2c1779a20c2a99607394_36620_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/A4.CertificateSummary.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>B: Configure Freeraduis on pfsense.</p>
+
+<ol>
+<li><p>Go to Services -&gt; Freeradius.</p></li>
+
+<li><p>Create a User. username: wifiUser1 password: 123456<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p385/B1.CreateUser.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B2.CreateNASClient_hu10cc05f9203509bc2eeba96b8d6d7d45_30603_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B2.CreateNASClient.png" 
+  
+  alt="">
+<br />
+On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B3.NASClientSummary_hu7356433fe47c1f66c29b1e514ea3c4ff_25798_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B3.NASClientSummary.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Create an interface.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B4.CreateInterface_huf22f8b557e191f5a31825a8d5eb09946_44256_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B4.CreateInterface.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Configure EAP.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/B5.ConfigureEAP_hu67cd0cd55a071c11cfbcc5ac30ac4fc2_52357_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/B5.ConfigureEAP.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>C. Configure Access Point<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/C1.AccessPointWPA2_hu632746057e76736781ef5feb659575a7_43627_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/C1.AccessPointWPA2.png" 
+  
+  alt="">
+</p>
+
+<p>D. Import of CA.crt to Windows 7</p>
+
+<ol>
+<li><p>Export CA.crt from pfsense Certificate Manager.</p></li>
+
+<li><p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p385/D1.importCaCrt_huffd458e457b3aa0ff96b58c429c1dd25_80463_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p385/D1.importCaCrt.png" 
+  
+  alt="">
+</p></li>
+</ol>
+
+<p>Once you connect to your Access point you just configured windows will require you to enter a Username and Password, use the one we have made above. You will also get a warning stating that the Certificate is invalid or is unknown, just select Connect on that part since were using a self-signed certificate.</p>
+
+<p>References:</p>
+
+<p><a href="http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS">http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS</a></p>
+
+<p><a href="http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2">http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Basic Stamp 2e IR Remote Decoder</title>
+            <link>/p375/</link>
+            <pubDate>Tue, 30 Apr 2013 14:05:40 +0000</pubDate>
+            
+            <guid>/p375/</guid>
+            <description>Purpose: Remote control decoder
+Status: * Decoding part &amp;ndash; done.
+ Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
+  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
+ 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
+ 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.</description>
+            <content type="html"><![CDATA[<p>Purpose: Remote control decoder</p>
+
+<p>Status: * Decoding part &ndash; done.</p>
+
+<ul>
+<li>Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.<br />
+<br /></li>
+</ul>
+
+<p>BOM:</p>
+
+<ul>
+<li>1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e<br /></li>
+<li>1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V<br /></li>
+<li>1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.3V<br /></li>
+<li>1 TSOP312.., 314.. package THT; row single; pin spacing 0.1in (2.54mm); pins 3<br /></li>
+<li>1 Infrared LED -  5mm package 5 mm [THT]; leg yes; color Infrared (940nm)<br /></li>
+<li>1 150 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 150Ω; pin spacing 400 mil<br /></li>
+<li>3 220 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 220Ω; pin spacing 400 mil<br /></li>
+<li>1 470 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 470Ω; pin spacing 400 mil<br /></li>
+<li>1 Rotary Potentiometer (Small) maximum resistance 10kΩ<br /></li>
+<li>1 555 Timer package DIP8 [THT]<br />
+<br /></li>
+</ul>
+
+<p>Schematic</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_500x0_resize_box_2.png 500w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_800x0_resize_box_2.png 800w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_1200x0_resize_box_2.png 1200w
+  
+  
+    , /p375/bs2e_IR_decoder_schem_hu42cee78ca754d7eefbc58c57625806aa_174119_1500x0_resize_box_2.png 1500w 
+  '
+  
+    src="/p375/bs2e_IR_decoder_schem.png" 
+  
+  alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_800x0_resize_q75_box.jpg 800w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_1200x0_resize_q75_box.jpg 1200w
+  
+  
+    , /p375/bs2eIRDecoder_hubee46a4363496ab0bf382d9a94fc7785_293400_1500x0_resize_q75_box.jpg 1500w 
+  '
+  
+    src="/p375/bs2eIRDecoder.jpg" 
+  
+  alt="">
+
+
+<p>Captured IR code using a IR phototransistor connected to a PC/Laptop sound card.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p375/Captured-IR-code-using-audacity_hu997c5ce4aa21b5e387e865adb42e67b5_38867_500x0_resize_box_2.png 500w
+  
+  
+    , /p375/Captured-IR-code-using-audacity_hu997c5ce4aa21b5e387e865adb42e67b5_38867_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p375/Captured-IR-code-using-audacity.png" 
+  
+  alt="">
+
+
+<p>Sample decoding session using Basic Stamp Editor debug terminal.</p>
+
+<pre><code>Measuring Start bit:
+Press several random keys 15 times at least 1 second apart
+15 of 15
+Start pulse range: uS , units
+LOW: 2916us - 3672us , 1474-1842
+High: 4104us - 4104us , 2059-2062
+Skip pulse histogram:[Y/n] n
+Press a several random keys repeatedly
+00: Width units         0       Width us        0-36     60
+12: Width units         216     Width us        432-468  25
+13: Width units         234     Width us        468-504  37
+14: Width units         252     Width us        504-540  12
+15: Width units         270     Width us        540-576  2
+16: Width units         288     Width us        576-612  3
+17: Width units         306     Width us        612-648  6
+43: Width units         774     Width us        1548-1584       20
+44: Width units         792     Width us        1584-1620       204
+45: Width units         810     Width us        1620-1656       14
+62: Width units         1116    Width us        2232-2268       105
+Enter low bit max width (in cycles,see histogram): 288
+Enter high bit max width (in cycles,see histogram): 810
+Press a key to decode
+Bit Count: 32
+LSB to MSB: %11111101 %00000010 %00000111 %00000111 FD020707
+Transmit code LSB-&gt;MSB:[Y/n] n
+Retransmit code LSB-&gt;MSB:[Y/n] n
+Bit Count: 32
+LSB to MSB: %11111011 %00000100 %00000111 %00000111 FB040707
+Transmit code LSB-&gt;MSB:[Y/n] n
+Retransmit code LSB-&gt;MSB:[Y/n] n
+Bit Count: 33
+LSB to MSB: %11111011 %00000100 %00000111 %00000111 FB040707
+Transmit code LSB-&gt;MSB:[Y/n]
+</code></pre>
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Source Code
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+				<li>
+					<a href="/posts/2013-04-30-basic-stamp-2e-ir-remote-decoder/files/bs2e_IrRemote.txt" >
+						bs2e_IrRemote.txt
+					</a>
+					(3 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/posts/2013-04-30-basic-stamp-2e-ir-remote-decoder/files/measurePulse.txt" >
+						measurePulse.txt
+					</a>
+					(5 ko)
+				</li>
+			
+		
+	
+	<div>
+	
+</section>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>Enable brightness function keys</title>
+            <link>/p370/</link>
+            <pubDate>Thu, 28 Mar 2013 10:48:03 +0000</pubDate>
+            
+            <guid>/p370/</guid>
+            <description>insert acpi_backlight=vendor option into grub.
+update-grub2
+GRUB_DEFAULT=0
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT=&amp;ldquo;quiet splash acpi_backlight=vendor&amp;rdquo;
+GRUB_CMDLINE_LINUX=&amp;ldquo;&amp;rdquo;</description>
+            <content type="html"><![CDATA[<p>insert acpi_backlight=vendor option into grub.</p>
+
+<p>update-grub2</p>
+
+<p>GRUB_DEFAULT=0</p>
+
+<p>GRUB_HIDDEN_TIMEOUT=0</p>
+
+<p>GRUB_HIDDEN_TIMEOUT_QUIET=true</p>
+
+<p>GRUB_TIMEOUT=10</p>
+
+<p>GRUB_DISTRIBUTOR=`lsb_release -i -s 2&gt; /dev/null || echo Debian`</p>
+
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash acpi_backlight=vendor&rdquo;</p>
+
+<p>GRUB_CMDLINE_LINUX=&ldquo;&rdquo;</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Disable discreet VGA card in linux mint</title>
+            <link>/p371/</link>
+            <pubDate>Thu, 28 Mar 2013 10:31:19 +0000</pubDate>
+            
+            <guid>/p371/</guid>
+            <description>Nvidia:
+sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF  check the output of dmesg if the ff shows
+bbswitch: device 0000:01:00.0 is in use by driver &#39;nvidia&#39;, refusing OFF
+if it does contain the above message, find which application using it and kill it. Then try turning it off again.
+sudo lsof -n -w -t /dev/nvidia*</description>
+            <content type="html"><![CDATA[<p>Nvidia:</p>
+
+<pre><code>sudo rmmod nvidia
+sudo tee /proc/acpi/bbswitch &lt;&lt;&lt;OFF
+</code></pre>
+
+<p>check the output of dmesg if the ff shows</p>
+
+<p><code>bbswitch: device 0000:01:00.0 is in use by driver 'nvidia', refusing OFF</code></p>
+
+<p>if it does contain the above message, find which application using it and kill it. Then try turning it off again.</p>
+
+<p><code>sudo lsof -n -w -t /dev/nvidia*</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Dell T110 IPMI 2.0 SOL with CentOS 6.3</title>
+            <link>/p366/</link>
+            <pubDate>Fri, 22 Mar 2013 11:20:20 +0000</pubDate>
+            
+            <guid>/p366/</guid>
+            <description>IPMI:
+ Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
+ Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
+ Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
+ Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
+ Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
+ Set Username and password.
+ Press Esc key and select Save option.
+  BIOS:
+ Enter Dell&amp;rsquo;s BIOS. (F2)
+ Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
+            <content type="html"><![CDATA[<p>IPMI:</p>
+
+<ol>
+<li><p>Enter Dell&rsquo;s IPMI server management configuration utility. (Ctrl+E)</p></li>
+
+<li><p>Set &ldquo;IPMI over LAN&rdquo; to &ldquo;On&rdquo;.</p></li>
+
+<li><p>Configure &ldquo;IPMI LAN Channel&rdquo;, choose either static or dynamic.</p></li>
+
+<li><p>Set &ldquo;VLAN Enable&rdquo; to &ldquo;Off&rdquo;.</p></li>
+
+<li><p>Set &ldquo;Administrator Account&rdquo; to &ldquo;Enable&rdquo;</p></li>
+
+<li><p>Set Username and password.</p></li>
+
+<li><p>Press Esc key and select Save option.</p></li>
+</ol>
+
+<p>BIOS:</p>
+
+<ol>
+<li><p>Enter Dell&rsquo;s BIOS. (F2)</p></li>
+
+<li><p>Configure &ldquo;Serial Communication&rdquo; to be &ldquo;On with Console Redirection via COM2&rdquo;. Dell&#8217;s BMC is connected to COM2.<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p366/1050-2_hua34ca36e5e4a011978596abc12e42941_27879_500x0_resize_box_2.png 500w
+  
+  
+  
+  '
+  
+    src="/p366/1050-2.png" 
+  
+  alt="">
+</p></li>
+
+<li><p>Set &ldquo;Baud&rdquo; and &ldquo;Remote Terminal Type&rdquo;. &ldquo;115200&rdquo;, &ldquo;VT100/VT220&rdquo;.</p></li>
+
+<li><p>Save and exit.</p></li>
+</ol>
+
+<p>CentOS 6.3</p>
+
+<ol>
+<li><p>Edit /boot/grub/grub.conf using vi/gedit.</p></li>
+
+<li><p>Insert the ff lines below &ldquo;hiddenmenu&rdquo; option. This redirect console to 2nd serial port(COM2) where BMC is connected.</p>
+
+<pre><code>serial --unit=2 --speed=115200
+terminal --timeout=8 console serial
+</code></pre></li>
+
+<li><p>Comment out splashimage.</p>
+
+<pre><code>#splashimage=(hd0,0)/grub/splash.xpm.gz
+</code></pre></li>
+
+<li><p>Append the ff lines to kernel options</p>
+
+<pre><code>console=tty0 console=ttyS1,115200n8
+
+kernel /vmlinuz-2.6.9-42.0.10.ELsmp ro root=LABEL=/ console=tty0 console=ttyS1,19200n8
+</code></pre></li>
+
+<li><p>Save and exit.</p></li>
+</ol>
+
+<p>Testing.</p>
+
+<p>On another terminal connect using the ff command.</p>
+
+<p><code>ipmitool -I lanplus -H &lt;IPofServerIPMI&gt; -U user -a sol activate</code></p>
+
+<p>Ref:</p>
+
+<p><a href="http://www.symantec.com/connect/articles/how-do-sol-serial-over-lan-aka-console-redirection-dell-servers">http://www.symantec.com/connect/articles/how-do-sol-serial-over-lan-aka-console-redirection-dell-servers</a></p>
+
+<p><a href="http://www.dell.com/downloads/global/power/ps4q04-20040204-murphy.pdf">http://www.dell.com/downloads/global/power/ps4q04-20040204-murphy.pdf</a></p>
+
+<p><a href="http://www.cyberciti.biz/faq/linux-serial-console-howto/">http://www.cyberciti.biz/faq/linux-serial-console-howto/</a></p>
+
+<p><a href="http://lonesysadmin.net/2007/06/21/how-to-configure-ipmi-on-a-dell-poweredge-running-red-hat-enterprise-linux/">http://lonesysadmin.net/2007/06/21/how-to-configure-ipmi-on-a-dell-poweredge-running-red-hat-enterprise-linux/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>add multiple email forwarders using AutoIt</title>
+            <link>/p363/</link>
+            <pubDate>Thu, 21 Mar 2013 09:01:16 +0000</pubDate>
+            
+            <guid>/p363/</guid>
+            <description>#include &amp;lt;string.au3&amp;gt; #include &amp;lt;Array.au3&amp;gt; #Include &amp;lt;File.au3&amp;gt; #Include &amp;lt;FF.au3&amp;gt; #include &amp;lt;Date.au3&amp;gt; Global $Paused HotKeySet(&amp;#34;{PAUSE}&amp;#34;, &amp;#34;TogglePause&amp;#34;) HotKeySet(&amp;#34;{ESC}&amp;#34;, &amp;#34;Terminate&amp;#34;) $emailList=&amp;#34;emaillist.csv&amp;#34; $fowardEmailto=&amp;#34;myemail@core.piehosting.com&amp;#34; $cpanelEmailForwardingPage=&amp;#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&amp;#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&amp;#34;Not Connected &amp;#34; &amp;amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&amp;#34;error&amp;#34;,&amp;#34;File does not exist or cant be read&amp;#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &amp;#34;&amp;#34;, &amp;#34;size: &amp;#34; &amp;amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &amp;lt;&amp;gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &amp;#34;@&amp;#34;) ConsoleWrite(&amp;#34;email: &amp;#34; &amp;amp; $email &amp;amp; @CRLF) ConsoleWrite(&amp;#34;name: &amp;#34; &amp;amp; $temp1[1] &amp;amp; @CRLF) ConsoleWrite(&amp;#34;domain: &amp;#34; &amp;amp; $temp1[2] &amp;amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &amp;#34;email&amp;#34;, &amp;#34;id&amp;#34;) ; Enter email domain on select dropdown box $test2=&amp;#39;//select[@name=&amp;#34;domain&amp;#34;]//option[@value=&amp;#34;&amp;#39; &amp;amp; $temp1[2] &amp;amp; &amp;#39;&amp;#34;]&amp;#39;  _FFXPath($test2, &amp;#39;selected=true&amp;#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &amp;#34;fwdemail&amp;#34;, &amp;#34;id&amp;#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&amp;#39;Script is &amp;#34;Paused&amp;#34;&amp;#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc </description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>string<span style="color:#f92672">.</span><span style="color:#a6e22e">au3</span><span style="color:#f92672">&gt;</span>
+<span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>Array<span style="color:#f92672">.</span><span style="color:#a6e22e">au3</span><span style="color:#f92672">&gt;</span>
+<span style="color:#960050;background-color:#1e0010">#</span>Include <span style="color:#f92672">&lt;</span>File<span style="color:#f92672">.</span><span style="color:#a6e22e">au3</span><span style="color:#f92672">&gt;</span>
+<span style="color:#960050;background-color:#1e0010">#</span>Include <span style="color:#f92672">&lt;</span>FF<span style="color:#f92672">.</span><span style="color:#a6e22e">au3</span><span style="color:#f92672">&gt;</span>
+<span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>Date<span style="color:#f92672">.</span><span style="color:#a6e22e">au3</span><span style="color:#f92672">&gt;</span>
+
+Global $Paused
+<span style="color:#a6e22e">HotKeySet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;{PAUSE}&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TogglePause&#34;</span><span style="color:#f92672">)</span>
+HotKeySet<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;{ESC}&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Terminate&#34;</span><span style="color:#f92672">)</span>
+
+$emailList<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emaillist.csv&#34;</span>
+$fowardEmailto<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myemail@core.piehosting.com&#34;</span>
+$cpanelEmailForwardingPage<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&#34;</span>
+
+_FFConnect<span style="color:#f92672">()</span>
+
+<span style="color:#66d9ef">if</span> _FFIsConnected<span style="color:#f92672">()</span> Then
+	<span style="color:#f92672">;</span> <span style="color:#66d9ef">do</span> nothing
+Else
+	
+	<span style="color:#a6e22e">ConsoleWrite</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Not Connected &#34;</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">@CRLF</span><span style="color:#f92672">)</span>
+EndIf
+
+<span style="color:#f92672">;</span> check file <span style="color:#66d9ef">if</span> it exist
+$file <span style="color:#f92672">=</span> FileOpen<span style="color:#f92672">(</span>$emailList<span style="color:#f92672">,</span>0<span style="color:#f92672">)</span> 
+
+<span style="color:#66d9ef">if</span> $file<span style="color:#f92672">=-</span>1 Then
+	<span style="color:#a6e22e">MsgBox</span><span style="color:#f92672">(</span>0<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;error&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;File does not exist or cant be read&#34;</span><span style="color:#f92672">)</span>
+	Exit
+EndIf
+
+<span style="color:#f92672">;</span> open file containing emails and put contents to an array
+Dim $aRecords
+
+<span style="color:#a6e22e">_FileReadToArray</span><span style="color:#f92672">(</span>$emailList<span style="color:#f92672">,</span>$aRecords<span style="color:#f92672">)</span>
+
+MsgBox<span style="color:#f92672">(</span>0<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;size: &#34;</span> <span style="color:#f92672">&amp;</span> $aRecords<span style="color:#f92672">[</span>0<span style="color:#f92672">])</span>
+
+For $x<span style="color:#f92672">=</span>1 to $aRecords<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span>
+	<span style="color:#a6e22e">_FFOpenURL</span><span style="color:#f92672">(</span>$cpanelEmailForwardingPage<span style="color:#f92672">)</span>
+   If<span style="color:#f92672">(</span>$aRecords<span style="color:#f92672">[</span>$x<span style="color:#f92672">]</span> <span style="color:#f92672">&lt;&gt;</span> $fowardEmailto<span style="color:#f92672">)</span> Then
+	  <span style="color:#a6e22e">writeForwarder</span><span style="color:#f92672">(</span>$aRecords<span style="color:#f92672">[</span>$x<span style="color:#f92672">])</span>
+   
+	EndIf
+Next
+
+Exit
+
+Func <span style="color:#a6e22e">writeForwarder</span><span style="color:#f92672">(</span>$email<span style="color:#f92672">)</span>
+	$temp1 <span style="color:#f92672">=</span> StringSplit<span style="color:#f92672">(</span>$email<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;@&#34;</span><span style="color:#f92672">)</span>
+	ConsoleWrite<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email: &#34;</span> <span style="color:#f92672">&amp;</span> $email <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">@CRLF</span><span style="color:#f92672">)</span>
+	ConsoleWrite<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;name: &#34;</span> <span style="color:#f92672">&amp;</span> $temp1<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">@CRLF</span><span style="color:#f92672">)</span>
+	ConsoleWrite<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;domain: &#34;</span> <span style="color:#f92672">&amp;</span> $temp1<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">@CRLF</span><span style="color:#f92672">)</span>
+	
+	<span style="color:#f92672">;</span> Enter email on field
+	<span style="color:#a6e22e">_FFSetValue</span><span style="color:#f92672">(</span>$temp1<span style="color:#f92672">[</span>1<span style="color:#f92672">],</span> <span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span>
+	
+	<span style="color:#f92672">;</span> Enter email domain on select dropdown box
+	$test2<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#75715e">//select[@name=&#34;domain&#34;]//option[@value=&#34;&#39; &amp; $temp1[2] &amp; &#39;&#34;]&#39;
+</span><span style="color:#75715e"></span>    _FFXPath<span style="color:#f92672">(</span>$test2<span style="color:#f92672">,</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>selected<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">,</span> 9<span style="color:#f92672">)</span>
+	
+	<span style="color:#f92672">;</span> Enter emaill address to forward email
+	<span style="color:#a6e22e">_FFSetValue</span><span style="color:#f92672">(</span>$fowardEmailto<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;fwdemail&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span>
+	
+	<span style="color:#f92672">;</span> submit fom
+	<span style="color:#a6e22e">_FFFormSubmit</span><span style="color:#f92672">()</span>
+	
+	<span style="color:#f92672">;</span>Sleep<span style="color:#f92672">(</span>2000<span style="color:#f92672">)</span>
+EndFunc
+
+Func <span style="color:#a6e22e">TogglePause</span><span style="color:#f92672">()</span>
+	$Paused <span style="color:#f92672">=</span> NOT $Paused
+	While $Paused
+		<span style="color:#a6e22e">Sleep</span><span style="color:#f92672">(</span>100<span style="color:#f92672">)</span>
+		ToolTip<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Script is <span style="color:#e6db74">&#34;Paused&#34;</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">,</span>0<span style="color:#f92672">,</span>0<span style="color:#f92672">)</span>
+		WEnd
+	EndFunc
+	
+Func <span style="color:#a6e22e">Terminate</span><span style="color:#f92672">()</span>
+	Exit 0
+	EndFunc</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Tower of hanoi v.1</title>
+            <link>/p333/</link>
+            <pubDate>Thu, 21 Feb 2013 10:30:08 +0000</pubDate>
+            
+            <guid>/p333/</guid>
+            <description>v.1 using iterative solution
+todo:
+v.2 shorten code.
+v.3 use recursion
+import java.util.logging.Level; import java.util.logging.Logger; /* * To change this template, choose Tools | Templates * and open the template in the editor. * even: right side move. * odd: left side move. */ /** * * @author Jefferson M. Fermo * * Iterative solution of tower of Hanoi. * * */ public class Hanoi { private Peg[] pegs; private final int NUMBEROFTOWERS = 3; private boolean directionOfMoveIsRight = false; private long numberOfMoves = 0; private int discCount = 0; int currentPeg = 0; int lastPegMove = 0; int moves = 0; public Hanoi(int discCount) throws Exception { this.</description>
+            <content type="html"><![CDATA[<p>v.1 using iterative solution</p>
+
+<p>todo:</p>
+
+<p>v.2 shorten code.</p>
+
+<p>v.3 use recursion</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.logging.Level<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.logging.Logger<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e"> * To change this template, choose Tools | Templates
+</span><span style="color:#75715e"> * and open the template in the editor.
+</span><span style="color:#75715e"> * even: right side move.
+</span><span style="color:#75715e"> * odd: left side move.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> *
+</span><span style="color:#75715e"> * @author Jefferson M. Fermo 
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> * Iterative solution of tower of Hanoi.
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Hanoi</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> Peg<span style="color:#f92672">[]</span> pegs<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> NUMBEROFTOWERS <span style="color:#f92672">=</span> 3<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">long</span> numberOfMoves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> discCount <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">int</span> currentPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+    <span style="color:#66d9ef">int</span> lastPegMove <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">int</span> moves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Hanoi</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> discCount<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discCount</span> <span style="color:#f92672">=</span> discCount<span style="color:#f92672">;</span>
+        
+        <span style="color:#75715e">// (N^2)-1
+</span><span style="color:#75715e"></span>        numberOfMoves <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">long</span><span style="color:#f92672">)</span> Math<span style="color:#f92672">.</span><span style="color:#a6e22e">pow</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> discCount<span style="color:#f92672">)-</span>1<span style="color:#f92672">;</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;moves: &#34;</span> <span style="color:#f92672">+</span> numberOfMoves<span style="color:#f92672">);</span>
+        
+        
+        <span style="color:#75715e">// determine the movement of disc based on its quantity.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>discCount <span style="color:#f92672">%</span> 2 <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;odd&#34;</span><span style="color:#f92672">);</span>
+            directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;even&#34;</span><span style="color:#f92672">);</span>
+            directionOfMoveIsRight <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>            
+        
+        pegs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Peg<span style="color:#f92672">[</span>NUMBEROFTOWERS<span style="color:#f92672">];</span>
+        
+        <span style="color:#75715e">// create pegs with slots equal to the total number of disc.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> NUMBEROFTOWERS<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            pegs<span style="color:#f92672">[</span>cntr<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Peg<span style="color:#f92672">(</span>discCount<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> discCount<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            Disc disc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Disc<span style="color:#f92672">(</span>discCount<span style="color:#f92672">-</span>cntr<span style="color:#f92672">);</span>
+            
+            pegs<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">populatePeg</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Initial content&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Peg peg1 <span style="color:#f92672">:</span> pegs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>peg1<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;**************&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#75715e">//System.out.println(&#34;next peg transfer disc #&#34; + nextPeg(pegs[1]).getPegNumber());
+</span><span style="color:#75715e"></span>        
+        
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">solve</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>moves <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> moves <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> numberOfMoves<span style="color:#f92672">;</span> <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            
+            Peg peg <span style="color:#f92672">=</span> pegs<span style="color:#f92672">[</span>currentPeg<span style="color:#f92672">];</span>
+            
+            moveDiscFromPeg<span style="color:#f92672">(</span>peg<span style="color:#f92672">);</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 0 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 2 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 0<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                currentPeg <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 0 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 1 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 0<span style="color:#f92672">)){</span>
+                currentPeg <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">((</span>currentPeg <span style="color:#f92672">==</span> 1 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span>currentPeg <span style="color:#f92672">==</span> 2 <span style="color:#f92672">&amp;</span> lastPegMove <span style="color:#f92672">==</span> 1<span style="color:#f92672">)){</span>
+                currentPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Peg peg1 <span style="color:#f92672">:</span> pegs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>peg1<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+    <span style="color:#f92672">}</span>
+    
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">moveDiscFromPeg</span><span style="color:#f92672">(</span>Peg currentPeg<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+    
+        <span style="color:#66d9ef">int</span> invalidNextPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">int</span> movesMade <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        Peg peg <span style="color:#f92672">=</span> currentPeg<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">int</span> lastPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#75715e">// there are only 2 possible moves in a 3 tower.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>invalidNextPeg <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>         
+            
+            Peg nextPeg <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">(</span>peg<span style="color:#f92672">);</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> nextPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> movesMade<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            
+            <span style="color:#75715e">//System.out.println(&#34;is move legal? &#34; + currentPeg.getPegNumber() + &#34;, &#34; + nextPeg.getPegNumber());
+</span><span style="color:#75715e"></span>            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>isNextMoveLegal<span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">,</span> nextPeg<span style="color:#f92672">)){</span>
+                
+                moveDisk<span style="color:#f92672">(</span>currentPeg<span style="color:#f92672">,</span> nextPeg<span style="color:#f92672">);</span>
+                                
+                moves<span style="color:#f92672">++;</span>
+                
+                invalidNextPeg <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+                
+                lastPegMove <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">();</span>
+                
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                
+                invalidNextPeg<span style="color:#f92672">++;</span>
+                
+            <span style="color:#f92672">}</span>
+            
+            peg <span style="color:#f92672">=</span> nextPeg<span style="color:#f92672">;</span>            
+        <span style="color:#f92672">}</span>
+    
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;last peg: &#34;</span> <span style="color:#f92672">+</span> lastPeg<span style="color:#f92672">);</span>
+            
+        
+        <span style="color:#66d9ef">return</span> movesMade<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * Checks if the move is legal from source to destination peg.
+</span><span style="color:#75715e">     * A move is legal if the following has been met:
+</span><span style="color:#75715e">     * 1. source peg contains a disc and destination peg is empty.
+</span><span style="color:#75715e">     * 2. disc at the top of destination peg is bigger than the disc on top of source peg. Both pegs are not empty.
+</span><span style="color:#75715e">     * A move is considered invalid if:
+</span><span style="color:#75715e">     * 3. source peg does not contain a disc and destination contains a disc.
+</span><span style="color:#75715e">     * 4. disc at the top of destination peg is smaller than the disc on top of source peg. Both pegs are not empty.
+</span><span style="color:#75715e">     * 5. both pegs does not contain a disc.
+</span><span style="color:#75715e">     * 
+</span><span style="color:#75715e">     * @param sourcePeg Peg where disc will be taken
+</span><span style="color:#75715e">     * @param destPeg   Peg where disc will be placed
+</span><span style="color:#75715e">     * @return  returns true if move is legal based on rule #1 and #2
+</span><span style="color:#75715e">     */</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isNextMoveLegal</span><span style="color:#f92672">(</span>Peg sourcePeg<span style="color:#f92672">,</span> Peg destPeg<span style="color:#f92672">){</span>
+        
+        <span style="color:#75715e">// rule #1
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+        <span style="color:#75715e">// rule #3    
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            Disc sourceDisk <span style="color:#f92672">=</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">();</span>
+            Disc destDisk <span style="color:#f92672">=</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">();</span>
+            
+            <span style="color:#75715e">//rule #2
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>destDisk<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;</span> sourceDisk<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+            <span style="color:#75715e">//rule #4
+</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#75715e">//rule #5    
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">&amp;</span> destPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">){</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">private</span> Peg <span style="color:#a6e22e">nextPeg</span><span style="color:#f92672">(</span>Peg currentPeg<span style="color:#f92672">){</span>
+    
+        <span style="color:#66d9ef">int</span> pegNumber <span style="color:#f92672">=</span> currentPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">();</span>
+        
+        <span style="color:#66d9ef">int</span> nextPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>directionOfMoveIsRight<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> pegNumber <span style="color:#f92672">+</span> 1<span style="color:#f92672">;</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>tmp <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> 3<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> tmp<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> pegNumber <span style="color:#f92672">-</span> 1<span style="color:#f92672">;</span>
+            
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>tmp <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+                nextPegNumber <span style="color:#f92672">=</span> tmp<span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#66d9ef">return</span> pegs<span style="color:#f92672">[</span>nextPegNumber<span style="color:#f92672">];</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">moveDisk</span><span style="color:#f92672">(</span>Peg sourcePeg<span style="color:#f92672">,</span> Peg destinationPeg<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+    
+        Disc disc <span style="color:#f92672">=</span> sourcePeg<span style="color:#f92672">.</span><span style="color:#a6e22e">getDisk</span><span style="color:#f92672">();</span>
+        
+        destinationPeg<span style="color:#f92672">.</span><span style="color:#a6e22e">putDisc</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">);</span>        
+        
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * @param args the command line arguments
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">// create 3 towers(default) with disc from 1 to 25 ascending.
+</span><span style="color:#75715e"></span>            Hanoi hanoi <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Hanoi<span style="color:#f92672">(</span>25<span style="color:#f92672">);</span>
+            
+            hanoi<span style="color:#f92672">.</span><span style="color:#a6e22e">solve</span><span style="color:#f92672">();</span>
+            
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>Hanoi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span>Level<span style="color:#f92672">.</span><span style="color:#a6e22e">SEVERE</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">,</span> ex<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Peg</span><span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> Disc<span style="color:#f92672">[]</span> disc<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> topIndex <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> discCount <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> pegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> myPegNumber <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    
+    Peg<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> discCount<span style="color:#f92672">){</span>
+        disc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Disc<span style="color:#f92672">[</span>discCount<span style="color:#f92672">];</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discCount</span> <span style="color:#f92672">=</span> discCount<span style="color:#f92672">;</span>
+        myPegNumber <span style="color:#f92672">=</span> pegNumber<span style="color:#f92672">++;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Disc <span style="color:#a6e22e">readTopDisc</span><span style="color:#f92672">(){</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> disc<span style="color:#f92672">[</span>topIndex<span style="color:#f92672">];</span>
+        <span style="color:#f92672">}</span>
+        
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getTopIndex</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> topIndex<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> Disc <span style="color:#a6e22e">getDisk</span><span style="color:#f92672">(){</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">==</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            Disc disk <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">];</span>
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+            topIndex<span style="color:#f92672">--;</span>
+            <span style="color:#66d9ef">return</span> disk<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">populatePeg</span><span style="color:#f92672">(</span>Disc disc<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> discCount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            topIndex<span style="color:#f92672">++;</span>
+            
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> disc<span style="color:#f92672">;</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Added disk #&#34;</span> <span style="color:#f92672">+</span> disc<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; at :&#34;</span> <span style="color:#f92672">+</span> topIndex <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">);</span>
+            
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Exception<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Peg overflowed with disk&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">putDisc</span><span style="color:#f92672">(</span>Disc disc<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">{</span>
+        
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>topIndex <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> discCount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            topIndex<span style="color:#f92672">++;</span>
+            
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">disc</span><span style="color:#f92672">[</span>topIndex<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> disc<span style="color:#f92672">;</span>
+            <span style="color:#75715e">//System.out.print(&#34;Added disk #&#34; + disc + &#34; at P&#34; + myPegNumber + &#34;:&#34; + topIndex + &#34;\n&#34;);
+</span><span style="color:#75715e"></span>            
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Exception<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Peg overflowed with disk&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPegNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> myPegNumber<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">(){</span>
+    
+        StringBuilder string <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder<span style="color:#f92672">();</span>
+        
+        string <span style="color:#f92672">=</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\nPeg #&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>myPegNumber<span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\t&#34;</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> cntr <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> cntr <span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;=</span> topIndex<span style="color:#f92672">;</span> cntr<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            string <span style="color:#f92672">=</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>disc<span style="color:#f92672">[</span>cntr<span style="color:#f92672">].</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        
+        <span style="color:#75715e">//string = string.append(&#34;\n&#34;);
+</span><span style="color:#75715e"></span>        
+        <span style="color:#66d9ef">return</span> string<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Disc</span><span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">int</span> size<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Disc</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> number<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        size <span style="color:#f92672">=</span> number<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">(){</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">+</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    
+<span style="color:#f92672">}</span></code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>make gopenvpn icon show in ubuntu 11.04 and up</title>
+            <link>/p322/</link>
+            <pubDate>Tue, 19 Feb 2013 11:40:04 +0000</pubDate>
+            
+            <guid>/p322/</guid>
+            <description>gsettings set com.canonical.Unity.Panel systray-whitelist &amp;quot;[&#39;JavaEmbeddedFrame&#39;, &#39;Mumble&#39;, &#39;Wine&#39;, &#39;Skype&#39;, &#39;gopenvpn&#39;]&amp;quot;
+also allow user to sudo gopenvpn and openvpn.</description>
+            <content type="html"><![CDATA[<p><code>gsettings set com.canonical.Unity.Panel systray-whitelist &quot;['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'gopenvpn']&quot;</code></p>
+
+<p>also allow user to sudo gopenvpn and openvpn.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>allow httpd to access fuse mounted folders</title>
+            <link>/p316/</link>
+            <pubDate>Fri, 08 Feb 2013 09:36:27 +0000</pubDate>
+            
+            <guid>/p316/</guid>
+            <description>Centos 6.3 selinux does not have httpd_use_fusefs in its database here&amp;rsquo;s a quick fix instead of turning off selinux totally.
+https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html
+here&amp;rsquo;s a good reference about selinux management:
+http://tag1consulting.com/blog/stop-disabling-selinux</description>
+            <content type="html"><![CDATA[<p>Centos 6.3 selinux does not have httpd_use_fusefs in its database here&rsquo;s a quick fix instead of turning off selinux totally.</p>
+
+<p><a href="https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html">https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html</a></p>
+
+<p>here&rsquo;s a good reference about selinux management:</p>
+
+<p><a href="http://tag1consulting.com/blog/stop-disabling-selinux">http://tag1consulting.com/blog/stop-disabling-selinux</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>KVM Spice USB-redirection quick speed test</title>
+            <link>/p295/</link>
+            <pubDate>Mon, 04 Feb 2013 09:51:46 +0000</pubDate>
+            
+            <guid>/p295/</guid>
+            <description>Bare Metal: Write: 22.8MBs Read: 22.0MBs
+Host to Guest: Write: 6.46MBs Read: 6.36MBs
+Remote to Guest: Write: 5.00MBs Read: 4.92MBs * via remote-viewer</description>
+            <content type="html"><![CDATA[<p>Bare Metal:            Write: 22.8MBs Read: 22.0MBs</p>
+
+<p>Host to Guest:       Write: 6.46MBs Read: 6.36MBs</p>
+
+<p>Remote to Guest:  Write: 5.00MBs Read: 4.92MBs * via remote-viewer</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>allow non-admin users to run programs to as administrator</title>
+            <link>/p289/</link>
+            <pubDate>Mon, 04 Feb 2013 08:21:52 +0000</pubDate>
+            
+            <guid>/p289/</guid>
+            <description>use RunasSpc to allow non-admin users to run programs at elevated rights without your password. free for private use.
+link: http://www.robotronic.de/guidance.html</description>
+            <content type="html"><![CDATA[<p>use RunasSpc to allow non-admin users to run programs at elevated rights without your password. free for private use.</p>
+
+<p>link: <a href="http://www.robotronic.de/guidance.html">http://www.robotronic.de/guidance.html</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>KVM notes</title>
+            <link>/p287/</link>
+            <pubDate>Mon, 28 Jan 2013 07:24:13 +0000</pubDate>
+            
+            <guid>/p287/</guid>
+            <description>For host machine- Centos 6.3 64:
+KVM installation. http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server
+http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/
+http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/
+Using Spice with LibVirt KVM http://wiki.centos.org/HowTos/Spice-libvirt
+Viewing remote KVM Guest with usb redirection (linux mint maya 64): Option 1:
+https://launchpad.net/~bderzhavets/+archive/lib-usbredir73
+Option 2:
+Compile spice:
+wget http://downloads.us.xiph.org/releases/celt/celt-0.5.1.3.tar.gz wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configure --prefix=/usr http://spice-space.org/download/gtk/spice-gtk-0.16.tar.bz2 ./configure --enable-usbredir=yes --with-python=yes http://spice-space.org/download/releases/spice-protocol-0.12.2.tar.gz install virt-viewer 5.4-3. deb http://ubuntu.mirror.cambrium.nl/ubuntu/ raring main universe
+libacl1.2.2.51-8
+libattr1-1:2.4.46-8ubuntu2
+libspice-client-glib-2.0-8
+libspice-client-gtk-3.0-4
+wget https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.</description>
+            <content type="html"><![CDATA[
+
+<p>For host machine- Centos 6.3 64:</p>
+
+<h2 id="kvm-installation">KVM installation.</h2>
+
+<p><a href="http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server">http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server</a></p>
+
+<p><a href="http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/">http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/</a></p>
+
+<p><a href="http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/">http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/</a></p>
+
+<h2 id="using-spice-with-libvirt-kvm">Using Spice with LibVirt KVM</h2>
+
+<p><a href="http://wiki.centos.org/HowTos/Spice-libvirt">http://wiki.centos.org/HowTos/Spice-libvirt</a></p>
+
+<h2 id="viewing-remote-kvm-guest-with-usb-redirection-linux-mint-maya-64">Viewing remote KVM Guest with usb redirection (linux mint maya 64):</h2>
+
+<p>Option 1:</p>
+
+<p><a href="https://launchpad.net/~bderzhavets/+archive/lib-usbredir73">https://launchpad.net/~bderzhavets/+archive/lib-usbredir73</a></p>
+
+<p>Option 2:</p>
+
+<p>Compile spice:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://downloads.us.xiph.org/releases/celt/celt-0.5.1.3.tar.gz
+  
+wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configure --prefix<span style="color:#f92672">=</span>/usr
+  
+http://spice-space.org/download/gtk/spice-gtk-0.16.tar.bz2 ./configure --enable-usbredir<span style="color:#f92672">=</span>yes --with-python<span style="color:#f92672">=</span>yes
+  
+http://spice-space.org/download/releases/spice-protocol-0.12.2.tar.gz</code></pre></div>
+
+<h2 id="install-virt-viewer-5-4-3">install virt-viewer 5.4-3.</h2>
+
+<p>deb <a href="http://ubuntu.mirror.cambrium.nl/ubuntu/">http://ubuntu.mirror.cambrium.nl/ubuntu/</a> raring main universe</p>
+
+<p>libacl1.2.2.51-8</p>
+
+<p>libattr1-1:2.4.46-8ubuntu2</p>
+
+<p>libspice-client-glib-2.0-8</p>
+
+<p>libspice-client-gtk-3.0-4</p>
+
+<p>wget <a href="https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb">https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb</a></p>
+
+<h2 id="viewing-remote-kvm-guest-with-usb-redirection-using-ubuntu-13-04-live-cd">Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD):</h2>
+
+<p>enable universe sources</p>
+
+<pre><code>sudo apt-get update
+sudo apt-get install libapparmor1_2.8 libgtk-vnc-2.0 libgvnc-1.0 libspice-client-glib-2.0 libspice-client-gtk-3.0 libusbredirhost1 libusbredirparser0 libvirt0
+</code></pre>
+
+<p>now ubuntu 13.04 does have virt-viewer-0.5.4-1 at universe, but this version could not connect to spice type graphics.</p>
+
+<p>it seems that the binary remote-viewer is not linked libspice-client-glib-2.0. That is why I&#8217;ll be using this version virt-viewer_0.5.4-3~raring0_i386.deb from <a href="https://launchpad.net/~dnjl/+archive/virtualization">https://launchpad.net/~dnjl/+archive/virtualization</a>.</p>
+
+<pre><code>wget https://launchpad.net/~dnjl/+archive/build/+build/4077606/+files/virt-viewer_0.5.4-3~raring0_i386.deb
+sudo dpkg -i virt-viewer_0.5.4-3~raring0_i386.deb
+</code></pre>
+
+<p>Note:</p>
+
+<ul>
+<li><p>both option has USB redirection.</p></li>
+
+<li><p>as of 02/04/13 linux mint virt-viewer from standard repo does not have usb-redirection suppport.</p></li>
+
+<li><p>virt-manager from <a href="http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz">http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz</a> has problem with glibc that why I looked for an updated version</p></li>
+</ul>
+
+<h2 id="install-kvm-guest-lvm-via-kvm">Install kvm guest(LVM) via KVM</h2>
+
+<pre><code>mkdir /var/www/html/centos
+  
+mount -t iso9660 -o loop CentOS-6.3-x86_64-bin-DVD1.iso /var/www/html/centos
+  
+virt-install \
+  --name=loyalty1 \
+  --cpuset=2 --ram=1024 --network bridge=br0 \
+  --disk=/dev/volgrp\_kvm\_guest1/swap \
+  --disk=/dev/volgrp\_kvm\_guest1/root \
+  --disk=/dev/volgrp\_kvm\_guest1/usr \
+  --disk=/dev/volgrp\_kvm\_guest1/opt \
+  --disk=/dev/volgrp\_kvm\_guest1/var \
+  --vnc --noautoconsole \
+  --location http://myserver/centos
+</code></pre>
+
+<h2 id="install-kvm-guest-image-via-iso">Install KVM guest(image) via ISO</h2>
+
+<pre><code>virt-install \
+  --name=pfsense2 \
+  --cpuset=2 \
+  --ram=1024 \
+  --network bridge=br0 \
+  --network bridge=br1 \
+  --disk path=/var/lib/libvirt/images/pfsense.img \
+  --vnc --noautoconsole --livecd \
+  --cdrom /var/lib/libvirt/images/pfsense.iso
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>my pfsense notes</title>
+            <link>/p275/</link>
+            <pubDate>Thu, 24 Jan 2013 07:43:33 +0000</pubDate>
+            
+            <guid>/p275/</guid>
+            <description>working folder of ntop, nut, dhcp:
+/var/db
+config folder of openvpn, ntp, dns(resolv), snmp, syslog
+/var/etc</description>
+            <content type="html"><![CDATA[<p>working folder of ntop, nut, dhcp:</p>
+
+<p>/var/db</p>
+
+<p>config folder of openvpn, ntp, dns(resolv), snmp, syslog</p>
+
+<p>/var/etc</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Problem logging in from Netbootdisk into smb share after using Samba v3.5.10</title>
+            <link>/p220/</link>
+            <pubDate>Tue, 13 Nov 2012 05:46:40 +0000</pubDate>
+            
+            <guid>/p220/</guid>
+            <description>Problem:
+accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.
+increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33
+*ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser
+On the client side, Netbootdisk on my instance, it is saying that my password is invalid.</description>
+            <content type="html"><![CDATA[<p>Problem:</p>
+
+<p>accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.</p>
+
+<p>increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33</p>
+
+<p>*ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser</p>
+
+<p>On the client side, Netbootdisk on my instance, it is saying that my password is invalid. But on Windows desktop I was able to log in just fine.</p>
+
+<p>comparing the output of <code>testparm -v</code> on both version shows that samba 3.5.8 change some default settings from lower version if it were not specified on your smb.conf. Particularly the lanman auth was set to No by default which cause the above Lanman passwords NOT PERMITTED &#8230; error.</p>
+
+<p>lower version: lanman auth = Yes</p>
+
+<p>-</p>
+
+<p>newer version: lanman auth = No</p>
+
+<p>After entering lanman auth = Yes into smb.conf</p>
+
+<p>The error changed to</p>
+
+<p>*ntlm_password_check: NO LanMan password set for user myuser (and no NT password supplied)</p>
+
+<p>after fiddling around with the other default settings I was still stuck with that error.Then I decided to issue again the command</p>
+
+<p><code>smbpasswd -a myuser</code></p>
+
+<p>and this solve my problem I was now able to login into samba 3.5.10 from Netbootdisk like before.</p>
+
+<p>It seems that smbpasswd will not create a LanMan password if the lanman auth setting was left on its own and you have to reissue that smbpasswd command in case you decided to change lanman auth to Yes it later on.</p>
+
+<p>Not sure if it were in the release notes I did not bother to read them maybe I should have.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Ruckus zap tool installation and testing</title>
+            <link>/p217/</link>
+            <pubDate>Thu, 08 Nov 2012 18:31:19 +0000</pubDate>
+            
+            <guid>/p217/</guid>
+            <description>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
+Mac
+Windows
+For Linux: you have to compile from source. Open terminal and execute the following commands
+svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+ Run zapd on both PC/Laptop,you should see something like the following.
+zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer.</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.<br />
+<a href="http://theruckusroom.typepad.com/files/zap_mac_20100111.zip" title="mac">Mac</a><br />
+<a href="http://theruckusroom.typepad.com/files/zap_install_20100413.zip" title="Windows">Windows</a><br />
+For Linux: you have to compile from source. Open terminal and execute the following commands<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only
+cd zapwireless-read-only
+make <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div></p></li>
+
+<li><p>Run zapd on both PC/Laptop,you should see something like the following.</p>
+
+<pre><code>zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc.
+      
+Built Oct 13 2012 at 11:12:20
+      
+Zapd service started
+</code></pre></li>
+
+<li><p>To test zap run the following command on either computer.<br />
+<code>zap -sIpOf1stComputer -dIpOf2ndComputer</code><br />
+Zap should run for a number of seconds and you should see something like the following output.</p>
+
+<pre><code>0: 192.168.1.247-&gt;192.168.1.18 403=rx 0=dr 0=oo 0=rp 403=rx in 50.1ms 94.7mbps 94.7 | 94.7 94.7 94.7 94.7 94.7 94.7 
+</code></pre></li>
+
+<li><p>If all goes well then zap tool has been properly installed. If not check your firewall if its blocking Zap tool. Also don&#8217;t forget to read Zap&#8217;s tool Manual regarding changing windows registry to enable TOS bit modification</p></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>zPerf 1.0 (wip)</title>
+            <link>/p201/</link>
+            <pubDate>Thu, 08 Nov 2012 11:11:29 +0000</pubDate>
+            
+            <guid>/p201/</guid>
+            <description>Purpose:
+ Provides a GUI Frontend for Ruckus amazing Zap tool
+ Visualize Zap tool results using charts.
+  Feature:
+ Generate CDF graph from zap result file.
+ Save graph to image file
+  Requirements:
+ jre6 or higher
+ Ruckus zap tool
+  Download zperf archive: zPerf
+How to use:
+ Extract zperf archive.
+ Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
+            <content type="html"><![CDATA[<p>Purpose:</p>
+
+<ul>
+<li><p>Provides a GUI Frontend for Ruckus amazing Zap tool</p></li>
+
+<li><p>Visualize Zap tool results using charts.</p></li>
+</ul>
+
+<p>Feature:</p>
+
+<ul>
+<li>Generate CDF graph from zap result file.<br /></li>
+<li>Save graph to image file<br />
+<br /></li>
+</ul>
+
+<p>Requirements:</p>
+
+<ul>
+<li>jre6 or higher<br /></li>
+<li>Ruckus zap tool<br />
+<br /></li>
+</ul>
+
+<p>Download zperf archive: <a href="https://drive.google.com/?usp=folder&amp;authuser=0#folders/0B0Vl1rpEEmwkOGZsa1BydVZ1eUE" title="zPerf">zPerf</a></p>
+
+<p>How to use:</p>
+
+<ul>
+<li>Extract zperf archive.<br /></li>
+<li>Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.exe - 32bit windows, zperf64.exe, 64bit windows.<br /></li>
+<li>Enter IP address of both computers running zapd<br /></li>
+<li>Enter the name of the file where to save result in &ldquo;Result filename&rdquo;. This is optional, zPerf with create one if you did not specify.<br /></li>
+<li>Pres &ldquo;Run&rdquo; button<br />
+<br /></li>
+</ul>
+
+<p>Screen shots:</p>
+
+<p>Main User Interface</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p201/main_huc8c1c2e1be3c39190b3277125d51dc9c_41539_500x0_resize_box_2.png 500w
+  
+  
+    , /p201/main_huc8c1c2e1be3c39190b3277125d51dc9c_41539_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p201/main.png" 
+  
+  alt="">
+
+
+<p>Chart Viewer - Split View</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p201/splitview1_hu3cddbfe6162f56e93c54cfd019dafa58_69175_500x0_resize_box_2.png 500w
+  
+  
+    , /p201/splitview1_hu3cddbfe6162f56e93c54cfd019dafa58_69175_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p201/splitview1.png" 
+  
+  alt="">
+
+
+<p>Chart Viewer - Line Chart</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p201/linechart_hud0e1b7e9c090096d763f687fb1395dc9_60165_500x0_resize_box_2.png 500w
+  
+  
+    , /p201/linechart_hud0e1b7e9c090096d763f687fb1395dc9_60165_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p201/linechart.png" 
+  
+  alt="">
+
+
+<p>Chart Viewer - Average throughput comparison between traces on a certain probability.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p201/splitview_hu77e44cec5a62f58e7ae3744183efa790_65062_500x0_resize_box_2.png 500w
+  
+  
+    , /p201/splitview_hu77e44cec5a62f58e7ae3744183efa790_65062_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p201/splitview.png" 
+  
+  alt="">
+
+
+<p>zPerf process and thread handling was inspired by <a href="http://code.google.com/p/xjperf/" title="jperf">jperf</a>. I actually copied the source and modified it a bit for my purpose.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Removing multiple devices in Windows</title>
+            <link>/p192/</link>
+            <pubDate>Sun, 07 Oct 2012 03:46:14 +0000</pubDate>
+            
+            <guid>/p192/</guid>
+            <description>Device Remover
+http://www.pro-it-education.de/software/deviceremover/</description>
+            <content type="html"><![CDATA[<p>Device Remover</p>
+
+<p><a href="http://www.pro-it-education.de/software/deviceremover/">http://www.pro-it-education.de/software/deviceremover/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Scripts, scripts and scripts.</title>
+            <link>/p185/</link>
+            <pubDate>Fri, 27 Jul 2012 17:27:29 +0000</pubDate>
+            
+            <guid>/p185/</guid>
+            <description>find certain strings in files on certain folders
+  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
+find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
+ search for top talkers using tshark
+  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
+ chmod multiples files mix with directory.</description>
+            <content type="html"><![CDATA[<ul>
+<li>find certain strings in files on certain folders<br />
+<br /></li>
+</ul>
+
+<p><code>find . -type f ! -exec grep -q '@olddomain.com' {} \; -exec grep -q 'olddomain.com' {} \; -print</code></p>
+
+<p><code>find . -type f | xargs egrep -Hn '@olddomain.com'</code></p>
+
+<ul>
+<li>search for top talkers using tshark<br />
+<br /></li>
+</ul>
+
+<p><code>tshark -r output.cap -T fields -e ip.src &quot;tcp.flags.syn==1 &amp;&amp; tcp.flags.ack==0&quot; | sort | uniq -c | sort -rn | head</code></p>
+
+<ul>
+<li>chmod multiples files mix with directory.<br />
+<br /></li>
+</ul>
+
+<p><code>find /folderpath -type f -exec chmod 644 {} \;</code></p>
+
+<ul>
+<li>chmod multiples directory mix with other files.<br />
+<br /></li>
+</ul>
+
+<p><code>find /folderpath -type d -exec chmod 755 {} \;</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Sending mysql commands with backticks via pssh</title>
+            <link>/p180/</link>
+            <pubDate>Mon, 23 Jul 2012 02:10:28 +0000</pubDate>
+            
+            <guid>/p180/</guid>
+            <description>pssh -h servers -i &#39;echo &amp;quot;select * from \`tablename with space\`&amp;quot; | mysql -uusername -ppass database&#39;</description>
+            <content type="html"><![CDATA[<p><code>pssh -h servers -i 'echo &quot;select * from \`tablename with space\`&quot; | mysql -uusername -ppass database'</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>when certs are revoke</title>
+            <link>/p166/</link>
+            <pubDate>Tue, 17 Jul 2012 02:08:50 +0000</pubDate>
+            
+            <guid>/p166/</guid>
+            <description>Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port Re-using SSL/TLS context Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port LZO compression initialized Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS\_ERROR: BIO read tls\_read\_plaintext error: error:140890B2:SSL routines:SSL3\_GET\_CLIENT\_CERTIFICATE:no certificate returned Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS object -&amp;gt; incoming plaintext read error Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS handshake failed </description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:23 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port Re-using SSL/TLS context
+  
+Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:23 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port LZO compression initialized
+  
+Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS<span style="color:#ae81ff">\_</span>ERROR: BIO read tls<span style="color:#ae81ff">\_</span>read<span style="color:#ae81ff">\_</span>plaintext error: error:140890B2:SSL routines:SSL3<span style="color:#ae81ff">\_</span>GET<span style="color:#ae81ff">\_</span>CLIENT<span style="color:#ae81ff">\_</span>CERTIFICATE:no certificate returned
+  
+Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS object -&gt; incoming plaintext read error
+  
+Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS handshake failed</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>compiling ffmpeg on centos 6</title>
+            <link>/p164/</link>
+            <pubDate>Sat, 02 Jun 2012 10:45:10 +0000</pubDate>
+            
+            <guid>/p164/</guid>
+            <description>requirements: libtool for faad2
+a52:
+./configure --enable-shared=PKGS
+faad2:
+autoreconf -vif ./configure  faac:
+./bootstrap ./configure --without-mp4v2 --prefix=/usr  lamemp3:
+./configure --prefix=/usr
+yasm:
+.configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
+x264:
+git clone git://git.videolan.org/x264.git ./configure --enable-shared --prefix=/usr make fprofiled make install  xvidcore:
+.configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
+ffmpeg:
+svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --enable-gpl --enable-postproc --enable-nonfree --enable-postproc \ --enable-avfilter --enable-pthreads --enable-libxvid \ --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay  </description>
+            <content type="html"><![CDATA[<p>requirements: libtool for faad2</p>
+
+<p>a52:</p>
+
+<p><code>./configure --enable-shared=PKGS</code></p>
+
+<p>faad2:</p>
+
+<pre><code>autoreconf -vif
+./configure
+</code></pre>
+
+<p>faac:</p>
+
+<pre><code>./bootstrap
+./configure --without-mp4v2 --prefix=/usr
+</code></pre>
+
+<p>lamemp3:</p>
+
+<p><code>./configure --prefix=/usr</code></p>
+
+<p>yasm:</p>
+
+<p><code>.configure &amp;&amp; make &amp;&amp; make install</code></p>
+
+<p>x264:</p>
+
+<pre><code>git clone git://git.videolan.org/x264.git
+./configure --enable-shared --prefix=/usr
+make fprofiled
+make install
+</code></pre>
+
+<p>xvidcore:</p>
+
+<p><code>.configure &amp;&amp; make &amp;&amp; make install</code></p>
+
+<p>ffmpeg:</p>
+
+<pre><code>svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
+cd ffmpeg
+./configure --enable-gpl  --enable-postproc --enable-nonfree --enable-postproc \
+--enable-avfilter --enable-pthreads --enable-libxvid \
+--enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>installing swftools on centos 6</title>
+            <link>/p153/</link>
+            <pubDate>Sat, 02 Jun 2012 05:17:00 +0000</pubDate>
+            
+            <guid>/p153/</guid>
+            <description>install pdf2swf dependencies
+zlib-devel, libjpeg-devel, freetype-devel, giflib-devel
+wget http://www.swftools.org/swftools-0.9.2.tar.gz&amp;lt;br /&amp;gt; tar xvzf http://www.swftools.org/swftools-0.9.2.tar.gz&amp;lt;br /&amp;gt; cd swftools-0.9.2
+Download the latest tarzgzipped version fo xpdf and put it on the swftools lib/pdf folder
+cd lib/pdf/&amp;lt;br /&amp;gt; wget ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.03.tar.gz&amp;lt;br /&amp;gt; ./configure&amp;lt;br /&amp;gt; make
+Before running make install
+cd swfs&amp;lt;br /&amp;gt; vi Makefile
+remove the two &amp;#8220;rm&amp;#8221; lines with -o option as this are invalid
+make install</description>
+            <content type="html"><![CDATA[<p>install pdf2swf dependencies</p>
+
+<p>zlib-devel, libjpeg-devel, freetype-devel, giflib-devel</p>
+
+<p><code>wget http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt;
+tar xvzf http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt;
+cd swftools-0.9.2</code></p>
+
+<p>Download the latest tarzgzipped version fo xpdf and put it on the swftools lib/pdf folder</p>
+
+<p><code>cd lib/pdf/&lt;br /&gt;
+wget ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.03.tar.gz&lt;br /&gt;
+./configure&lt;br /&gt;
+make</code></p>
+
+<p>Before running make install</p>
+
+<p><code>cd swfs&lt;br /&gt;
+vi Makefile</code></p>
+
+<p>remove the two &#8220;rm&#8221; lines with -o option as this are invalid</p>
+
+<p><code>make install</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>PXE booting CENTOS 6 on Atheros Atl1e using Driver Update Disk</title>
+            <link>/p145/</link>
+            <pubDate>Wed, 23 May 2012 06:38:52 +0000</pubDate>
+            
+            <guid>/p145/</guid>
+            <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer.
+http://www.elrepo.org/people/pschaff/dud/
+ the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file.
+gunzip DUP_el6_i686_20120402.iso.gz
+ Create a temp folder.
+mkdir initrd_update
+ make a copy of that uncompressed file to the folder you have made
+cp DUP_el6_i686_20120402.iso initrd_update/dd.img
+ enter that folder
+cd initrd_update
+ run the ff. command
+find . | cpio --quiet -o -H newc | gzip -9 &amp;gt; .</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Download pschaff&rsquo;s driver disk from elrepo, select architecture that match your installer.<br />
+<br \><code>http://www.elrepo.org/people/pschaff/dud/</code></p></li>
+
+<li><p>the file you&rsquo;ve downloaded should end with &lsquo;.gz&rsquo;. Uncompress that file.<br />
+<br \><code>gunzip DUP_el6_i686_20120402.iso.gz</code></p></li>
+
+<li><p>Create a temp folder.<br />
+<br \><code>mkdir initrd_update</code></p></li>
+
+<li><p>make a copy of that uncompressed file to the folder you have made<br />
+<br \><code>cp DUP_el6_i686_20120402.iso initrd_update/dd.img</code></p></li>
+
+<li><p>enter that folder<br />
+<br \><code>cd initrd_update</code></p></li>
+
+<li><p>run the ff. command<br />
+<br \><code>find . | cpio --quiet -o -H newc | gzip -9 &gt; ./initrd_update.img</code></p></li>
+
+<li><p>copy initrd_update.img to your pxe installation folder as dd.iso</p></li>
+
+<li><p>modify your centos pxe kernel like this.<br />
+<br \><code>APPEND ksdevice=eth0 initrd=el6-kickstart/initrd.img,el6-kickstart/dd.img</code></p></li>
+
+<li><p>that&rsquo;s should be it. once pxe downloaded initrd.img and dd.img the drive update disk will be automatically be applied.</p></li>
+</ol>
+
+<p>References:</p>
+
+<p><a href="http://elrepo.org/bugs/view.php?id=215">http://elrepo.org/bugs/view.php?id=215</a></p>
+
+<p><a href="http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/sect-Preparing_an_initial_RAM_disk_update-ppc.html">http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/sect-Preparing_an_initial_RAM_disk_update-ppc.html</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>using sed in bash scripts</title>
+            <link>/p139/</link>
+            <pubDate>Mon, 21 May 2012 03:40:54 +0000</pubDate>
+            
+            <guid>/p139/</guid>
+            <description># Inserting a text on a specified line number ex. insert a text in line number 8 sed command &amp;ldquo;8i&amp;rdquo;
+-e &#39;8i\# PC-Check 7\.03 with net support&#39;
+special characters like # and . should have a \ suffix.
+# Insert a blank line on line number
+-e &#39;8i\\`echo -e &#39;\n\r&#39;`&#39;
+# to append at end of the file: sed command: $a
+-e &#39;\$a#HQ to local DVR&#39;
+# search and replace, ^ - match all words beginning the word specified and replace the matching word,</description>
+            <content type="html"><![CDATA[<p># Inserting a text on a specified line number ex. insert a text in line number 8 sed command &ldquo;8i&rdquo;</p>
+
+<p><code>-e '8i\# PC-Check 7\.03 with net support'</code></p>
+
+<p>special characters like # and . should have a \ suffix.</p>
+
+<p># Insert a blank line on line number</p>
+
+<p><code>-e '8i\\`echo -e '\n\r'`'</code></p>
+
+<p># to append at end of the file: sed command: $a</p>
+
+<p><code>-e '\$a#HQ to local DVR'</code></p>
+
+<p># search and replace, ^ - match all words beginning the word specified and replace the matching word,</p>
+
+<p><code>-e 's/^DNAT/#DNAT/g'</code></p>
+
+<p># search and replace whole line: .* - match all lines containing the word being search and replace the whole line.</p>
+
+<p><code>-e 's/.*DNAT.*/#DNAT/g'</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>gpg notes</title>
+            <link>/p124/</link>
+            <pubDate>Tue, 08 May 2012 11:03:09 +0000</pubDate>
+            
+            <guid>/p124/</guid>
+            <description>compress multiple files and encrypt using gpg
+tar -cv folder | gpg -e -r recipientGpgKey -o output.tar.gpg
+to decompress the above file:(prepare recipientGpgKey passphrase )
+gpg --output output.tar --decrypt output.tar.gpg
+you must specify &amp;#8211;secret-keyring pathtokeyring if secret key is not available on the machine</description>
+            <content type="html"><![CDATA[<p>compress multiple files and encrypt using gpg</p>
+
+<p><code>tar -cv folder | gpg  -e -r recipientGpgKey -o output.tar.gpg</code></p>
+
+<p>to decompress the above file:(prepare recipientGpgKey passphrase )</p>
+
+<p><code>gpg --output  output.tar --decrypt  output.tar.gpg</code></p>
+
+<p>you must specify &#8211;secret-keyring pathtokeyring if secret key is not available on the machine</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Fwknopd with SPA, Part 2.</title>
+            <link>/p78/</link>
+            <pubDate>Sat, 15 Oct 2011 10:41:28 +0000</pubDate>
+            
+            <guid>/p78/</guid>
+            <description>View both keys with gpg --list-keys $ gpg --list-keys pub 1024D/AAAAAAAA 2008-03-07 uid test fwknop &amp;lt;username-test@example.com&amp;gt; sub 2048g/DDDDDDDD 2008-03-07 Export both keys from remote and local terminals. gpg -a --export AAAAAAAA &amp;gt; remote.asc gpg -a --export BBBBBBBB &amp;gt; local.asc where AAAAAAAA is the remote key id and BBBBBBBB is the local key id.
+securely transfer remote.asc to local terminal.
+securely transfer local.asc to remote terminal.
+import and signed both keys, you will need to enter the correct passphrase when signing both keys.</description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">View both keys with gpg --list-keys
+
+$ gpg --list-keys
+  
+pub 1024D/AAAAAAAA <span style="color:#ae81ff">2008</span>-03-07
+  
+uid test fwknop &lt;username-test@example.com&gt;
+  
+sub 2048g/DDDDDDDD <span style="color:#ae81ff">2008</span>-03-07
+
+Export both keys from remote and local terminals.
+
+gpg -a --export AAAAAAAA &gt; remote.asc
+  
+gpg -a --export BBBBBBBB &gt; local.asc</code></pre></div>
+
+<p>where AAAAAAAA is the remote key id and BBBBBBBB is the local key id.</p>
+
+<p>securely transfer remote.asc to local terminal.</p>
+
+<p>securely transfer local.asc to remote terminal.</p>
+
+<p>import and signed both keys, you will need to enter the correct passphrase when signing both keys.</p>
+
+<p>on local terminal</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gpg --import remote.asc
+$ gpg --edit-key AAAAAAAA
+Command&gt; sign
+Command&gt; save</code></pre></div>
+
+<p>on remote terminal</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gpg --import local.asc
+$ gpg --edit-key BBBBBBBB
+Command&gt; sign
+Command&gt; save</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>fwknopd with SPA Part.1</title>
+            <link>/p76/</link>
+            <pubDate>Sat, 15 Oct 2011 10:29:57 +0000</pubDate>
+            
+            <guid>/p76/</guid>
+            <description>Generate gpg keys on both remote and local terminal : `gpg --gen-key` Please select what kind of key you want: Select (1) DSA and Elgamal (default) What keysize do you want? (2048) Choose default 2048(just press enter) Key is valid for? (0) press enter key does not expire Is this correct? (y/N) press y Real name: enter key name e.g: term-Gpg Email address: enter email... Comment: optional press enter if none Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?</description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Generate gpg keys on both remote and local terminal :
+
+<span style="color:#e6db74">`</span>gpg --gen-key<span style="color:#e6db74">`</span>
+  
+Please <span style="color:#66d9ef">select</span> what kind of key you want:
+  
+Select <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> DSA and Elgamal <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
+
+What keysize <span style="color:#66d9ef">do</span> you want? <span style="color:#f92672">(</span><span style="color:#ae81ff">2048</span><span style="color:#f92672">)</span>
+  
+Choose default <span style="color:#ae81ff">2048</span><span style="color:#f92672">(</span>just press enter<span style="color:#f92672">)</span>
+
+Key is valid <span style="color:#66d9ef">for</span>? <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span>
+  
+press enter key does not expire
+
+Is this correct? <span style="color:#f92672">(</span>y/N<span style="color:#f92672">)</span>
+  
+press y
+
+Real name:
+  
+enter key name e.g: term-Gpg
+
+Email address:
+  
+enter email...
+
+Comment:
+  
+optional press enter <span style="color:#66d9ef">if</span> none
+
+Change <span style="color:#f92672">(</span>N<span style="color:#f92672">)</span>ame, <span style="color:#f92672">(</span>C<span style="color:#f92672">)</span>omment, <span style="color:#f92672">(</span>E<span style="color:#f92672">)</span>mail or <span style="color:#f92672">(</span>O<span style="color:#f92672">)</span>kay/<span style="color:#f92672">(</span>Q<span style="color:#f92672">)</span>uit?
+  
+press O and enter
+
+You need a Passphrase to protect your secret key.
+  
+enter your ultra duper secure passpharse.
+
+generate some activity on the terminal,move your mouse or search <span style="color:#66d9ef">for</span> a file. <span style="color:#66d9ef">while</span> it generates random bytes.
+
+<span style="color:#75715e"># finally if all goes well, the ff will be shown.</span>
+
+public and secret key created and signed.
+
+gpg: checking the trustdb
+  
+gpg: <span style="color:#ae81ff">3</span> marginal<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> needed, <span style="color:#ae81ff">1</span> complete<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> needed, PGP trust model
+  
+gpg: depth: <span style="color:#ae81ff">0</span> valid: <span style="color:#ae81ff">1</span> signed: <span style="color:#ae81ff">0</span> trust: <span style="color:#ae81ff">0</span>-, 0q, 0n, 0m, 0f, 1u
+  
+pub 1024D/YYYYXXXX <span style="color:#ae81ff">2011</span>-06-03
+        
+Key fingerprint <span style="color:#f92672">=</span> <span style="color:#ae81ff">1111</span> <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">3333</span> <span style="color:#ae81ff">4444</span> <span style="color:#ae81ff">5555</span> <span style="color:#ae81ff">6666</span> <span style="color:#ae81ff">7777</span> <span style="color:#ae81ff">8888</span> <span style="color:#ae81ff">9999</span> aaaa
+  
+uid Term7-Gpg &lt;jmfermo@bodegasite.com&gt;
+  
+sub 2048g/XXXXYYY <span style="color:#ae81ff">2011</span>-06-03</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>installing oflademo on red5</title>
+            <link>/p72/</link>
+            <pubDate>Fri, 16 Sep 2011 08:54:04 +0000</pubDate>
+            
+            <guid>/p72/</guid>
+            <description>wget http://trac.red5.org/downloads/1_0/red5-1.0.0-RC1.tar.gz tar xvzf red5-1.0.0-RC1.tar.gz cd red5-1.0.0/webapps/ mkdir oflaDemo cd oflaDemo wget http://red5.googlecode.com/svn-history/r3990/snapshots/oflaDemo-r3989-java6.war unzip oflaDemo-r3989-java6.war cd ../.. ./red5.sh </description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://trac.red5.org/downloads/1_0/red5-1.0.0-RC1.tar.gz
+tar xvzf red5-1.0.0-RC1.tar.gz
+cd red5-1.0.0/webapps/
+mkdir oflaDemo
+cd oflaDemo
+wget http://red5.googlecode.com/svn-history/r3990/snapshots/oflaDemo-r3989-java6.war
+unzip oflaDemo-r3989-java6.war
+cd ../..
+./red5.sh</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Kernel not loading usbserial on Huawei modems</title>
+            <link>/p69/</link>
+            <pubDate>Wed, 14 Sep 2011 10:29:30 +0000</pubDate>
+            
+            <guid>/p69/</guid>
+            <description>remove pl2303 and usb_storage driver
+rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt; 
+then reinsert huawei modem again</description>
+            <content type="html"><![CDATA[<p>remove pl2303 and usb_storage driver</p>
+
+<p><code>rmmod pl2303&lt;br /&gt;
+rmmod usb_storage&lt;br /&gt;
+</code></p>
+
+<p>then reinsert huawei modem again</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Common AT commands</title>
+            <link>/p67/</link>
+            <pubDate>Mon, 12 Sep 2011 05:08:38 +0000</pubDate>
+            
+            <guid>/p67/</guid>
+            <description>Read all SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGL=&amp;#34;ALL&amp;#34; Read single sms in text mode: AT+CMGF=1 # (set TEXT MODE) AT+CMGR=1 # (location index) Delete single sms: AT+CMGD=1 # (location index) Sending SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGS=&amp;#34;0912xxxyyyy&amp;#34; &amp;gt; test message Press Ctrl+z Press Enter Read Sim Number: AT+CPBS=&amp;#34;ON&amp;#34; AT+CPBR=1 +CPBR: 1,&amp;#34;+63948xxxyyyy&amp;#34;,145,&amp;#34;&amp;#34;; </description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Read all SMS in text mode:
+  
+AT+CMGF<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">(</span>set TEXT MODE<span style="color:#f92672">)</span>
+  
+AT+CMGL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ALL&#34;</span>
+
+Read single sms in text mode:
+  
+AT+CMGF<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#75715e"># (set TEXT MODE)</span>
+  
+AT+CMGR<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#75715e"># (location index)</span>
+
+Delete single sms:
+  
+AT+CMGD<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#75715e"># (location index)</span>
+
+Sending SMS in text mode:
+  
+AT+CMGF<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">(</span>set TEXT MODE<span style="color:#f92672">)</span>
+  
+AT+CMGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0912xxxyyyy&#34;</span>
+  
+&gt; test message
+  
+Press Ctrl+z
+  
+Press Enter
+
+Read Sim Number:
+  
+AT+CPBS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ON&#34;</span>
+  
+AT+CPBR<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+  
++CPBR: <span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;+63948xxxyyyy&#34;</span>,145,<span style="color:#e6db74">&#34;&#34;</span>;</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Setup apache to handle Eric Blue’s Document Browser 1.0</title>
+            <link>/p64/</link>
+            <pubDate>Mon, 29 Aug 2011 08:39:54 +0000</pubDate>
+            
+            <guid>/p64/</guid>
+            <description>Download doc_browser http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip
+ Extract contents to a directory named projects/docbrowser
+ Create the ff. doc.conf inside apache conf.d
+cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
+ Ensure that list.cgi and convert.cgi have execute permission enabled.
+  those script requires the ff. perl module</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Download doc_browser <a href="http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip">http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip</a></p></li>
+
+<li><p>Extract contents to a directory named projects/docbrowser</p></li>
+
+<li><p>Create the ff. doc.conf inside apache conf.d<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat &gt;/etc/apache/conf.d <span style="color:#e6db74">&lt;&lt;EOL
+</span><span style="color:#e6db74">Alias /projects /var/www/projects&lt;/p&gt;
+</span><span style="color:#e6db74">&lt;p&gt;&lt;Location /projects&gt;&lt;br /&gt;
+</span><span style="color:#e6db74">    Order allow,deny&lt;br /&gt;
+</span><span style="color:#e6db74">    Allow from all&lt;br /&gt;
+</span><span style="color:#e6db74">&lt;/Location&gt;&lt;/p&gt;
+</span><span style="color:#e6db74">&lt;p&gt;&lt;Directory /var/www/projects&gt;&lt;br /&gt;
+</span><span style="color:#e6db74">Options +ExecCGI&lt;br /&gt;
+</span><span style="color:#e6db74">AddHandler cgi-script .cgi .pl&lt;br /&gt;
+</span><span style="color:#e6db74">&lt;/Directory&gt;&lt;br /&gt;
+</span><span style="color:#e6db74">EOL</span></code></pre></div></p></li>
+
+<li><p>Ensure that list.cgi and convert.cgi have execute permission enabled.</p></li>
+</ol>
+
+<p>those script requires the ff. perl module</p>
+
+<p>perl-HTML-Entities-Numbered (centos 5.6 base repo)</p>
+
+<p>perl-Log-Log4perl (rpmforge)</p>
+
+<p>perl-CGI</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Allow normal user to run smartd in pfsense 1.2.3</title>
+            <link>/p60/</link>
+            <pubDate>Fri, 19 Aug 2011 10:10:52 +0000</pubDate>
+            
+            <guid>/p60/</guid>
+            <description>chmod 4555 /usr/local/sbin/smartctl</description>
+            <content type="html"><![CDATA[<p><code>chmod 4555 /usr/local/sbin/smartctl</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>SMARTD on zabbix</title>
+            <link>/p46/</link>
+            <pubDate>Sun, 12 Dec 2010 12:43:17 +0000</pubDate>
+            
+            <guid>/p46/</guid>
+            <description>UserParameter=system.smartd[*],sudo smartctl -A $1| grep $2| tail -1| cut -c 88-|cut -f1 -d&amp;#34; &amp;#34; zabbix ALL=NOPASSWD: /usr/sbin/smartctl </description>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>system.smartd<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>,sudo smartctl -A $1| grep $2| tail -1| cut -c <span style="color:#ae81ff">88</span>-|cut -f1 -d<span style="color:#e6db74">&#34; &#34;</span>
+
+zabbix ALL<span style="color:#f92672">=</span>NOPASSWD: /usr/sbin/smartctl</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>lm_sensors 3.20 w/ coretemp using CENTOS 5.5 on GA-G31M-E2SL w/ it8718 chip</title>
+            <link>/p44/</link>
+            <pubDate>Sun, 12 Dec 2010 07:07:46 +0000</pubDate>
+            
+            <guid>/p44/</guid>
+            <description>add elrepo to your repositories
+ yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+ lsmod | grep coretemp # coretemp should be loaded by now
+ download latest lm_sensors 3.20 source, compile and install
+ edit /etc/init.d/lm_sensors entry
+from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+ chkconfig lm_sensors on
+ done
+modinfo it87 modinfo coretemp
+  optional
+ add the ff. to your zabbix_agent.conf</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>add elrepo to your repositories</p></li>
+
+<li><p>yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.</p></li>
+
+<li><p>lsmod | grep coretemp # coretemp should be loaded by now</p></li>
+
+<li><p>download latest lm_sensors 3.20 source, compile and install</p></li>
+
+<li><p>edit /etc/init.d/lm_sensors entry<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  from : PSENSORS<span style="color:#f92672">=</span>/usr/bin/sensors
+  to: PSENSORS<span style="color:#f92672">=</span>/usr/local/bin/sensors</code></pre></div></p></li>
+
+<li><p>chkconfig lm_sensors on</p></li>
+
+<li><p>done<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  modinfo it87
+  
+  modinfo coretemp</code></pre></div></p></li>
+</ol>
+
+<p>optional</p>
+
+<ol>
+<li><p>add the ff. to your zabbix_agent.conf<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>sensors<span style="color:#f92672">[</span><span style="color:#ae81ff">\*</span><span style="color:#f92672">]</span>,/usr/local/bin/sensors | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | head -$2 | tail -1 | awk <span style="color:#e6db74">&#34;{print </span>$<span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;}&#34;</span> | sed <span style="color:#e6db74">&#39;s/[-!@#\$%^&amp;\*()°+a-zA-Z]//g&#39;</span></code></pre></div></p></li>
+
+<li><p>add the ff to your sensors3.conf under the chip it87 entry</p></li>
+</ol>
+
+<p>label fan1 &ldquo;CPU Fan&rdquo;</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Mozilla’s ubuntu ppa’s</title>
+            <link>/p36/</link>
+            <pubDate>Sat, 26 Jun 2010 03:39:18 +0000</pubDate>
+            
+            <guid>/p36/</guid>
+            <description>to get the latest versions of firefox and thunderbird for ubuntu do the ff
+sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
+sudo apt-get update
+sudo apt-get install thunderbird
+sudo apt-get install firefox</description>
+            <content type="html"><![CDATA[<p>to get the latest versions of firefox and thunderbird for ubuntu do the ff</p>
+
+<p>sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa</p>
+
+<p>sudo apt-get update</p>
+
+<p>sudo apt-get install thunderbird</p>
+
+<p>sudo apt-get install firefox</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Elrepo</title>
+            <link>/p35/</link>
+            <pubDate>Wed, 26 May 2010 03:35:25 +0000</pubDate>
+            
+            <guid>/p35/</guid>
+            <description>hardware drivers
+http://elrepo.org</description>
+            <content type="html"><![CDATA[<p>hardware drivers</p>
+
+<p><a href="http://elrepo.org">http://elrepo.org</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>NUT</title>
+            <link>/p31/</link>
+            <pubDate>Wed, 26 May 2010 03:33:52 +0000</pubDate>
+            
+            <guid>/p31/</guid>
+            <description>Compile NUT from source
+  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
+vi /etc/udev/rules.d/52-nut-usbups.rules # This file is generated and installed by the Network UPS Tools package.</description>
+            <content type="html"><![CDATA[<ol>
+<li>Compile NUT from source<br />
+<br /></li>
+</ol>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
+groupadd nut;adduser -g nut ups
+  
+yum install gd-devel libusb-devel
+  
+./configure --with-user<span style="color:#f92672">=</span>ups --with-group<span style="color:#f92672">=</span>nut --with-usb --with-cgi --prefix<span style="color:#f92672">=</span>/ups --localstatedir<span style="color:#f92672">=</span>/ups/var --with-pidpath<span style="color:#f92672">=</span>/ups/var/state/ups --with-statepath<span style="color:#f92672">=</span>/ups/var/state/ups --enable-static
+
+make
+  
+make install
+  
+cd /ups;mkdir -p /ups/var/state/ups;chmod <span style="color:#ae81ff">0770</span> /ups/var/state/ups;chown root:nut /ups/var/state/ups
+  
+copy libz.so to /ups/lib
+  
+copy libz.a to /ups/lib
+  
+chmod <span style="color:#ae81ff">0660</span> /dev/ttyS0;chown root:nut /dev/ttyS0
+
+cat &gt;/etc/udev/rules.d/99-my.rules <span style="color:#e6db74">&lt;&lt;EOL
+</span><span style="color:#e6db74">SUBSYSTEM==&#34;tty&#34;, KERNEL==&#34;ttyS0&#34;, OWNER=&#34;root&#34;, GROUP=&#34;nut&#34;
+</span><span style="color:#e6db74">EOL</span></code></pre></div>
+
+<p>For APC UPS BR550I or BR550GI use the ff.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/udev/rules.d/52-nut-usbups.rules
+<span style="color:#75715e"># This file is generated and installed by the Network UPS Tools package.</span>
+ACTION!<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;add&#34;</span>, GOTO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_end&#34;</span>
+SUBSYSTEM<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;usb_device&#34;</span>, GOTO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_real&#34;</span>
+SUBSYSTEM<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;usb&#34;</span>, GOTO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_real&#34;</span>
+BUS!<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;usb&#34;</span>, GOTO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_end&#34;</span>
+LABEL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_real&#34;</span>
+<span style="color:#75715e"># APC</span>
+<span style="color:#75715e">#  various models  - usbhid-ups</span>
+ATTR<span style="color:#f92672">{</span>idVendor<span style="color:#f92672">}==</span><span style="color:#e6db74">&#34;051d&#34;</span>, ATTR<span style="color:#f92672">{</span>idProduct<span style="color:#f92672">}==</span><span style="color:#e6db74">&#34;0002&#34;</span>, MODE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;664&#34;</span>, GROUP<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut&#34;</span>
+LABEL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_end&#34;</span></code></pre></div>
+
+<p>Prepare upsd.conf upsmon.conf ups.conf upssched.conf upsd.users</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chown root:nut *.conf upsd.users
+  
+chmod <span style="color:#ae81ff">0640</span> *.conf upsd.users
+  </code></pre></div>
+
+<p>add the following to /etc/init.d/halt</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">LD_LIBRARY_PATH<span style="color:#f92672">=</span>/ups/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>test -f /etc/killpower<span style="color:#f92672">)</span>
+<span style="color:#66d9ef">then</span>
+        echo <span style="color:#e6db74">&#34;***************SHUTTING DOWN UPS*************&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;5&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;4&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;3&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;2&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;1&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        echo <span style="color:#e6db74">&#34;bye!&#34;</span>
+        sleep <span style="color:#ae81ff">1</span>
+        /ups/bin/upsdrvctl -u root shutdown
+        echo <span style="color:#e6db74">&#34;UPS should be off by now&#34;</span>
+        sleep <span style="color:#ae81ff">20</span>
+<span style="color:#66d9ef">fi</span>
+  </code></pre></div>
+
+<p>Add upsd upsmon startup scripts to /etc/rc.local</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
+cat &gt;/ups/etc/alerthandler <span style="color:#e6db74">&lt;&lt;EOL
+</span><span style="color:#e6db74">#! /bin/sh
+</span><span style="color:#e6db74">case $1 in
+</span><span style="color:#e6db74">        onbattwarn)
+</span><span style="color:#e6db74">                echo &#34;The UPS has been on battery for awhile&#34;
+</span><span style="color:#e6db74">                /ups/sbin/upsmon -c fsd
+</span><span style="color:#e6db74">        ;;
+</span><span style="color:#e6db74">        ups-back-on-power)
+</span><span style="color:#e6db74">                /bin/rm -f /ups/var/state/ups-on-battery
+</span><span style="color:#e6db74">        ;;
+</span><span style="color:#e6db74">        *)
+</span><span style="color:#e6db74">                logger -t alerthandler &#34;Unrecognized command: $1&#34;
+</span><span style="color:#e6db74">        ;;
+</span><span style="color:#e6db74">        esac
+</span><span style="color:#e6db74">EOL</span>
+
+chmod <span style="color:#ae81ff">0760</span> /ups/etc/alerthandler;chown root:nut /ups/etc/alerthandler
+  </code></pre></div>
+
+<p>TEST</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ fuser /dev/ttyS0 <span style="color:#75715e"># should produce no output</span>
+  
+$ upsdrvctl start
+  
+<span style="color:#75715e"># Output:</span>
+  
+Network UPS Tools - UPS driver controller <span style="color:#ae81ff">2</span>.4.3
+  
+Network UPS Tools - Megatec protocol driver <span style="color:#ae81ff">1</span>.6 <span style="color:#f92672">(</span><span style="color:#ae81ff">2</span>.4.3<span style="color:#f92672">)</span>
+  
+Megatec protocol UPS detected.
+  
+$ upsd
+  
+<span style="color:#75715e"># Output:</span>
+  
+Network UPS Tools upsd <span style="color:#ae81ff">2</span>.4.3
+  
+listening on <span style="color:#ae81ff">127</span>.0.0.1 port <span style="color:#ae81ff">3493</span>
+  
+listening on <span style="color:#ae81ff">192</span>.168.1.145 port <span style="color:#ae81ff">3493</span>
+  
+Connected to UPS <span style="color:#f92672">[</span>myups<span style="color:#f92672">]</span>: megatec-myups
+  
+  
+$ upsc myups@localhost
+  
+<span style="color:#75715e"># Output:</span>
+  
+battery.charge: <span style="color:#ae81ff">100</span>.0
+  
+...
+  
+ups.type: standby</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ius repo</title>
+            <link>/p28/</link>
+            <pubDate>Wed, 26 May 2010 02:28:57 +0000</pubDate>
+            
+            <guid>/p28/</guid>
+            <description>website: http://iuscommunity.org/
+download: epel-release-* ; ius-release-*
+to update PHP:
+remove rhel packages:
+rpm -qa | grep php yum shell remove php-gd php-cli php-odbc php-mbstring php-pdo php php-xml php-common php-ldap php-mysql php-imap install php52-gd php52-cli php52-odbc php52-mbstring php52-pdo php52 php52-xml php52-common php52-ldap php52-mysql php52-imap php52-mcrypt transaction solve transaction run </description>
+            <content type="html"><![CDATA[<p>website: <a href="http://iuscommunity.org/">http://iuscommunity.org/</a></p>
+
+<p>download: epel-release-* ; ius-release-*</p>
+
+<p>to update PHP:</p>
+
+<p>remove rhel packages:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
+rpm -qa | grep php
+
+yum shell
+
+remove php-gd php-cli php-odbc php-mbstring php-pdo php php-xml php-common php-ldap php-mysql php-imap
+
+install php52-gd php52-cli php52-odbc php52-mbstring php52-pdo php52 php52-xml php52-common php52-ldap php52-mysql php52-imap php52-mcrypt
+
+transaction solve
+
+transaction run</code></pre></div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Openstreetmap</title>
+            <link>/p17/</link>
+            <pubDate>Mon, 17 Aug 2009 17:51:09 +0000</pubDate>
+            
+            <guid>/p17/</guid>
+            <description>I just recently joined Openstreetmap.org.ph and now Im totally addicted to it. visit Puerto Princesa using the following links
+[OpenStreetMap][1]
+ </description>
+            <content type="html"><![CDATA[<p>I just recently joined Openstreetmap.org.ph and now Im totally addicted to it. visit Puerto Princesa using the following links</p>
+
+<p>[OpenStreetMap][1]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe width="100%" height="600px" frameBorder="0" src="https://umap.openstreetmap.fr/en/map/puerto-princesa-city_345821?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=true//"></iframe>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>d-txt n electrik fan</title>
+            <link>/p12/</link>
+            <pubDate>Mon, 18 May 2009 16:16:50 +0000</pubDate>
+            
+            <guid>/p12/</guid>
+            <description>GSM Controller
+  most annoying interfacing i ever done, panay debugging ng serial port.</description>
+            <content type="html"><![CDATA[<p>GSM Controller</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/WyJUUdvFfWM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>most annoying interfacing i ever done, panay debugging ng serial port.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>bang bang!</title>
+            <link>/p6/</link>
+            <pubDate>Mon, 18 May 2009 16:07:19 +0000</pubDate>
+            
+            <guid>/p6/</guid>
+            <description>DIY airsoft .6mm BB chronometer
+  Tech specs:
+PIC16F877a 20Mhz
+Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring
+uses PORTB interrupts for BB detection.</description>
+            <content type="html"><![CDATA[<p>DIY airsoft .6mm BB chronometer</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/XNTe6BPNWYQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Tech specs:</p>
+
+<p>PIC16F877a 20Mhz</p>
+
+<p>Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring</p>
+
+<p>uses PORTB interrupts for BB detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /p6/DIYChronometer_schem_hu3b37ed20669b272d0a1ced0a5be81e5d_136910_500x0_resize_box_2.png 500w
+  
+  
+    , /p6/DIYChronometer_schem_hu3b37ed20669b272d0a1ced0a5be81e5d_136910_800x0_resize_box_2.png 800w
+  
+  
+  '
+  
+    src="/p6/DIYChronometer_schem.png" 
+  
+  alt="">
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>beep beep beep!</title>
+            <link>/p1/</link>
+            <pubDate>Thu, 14 May 2009 23:49:31 +0000</pubDate>
+            
+            <guid>/p1/</guid>
+            <description>Welcome to my blogblogblog. This is what i do when there&amp;#8217;s nothing to do.
+  Nikko V2.0. tech specs:
+PIC16F877a 20Mhz
+Mission in life: to follow wall.</description>
+            <content type="html"><![CDATA[<p>Welcome to my blogblogblog. This is what i do when there&#8217;s nothing to do.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/XXpG8QJSHTM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Nikko V2.0. tech specs:</p>
+
+<p>PIC16F877a 20Mhz</p>
+
+<p>Mission in life: to follow wall.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

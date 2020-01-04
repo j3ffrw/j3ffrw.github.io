@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded Systems on Tech notes and other stuff</title>
+    <link>/categories/embedded-systems/</link>
+    <description>Recent content in Embedded Systems on Tech notes and other stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2014 04:31:26 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/embedded-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use Chipkit’s Max32 as USB Adapter for Xbee radios</title>
+      <link>/p485/</link>
+      <pubDate>Wed, 01 Jan 2014 04:31:26 +0000</pubDate>
+      
+      <guid>/p485/</guid>
+      <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
+Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu)  Ref:
+Arduino Uno to Xbee
+  Parallax XBee USB Adapter Board
+http://www.parallax.com/product/32400
+Using X-CTU on linux
+http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html
+Chipkit Max32 Schematics
+http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf</description>
+    </item>
+    
+    <item>
+      <title>a random thought</title>
+      <link>/p470/</link>
+      <pubDate>Sun, 24 Nov 2013 13:12:31 +0000</pubDate>
+      
+      <guid>/p470/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Basic Stamp 2e IR Remote Decoder</title>
+      <link>/p375/</link>
+      <pubDate>Tue, 30 Apr 2013 14:05:40 +0000</pubDate>
+      
+      <guid>/p375/</guid>
+      <description>Purpose: Remote control decoder
+Status: * Decoding part &amp;ndash; done.
+ Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
+  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
+ 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
+ 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.</description>
+    </item>
+    
+    <item>
+      <title>Common AT commands</title>
+      <link>/p67/</link>
+      <pubDate>Mon, 12 Sep 2011 05:08:38 +0000</pubDate>
+      
+      <guid>/p67/</guid>
+      <description>Read all SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGL=&amp;#34;ALL&amp;#34; Read single sms in text mode: AT+CMGF=1 # (set TEXT MODE) AT+CMGR=1 # (location index) Delete single sms: AT+CMGD=1 # (location index) Sending SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGS=&amp;#34;0912xxxyyyy&amp;#34; &amp;gt; test message Press Ctrl+z Press Enter Read Sim Number: AT+CPBS=&amp;#34;ON&amp;#34; AT+CPBR=1 +CPBR: 1,&amp;#34;+63948xxxyyyy&amp;#34;,145,&amp;#34;&amp;#34;; </description>
+    </item>
+    
+    <item>
+      <title>d-txt n electrik fan</title>
+      <link>/p12/</link>
+      <pubDate>Mon, 18 May 2009 16:16:50 +0000</pubDate>
+      
+      <guid>/p12/</guid>
+      <description>GSM Controller
+  most annoying interfacing i ever done, panay debugging ng serial port.</description>
+    </item>
+    
+    <item>
+      <title>bang bang!</title>
+      <link>/p6/</link>
+      <pubDate>Mon, 18 May 2009 16:07:19 +0000</pubDate>
+      
+      <guid>/p6/</guid>
+      <description>DIY airsoft .6mm BB chronometer
+  Tech specs:
+PIC16F877a 20Mhz
+Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring
+uses PORTB interrupts for BB detection.</description>
+    </item>
+    
+    <item>
+      <title>beep beep beep!</title>
+      <link>/p1/</link>
+      <pubDate>Thu, 14 May 2009 23:49:31 +0000</pubDate>
+      
+      <guid>/p1/</guid>
+      <description>Welcome to my blogblogblog. This is what i do when there&amp;#8217;s nothing to do.
+  Nikko V2.0. tech specs:
+PIC16F877a 20Mhz
+Mission in life: to follow wall.</description>
+    </item>
+    
+  </channel>
+</rss>
