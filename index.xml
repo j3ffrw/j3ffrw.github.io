@@ -6,10 +6,38 @@
     <description>Recent content on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2014 04:31:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2020 00:10:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Migrating wordpress to Hugo</title>
+      <link>/p502/</link>
+      <pubDate>Sun, 05 Jan 2020 00:10:00 +0000</pubDate>
+      
+      <guid>/p502/</guid>
+      <description>Use https://github.com/SchumacherFM/wordpress-to-hugo-exporter
+ Convert posts to page bundle
+https://gohugo.io/content-management/page-bundles/
+cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done  Cleanup each post, convert image reference to shortcode equivalent
+vim search and replace snippets
+%s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g  Deploy at last.
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
+  References:</description>
+    </item>
+    
+    <item>
+      <title>Determine w/c ssh public key was used to login</title>
+      <link>/p501/</link>
+      <pubDate>Fri, 27 Apr 2018 15:10:00 +0000</pubDate>
+      
+      <guid>/p501/</guid>
+      <description>Generate fingerprint per key
+while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
+ Match fingerprint on /var/log/secure
+AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
+    </item>
     
     <item>
       <title>How to use Chipkit’s Max32 as USB Adapter for Xbee radios</title>

@@ -4,20 +4,36 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-01T04:31:26+00:00</lastmod>
+    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2014-01-01T04:31:26+00:00</lastmod>
+    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2014-01-01T04:31:26+00:00</lastmod>
+    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/p502/</loc>
+    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/p501/</loc>
+    <lastmod>2018-04-27T15:10:00+00:00</lastmod>
   </url>
   
   <url>
@@ -45,12 +61,6 @@
   <url>
     <loc>/p470/</loc>
     <lastmod>2013-11-24T13:12:31+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/linux/</loc>
-    <lastmod>2013-11-02T04:46:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

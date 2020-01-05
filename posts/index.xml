@@ -5,8 +5,95 @@
         <description>Recent content on Tech notes and other stuff</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 01 Jan 2014 04:31:26 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 05 Jan 2020 00:10:00 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Migrating wordpress to Hugo</title>
+            <link>/p502/</link>
+            <pubDate>Sun, 05 Jan 2020 00:10:00 +0000</pubDate>
+            
+            <guid>/p502/</guid>
+            <description>Use https://github.com/SchumacherFM/wordpress-to-hugo-exporter
+ Convert posts to page bundle
+https://gohugo.io/content-management/page-bundles/
+cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done  Cleanup each post, convert image reference to shortcode equivalent
+vim search and replace snippets
+%s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g  Deploy at last.
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
+  References:</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Use <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">https://github.com/SchumacherFM/wordpress-to-hugo-exporter</a></p></li>
+
+<li><p>Convert posts to page bundle<br />
+<a href="https://gohugo.io/content-management/page-bundles/">https://gohugo.io/content-management/page-bundles/</a></p>
+
+<pre><code>cd content/posts
+find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done
+</code></pre></li>
+
+<li><p>Cleanup each post, convert image reference to shortcode equivalent<br />
+vim search and replace snippets</p>
+
+<pre><code>%s/^M//g
+%s/&amp;gt;/&gt;/g
+%s/&amp;lt;/&lt;/g
+%s/\\_/_/g
+%s/&amp;#8217;/'/g
+%s/&amp;#8211;/-/g
+%s/&lt;\/p&gt;//g
+%s/&lt;p&gt;//g
+%s/&lt;/pre&gt;//g
+%s/&amp;#8220;/&quot;/g
+%s/&amp;#8221;/&quot;/g
+%s/&lt;br\ \/&gt;//g
+</code></pre></li>
+
+<li><p>Deploy at last.<br />
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p></li>
+</ol>
+
+<p>References:</p>
+
+<p><a href="https://laurakalbag.com/processing-responsive-images-with-hugo/">https://laurakalbag.com/processing-responsive-images-with-hugo/</a></p>
+
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Determine w/c ssh public key was used to login</title>
+            <link>/p501/</link>
+            <pubDate>Fri, 27 Apr 2018 15:10:00 +0000</pubDate>
+            
+            <guid>/p501/</guid>
+            <description>Generate fingerprint per key
+while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
+ Match fingerprint on /var/log/secure
+AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
+            <content type="html"><![CDATA[<ol>
+<li><p>Generate fingerprint per key<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> read l; <span style="color:#66d9ef">do</span>
+  <span style="color:#f92672">[[</span> -n $l <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">${</span>l###<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> $l <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> ssh-keygen -l -f /dev/stdin <span style="color:#f92672">&lt;&lt;&lt;</span>$l;
+<span style="color:#66d9ef">done</span> &lt; .ssh/authorized_keys</code></pre></div></p></li>
+
+<li><p>Match fingerprint on /var/log/secure<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">AUTHORIZED_FP<span style="color:#f92672">=</span><span style="color:#e6db74">`</span><span style="color:#66d9ef">while</span> read l; <span style="color:#66d9ef">do</span> <span style="color:#f92672">[[</span> -n $l <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">${</span>l###<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> $l <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> ssh-keygen -l -f /dev/stdin <span style="color:#f92672">&lt;&lt;&lt;</span>$l; <span style="color:#66d9ef">done</span> &lt; /home/centos/.ssh/authorized_keys <span style="color:#ae81ff">2</span>&gt;/dev/null | grep RSA<span style="color:#e6db74">`</span>
+sudo cat /var/log/secure |grep <span style="color:#e6db74">&#34;Accepted publickey&#34;</span> | <span style="color:#66d9ef">while</span> read line; <span style="color:#66d9ef">do</span>
+  AUDIT_MESSAGE<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $line | awk -F<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $1 &#34; &#34; $2 &#34; &#34; $3 &#34; from &#34; $11 &#34; FP: &#34; $16}&#39;</span><span style="color:#e6db74">`</span>
+  AUDIT_FP<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $AUDIT_MESSAGE | awk -F<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $7}&#39;</span><span style="color:#e6db74">`</span>
+  <span style="color:#75715e">#echo &#34;$AUDIT_FP&#34;</span>
+  MATCHED<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>printf <span style="color:#e6db74">&#34;</span>$AUTHORIZED_FP<span style="color:#e6db74">&#34;</span> | grep -n $AUDIT_FP<span style="color:#e6db74">`</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$?<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    KEY_LINE<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $MATCHED | awk -F<span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#e6db74">&#39;{print $1}&#39;</span><span style="color:#e6db74">`</span>
+    KEY_USER<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $MATCHED | awk -F<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $3}&#39;</span><span style="color:#e6db74">`</span>
+    <span style="color:#75715e">#echo $KEY_USER`</span>
+    echo <span style="color:#e6db74">&#34;</span>$AUDIT_MESSAGE<span style="color:#e6db74"> User: </span>$KEY_LINE<span style="color:#e6db74"> </span>$KEY_USER<span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span></code></pre></div></p></li>
+</ol>
+]]></content>
+        </item>
         
         <item>
             <title>How to use Chipkit’s Max32 as USB Adapter for Xbee radios</title>
