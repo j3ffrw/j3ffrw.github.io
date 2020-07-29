@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded Systems on Tech notes and other stuff</title>
@@ -18,7 +18,7 @@
       
       <guid>/p485/</guid>
       <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
-Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu)  Ref:
+Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
 Arduino Uno to Xbee
   Parallax XBee USB Adapter Board
 http://www.parallax.com/product/32400
@@ -45,11 +45,8 @@ http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.
       <guid>/p375/</guid>
       <description>Purpose: Remote control decoder
 Status: * Decoding part &amp;ndash; done.
- Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
-  BOM:
- 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
- 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
- 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.</description>
+ Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.</description>
     </item>
     
     <item>
@@ -90,7 +87,7 @@ uses PORTB interrupts for BB detection.</description>
       <pubDate>Thu, 14 May 2009 23:49:31 +0000</pubDate>
       
       <guid>/p1/</guid>
-      <description>Welcome to my blogblogblog. This is what i do when there&amp;#8217;s nothing to do.
+      <description>Welcome to my blogblogblog. This is what i do when there’s nothing to do.
   Nikko V2.0. tech specs:
 PIC16F877a 20Mhz
 Mission in life: to follow wall.</description>

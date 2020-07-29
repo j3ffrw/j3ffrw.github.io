@@ -8,16 +8,13 @@
     content="core">
 <meta name="description"
     content="add elrepo to your repositories
- yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
- lsmod | grep coretemp # coretemp should be loaded by now
- download latest lm_sensors 3.20 source, compile and install
- edit /etc/init.d/lm_sensors entry
-from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
- chkconfig lm_sensors on
- done
-modinfo it87 modinfo coretemp
-  optional
- add the ff. to your zabbix_agent.conf" />
+  yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+  lsmod | grep coretemp # coretemp should be loaded by now
+  download latest lm_sensors 3.20 source, compile and install
+  edit /etc/init.d/lm_sensors entry from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+  chkconfig lm_sensors on
+  done modinfo it87 modinfo coretemp
+  optional" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/p44/" />
@@ -36,7 +33,7 @@ modinfo it87 modinfo coretemp
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -46,23 +43,17 @@ modinfo it87 modinfo coretemp
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="lm_sensors 3.20 w/ coretemp using CENTOS 5.5 on GA-G31M-E2SL w/ it8718 chip">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="lm_sensors 3.20 w/ coretemp using CENTOS 5.5 on GA-G31M-E2SL w/ it8718 chip">
 <meta itemprop="description" content="add elrepo to your repositories
- yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
- lsmod | grep coretemp # coretemp should be loaded by now
- download latest lm_sensors 3.20 source, compile and install
- edit /etc/init.d/lm_sensors entry
-from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
- chkconfig lm_sensors on
- done
-modinfo it87 modinfo coretemp
-  optional
- add the ff. to your zabbix_agent.conf">
-
-
-<meta itemprop="datePublished" content="2010-12-12T07:07:46&#43;00:00" />
-<meta itemprop="dateModified" content="2010-12-12T07:07:46&#43;00:00" />
+  yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+  lsmod | grep coretemp # coretemp should be loaded by now
+  download latest lm_sensors 3.20 source, compile and install
+  edit /etc/init.d/lm_sensors entry from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+  chkconfig lm_sensors on
+  done modinfo it87 modinfo coretemp
+  optional">
+<meta itemprop="datePublished" content="2010-12-12T07:07:46+00:00" />
+<meta itemprop="dateModified" content="2010-12-12T07:07:46+00:00" />
 <meta itemprop="wordCount" content="92">
 
 
@@ -71,16 +62,13 @@ modinfo it87 modinfo coretemp
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="lm_sensors 3.20 w/ coretemp using CENTOS 5.5 on GA-G31M-E2SL w/ it8718 chip"/>
 <meta name="twitter:description" content="add elrepo to your repositories
- yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
- lsmod | grep coretemp # coretemp should be loaded by now
- download latest lm_sensors 3.20 source, compile and install
- edit /etc/init.d/lm_sensors entry
-from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
- chkconfig lm_sensors on
- done
-modinfo it87 modinfo coretemp
-  optional
- add the ff. to your zabbix_agent.conf"/>
+  yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+  lsmod | grep coretemp # coretemp should be loaded by now
+  download latest lm_sensors 3.20 source, compile and install
+  edit /etc/init.d/lm_sensors entry from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+  chkconfig lm_sensors on
+  done modinfo it87 modinfo coretemp
+  optional"/>
 
 
 
@@ -153,35 +141,43 @@ modinfo it87 modinfo coretemp
 
             <div class="post-content">
                 <ol>
-<li><p>add elrepo to your repositories</p></li>
-
-<li><p>yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.</p></li>
-
-<li><p>lsmod | grep coretemp # coretemp should be loaded by now</p></li>
-
-<li><p>download latest lm_sensors 3.20 source, compile and install</p></li>
-
-<li><p>edit /etc/init.d/lm_sensors entry<br />
+<li>
+<p>add elrepo to your repositories</p>
+</li>
+<li>
+<p>yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.</p>
+</li>
+<li>
+<p>lsmod | grep coretemp # coretemp should be loaded by now</p>
+</li>
+<li>
+<p>download latest lm_sensors 3.20 source, compile and install</p>
+</li>
+<li>
+<p>edit /etc/init.d/lm_sensors entry
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  from : PSENSORS<span style="color:#f92672">=</span>/usr/bin/sensors
-  to: PSENSORS<span style="color:#f92672">=</span>/usr/local/bin/sensors</code></pre></div></p></li>
-
-<li><p>chkconfig lm_sensors on</p></li>
-
-<li><p>done<br />
+  to: PSENSORS<span style="color:#f92672">=</span>/usr/local/bin/sensors</code></pre></div></p>
+</li>
+<li>
+<p>chkconfig lm_sensors on</p>
+</li>
+<li>
+<p>done
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  modinfo it87
   
-  modinfo coretemp</code></pre></div></p></li>
+  modinfo coretemp</code></pre></div></p>
+</li>
 </ol>
-
 <p>optional</p>
-
 <ol>
-<li><p>add the ff. to your zabbix_agent.conf<br />
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>sensors<span style="color:#f92672">[</span><span style="color:#ae81ff">\*</span><span style="color:#f92672">]</span>,/usr/local/bin/sensors | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | head -$2 | tail -1 | awk <span style="color:#e6db74">&#34;{print </span>$<span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;}&#34;</span> | sed <span style="color:#e6db74">&#39;s/[-!@#\$%^&amp;\*()°+a-zA-Z]//g&#39;</span></code></pre></div></p></li>
-
-<li><p>add the ff to your sensors3.conf under the chip it87 entry</p></li>
+<li>
+<p>add the ff. to your zabbix_agent.conf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>sensors<span style="color:#f92672">[</span><span style="color:#ae81ff">\*</span><span style="color:#f92672">]</span>,/usr/local/bin/sensors | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | head -$2 | tail -1 | awk <span style="color:#e6db74">&#34;{print </span>$<span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;}&#34;</span> | sed <span style="color:#e6db74">&#39;s/[-!@#\$%^&amp;\*()°+a-zA-Z]//g&#39;</span></code></pre></div></p>
+</li>
+<li>
+<p>add the ff to your sensors3.conf under the chip it87 entry</p>
+</li>
 </ol>
-
 <p>label fan1 &ldquo;CPU Fan&rdquo;</p>
 
             </div>
@@ -228,7 +224,7 @@ modinfo it87 modinfo coretemp
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

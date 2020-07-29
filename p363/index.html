@@ -26,7 +26,7 @@
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -36,13 +36,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="add multiple email forwarders using AutoIt">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="add multiple email forwarders using AutoIt">
 <meta itemprop="description" content="#include &lt;string.au3&gt; #include &lt;Array.au3&gt; #Include &lt;File.au3&gt; #Include &lt;FF.au3&gt; #include &lt;Date.au3&gt; Global $Paused HotKeySet(&#34;{PAUSE}&#34;, &#34;TogglePause&#34;) HotKeySet(&#34;{ESC}&#34;, &#34;Terminate&#34;) $emailList=&#34;emaillist.csv&#34; $fowardEmailto=&#34;myemail@core.piehosting.com&#34; $cpanelEmailForwardingPage=&#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&#34;Not Connected &#34; &amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&#34;error&#34;,&#34;File does not exist or cant be read&#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &#34;&#34;, &#34;size: &#34; &amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &lt;&gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &#34;@&#34;) ConsoleWrite(&#34;email: &#34; &amp; $email &amp; @CRLF) ConsoleWrite(&#34;name: &#34; &amp; $temp1[1] &amp; @CRLF) ConsoleWrite(&#34;domain: &#34; &amp; $temp1[2] &amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &#34;email&#34;, &#34;id&#34;) ; Enter email domain on select dropdown box $test2=&#39;//select[@name=&#34;domain&#34;]//option[@value=&#34;&#39; &amp; $temp1[2] &amp; &#39;&#34;]&#39;  _FFXPath($test2, &#39;selected=true&#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &#34;fwdemail&#34;, &#34;id&#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&#39;Script is &#34;Paused&#34;&#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc ">
-
-
-<meta itemprop="datePublished" content="2013-03-21T09:01:16&#43;00:00" />
-<meta itemprop="dateModified" content="2013-03-21T09:01:16&#43;00:00" />
+<meta itemprop="datePublished" content="2013-03-21T09:01:16+00:00" />
+<meta itemprop="dateModified" content="2013-03-21T09:01:16+00:00" />
 <meta itemprop="wordCount" content="171">
 
 
@@ -248,7 +245,7 @@ Func <span style="color:#a6e22e">Terminate</span><span style="color:#f92672">()<
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

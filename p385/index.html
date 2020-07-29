@@ -32,7 +32,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt." />
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -42,8 +42,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt." />
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.">
 <meta itemprop="description" content="Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
@@ -51,10 +50,8 @@ Requirements:
 Pfsense &ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &ndash; 1.6.7 pfsense package
 Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt.">
-
-
-<meta itemprop="datePublished" content="2013-05-02T11:27:16&#43;00:00" />
-<meta itemprop="dateModified" content="2013-05-02T11:27:16&#43;00:00" />
+<meta itemprop="datePublished" content="2013-05-02T11:27:16+00:00" />
+<meta itemprop="dateModified" content="2013-05-02T11:27:16+00:00" />
 <meta itemprop="wordCount" content="262">
 
 
@@ -142,11 +139,8 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
             <div class="post-content">
                 <p>Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.</p>
-
 <p>This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.</p>
-
 <p>Network diagram:</p>
-
 
 
 
@@ -186,25 +180,19 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
   
   alt="">
 
-
 <p>Requirements:</p>
-
 <p>Pfsense &ndash; for this demonstration i was using 2.1-BETA1</p>
-
 <p>Freeradius &ndash; 1.6.7 pfsense package</p>
-
 <p>Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt. (any AP should work as long it is capable using WPA Ent.)</p>
-
 <p>Any WPA/WPA2 compliant client. &ndash; Laptop with Windows 7.</p>
-
 <p>Procedure:</p>
-
 <p>A: Generate Certificates Needed.</p>
-
 <ol>
-<li><p>Login to pfsense web interface and go to Certificate Manager.</p></li>
-
-<li><p>Create CA.<br />
+<li>
+<p>Login to pfsense web interface and go to Certificate Manager.</p>
+</li>
+<li>
+<p>Create CA.
 
 
 
@@ -245,7 +233,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A1.CreateCA.png" 
   
   alt="">
-<br />
+
 
 
 
@@ -286,9 +274,10 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A2.CASummarry.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create Server Certificate.<br />
+</p>
+</li>
+<li>
+<p>Create Server Certificate.
 
 
 
@@ -329,7 +318,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A3.CreateServerCert.png" 
   
   alt="">
-<br />
+
 
 
 
@@ -370,15 +359,16 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A4.CertificateSummary.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>B: Configure Freeraduis on pfsense.</p>
-
 <ol>
-<li><p>Go to Services -&gt; Freeradius.</p></li>
-
-<li><p>Create a User. username: wifiUser1 password: 123456<br />
+<li>
+<p>Go to Services -&gt; Freeradius.</p>
+</li>
+<li>
+<p>Create a User. username: wifiUser1 password: 123456
 
 
 
@@ -417,9 +407,10 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/B1.CreateUser.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret<br />
+</p>
+</li>
+<li>
+<p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret
 
 
 
@@ -460,8 +451,8 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/B2.CreateNASClient.png" 
   
   alt="">
-<br />
-On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150<br />
+
+On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150
 
 
 
@@ -502,9 +493,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B3.NASClientSummary.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create an interface.<br />
+</p>
+</li>
+<li>
+<p>Create an interface.
 
 
 
@@ -545,9 +537,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B4.CreateInterface.png" 
   
   alt="">
-</p></li>
-
-<li><p>Configure EAP.<br />
+</p>
+</li>
+<li>
+<p>Configure EAP.
 
 
 
@@ -588,10 +581,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B5.ConfigureEAP.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
-<p>C. Configure Access Point<br />
+<p>C. Configure Access Point
 
 
 
@@ -633,13 +626,13 @@ On the screenshot below I also added several entries which I use for troubleshoo
   
   alt="">
 </p>
-
 <p>D. Import of CA.crt to Windows 7</p>
-
 <ol>
-<li><p>Export CA.crt from pfsense Certificate Manager.</p></li>
-
-<li><p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;<br />
+<li>
+<p>Export CA.crt from pfsense Certificate Manager.</p>
+</li>
+<li>
+<p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;
 
 
 
@@ -680,15 +673,12 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/D1.importCaCrt.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>Once you connect to your Access point you just configured windows will require you to enter a Username and Password, use the one we have made above. You will also get a warning stating that the Certificate is invalid or is unknown, just select Connect on that part since were using a self-signed certificate.</p>
-
 <p>References:</p>
-
 <p><a href="http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS">http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS</a></p>
-
 <p><a href="http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2">http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2</a></p>
 
             </div>
@@ -735,7 +725,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

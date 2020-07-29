@@ -32,7 +32,7 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -42,8 +42,7 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="generating(self-signed) and enabling SSL in Apache">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="generating(self-signed) and enabling SSL in Apache">
 <meta itemprop="description" content="#generate SSL cert for apache
 openssl version
 OpenSSL 1.0.0-fips 29 Mar 2010
@@ -51,10 +50,8 @@ cd /etc/pki/tls/certs openssl genrsa -out mycert.pem 2048 ls -alh mycert.* opens
 httpd-2.2.15-28.el6.centos.i686
 mySslEnabledVirtHost.conf
 LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000) SSLSessionCacheTimeout 300 SSLMutex default SSLRandomSeed startup file:/dev/urandom 256 SSLRandomSeed connect builtin SSLCryptoDevice builtin &lt;VirtualHost _default_:443&gt; SSLEngine on SSLCertificateFile /etc/pki/tls/certs/mycert.">
-
-
-<meta itemprop="datePublished" content="2013-06-19T03:55:08&#43;00:00" />
-<meta itemprop="dateModified" content="2013-06-19T03:55:08&#43;00:00" />
+<meta itemprop="datePublished" content="2013-06-19T03:55:08+00:00" />
+<meta itemprop="dateModified" content="2013-06-19T03:55:08+00:00" />
 <meta itemprop="wordCount" content="99">
 
 
@@ -141,11 +138,8 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
 
             <div class="post-content">
                 <p>#generate SSL cert for apache</p>
-
 <p>openssl version</p>
-
 <p>OpenSSL 1.0.0-fips 29 Mar 2010</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /etc/pki/tls/certs
 openssl genrsa -out mycert.pem <span style="color:#ae81ff">2048</span>
 ls -alh mycert.*
@@ -154,13 +148,9 @@ ls -alh mycert.*
 openssl x509 -req -days <span style="color:#ae81ff">365</span> -in mycert.csr -signkey mycert.pem -out mycert.crt
 ls -alh mycert.*
 cp mycert.pem mycert.csr /etc/pki/tls/private/</code></pre></div>
-
 <p># A single SSL enabled virtual host</p>
-
 <p>httpd-2.2.15-28.el6.centos.i686</p>
-
 <p>mySslEnabledVirtHost.conf</p>
-
 <pre><code>LoadModule ssl_module modules/mod_ssl.so
 Listen 443
 SSLPassPhraseDialog  builtin
@@ -182,7 +172,6 @@ SSLCryptoDevice builtin
         ServerName subdomain.mydomain.com:443
 &lt;/VirtualHost&gt;
 </code></pre>
-
             </div>
         </article>
 
@@ -227,7 +216,7 @@ SSLCryptoDevice builtin
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

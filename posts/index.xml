@@ -5,8 +5,291 @@
         <description>Recent content on Tech notes and other stuff</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 05 Jan 2020 00:10:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jul 2020 10:31:19 +0800</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Ruckus Zap and Speedflex test setup</title>
+            <link>/p504/</link>
+            <pubDate>Wed, 29 Jul 2020 10:31:19 +0800</pubDate>
+            
+            <guid>/p504/</guid>
+            <description>Buid zap tool. link
+  Install Ruckus Speedlflex on Node #1 and #2.
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
+ 
+  
+    On the control(laptop), run zap client
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192.</description>
+            <content type="html"><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='300'
+  srcset='
+  
+    /p504/images/ruckus_zap_speedflex_hu82f07cb017ee57daa8bc3cb82be16371_20828_500x0_resize_q75_box.jpeg 500w
+  
+  
+  
+  '
+  
+    src="/p504/images/ruckus_zap_speedflex.jpeg" 
+  
+  alt="">
+
+<ol>
+<li>
+<p>Buid zap tool. <a href="/p217/">link</a></p>
+</li>
+<li>
+<p>Install Ruckus Speedlflex on Node #1 and #2.</p>
+</li>
+<li>
+<p>Test basic connectivity between Node #1 and #2 using the app Speedflex itself
+<figure class="grid two" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='(min-width: 35em) 1024px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p504/images/Node1_SpeedFlex.jpg" 
+  
+  alt="Node #1 configuration">
+
+  <p>.</p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='(min-width: 35em) 1024px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p504/images/Node2_SpeedFlex.jpg" 
+  
+  alt="Node #2 configuration">
+
+  <figcaption>
+    <p></p>
+  </figcaption>
+
+    <figcaption>
+      <p></p>
+  </figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>On the control(laptop), run zap client</p>
+</li>
+</ol>
+<pre><code>$ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4
+./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved.
+Built Jul 29 2020 at 10:29:36
+Engaging default options -p50000 -n1000 -l1472 -q0x0
+
+    0: 192.168.1.3-&gt;192.168.1.4    233=rx   0=dr   0=oo   0=rp   233=rx in    51.7ms    53.0mbps    53.0 | 53.0 53.0 53.0 53.0 53.0 53.0
+    1: 192.168.1.3-&gt;192.168.1.4    546=rx   0=dr   0=oo   0=rp   313=rx in    50.3ms    73.2mbps    63.1 | 73.2 53.0 53.0 53.0 53.0 53.0
+    2: 192.168.1.3-&gt;192.168.1.4    628=rx   0=dr   0=oo   0=rp    82=rx in    59.6ms    16.2mbps    47.5 | 73.2 53.0 16.2 16.2 16.2 16.2
+    3: 192.168.1.3-&gt;192.168.1.4    769=rx   0=dr   0=oo   0=rp   141=rx in    68.1ms    24.4mbps    41.7 | 73.2 24.4 16.2 16.2 16.2 16.2
+    4: 192.168.1.3-&gt;192.168.1.4   1081=rx   0=dr   0=oo   0=rp   312=rx in    50.7ms    72.5mbps    47.9 | 73.2 53.0 16.2 16.2 16.2 16.2
+    5: 192.168.1.3-&gt;192.168.1.4   1337=rx   0=dr   0=oo   0=rp   256=rx in    50.3ms    59.9mbps    49.9 | 73.2 53.0 16.2 16.2 16.2 16.2
+    6: 192.168.1.3-&gt;192.168.1.4   1547=rx   0=dr   0=oo   0=rp   210=rx in    51.2ms    48.3mbps    49.6 | 73.2 53.0 16.2 16.2 16.2 16.2
+    7: 192.168.1.3-&gt;192.168.1.4   1790=rx   0=dr   0=oo   0=rp   243=rx in    71.9ms    39.8mbps    48.4 | 73.2 48.3 16.2 16.2 16.2 16.2
+    8: 192.168.1.3-&gt;192.168.1.4   1909=rx   0=dr   0=oo   0=rp   119=rx in    50.8ms    27.6mbps    46.1 | 73.2 48.3 16.2 16.2 16.2 16.2
+    9: 192.168.1.3-&gt;192.168.1.4   2097=rx   0=dr   0=oo   0=rp   188=rx in    85.8ms    25.8mbps    44.1 | 73.2 39.8 16.2 16.2 16.2 16.2
+   10: 192.168.1.3-&gt;192.168.1.4   2104=rx   0=dr   0=oo   0=rp     7=rx in    80.1ms     1.0mbps    40.2 | 73.2 39.8 16.2  1.0  1.0  1.0
+   11: 192.168.1.3-&gt;192.168.1.4   2127=rx   0=dr   0=oo   0=rp    23=rx in    96.3ms     2.8mbps    37.0 | 73.2 27.6  2.8  1.0  1.0  1.0
+</code></pre><ol start="5">
+<li>How to analyze result
+<a href="http://www.enterprisenetworkingplanet.com/netos/article.php/3861171/Zap-Provides-Open-Source-Wireless-Testing.htm">http://www.enterprisenetworkingplanet.com/netos/article.php/3861171/Zap-Provides-Open-Source-Wireless-Testing.htm</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='300'
+  srcset='
+  
+    /p504/images/zap-output_hu98df212ca25fa4e5a6c4fcba2c811379_72519_500x0_resize_q75_box.jpg 500w
+  
+  
+  
+  '
+  
+    src="/p504/images/zap-output.jpg" 
+  
+  alt="">
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>Apache Benchmark cache buster</title>
+            <link>/p503/</link>
+            <pubDate>Sat, 18 Apr 2020 00:10:00 +0800</pubDate>
+            
+            <guid>/p503/</guid>
+            <description>Allows ab to bypass or invalidate cdn/web cache by passing random parameters
+Shortcut using docker https://github.com/j3ffrw/httpd/tree/cache_buster/2.4/alpine
+Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
+ Build openssl  wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1e.tar.gz tar xvzf openssl-1.1.1e.tar.gz cd openssl-1.1.1e mkdir /opt/ssl ./config --prefix=/opt/ssl --openssldir=/opt/ssl no-ssl2 shared zlib make -j4 make install Test openssl  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl version -a echo &amp;quot;&amp;quot; | LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl s_client -connect www.google.com:443 Build httpd 2.4.43  wget https://downloads.apache.org//httpd/httpd-2.4.43.tar.gz tar xvzf httpd-2.</description>
+            <content type="html"><![CDATA[<p>Allows ab to bypass or invalidate cdn/web cache by passing random parameters</p>
+<h1 id="shortcut-using-docker">Shortcut using docker</h1>
+<p><a href="https://github.com/j3ffrw/httpd/tree/cache_buster/2.4/alpine">https://github.com/j3ffrw/httpd/tree/cache_buster/2.4/alpine</a></p>
+<h1 id="details-of-building-apache-benchmarchhttpd-from-source">Details of building Apache Benchmarch(httpd) from source</h1>
+<p>Linux Mint 19.1</p>
+<ol>
+<li>Build openssl</li>
+</ol>
+<pre><code>wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1e.tar.gz
+tar xvzf openssl-1.1.1e.tar.gz
+
+cd openssl-1.1.1e
+mkdir /opt/ssl
+./config --prefix=/opt/ssl --openssldir=/opt/ssl no-ssl2 shared zlib
+make -j4
+make install
+</code></pre><ol start="2">
+<li>Test openssl</li>
+</ol>
+<pre><code>LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl version -a
+echo &quot;&quot; | LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl s_client -connect www.google.com:443
+</code></pre><ol start="3">
+<li>Build httpd 2.4.43</li>
+</ol>
+<pre><code>wget https://downloads.apache.org//httpd/httpd-2.4.43.tar.gz
+tar xvzf httpd-2.4.43.tar.gz
+
+cd httpd-2.4.43/srclib
+wget https://downloads.apache.org//apr/apr-1.7.0.tar.gz
+tar xvzf apr-1.7.0.tar.gz
+ln -s apr-1.7.0 apr
+wget https://downloads.apache.org//apr/apr-util-1.6.1.tar.gz
+tar xvzf apr-util-1.6.1.tar.gz
+ln -s apr-util-1.6.1 apr-util
+cd ..
+# Apply ab.c.patch if desired
+# https://github.com/j3ffrw/httpd/blob/cache_buster/2.4/alpine/ab.c.patch
+
+./configure --with-included-apr --enable-static-ab --with-ssl=/opt/ssl/ --enable-ssl-staticlib-deps --enable-mods-static=ssl --enable-ssl
+make -j4
+</code></pre><ol start="4">
+<li>Test ab</li>
+</ol>
+<pre><code>LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ssl/lib ./support/ab -V
+</code></pre><p>References:
+<a href="https://chrismiles.livejournal.com/21720.html">https://chrismiles.livejournal.com/21720.html</a>
+<a href="https://rainbow.chard.org/2012/09/14/using-ab-to-benchmark-with-different-or-random-requests/">https://rainbow.chard.org/2012/09/14/using-ab-to-benchmark-with-different-or-random-requests/</a></p>
+]]></content>
+        </item>
         
         <item>
             <title>Migrating wordpress to Hugo</title>
@@ -15,26 +298,23 @@
             
             <guid>/p502/</guid>
             <description>Use https://github.com/SchumacherFM/wordpress-to-hugo-exporter
- Convert posts to page bundle
-https://gohugo.io/content-management/page-bundles/
-cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done  Cleanup each post, convert image reference to shortcode equivalent
-vim search and replace snippets
-%s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g  Deploy at last.
-https://gohugo.io/hosting-and-deployment/hosting-on-github/
-  References:</description>
+  Convert posts to page bundle https://gohugo.io/content-management/page-bundles/
+  cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done Cleanup each post, convert image reference to shortcode equivalent vim search and replace snippets  %s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g Deploy at last. https://gohugo.io/hosting-and-deployment/hosting-on-github/  References:</description>
             <content type="html"><![CDATA[<ol>
-<li><p>Use <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">https://github.com/SchumacherFM/wordpress-to-hugo-exporter</a></p></li>
-
-<li><p>Convert posts to page bundle<br />
+<li>
+<p>Use <a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">https://github.com/SchumacherFM/wordpress-to-hugo-exporter</a></p>
+</li>
+<li>
+<p>Convert posts to page bundle
 <a href="https://gohugo.io/content-management/page-bundles/">https://gohugo.io/content-management/page-bundles/</a></p>
-
+</li>
+</ol>
 <pre><code>cd content/posts
 find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done
-</code></pre></li>
-
-<li><p>Cleanup each post, convert image reference to shortcode equivalent<br />
-vim search and replace snippets</p>
-
+</code></pre><ol start="3">
+<li>Cleanup each post, convert image reference to shortcode equivalent
+vim search and replace snippets</li>
+</ol>
 <pre><code>%s/^M//g
 %s/&amp;gt;/&gt;/g
 %s/&amp;lt;/&lt;/g
@@ -47,16 +327,12 @@ vim search and replace snippets</p>
 %s/&amp;#8220;/&quot;/g
 %s/&amp;#8221;/&quot;/g
 %s/&lt;br\ \/&gt;//g
-</code></pre></li>
-
-<li><p>Deploy at last.<br />
-<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p></li>
+</code></pre><ol start="4">
+<li>Deploy at last.
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></li>
 </ol>
-
 <p>References:</p>
-
 <p><a href="https://laurakalbag.com/processing-responsive-images-with-hugo/">https://laurakalbag.com/processing-responsive-images-with-hugo/</a></p>
-
 <p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
 ]]></content>
         </item>
@@ -67,18 +343,18 @@ vim search and replace snippets</p>
             <pubDate>Fri, 27 Apr 2018 15:10:00 +0000</pubDate>
             
             <guid>/p501/</guid>
-            <description>Generate fingerprint per key
-while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
- Match fingerprint on /var/log/secure
-AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
+            <description>Generate fingerprint per key while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
+  Match fingerprint on /var/log/secure AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
             <content type="html"><![CDATA[<ol>
-<li><p>Generate fingerprint per key<br />
+<li>
+<p>Generate fingerprint per key
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> read l; <span style="color:#66d9ef">do</span>
   <span style="color:#f92672">[[</span> -n $l <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">${</span>l###<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> $l <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> ssh-keygen -l -f /dev/stdin <span style="color:#f92672">&lt;&lt;&lt;</span>$l;
-<span style="color:#66d9ef">done</span> &lt; .ssh/authorized_keys</code></pre></div></p></li>
-
-<li><p>Match fingerprint on /var/log/secure<br />
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">AUTHORIZED_FP<span style="color:#f92672">=</span><span style="color:#e6db74">`</span><span style="color:#66d9ef">while</span> read l; <span style="color:#66d9ef">do</span> <span style="color:#f92672">[[</span> -n $l <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">${</span>l###<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> $l <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> ssh-keygen -l -f /dev/stdin <span style="color:#f92672">&lt;&lt;&lt;</span>$l; <span style="color:#66d9ef">done</span> &lt; /home/centos/.ssh/authorized_keys <span style="color:#ae81ff">2</span>&gt;/dev/null | grep RSA<span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">done</span> &lt; .ssh/authorized_keys</code></pre></div></p>
+</li>
+<li>
+<p>Match fingerprint on /var/log/secure
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">AUTHORIZED_FP<span style="color:#f92672">=</span><span style="color:#e6db74">`</span><span style="color:#66d9ef">while</span> read l; <span style="color:#66d9ef">do</span> <span style="color:#f92672">[[</span> -n $l <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">${</span>l###<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> $l <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> ssh-keygen -l -f /dev/stdin <span style="color:#f92672">&lt;&lt;&lt;</span>$l; <span style="color:#66d9ef">done</span> &lt; /home/centos/.ssh/authorized_keys 2&gt;/dev/null | grep RSA<span style="color:#e6db74">`</span>
 sudo cat /var/log/secure |grep <span style="color:#e6db74">&#34;Accepted publickey&#34;</span> | <span style="color:#66d9ef">while</span> read line; <span style="color:#66d9ef">do</span>
   AUDIT_MESSAGE<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $line | awk -F<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $1 &#34; &#34; $2 &#34; &#34; $3 &#34; from &#34; $11 &#34; FP: &#34; $16}&#39;</span><span style="color:#e6db74">`</span>
   AUDIT_FP<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $AUDIT_MESSAGE | awk -F<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $7}&#39;</span><span style="color:#e6db74">`</span>
@@ -90,7 +366,8 @@ sudo cat /var/log/secure |grep <span style="color:#e6db74">&#34;Accepted publick
     <span style="color:#75715e">#echo $KEY_USER`</span>
     echo <span style="color:#e6db74">&#34;</span>$AUDIT_MESSAGE<span style="color:#e6db74"> User: </span>$KEY_LINE<span style="color:#e6db74"> </span>$KEY_USER<span style="color:#e6db74">&#34;</span>
   <span style="color:#66d9ef">fi</span>
-<span style="color:#66d9ef">done</span></code></pre></div></p></li>
+<span style="color:#66d9ef">done</span></code></pre></div></p>
+</li>
 </ol>
 ]]></content>
         </item>
@@ -102,7 +379,7 @@ sudo cat /var/log/secure |grep <span style="color:#e6db74">&#34;Accepted publick
             
             <guid>/p485/</guid>
             <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
-Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu)  Ref:
+Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
 Arduino Uno to Xbee
   Parallax XBee USB Adapter Board
 http://www.parallax.com/product/32400
@@ -111,7 +388,6 @@ http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html
 Chipkit Max32 Schematics
 http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf</description>
             <content type="html"><![CDATA[<p>Here&rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.</p>
-
 
 
 
@@ -153,36 +429,25 @@ http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.
   
   alt="">
 
-
 <pre><code>Xbee   to   Max32 
 DOUT ------ 1(TX0)
 DIN  ------ 0(RX0)
 VCC  ------ 3.3V
 GND  ------ GND
 RST to GND ( This is to deactivate the max32 mcu)
-</code></pre>
-
-<p>Ref:</p>
-
+</code></pre><p>Ref:</p>
 <p>Arduino Uno to Xbee</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/dEIP_JmjlmE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/dEIP_JmjlmE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Parallax XBee USB Adapter Board</p>
-
 <p><a href="http://www.parallax.com/product/32400">http://www.parallax.com/product/32400</a></p>
-
 <p>Using X-CTU on linux</p>
-
 <p><a href="http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html">http://lizard43.blogspot.com/2008/10/x-ctu-with-linux.html</a></p>
-
 <p>Chipkit Max32 Schematics</p>
-
-<p><a href="http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf">http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.pdf</a></p>
+<p><a href="http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32">http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32</a>_bysa_sch.pdf</p>
 ]]></content>
         </item>
         
@@ -196,33 +461,23 @@ RST to GND ( This is to deactivate the max32 mcu)
 www.circuit-help.com.ph
 www.innovationph.com/
 www.relixtechnologies.com/ http://www.tipidpc.com/useritems.php?username=relixtech
-www.gadgetpinas.ph http://www.tipidpc.com/useritems.php?username=SOMASEGAR (Arduino&amp;#8217;s and raspberry pi)
+www.gadgetpinas.ph http://www.tipidpc.com/useritems.php?username=SOMASEGAR (Arduino’s and raspberry pi)
 http://www.dynamodo.com
 http://nipahut.com.ph/index.html
 http://ph.element14.com/
 http://depmechatronics.wordpress.com/
 http://www.newportelec.com/ic.html
 http://www.dynamodo.com/</description>
-            <content type="html"><![CDATA[<p>www.e-gizmo.com</p>
-
-<p>www.circuit-help.com.ph</p>
-
-<p>www.innovationph.com/</p>
-
-<p>www.relixtechnologies.com/ <a href="http://www.tipidpc.com/useritems.php?username=relixtech">http://www.tipidpc.com/useritems.php?username=relixtech</a></p>
-
-<p>www.gadgetpinas.ph <a href="http://www.tipidpc.com/useritems.php?username=SOMASEGAR">http://www.tipidpc.com/useritems.php?username=SOMASEGAR</a> (Arduino&#8217;s and raspberry pi)</p>
-
+            <content type="html"><![CDATA[<p><a href="http://www.e-gizmo.com">www.e-gizmo.com</a></p>
+<p><a href="http://www.circuit-help.com.ph">www.circuit-help.com.ph</a></p>
+<p><a href="http://www.innovationph.com/">www.innovationph.com/</a></p>
+<p><a href="http://www.relixtechnologies.com/">www.relixtechnologies.com/</a> <a href="http://www.tipidpc.com/useritems.php?username=relixtech">http://www.tipidpc.com/useritems.php?username=relixtech</a></p>
+<p><a href="http://www.gadgetpinas.ph">www.gadgetpinas.ph</a> <a href="http://www.tipidpc.com/useritems.php?username=SOMASEGAR">http://www.tipidpc.com/useritems.php?username=SOMASEGAR</a> (Arduino’s and raspberry pi)</p>
 <p><a href="http://www.dynamodo.com">http://www.dynamodo.com</a></p>
-
 <p><a href="http://nipahut.com.ph/index.html">http://nipahut.com.ph/index.html</a></p>
-
 <p><a href="http://ph.element14.com/">http://ph.element14.com/</a></p>
-
 <p><a href="http://depmechatronics.wordpress.com/">http://depmechatronics.wordpress.com/</a></p>
-
 <p><a href="http://www.newportelec.com/ic.html">http://www.newportelec.com/ic.html</a></p>
-
 <p><a href="http://www.dynamodo.com/">http://www.dynamodo.com/</a></p>
 ]]></content>
         </item>
@@ -294,36 +549,28 @@ http://www.dynamodo.com/</description>
 mkdir ~/backup; cd ~/backup sfdisk -d /dev/sdx &amp;gt; sfdisk_dump fdisk -l /dev/sda &amp;gt; fdisk_listing LVM metadata backup
 vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup
 LUKS header
- locate partition(s) with luks
-using blkid
-fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done
-or
-using cryptsetup
-fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do cryptsetup isLuks $line; if [ $?</description>
+  locate partition(s) with luks using blkid fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done or using cryptsetup fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do cryptsetup isLuks $line; if [ $?</description>
             <content type="html"><![CDATA[<p><strong>Partition</strong></p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir ~/backup; cd ~/backup
 sfdisk -d /dev/sdx &gt; sfdisk_dump
 fdisk -l /dev/sda &gt; fdisk_listing</code></pre></div>
-
 <p><strong>LVM metadata backup</strong></p>
-
 <p><code>vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup</code></p>
-
 <p><strong>LUKS header</strong></p>
-
 <ol>
-<li><p>locate partition(s) with luks<br />
-using blkid<br />
-<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done</code><br />
-or<br />
-using cryptsetup<br />
-<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do cryptsetup isLuks $line; if [ $? = 0 ]; then echo &quot;luks found on $line&quot;; fi done</code></p></li>
-
-<li><p>actual backup<br />
-<code>cryptsetup luksHeaderBackup --header-backup-file luksHeaderBackup /dev/sdx#</code></p></li>
+<li>
+<p>locate partition(s) with luks
+using blkid
+<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done</code>
+or
+using cryptsetup
+<code>fdisk -l 2&gt;&amp;1 | cut -d' ' -f1 | grep &quot;\/dev&quot; | while read line; do cryptsetup isLuks $line; if [ $? = 0 ]; then echo &quot;luks found on $line&quot;; fi done</code></p>
+</li>
+<li>
+<p>actual backup
+<code>cryptsetup luksHeaderBackup --header-backup-file luksHeaderBackup /dev/sdx#</code></p>
+</li>
 </ol>
-
 <p>NOTE: be sure to secure luksHeader by encrypting it using gpg -c luksHeaderBackup</p>
 ]]></content>
         </item>
@@ -337,7 +584,6 @@ using cryptsetup<br />
             <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR when using an iso file to install a guest OS(Windows 7)
 mkdir -p isos/mountp cp udfimage.iso isos cd isos geteltorito udfimage.iso &amp;amp;gt; boot.bin mount -o loop -t auto udfimage.iso mountp cp -r mountp udfimagecontents cp boot.bin udfimagecontents mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents reference: http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</description>
             <content type="html"><![CDATA[<p>this is useful when you virtualbox is complaining about <a href="https://www.virtualbox.org/ticket/10666" title="VBOX_E_IPRT_ERROR">VBOX_E_IPRT_ERROR</a> when using an iso file to install a guest OS(Windows 7)</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p isos/mountp
 cp udfimage.iso isos
 cd isos
@@ -346,7 +592,6 @@ mount -o loop -t auto udfimage.iso mountp
 cp -r mountp udfimagecontents
 cp boot.bin udfimagecontents
 mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents</code></pre></div>
-
 <p>reference: <a href="http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/">http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</a></p>
 ]]></content>
         </item>
@@ -365,11 +610,8 @@ httpd-2.2.15-28.el6.centos.i686
 mySslEnabledVirtHost.conf
 LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000) SSLSessionCacheTimeout 300 SSLMutex default SSLRandomSeed startup file:/dev/urandom 256 SSLRandomSeed connect builtin SSLCryptoDevice builtin &amp;lt;VirtualHost _default_:443&amp;gt; SSLEngine on SSLCertificateFile /etc/pki/tls/certs/mycert.</description>
             <content type="html"><![CDATA[<p>#generate SSL cert for apache</p>
-
 <p>openssl version</p>
-
 <p>OpenSSL 1.0.0-fips 29 Mar 2010</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /etc/pki/tls/certs
 openssl genrsa -out mycert.pem <span style="color:#ae81ff">2048</span>
 ls -alh mycert.*
@@ -378,13 +620,9 @@ ls -alh mycert.*
 openssl x509 -req -days <span style="color:#ae81ff">365</span> -in mycert.csr -signkey mycert.pem -out mycert.crt
 ls -alh mycert.*
 cp mycert.pem mycert.csr /etc/pki/tls/private/</code></pre></div>
-
 <p># A single SSL enabled virtual host</p>
-
 <p>httpd-2.2.15-28.el6.centos.i686</p>
-
 <p>mySslEnabledVirtHost.conf</p>
-
 <pre><code>LoadModule ssl_module modules/mod_ssl.so
 Listen 443
 SSLPassPhraseDialog  builtin
@@ -405,8 +643,7 @@ SSLCryptoDevice builtin
         DocumentRoot /var/www/myweb
         ServerName subdomain.mydomain.com:443
 &lt;/VirtualHost&gt;
-</code></pre>
-]]></content>
+</code></pre>]]></content>
         </item>
         
         <item>
@@ -417,21 +654,20 @@ SSLCryptoDevice builtin
             <guid>/p404/</guid>
             <description>What better things to do during election day than fixing things up.
 List of things to fix:
- Canon EF-S 18-55mm 3.6-5.6 IS stock lens &amp;#8211; problem: auto focus kaput
- Quantaray LD 70-300mm &amp;#8211; problem: auto focus kaput.
+  Canon EF-S 18-55mm 3.6-5.6 IS stock lens – problem: auto focus kaput
+  Quantaray LD 70-300mm – problem: auto focus kaput.
   Let&amp;rsquo;s start off with quantaray.
-This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.
-The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right were all strip, I don&amp;rsquo;t know what cause this, since the lens is not mine and was borrowed from my uncle.</description>
+This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</description>
             <content type="html"><![CDATA[<p>What better things to do during election day than fixing things up.</p>
-
 <p>List of things to fix:</p>
-
 <ol>
-<li><p>Canon EF-S 18-55mm 3.6-5.6 IS stock lens &#8211; problem: auto focus kaput</p></li>
-
-<li><p>Quantaray LD 70-300mm &#8211; problem: auto focus kaput.</p></li>
+<li>
+<p>Canon EF-S 18-55mm 3.6-5.6 IS stock lens – problem: auto focus kaput</p>
+</li>
+<li>
+<p>Quantaray LD 70-300mm – problem: auto focus kaput.</p>
+</li>
 </ol>
-
 
 
 
@@ -475,9 +711,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   
   alt="">
 
-
 <p>Let&rsquo;s start off with quantaray.</p>
-
 
 
 
@@ -521,9 +755,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   
   alt="">
 
-
 <p>This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</p>
-
 
 
 
@@ -567,9 +799,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   
   alt="">
 
-
 <p>The cause of the problem was that the gear&rsquo;s upper tooth on the right were all strip, I don&rsquo;t know what cause this, since the lens is not mine and was borrowed from my uncle.</p>
-
 
 
 
@@ -613,10 +843,8 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   
   alt="">
 
-
 <p>A workaround is to swap the gears position since both are identical and the second gear position seems to not use those tooth anyway.</p>
-
-<figure >
+<figure  >
   
 
 
@@ -667,8 +895,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   </figcaption>
 </figure>
 
-
-<figure >
+<figure  >
   
 
 
@@ -719,8 +946,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   </figcaption>
 </figure>
 
-
-<figure >
+<figure  >
   
 
 
@@ -771,8 +997,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
   </figcaption>
 </figure>
 
-
-<p><figure >
+<p><figure  >
   
 
 
@@ -822,7 +1047,7 @@ The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right 
       <p>Test shot @300mm</p>
   </figcaption>
 </figure>
-<br />
+
 As for the canon lens the Focus FPC has split into two and needs replacement.</p>
 ]]></content>
         </item>
@@ -841,11 +1066,8 @@ Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &amp;ndash; 1.6.7 pfsense package
 Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>
             <content type="html"><![CDATA[<p>Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.</p>
-
 <p>This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.</p>
-
 <p>Network diagram:</p>
-
 
 
 
@@ -885,25 +1107,19 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
   
   alt="">
 
-
 <p>Requirements:</p>
-
 <p>Pfsense &ndash; for this demonstration i was using 2.1-BETA1</p>
-
 <p>Freeradius &ndash; 1.6.7 pfsense package</p>
-
 <p>Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt. (any AP should work as long it is capable using WPA Ent.)</p>
-
 <p>Any WPA/WPA2 compliant client. &ndash; Laptop with Windows 7.</p>
-
 <p>Procedure:</p>
-
 <p>A: Generate Certificates Needed.</p>
-
 <ol>
-<li><p>Login to pfsense web interface and go to Certificate Manager.</p></li>
-
-<li><p>Create CA.<br />
+<li>
+<p>Login to pfsense web interface and go to Certificate Manager.</p>
+</li>
+<li>
+<p>Create CA.
 
 
 
@@ -944,7 +1160,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/A1.CreateCA.png" 
   
   alt="">
-<br />
+
 
 
 
@@ -985,9 +1201,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/A2.CASummarry.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create Server Certificate.<br />
+</p>
+</li>
+<li>
+<p>Create Server Certificate.
 
 
 
@@ -1028,7 +1245,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/A3.CreateServerCert.png" 
   
   alt="">
-<br />
+
 
 
 
@@ -1069,15 +1286,16 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/A4.CertificateSummary.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>B: Configure Freeraduis on pfsense.</p>
-
 <ol>
-<li><p>Go to Services -&gt; Freeradius.</p></li>
-
-<li><p>Create a User. username: wifiUser1 password: 123456<br />
+<li>
+<p>Go to Services -&gt; Freeradius.</p>
+</li>
+<li>
+<p>Create a User. username: wifiUser1 password: 123456
 
 
 
@@ -1116,9 +1334,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/B1.CreateUser.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret<br />
+</p>
+</li>
+<li>
+<p>Create an authenticator entry in NAS/Client. IP: 10.0.1.150 , Client Shared Secret: myApSecret
 
 
 
@@ -1159,8 +1378,8 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     src="/p385/B2.CreateNASClient.png" 
   
   alt="">
-<br />
-On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150<br />
+
+On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150
 
 
 
@@ -1201,9 +1420,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B3.NASClientSummary.png" 
   
   alt="">
-</p></li>
-
-<li><p>Create an interface.<br />
+</p>
+</li>
+<li>
+<p>Create an interface.
 
 
 
@@ -1244,9 +1464,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B4.CreateInterface.png" 
   
   alt="">
-</p></li>
-
-<li><p>Configure EAP.<br />
+</p>
+</li>
+<li>
+<p>Configure EAP.
 
 
 
@@ -1287,10 +1508,10 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B5.ConfigureEAP.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
-<p>C. Configure Access Point<br />
+<p>C. Configure Access Point
 
 
 
@@ -1332,13 +1553,13 @@ On the screenshot below I also added several entries which I use for troubleshoo
   
   alt="">
 </p>
-
 <p>D. Import of CA.crt to Windows 7</p>
-
 <ol>
-<li><p>Export CA.crt from pfsense Certificate Manager.</p></li>
-
-<li><p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;<br />
+<li>
+<p>Export CA.crt from pfsense Certificate Manager.</p>
+</li>
+<li>
+<p>Import CA.crt into MMC Certificate add-in. Be sure to import it in &ldquo;Trusted Root Certification Authorities&rdquo;
 
 
 
@@ -1379,15 +1600,12 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/D1.importCaCrt.png" 
   
   alt="">
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>Once you connect to your Access point you just configured windows will require you to enter a Username and Password, use the one we have made above. You will also get a warning stating that the Certificate is invalid or is unknown, just select Connect on that part since were using a self-signed certificate.</p>
-
 <p>References:</p>
-
 <p><a href="http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS">http://doc.pfsense.org/index.php/FreeRADIUS_2.x_package#EAP-TLS</a></p>
-
 <p><a href="http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2">http://www.smallnetbuilder.com/wireless/wireless-howto/30213-how-to-setting-up-freeradius-for-wpa-a-wpa2-enterprise-part-2</a></p>
 ]]></content>
         </item>
@@ -1400,38 +1618,27 @@ On the screenshot below I also added several entries which I use for troubleshoo
             <guid>/p375/</guid>
             <description>Purpose: Remote control decoder
 Status: * Decoding part &amp;ndash; done.
- Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.
-  BOM:
- 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e
- 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V
- 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.</description>
+ Encoding part &amp;ndash; not working &amp;ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.  BOM:
+ 1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e 1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V 1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.</description>
             <content type="html"><![CDATA[<p>Purpose: Remote control decoder</p>
-
 <p>Status: * Decoding part &ndash; done.</p>
-
 <ul>
-<li>Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.<br />
-<br /></li>
+<li>Encoding part &ndash; not working &ndash; I need to check the 555 timer via scope(which i dont have) to verify the modulated frequency.</li>
 </ul>
-
 <p>BOM:</p>
-
 <ul>
-<li>1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e<br /></li>
-<li>1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V<br /></li>
-<li>1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.3V<br /></li>
-<li>1 TSOP312.., 314.. package THT; row single; pin spacing 0.1in (2.54mm); pins 3<br /></li>
-<li>1 Infrared LED -  5mm package 5 mm [THT]; leg yes; color Infrared (940nm)<br /></li>
-<li>1 150 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 150Ω; pin spacing 400 mil<br /></li>
-<li>3 220 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 220Ω; pin spacing 400 mil<br /></li>
-<li>1 470 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 470Ω; pin spacing 400 mil<br /></li>
-<li>1 Rotary Potentiometer (Small) maximum resistance 10kΩ<br /></li>
-<li>1 555 Timer package DIP8 [THT]<br />
-<br /></li>
+<li>1 BASIC Stamp 2e processor PBASIC; variant Basic Stamp 2e</li>
+<li>1 Electrolytic Capacitor package 100 mil [THT, electrolytic]; capacitance 1µF; voltage 6.3V</li>
+<li>1 Ceramic Capacitor package 100 mil [THT, multilayer]; capacitance 0.01µF; voltage 6.3V</li>
+<li>1 TSOP312.., 314.. package THT; row single; pin spacing 0.1in (2.54mm); pins 3</li>
+<li>1 Infrared LED -  5mm package 5 mm [THT]; leg yes; color Infrared (940nm)</li>
+<li>1 150 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 150Ω; pin spacing 400 mil</li>
+<li>3 220 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 220Ω; pin spacing 400 mil</li>
+<li>1 470 Ω Resistor package THT; tolerance ±5%; bands 4; resistance 470Ω; pin spacing 400 mil</li>
+<li>1 Rotary Potentiometer (Small) maximum resistance 10kΩ</li>
+<li>1 555 Timer package DIP8 [THT]</li>
 </ul>
-
 <p>Schematic</p>
-
 
 
 
@@ -1506,7 +1713,6 @@ Status: * Decoding part &amp;ndash; done.
 
 
 
-
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -1527,9 +1733,7 @@ Status: * Decoding part &amp;ndash; done.
   
   alt="">
 
-
 <p>Captured IR code using a IR phototransistor connected to a PC/Laptop sound card.</p>
-
 
 
 
@@ -1573,9 +1777,7 @@ Status: * Decoding part &amp;ndash; done.
   
   alt="">
 
-
 <p>Sample decoding session using Basic Stamp Editor debug terminal.</p>
-
 <pre><code>Measuring Start bit:
 Press several random keys 15 times at least 1 second apart
 15 of 15
@@ -1610,8 +1812,6 @@ Bit Count: 33
 LSB to MSB: %11111011 %00000100 %00000111 %00000111 FB040707
 Transmit code LSB-&gt;MSB:[Y/n]
 </code></pre>
-
-
 <section class="attachments ">
 	<label>
 		<i class="fas fa-paperclip" aria-hidden="true"></i>
@@ -1666,25 +1866,17 @@ GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT=&amp;ldquo;quiet splash acpi_backlight=vendor&amp;rdquo;
-GRUB_CMDLINE_LINUX=&amp;ldquo;&amp;rdquo;</description>
+GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash acpi_backlight=vendor&amp;rdquo;
+GRUB_CMDLINE_LINUX=&amp;rdquo;&amp;rdquo;</description>
             <content type="html"><![CDATA[<p>insert acpi_backlight=vendor option into grub.</p>
-
 <p>update-grub2</p>
-
 <p>GRUB_DEFAULT=0</p>
-
 <p>GRUB_HIDDEN_TIMEOUT=0</p>
-
 <p>GRUB_HIDDEN_TIMEOUT_QUIET=true</p>
-
 <p>GRUB_TIMEOUT=10</p>
-
 <p>GRUB_DISTRIBUTOR=`lsb_release -i -s 2&gt; /dev/null || echo Debian`</p>
-
-<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash acpi_backlight=vendor&rdquo;</p>
-
-<p>GRUB_CMDLINE_LINUX=&ldquo;&rdquo;</p>
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash acpi_backlight=vendor&rdquo;</p>
+<p>GRUB_CMDLINE_LINUX=&rdquo;&rdquo;</p>
 ]]></content>
         </item>
         
@@ -1695,22 +1887,16 @@ GRUB_CMDLINE_LINUX=&amp;ldquo;&amp;rdquo;</description>
             
             <guid>/p371/</guid>
             <description>Nvidia:
-sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF  check the output of dmesg if the ff shows
+sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF check the output of dmesg if the ff shows
 bbswitch: device 0000:01:00.0 is in use by driver &#39;nvidia&#39;, refusing OFF
 if it does contain the above message, find which application using it and kill it. Then try turning it off again.
 sudo lsof -n -w -t /dev/nvidia*</description>
             <content type="html"><![CDATA[<p>Nvidia:</p>
-
 <pre><code>sudo rmmod nvidia
 sudo tee /proc/acpi/bbswitch &lt;&lt;&lt;OFF
-</code></pre>
-
-<p>check the output of dmesg if the ff shows</p>
-
+</code></pre><p>check the output of dmesg if the ff shows</p>
 <p><code>bbswitch: device 0000:01:00.0 is in use by driver 'nvidia', refusing OFF</code></p>
-
 <p>if it does contain the above message, find which application using it and kill it. Then try turning it off again.</p>
-
 <p><code>sudo lsof -n -w -t /dev/nvidia*</code></p>
 ]]></content>
         </item>
@@ -1722,40 +1908,47 @@ sudo tee /proc/acpi/bbswitch &lt;&lt;&lt;OFF
             
             <guid>/p366/</guid>
             <description>IPMI:
- Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
- Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
- Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
- Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
- Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
- Set Username and password.
- Press Esc key and select Save option.
+  Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
+  Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
+  Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
+  Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
+  Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
+  Set Username and password.
+  Press Esc key and select Save option.
   BIOS:
- Enter Dell&amp;rsquo;s BIOS. (F2)
- Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
+  Enter Dell&amp;rsquo;s BIOS. (F2)
+  Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
             <content type="html"><![CDATA[<p>IPMI:</p>
-
 <ol>
-<li><p>Enter Dell&rsquo;s IPMI server management configuration utility. (Ctrl+E)</p></li>
-
-<li><p>Set &ldquo;IPMI over LAN&rdquo; to &ldquo;On&rdquo;.</p></li>
-
-<li><p>Configure &ldquo;IPMI LAN Channel&rdquo;, choose either static or dynamic.</p></li>
-
-<li><p>Set &ldquo;VLAN Enable&rdquo; to &ldquo;Off&rdquo;.</p></li>
-
-<li><p>Set &ldquo;Administrator Account&rdquo; to &ldquo;Enable&rdquo;</p></li>
-
-<li><p>Set Username and password.</p></li>
-
-<li><p>Press Esc key and select Save option.</p></li>
+<li>
+<p>Enter Dell&rsquo;s IPMI server management configuration utility. (Ctrl+E)</p>
+</li>
+<li>
+<p>Set &ldquo;IPMI over LAN&rdquo; to &ldquo;On&rdquo;.</p>
+</li>
+<li>
+<p>Configure &ldquo;IPMI LAN Channel&rdquo;, choose either static or dynamic.</p>
+</li>
+<li>
+<p>Set &ldquo;VLAN Enable&rdquo; to &ldquo;Off&rdquo;.</p>
+</li>
+<li>
+<p>Set &ldquo;Administrator Account&rdquo; to &ldquo;Enable&rdquo;</p>
+</li>
+<li>
+<p>Set Username and password.</p>
+</li>
+<li>
+<p>Press Esc key and select Save option.</p>
+</li>
 </ol>
-
 <p>BIOS:</p>
-
 <ol>
-<li><p>Enter Dell&rsquo;s BIOS. (F2)</p></li>
-
-<li><p>Configure &ldquo;Serial Communication&rdquo; to be &ldquo;On with Console Redirection via COM2&rdquo;. Dell&#8217;s BMC is connected to COM2.<br />
+<li>
+<p>Enter Dell&rsquo;s BIOS. (F2)</p>
+</li>
+<li>
+<p>Configure &ldquo;Serial Communication&rdquo; to be &ldquo;On with Console Redirection via COM2&rdquo;. Dell’s BMC is connected to COM2.
 
 
 
@@ -1796,53 +1989,46 @@ sudo tee /proc/acpi/bbswitch &lt;&lt;&lt;OFF
     src="/p366/1050-2.png" 
   
   alt="">
-</p></li>
-
-<li><p>Set &ldquo;Baud&rdquo; and &ldquo;Remote Terminal Type&rdquo;. &ldquo;115200&rdquo;, &ldquo;VT100/VT220&rdquo;.</p></li>
-
-<li><p>Save and exit.</p></li>
+</p>
+</li>
+<li>
+<p>Set &ldquo;Baud&rdquo; and &ldquo;Remote Terminal Type&rdquo;. &ldquo;115200&rdquo;, &ldquo;VT100/VT220&rdquo;.</p>
+</li>
+<li>
+<p>Save and exit.</p>
+</li>
 </ol>
-
 <p>CentOS 6.3</p>
-
 <ol>
-<li><p>Edit /boot/grub/grub.conf using vi/gedit.</p></li>
-
-<li><p>Insert the ff lines below &ldquo;hiddenmenu&rdquo; option. This redirect console to 2nd serial port(COM2) where BMC is connected.</p>
-
+<li>
+<p>Edit /boot/grub/grub.conf using vi/gedit.</p>
+</li>
+<li>
+<p>Insert the ff lines below &ldquo;hiddenmenu&rdquo; option. This redirect console to 2nd serial port(COM2) where BMC is connected.</p>
+</li>
+</ol>
 <pre><code>serial --unit=2 --speed=115200
 terminal --timeout=8 console serial
-</code></pre></li>
-
-<li><p>Comment out splashimage.</p>
-
+</code></pre><ol start="3">
+<li>Comment out splashimage.</li>
+</ol>
 <pre><code>#splashimage=(hd0,0)/grub/splash.xpm.gz
-</code></pre></li>
-
-<li><p>Append the ff lines to kernel options</p>
-
+</code></pre><ol start="4">
+<li>Append the ff lines to kernel options</li>
+</ol>
 <pre><code>console=tty0 console=ttyS1,115200n8
 
 kernel /vmlinuz-2.6.9-42.0.10.ELsmp ro root=LABEL=/ console=tty0 console=ttyS1,19200n8
-</code></pre></li>
-
-<li><p>Save and exit.</p></li>
+</code></pre><ol start="5">
+<li>Save and exit.</li>
 </ol>
-
 <p>Testing.</p>
-
 <p>On another terminal connect using the ff command.</p>
-
 <p><code>ipmitool -I lanplus -H &lt;IPofServerIPMI&gt; -U user -a sol activate</code></p>
-
 <p>Ref:</p>
-
 <p><a href="http://www.symantec.com/connect/articles/how-do-sol-serial-over-lan-aka-console-redirection-dell-servers">http://www.symantec.com/connect/articles/how-do-sol-serial-over-lan-aka-console-redirection-dell-servers</a></p>
-
 <p><a href="http://www.dell.com/downloads/global/power/ps4q04-20040204-murphy.pdf">http://www.dell.com/downloads/global/power/ps4q04-20040204-murphy.pdf</a></p>
-
 <p><a href="http://www.cyberciti.biz/faq/linux-serial-console-howto/">http://www.cyberciti.biz/faq/linux-serial-console-howto/</a></p>
-
 <p><a href="http://lonesysadmin.net/2007/06/21/how-to-configure-ipmi-on-a-dell-poweredge-running-red-hat-enterprise-linux/">http://lonesysadmin.net/2007/06/21/how-to-configure-ipmi-on-a-dell-poweredge-running-red-hat-enterprise-linux/</a></p>
 ]]></content>
         </item>
@@ -1950,13 +2136,9 @@ v.2 shorten code.
 v.3 use recursion
 import java.util.logging.Level; import java.util.logging.Logger; /* * To change this template, choose Tools | Templates * and open the template in the editor. * even: right side move. * odd: left side move. */ /** * * @author Jefferson M. Fermo * * Iterative solution of tower of Hanoi. * * */ public class Hanoi { private Peg[] pegs; private final int NUMBEROFTOWERS = 3; private boolean directionOfMoveIsRight = false; private long numberOfMoves = 0; private int discCount = 0; int currentPeg = 0; int lastPegMove = 0; int moves = 0; public Hanoi(int discCount) throws Exception { this.</description>
             <content type="html"><![CDATA[<p>v.1 using iterative solution</p>
-
 <p>todo:</p>
-
 <p>v.2 shorten code.</p>
-
 <p>v.3 use recursion</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.logging.Level<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> java.util.logging.Logger<span style="color:#f92672">;</span>
 
@@ -2329,7 +2511,6 @@ import java.util.logging.Level; import java.util.logging.Logger; /* * To change 
             <description>gsettings set com.canonical.Unity.Panel systray-whitelist &amp;quot;[&#39;JavaEmbeddedFrame&#39;, &#39;Mumble&#39;, &#39;Wine&#39;, &#39;Skype&#39;, &#39;gopenvpn&#39;]&amp;quot;
 also allow user to sudo gopenvpn and openvpn.</description>
             <content type="html"><![CDATA[<p><code>gsettings set com.canonical.Unity.Panel systray-whitelist &quot;['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'gopenvpn']&quot;</code></p>
-
 <p>also allow user to sudo gopenvpn and openvpn.</p>
 ]]></content>
         </item>
@@ -2345,11 +2526,8 @@ https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect
 here&amp;rsquo;s a good reference about selinux management:
 http://tag1consulting.com/blog/stop-disabling-selinux</description>
             <content type="html"><![CDATA[<p>Centos 6.3 selinux does not have httpd_use_fusefs in its database here&rsquo;s a quick fix instead of turning off selinux totally.</p>
-
 <p><a href="https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html">https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html</a></p>
-
 <p>here&rsquo;s a good reference about selinux management:</p>
-
 <p><a href="http://tag1consulting.com/blog/stop-disabling-selinux">http://tag1consulting.com/blog/stop-disabling-selinux</a></p>
 ]]></content>
         </item>
@@ -2364,9 +2542,7 @@ http://tag1consulting.com/blog/stop-disabling-selinux</description>
 Host to Guest: Write: 6.46MBs Read: 6.36MBs
 Remote to Guest: Write: 5.00MBs Read: 4.92MBs * via remote-viewer</description>
             <content type="html"><![CDATA[<p>Bare Metal:            Write: 22.8MBs Read: 22.0MBs</p>
-
 <p>Host to Guest:       Write: 6.46MBs Read: 6.36MBs</p>
-
 <p>Remote to Guest:  Write: 5.00MBs Read: 4.92MBs * via remote-viewer</p>
 ]]></content>
         </item>
@@ -2380,7 +2556,6 @@ Remote to Guest: Write: 5.00MBs Read: 4.92MBs * via remote-viewer</description>
             <description>use RunasSpc to allow non-admin users to run programs at elevated rights without your password. free for private use.
 link: http://www.robotronic.de/guidance.html</description>
             <content type="html"><![CDATA[<p>use RunasSpc to allow non-admin users to run programs at elevated rights without your password. free for private use.</p>
-
 <p>link: <a href="http://www.robotronic.de/guidance.html">http://www.robotronic.de/guidance.html</a></p>
 ]]></content>
         </item>
@@ -2406,33 +2581,19 @@ libattr1-1:2.4.46-8ubuntu2
 libspice-client-glib-2.0-8
 libspice-client-gtk-3.0-4
 wget https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb
-Viewing remote KVM Guest with usb redirection using Ubuntu 13.</description>
-            <content type="html"><![CDATA[
-
-<p>For host machine- Centos 6.3 64:</p>
-
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enable universe sources</description>
+            <content type="html"><![CDATA[<p>For host machine- Centos 6.3 64:</p>
 <h2 id="kvm-installation">KVM installation.</h2>
-
 <p><a href="http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server">http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server</a></p>
-
 <p><a href="http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/">http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/</a></p>
-
 <p><a href="http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/">http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/</a></p>
-
 <h2 id="using-spice-with-libvirt-kvm">Using Spice with LibVirt KVM</h2>
-
 <p><a href="http://wiki.centos.org/HowTos/Spice-libvirt">http://wiki.centos.org/HowTos/Spice-libvirt</a></p>
-
 <h2 id="viewing-remote-kvm-guest-with-usb-redirection-linux-mint-maya-64">Viewing remote KVM Guest with usb redirection (linux mint maya 64):</h2>
-
 <p>Option 1:</p>
-
 <p><a href="https://launchpad.net/~bderzhavets/+archive/lib-usbredir73">https://launchpad.net/~bderzhavets/+archive/lib-usbredir73</a></p>
-
 <p>Option 2:</p>
-
 <p>Compile spice:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://downloads.us.xiph.org/releases/celt/celt-0.5.1.3.tar.gz
   
 wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configure --prefix<span style="color:#f92672">=</span>/usr
@@ -2440,49 +2601,34 @@ wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configu
 http://spice-space.org/download/gtk/spice-gtk-0.16.tar.bz2 ./configure --enable-usbredir<span style="color:#f92672">=</span>yes --with-python<span style="color:#f92672">=</span>yes
   
 http://spice-space.org/download/releases/spice-protocol-0.12.2.tar.gz</code></pre></div>
-
-<h2 id="install-virt-viewer-5-4-3">install virt-viewer 5.4-3.</h2>
-
+<h2 id="install-virt-viewer-54-3">install virt-viewer 5.4-3.</h2>
 <p>deb <a href="http://ubuntu.mirror.cambrium.nl/ubuntu/">http://ubuntu.mirror.cambrium.nl/ubuntu/</a> raring main universe</p>
-
 <p>libacl1.2.2.51-8</p>
-
 <p>libattr1-1:2.4.46-8ubuntu2</p>
-
 <p>libspice-client-glib-2.0-8</p>
-
 <p>libspice-client-gtk-3.0-4</p>
-
 <p>wget <a href="https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb">https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb</a></p>
-
-<h2 id="viewing-remote-kvm-guest-with-usb-redirection-using-ubuntu-13-04-live-cd">Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD):</h2>
-
+<h2 id="viewing-remote-kvm-guest-with-usb-redirection-using-ubuntu-1304live-cd">Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD):</h2>
 <p>enable universe sources</p>
-
 <pre><code>sudo apt-get update
 sudo apt-get install libapparmor1_2.8 libgtk-vnc-2.0 libgvnc-1.0 libspice-client-glib-2.0 libspice-client-gtk-3.0 libusbredirhost1 libusbredirparser0 libvirt0
-</code></pre>
-
-<p>now ubuntu 13.04 does have virt-viewer-0.5.4-1 at universe, but this version could not connect to spice type graphics.</p>
-
-<p>it seems that the binary remote-viewer is not linked libspice-client-glib-2.0. That is why I&#8217;ll be using this version virt-viewer_0.5.4-3~raring0_i386.deb from <a href="https://launchpad.net/~dnjl/+archive/virtualization">https://launchpad.net/~dnjl/+archive/virtualization</a>.</p>
-
+</code></pre><p>now ubuntu 13.04 does have virt-viewer-0.5.4-1 at universe, but this version could not connect to spice type graphics.</p>
+<p>it seems that the binary remote-viewer is not linked libspice-client-glib-2.0. That is why I’ll be using this version virt-viewer_0.5.4-3~raring0_i386.deb from <a href="https://launchpad.net/~dnjl/+archive/virtualization">https://launchpad.net/~dnjl/+archive/virtualization</a>.</p>
 <pre><code>wget https://launchpad.net/~dnjl/+archive/build/+build/4077606/+files/virt-viewer_0.5.4-3~raring0_i386.deb
 sudo dpkg -i virt-viewer_0.5.4-3~raring0_i386.deb
-</code></pre>
-
-<p>Note:</p>
-
+</code></pre><p>Note:</p>
 <ul>
-<li><p>both option has USB redirection.</p></li>
-
-<li><p>as of 02/04/13 linux mint virt-viewer from standard repo does not have usb-redirection suppport.</p></li>
-
-<li><p>virt-manager from <a href="http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz">http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz</a> has problem with glibc that why I looked for an updated version</p></li>
+<li>
+<p>both option has USB redirection.</p>
+</li>
+<li>
+<p>as of 02/04/13 linux mint virt-viewer from standard repo does not have usb-redirection suppport.</p>
+</li>
+<li>
+<p>virt-manager from <a href="http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz">http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz</a> has problem with glibc that why I looked for an updated version</p>
+</li>
 </ul>
-
-<h2 id="install-kvm-guest-lvm-via-kvm">Install kvm guest(LVM) via KVM</h2>
-
+<h2 id="install-kvm-guestlvm-via-kvm">Install kvm guest(LVM) via KVM</h2>
 <pre><code>mkdir /var/www/html/centos
   
 mount -t iso9660 -o loop CentOS-6.3-x86_64-bin-DVD1.iso /var/www/html/centos
@@ -2497,10 +2643,7 @@ virt-install \
   --disk=/dev/volgrp\_kvm\_guest1/var \
   --vnc --noautoconsole \
   --location http://myserver/centos
-</code></pre>
-
-<h2 id="install-kvm-guest-image-via-iso">Install KVM guest(image) via ISO</h2>
-
+</code></pre><h2 id="install-kvm-guestimage-via-iso">Install KVM guest(image) via ISO</h2>
 <pre><code>virt-install \
   --name=pfsense2 \
   --cpuset=2 \
@@ -2510,8 +2653,7 @@ virt-install \
   --disk path=/var/lib/libvirt/images/pfsense.img \
   --vnc --noautoconsole --livecd \
   --cdrom /var/lib/libvirt/images/pfsense.iso
-</code></pre>
-]]></content>
+</code></pre>]]></content>
         </item>
         
         <item>
@@ -2525,11 +2667,8 @@ virt-install \
 config folder of openvpn, ntp, dns(resolv), snmp, syslog
 /var/etc</description>
             <content type="html"><![CDATA[<p>working folder of ntop, nut, dhcp:</p>
-
 <p>/var/db</p>
-
 <p>config folder of openvpn, ntp, dns(resolv), snmp, syslog</p>
-
 <p>/var/etc</p>
 ]]></content>
         </item>
@@ -2546,37 +2685,23 @@ increasing log level = 3 shows the following error on samba 3.5.10 which where n
 *ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser
 On the client side, Netbootdisk on my instance, it is saying that my password is invalid.</description>
             <content type="html"><![CDATA[<p>Problem:</p>
-
 <p>accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.</p>
-
 <p>increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33</p>
-
 <p>*ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser</p>
-
 <p>On the client side, Netbootdisk on my instance, it is saying that my password is invalid. But on Windows desktop I was able to log in just fine.</p>
-
-<p>comparing the output of <code>testparm -v</code> on both version shows that samba 3.5.8 change some default settings from lower version if it were not specified on your smb.conf. Particularly the lanman auth was set to No by default which cause the above Lanman passwords NOT PERMITTED &#8230; error.</p>
-
+<p>comparing the output of <code>testparm -v</code> on both version shows that samba 3.5.8 change some default settings from lower version if it were not specified on your smb.conf. Particularly the lanman auth was set to No by default which cause the above Lanman passwords NOT PERMITTED … error.</p>
 <p>lower version: lanman auth = Yes</p>
-
-<p>-</p>
-
+<ul>
+<li></li>
+</ul>
 <p>newer version: lanman auth = No</p>
-
 <p>After entering lanman auth = Yes into smb.conf</p>
-
 <p>The error changed to</p>
-
 <p>*ntlm_password_check: NO LanMan password set for user myuser (and no NT password supplied)</p>
-
 <p>after fiddling around with the other default settings I was still stuck with that error.Then I decided to issue again the command</p>
-
 <p><code>smbpasswd -a myuser</code></p>
-
 <p>and this solve my problem I was now able to login into samba 3.5.10 from Netbootdisk like before.</p>
-
 <p>It seems that smbpasswd will not create a LanMan password if the lanman auth setting was left on its own and you have to reissue that smbpasswd command in case you decided to change lanman auth to Yes it later on.</p>
-
 <p>Not sure if it were in the release notes I did not bother to read them maybe I should have.</p>
 ]]></content>
         </item>
@@ -2587,39 +2712,39 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
             <pubDate>Thu, 08 Nov 2012 18:31:19 +0000</pubDate>
             
             <guid>/p217/</guid>
-            <description>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
-Mac
-Windows
+            <description>Update: on 64bit OS edit Makefile after source checkout and remove -m32
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+  Run zapd on both PC/Laptop,you should see something like the following.</description>
+            <content type="html"><![CDATA[<p>Update: on 64bit OS edit Makefile after source checkout and remove -m32</p>
+<ol>
+<li>
+<p>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
+<a href="http://theruckusroom.typepad.com/files/zap_mac_20100111.zip" title="mac">Mac</a>
+<a href="http://theruckusroom.typepad.com/files/zap_install_20100413.zip" title="Windows">Windows</a>
 For Linux: you have to compile from source. Open terminal and execute the following commands
-svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
- Run zapd on both PC/Laptop,you should see something like the following.
-zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer.</description>
-            <content type="html"><![CDATA[<ol>
-<li><p>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.<br />
-<a href="http://theruckusroom.typepad.com/files/zap_mac_20100111.zip" title="mac">Mac</a><br />
-<a href="http://theruckusroom.typepad.com/files/zap_install_20100413.zip" title="Windows">Windows</a><br />
-For Linux: you have to compile from source. Open terminal and execute the following commands<br />
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only
+<span style="color:#75715e"># or</span>
+git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only
 cd zapwireless-read-only
-make <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div></p></li>
-
-<li><p>Run zapd on both PC/Laptop,you should see something like the following.</p>
-
+make <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div></p>
+</li>
+<li>
+<p>Run zapd on both PC/Laptop,you should see something like the following.</p>
+</li>
+</ol>
 <pre><code>zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc.
       
 Built Oct 13 2012 at 11:12:20
       
 Zapd service started
-</code></pre></li>
-
-<li><p>To test zap run the following command on either computer.<br />
-<code>zap -sIpOf1stComputer -dIpOf2ndComputer</code><br />
-Zap should run for a number of seconds and you should see something like the following output.</p>
-
+</code></pre><ol start="3">
+<li>To test zap run the following command on either computer.
+<code>zap -sIpOf1stComputer -dIpOf2ndComputer</code>
+Zap should run for a number of seconds and you should see something like the following output.</li>
+</ol>
 <pre><code>0: 192.168.1.247-&gt;192.168.1.18 403=rx 0=dr 0=oo 0=rp 403=rx in 50.1ms 94.7mbps 94.7 | 94.7 94.7 94.7 94.7 94.7 94.7 
-</code></pre></li>
-
-<li><p>If all goes well then zap tool has been properly installed. If not check your firewall if its blocking Zap tool. Also don&#8217;t forget to read Zap&#8217;s tool Manual regarding changing windows registry to enable TOS bit modification</p></li>
+</code></pre><ol start="4">
+<li>If all goes well then zap tool has been properly installed. If not check your firewall if its blocking Zap tool. Also don’t forget to read Zap’s tool Manual regarding changing windows registry to enable TOS bit modification</li>
 </ol>
 ]]></content>
         </item>
@@ -2631,59 +2756,43 @@ Zap should run for a number of seconds and you should see something like the fol
             
             <guid>/p201/</guid>
             <description>Purpose:
- Provides a GUI Frontend for Ruckus amazing Zap tool
- Visualize Zap tool results using charts.
+  Provides a GUI Frontend for Ruckus amazing Zap tool
+  Visualize Zap tool results using charts.
   Feature:
- Generate CDF graph from zap result file.
- Save graph to image file
-  Requirements:
- jre6 or higher
- Ruckus zap tool
-  Download zperf archive: zPerf
+ Generate CDF graph from zap result file. Save graph to image file  Requirements:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
 How to use:
- Extract zperf archive.
- Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
+ Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
             <content type="html"><![CDATA[<p>Purpose:</p>
-
 <ul>
-<li><p>Provides a GUI Frontend for Ruckus amazing Zap tool</p></li>
-
-<li><p>Visualize Zap tool results using charts.</p></li>
+<li>
+<p>Provides a GUI Frontend for Ruckus amazing Zap tool</p>
+</li>
+<li>
+<p>Visualize Zap tool results using charts.</p>
+</li>
 </ul>
-
 <p>Feature:</p>
-
 <ul>
-<li>Generate CDF graph from zap result file.<br /></li>
-<li>Save graph to image file<br />
-<br /></li>
+<li>Generate CDF graph from zap result file.</li>
+<li>Save graph to image file</li>
 </ul>
-
 <p>Requirements:</p>
-
 <ul>
-<li>jre6 or higher<br /></li>
-<li>Ruckus zap tool<br />
-<br /></li>
+<li>jre6 or higher</li>
+<li>Ruckus zap tool</li>
 </ul>
-
 <p>Download zperf archive: <a href="https://drive.google.com/?usp=folder&amp;authuser=0#folders/0B0Vl1rpEEmwkOGZsa1BydVZ1eUE" title="zPerf">zPerf</a></p>
-
 <p>How to use:</p>
-
 <ul>
-<li>Extract zperf archive.<br /></li>
-<li>Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.exe - 32bit windows, zperf64.exe, 64bit windows.<br /></li>
-<li>Enter IP address of both computers running zapd<br /></li>
-<li>Enter the name of the file where to save result in &ldquo;Result filename&rdquo;. This is optional, zPerf with create one if you did not specify.<br /></li>
-<li>Pres &ldquo;Run&rdquo; button<br />
-<br /></li>
+<li>Extract zperf archive.</li>
+<li>Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.exe - 32bit windows, zperf64.exe, 64bit windows.</li>
+<li>Enter IP address of both computers running zapd</li>
+<li>Enter the name of the file where to save result in &ldquo;Result filename&rdquo;. This is optional, zPerf with create one if you did not specify.</li>
+<li>Pres &ldquo;Run&rdquo; button</li>
 </ul>
-
 <p>Screen shots:</p>
-
 <p>Main User Interface</p>
-
 
 
 
@@ -2727,9 +2836,7 @@ How to use:
   
   alt="">
 
-
 <p>Chart Viewer - Split View</p>
-
 
 
 
@@ -2773,9 +2880,7 @@ How to use:
   
   alt="">
 
-
 <p>Chart Viewer - Line Chart</p>
-
 
 
 
@@ -2819,9 +2924,7 @@ How to use:
   
   alt="">
 
-
 <p>Chart Viewer - Average throughput comparison between traces on a certain probability.</p>
-
 
 
 
@@ -2865,7 +2968,6 @@ How to use:
   
   alt="">
 
-
 <p>zPerf process and thread handling was inspired by <a href="http://code.google.com/p/xjperf/" title="jperf">jperf</a>. I actually copied the source and modified it a bit for my purpose.</p>
 ]]></content>
         </item>
@@ -2879,7 +2981,6 @@ How to use:
             <description>Device Remover
 http://www.pro-it-education.de/software/deviceremover/</description>
             <content type="html"><![CDATA[<p>Device Remover</p>
-
 <p><a href="http://www.pro-it-education.de/software/deviceremover/">http://www.pro-it-education.de/software/deviceremover/</a></p>
 ]]></content>
         </item>
@@ -2890,40 +2991,26 @@ http://www.pro-it-education.de/software/deviceremover/</description>
             <pubDate>Fri, 27 Jul 2012 17:27:29 +0000</pubDate>
             
             <guid>/p185/</guid>
-            <description>find certain strings in files on certain folders
-  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
+            <description>find certain strings in files on certain folders  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
 find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
- search for top talkers using tshark
-  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
+ search for top talkers using tshark  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
  chmod multiples files mix with directory.</description>
             <content type="html"><![CDATA[<ul>
-<li>find certain strings in files on certain folders<br />
-<br /></li>
+<li>find certain strings in files on certain folders</li>
 </ul>
-
 <p><code>find . -type f ! -exec grep -q '@olddomain.com' {} \; -exec grep -q 'olddomain.com' {} \; -print</code></p>
-
 <p><code>find . -type f | xargs egrep -Hn '@olddomain.com'</code></p>
-
 <ul>
-<li>search for top talkers using tshark<br />
-<br /></li>
+<li>search for top talkers using tshark</li>
 </ul>
-
 <p><code>tshark -r output.cap -T fields -e ip.src &quot;tcp.flags.syn==1 &amp;&amp; tcp.flags.ack==0&quot; | sort | uniq -c | sort -rn | head</code></p>
-
 <ul>
-<li>chmod multiples files mix with directory.<br />
-<br /></li>
+<li>chmod multiples files mix with directory.</li>
 </ul>
-
 <p><code>find /folderpath -type f -exec chmod 644 {} \;</code></p>
-
 <ul>
-<li>chmod multiples directory mix with other files.<br />
-<br /></li>
+<li>chmod multiples directory mix with other files.</li>
 </ul>
-
 <p><code>find /folderpath -type d -exec chmod 755 {} \;</code></p>
 ]]></content>
         </item>
@@ -2946,15 +3033,15 @@ find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
             
             <guid>/p166/</guid>
             <description>Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port Re-using SSL/TLS context Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port LZO compression initialized Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS\_ERROR: BIO read tls\_read\_plaintext error: error:140890B2:SSL routines:SSL3\_GET\_CLIENT\_CERTIFICATE:no certificate returned Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS object -&amp;gt; incoming plaintext read error Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS handshake failed </description>
-            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:23 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port Re-using SSL/TLS context
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Jul <span style="color:#ae81ff">17</span> 09:59:23 localhost openvpn<span style="color:#f92672">[</span>6247<span style="color:#f92672">]</span>: XX.xx.XX.xx:port Re-using SSL/TLS context
   
-Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:23 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port LZO compression initialized
+Jul <span style="color:#ae81ff">17</span> 09:59:23 localhost openvpn<span style="color:#f92672">[</span>6247<span style="color:#f92672">]</span>: XX.xx.XX.xx:port LZO compression initialized
   
-Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS<span style="color:#ae81ff">\_</span>ERROR: BIO read tls<span style="color:#ae81ff">\_</span>read<span style="color:#ae81ff">\_</span>plaintext error: error:140890B2:SSL routines:SSL3<span style="color:#ae81ff">\_</span>GET<span style="color:#ae81ff">\_</span>CLIENT<span style="color:#ae81ff">\_</span>CERTIFICATE:no certificate returned
+Jul <span style="color:#ae81ff">17</span> 09:59:41 localhost openvpn<span style="color:#f92672">[</span>6247<span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS<span style="color:#ae81ff">\_</span>ERROR: BIO read tls<span style="color:#ae81ff">\_</span>read<span style="color:#ae81ff">\_</span>plaintext error: error:140890B2:SSL routines:SSL3<span style="color:#ae81ff">\_</span>GET<span style="color:#ae81ff">\_</span>CLIENT<span style="color:#ae81ff">\_</span>CERTIFICATE:no certificate returned
   
-Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS object -&gt; incoming plaintext read error
+Jul <span style="color:#ae81ff">17</span> 09:59:41 localhost openvpn<span style="color:#f92672">[</span>6247<span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS object -&gt; incoming plaintext read error
   
-Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:59:41 localhost openvpn<span style="color:#f92672">[</span><span style="color:#ae81ff">6247</span><span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS handshake failed</code></pre></div>
+Jul <span style="color:#ae81ff">17</span> 09:59:41 localhost openvpn<span style="color:#f92672">[</span>6247<span style="color:#f92672">]</span>: XX.xx.XX.xx:port TLS Error: TLS handshake failed</code></pre></div>
 ]]></content>
         </item>
         
@@ -2968,63 +3055,43 @@ Jul <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">09</span>:
 a52:
 ./configure --enable-shared=PKGS
 faad2:
-autoreconf -vif ./configure  faac:
-./bootstrap ./configure --without-mp4v2 --prefix=/usr  lamemp3:
+autoreconf -vif ./configure faac:
+./bootstrap ./configure --without-mp4v2 --prefix=/usr lamemp3:
 ./configure --prefix=/usr
 yasm:
 .configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
 x264:
-git clone git://git.videolan.org/x264.git ./configure --enable-shared --prefix=/usr make fprofiled make install  xvidcore:
+git clone git://git.videolan.org/x264.git ./configure --enable-shared --prefix=/usr make fprofiled make install xvidcore:
 .configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
 ffmpeg:
-svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --enable-gpl --enable-postproc --enable-nonfree --enable-postproc \ --enable-avfilter --enable-pthreads --enable-libxvid \ --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay  </description>
+svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --enable-gpl --enable-postproc --enable-nonfree --enable-postproc \ --enable-avfilter --enable-pthreads --enable-libxvid \ --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay </description>
             <content type="html"><![CDATA[<p>requirements: libtool for faad2</p>
-
 <p>a52:</p>
-
 <p><code>./configure --enable-shared=PKGS</code></p>
-
 <p>faad2:</p>
-
 <pre><code>autoreconf -vif
 ./configure
-</code></pre>
-
-<p>faac:</p>
-
+</code></pre><p>faac:</p>
 <pre><code>./bootstrap
 ./configure --without-mp4v2 --prefix=/usr
-</code></pre>
-
-<p>lamemp3:</p>
-
+</code></pre><p>lamemp3:</p>
 <p><code>./configure --prefix=/usr</code></p>
-
 <p>yasm:</p>
-
 <p><code>.configure &amp;&amp; make &amp;&amp; make install</code></p>
-
 <p>x264:</p>
-
 <pre><code>git clone git://git.videolan.org/x264.git
 ./configure --enable-shared --prefix=/usr
 make fprofiled
 make install
-</code></pre>
-
-<p>xvidcore:</p>
-
+</code></pre><p>xvidcore:</p>
 <p><code>.configure &amp;&amp; make &amp;&amp; make install</code></p>
-
 <p>ffmpeg:</p>
-
 <pre><code>svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
 cd ffmpeg
 ./configure --enable-gpl  --enable-postproc --enable-nonfree --enable-postproc \
 --enable-avfilter --enable-pthreads --enable-libxvid \
 --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay
-</code></pre>
-]]></content>
+</code></pre>]]></content>
         </item>
         
         <item>
@@ -3040,30 +3107,16 @@ Download the latest tarzgzipped version fo xpdf and put it on the swftools lib/p
 cd lib/pdf/&amp;lt;br /&amp;gt; wget ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.03.tar.gz&amp;lt;br /&amp;gt; ./configure&amp;lt;br /&amp;gt; make
 Before running make install
 cd swfs&amp;lt;br /&amp;gt; vi Makefile
-remove the two &amp;#8220;rm&amp;#8221; lines with -o option as this are invalid
+remove the two “rm” lines with -o option as this are invalid
 make install</description>
             <content type="html"><![CDATA[<p>install pdf2swf dependencies</p>
-
 <p>zlib-devel, libjpeg-devel, freetype-devel, giflib-devel</p>
-
-<p><code>wget http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt;
-tar xvzf http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt;
-cd swftools-0.9.2</code></p>
-
+<p><code>wget http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt; tar xvzf http://www.swftools.org/swftools-0.9.2.tar.gz&lt;br /&gt; cd swftools-0.9.2</code></p>
 <p>Download the latest tarzgzipped version fo xpdf and put it on the swftools lib/pdf folder</p>
-
-<p><code>cd lib/pdf/&lt;br /&gt;
-wget ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.03.tar.gz&lt;br /&gt;
-./configure&lt;br /&gt;
-make</code></p>
-
+<p><code>cd lib/pdf/&lt;br /&gt; wget ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.03.tar.gz&lt;br /&gt; ./configure&lt;br /&gt; make</code></p>
 <p>Before running make install</p>
-
-<p><code>cd swfs&lt;br /&gt;
-vi Makefile</code></p>
-
-<p>remove the two &#8220;rm&#8221; lines with -o option as this are invalid</p>
-
+<p><code>cd swfs&lt;br /&gt; vi Makefile</code></p>
+<p>remove the two “rm” lines with -o option as this are invalid</p>
 <p><code>make install</code></p>
 ]]></content>
         </item>
@@ -3074,50 +3127,51 @@ vi Makefile</code></p>
             <pubDate>Wed, 23 May 2012 06:38:52 +0000</pubDate>
             
             <guid>/p145/</guid>
-            <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer.
-http://www.elrepo.org/people/pschaff/dud/
- the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file.
-gunzip DUP_el6_i686_20120402.iso.gz
- Create a temp folder.
-mkdir initrd_update
- make a copy of that uncompressed file to the folder you have made
-cp DUP_el6_i686_20120402.iso initrd_update/dd.img
- enter that folder
-cd initrd_update
- run the ff. command
-find . | cpio --quiet -o -H newc | gzip -9 &amp;gt; .</description>
+            <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer. &amp;lt;br &amp;gt;http://www.elrepo.org/people/pschaff/dud/
+  the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file. &amp;lt;br &amp;gt;gunzip DUP_el6_i686_20120402.iso.gz
+  Create a temp folder. &amp;lt;br &amp;gt;mkdir initrd_update
+  make a copy of that uncompressed file to the folder you have made &amp;lt;br &amp;gt;cp DUP_el6_i686_20120402.iso initrd_update/dd.img
+  enter that folder &amp;lt;br &amp;gt;cd initrd_update
+  run the ff.</description>
             <content type="html"><![CDATA[<ol>
-<li><p>Download pschaff&rsquo;s driver disk from elrepo, select architecture that match your installer.<br />
-<br \><code>http://www.elrepo.org/people/pschaff/dud/</code></p></li>
-
-<li><p>the file you&rsquo;ve downloaded should end with &lsquo;.gz&rsquo;. Uncompress that file.<br />
-<br \><code>gunzip DUP_el6_i686_20120402.iso.gz</code></p></li>
-
-<li><p>Create a temp folder.<br />
-<br \><code>mkdir initrd_update</code></p></li>
-
-<li><p>make a copy of that uncompressed file to the folder you have made<br />
-<br \><code>cp DUP_el6_i686_20120402.iso initrd_update/dd.img</code></p></li>
-
-<li><p>enter that folder<br />
-<br \><code>cd initrd_update</code></p></li>
-
-<li><p>run the ff. command<br />
-<br \><code>find . | cpio --quiet -o -H newc | gzip -9 &gt; ./initrd_update.img</code></p></li>
-
-<li><p>copy initrd_update.img to your pxe installation folder as dd.iso</p></li>
-
-<li><p>modify your centos pxe kernel like this.<br />
-<br \><code>APPEND ksdevice=eth0 initrd=el6-kickstart/initrd.img,el6-kickstart/dd.img</code></p></li>
-
-<li><p>that&rsquo;s should be it. once pxe downloaded initrd.img and dd.img the drive update disk will be automatically be applied.</p></li>
+<li>
+<p>Download pschaff&rsquo;s driver disk from elrepo, select architecture that match your installer.
+&lt;br &gt;<code>http://www.elrepo.org/people/pschaff/dud/</code></p>
+</li>
+<li>
+<p>the file you&rsquo;ve downloaded should end with &lsquo;.gz&rsquo;. Uncompress that file.
+&lt;br &gt;<code>gunzip DUP_el6_i686_20120402.iso.gz</code></p>
+</li>
+<li>
+<p>Create a temp folder.
+&lt;br &gt;<code>mkdir initrd_update</code></p>
+</li>
+<li>
+<p>make a copy of that uncompressed file to the folder you have made
+&lt;br &gt;<code>cp DUP_el6_i686_20120402.iso initrd_update/dd.img</code></p>
+</li>
+<li>
+<p>enter that folder
+&lt;br &gt;<code>cd initrd_update</code></p>
+</li>
+<li>
+<p>run the ff. command
+&lt;br &gt;<code>find . | cpio --quiet -o -H newc | gzip -9 &gt; ./initrd_update.img</code></p>
+</li>
+<li>
+<p>copy initrd_update.img to your pxe installation folder as dd.iso</p>
+</li>
+<li>
+<p>modify your centos pxe kernel like this.
+&lt;br &gt;<code>APPEND ksdevice=eth0 initrd=el6-kickstart/initrd.img,el6-kickstart/dd.img</code></p>
+</li>
+<li>
+<p>that&rsquo;s should be it. once pxe downloaded initrd.img and dd.img the drive update disk will be automatically be applied.</p>
+</li>
 </ol>
-
 <p>References:</p>
-
 <p><a href="http://elrepo.org/bugs/view.php?id=215">http://elrepo.org/bugs/view.php?id=215</a></p>
-
-<p><a href="http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/sect-Preparing_an_initial_RAM_disk_update-ppc.html">http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/sect-Preparing_an_initial_RAM_disk_update-ppc.html</a></p>
+<p><a href="http://docs.redhat.com/docs/en-US/Red">http://docs.redhat.com/docs/en-US/Red</a>_Hat_Enterprise_Linux/6/html/Installation_Guide/sect-Preparing_an_initial_RAM_disk_update-ppc.html</p>
 ]]></content>
         </item>
         
@@ -3136,25 +3190,15 @@ special characters like # and . should have a \ suffix.
 -e &#39;\$a#HQ to local DVR&#39;
 # search and replace, ^ - match all words beginning the word specified and replace the matching word,</description>
             <content type="html"><![CDATA[<p># Inserting a text on a specified line number ex. insert a text in line number 8 sed command &ldquo;8i&rdquo;</p>
-
 <p><code>-e '8i\# PC-Check 7\.03 with net support'</code></p>
-
 <p>special characters like # and . should have a \ suffix.</p>
-
 <p># Insert a blank line on line number</p>
-
 <p><code>-e '8i\\`echo -e '\n\r'`'</code></p>
-
 <p># to append at end of the file: sed command: $a</p>
-
 <p><code>-e '\$a#HQ to local DVR'</code></p>
-
 <p># search and replace, ^ - match all words beginning the word specified and replace the matching word,</p>
-
 <p><code>-e 's/^DNAT/#DNAT/g'</code></p>
-
 <p># search and replace whole line: .* - match all lines containing the word being search and replace the whole line.</p>
-
 <p><code>-e 's/.*DNAT.*/#DNAT/g'</code></p>
 ]]></content>
         </item>
@@ -3169,16 +3213,12 @@ special characters like # and . should have a \ suffix.
 tar -cv folder | gpg -e -r recipientGpgKey -o output.tar.gpg
 to decompress the above file:(prepare recipientGpgKey passphrase )
 gpg --output output.tar --decrypt output.tar.gpg
-you must specify &amp;#8211;secret-keyring pathtokeyring if secret key is not available on the machine</description>
+you must specify –secret-keyring pathtokeyring if secret key is not available on the machine</description>
             <content type="html"><![CDATA[<p>compress multiple files and encrypt using gpg</p>
-
 <p><code>tar -cv folder | gpg  -e -r recipientGpgKey -o output.tar.gpg</code></p>
-
 <p>to decompress the above file:(prepare recipientGpgKey passphrase )</p>
-
 <p><code>gpg --output  output.tar --decrypt  output.tar.gpg</code></p>
-
-<p>you must specify &#8211;secret-keyring pathtokeyring if secret key is not available on the machine</p>
+<p>you must specify –secret-keyring pathtokeyring if secret key is not available on the machine</p>
 ]]></content>
         </item>
         
@@ -3196,35 +3236,27 @@ import and signed both keys, you will need to enter the correct passphrase when 
 
 $ gpg --list-keys
   
-pub 1024D/AAAAAAAA <span style="color:#ae81ff">2008</span>-03-07
+pub 1024D/AAAAAAAA 2008-03-07
   
 uid test fwknop &lt;username-test@example.com&gt;
   
-sub 2048g/DDDDDDDD <span style="color:#ae81ff">2008</span>-03-07
+sub 2048g/DDDDDDDD 2008-03-07
 
 Export both keys from remote and local terminals.
 
 gpg -a --export AAAAAAAA &gt; remote.asc
   
 gpg -a --export BBBBBBBB &gt; local.asc</code></pre></div>
-
 <p>where AAAAAAAA is the remote key id and BBBBBBBB is the local key id.</p>
-
 <p>securely transfer remote.asc to local terminal.</p>
-
 <p>securely transfer local.asc to remote terminal.</p>
-
 <p>import and signed both keys, you will need to enter the correct passphrase when signing both keys.</p>
-
 <p>on local terminal</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gpg --import remote.asc
 $ gpg --edit-key AAAAAAAA
 Command&gt; sign
 Command&gt; save</code></pre></div>
-
 <p>on remote terminal</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gpg --import local.asc
 $ gpg --edit-key BBBBBBBB
 Command&gt; sign
@@ -3245,13 +3277,13 @@ Command&gt; save</code></pre></div>
   
 Please <span style="color:#66d9ef">select</span> what kind of key you want:
   
-Select <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> DSA and Elgamal <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
+Select <span style="color:#f92672">(</span>1<span style="color:#f92672">)</span> DSA and Elgamal <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
 
-What keysize <span style="color:#66d9ef">do</span> you want? <span style="color:#f92672">(</span><span style="color:#ae81ff">2048</span><span style="color:#f92672">)</span>
+What keysize <span style="color:#66d9ef">do</span> you want? <span style="color:#f92672">(</span>2048<span style="color:#f92672">)</span>
   
-Choose default <span style="color:#ae81ff">2048</span><span style="color:#f92672">(</span>just press enter<span style="color:#f92672">)</span>
+Choose default 2048<span style="color:#f92672">(</span>just press enter<span style="color:#f92672">)</span>
 
-Key is valid <span style="color:#66d9ef">for</span>? <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span>
+Key is valid <span style="color:#66d9ef">for</span>? <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span>
   
 press enter key does not expire
 
@@ -3289,15 +3321,15 @@ gpg: checking the trustdb
   
 gpg: <span style="color:#ae81ff">3</span> marginal<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> needed, <span style="color:#ae81ff">1</span> complete<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> needed, PGP trust model
   
-gpg: depth: <span style="color:#ae81ff">0</span> valid: <span style="color:#ae81ff">1</span> signed: <span style="color:#ae81ff">0</span> trust: <span style="color:#ae81ff">0</span>-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: <span style="color:#ae81ff">0</span> valid: <span style="color:#ae81ff">1</span> signed: <span style="color:#ae81ff">0</span> trust: 0-, 0q, 0n, 0m, 0f, 1u
   
-pub 1024D/YYYYXXXX <span style="color:#ae81ff">2011</span>-06-03
+pub 1024D/YYYYXXXX 2011-06-03
         
 Key fingerprint <span style="color:#f92672">=</span> <span style="color:#ae81ff">1111</span> <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">3333</span> <span style="color:#ae81ff">4444</span> <span style="color:#ae81ff">5555</span> <span style="color:#ae81ff">6666</span> <span style="color:#ae81ff">7777</span> <span style="color:#ae81ff">8888</span> <span style="color:#ae81ff">9999</span> aaaa
   
 uid Term7-Gpg &lt;jmfermo@bodegasite.com&gt;
   
-sub 2048g/XXXXYYY <span style="color:#ae81ff">2011</span>-06-03</code></pre></div>
+sub 2048g/XXXXYYY 2011-06-03</code></pre></div>
 ]]></content>
         </item>
         
@@ -3327,14 +3359,10 @@ cd ../..
             
             <guid>/p69/</guid>
             <description>remove pl2303 and usb_storage driver
-rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt; 
+rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt;
 then reinsert huawei modem again</description>
             <content type="html"><![CDATA[<p>remove pl2303 and usb_storage driver</p>
-
-<p><code>rmmod pl2303&lt;br /&gt;
-rmmod usb_storage&lt;br /&gt;
-</code></p>
-
+<p><code>rmmod pl2303&lt;br /&gt; rmmod usb_storage&lt;br /&gt;</code></p>
 <p>then reinsert huawei modem again</p>
 ]]></content>
         </item>
@@ -3380,7 +3408,7 @@ AT+CPBS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ON&#
   
 AT+CPBR<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
   
-+CPBR: <span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;+63948xxxyyyy&#34;</span>,145,<span style="color:#e6db74">&#34;&#34;</span>;</code></pre></div>
++CPBR: 1,<span style="color:#e6db74">&#34;+63948xxxyyyy&#34;</span>,145,<span style="color:#e6db74">&#34;&#34;</span>;</code></pre></div>
 ]]></content>
         </item>
         
@@ -3391,17 +3419,19 @@ AT+CPBR<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
             
             <guid>/p64/</guid>
             <description>Download doc_browser http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip
- Extract contents to a directory named projects/docbrowser
- Create the ff. doc.conf inside apache conf.d
-cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
- Ensure that list.cgi and convert.cgi have execute permission enabled.
-  those script requires the ff. perl module</description>
+  Extract contents to a directory named projects/docbrowser
+  Create the ff. doc.conf inside apache conf.d cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
+  Ensure that list.cgi and convert.cgi have execute permission enabled.
+  those script requires the ff.</description>
             <content type="html"><![CDATA[<ol>
-<li><p>Download doc_browser <a href="http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip">http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip</a></p></li>
-
-<li><p>Extract contents to a directory named projects/docbrowser</p></li>
-
-<li><p>Create the ff. doc.conf inside apache conf.d<br />
+<li>
+<p>Download doc_browser <a href="http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip">http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip</a></p>
+</li>
+<li>
+<p>Extract contents to a directory named projects/docbrowser</p>
+</li>
+<li>
+<p>Create the ff. doc.conf inside apache conf.d
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat &gt;/etc/apache/conf.d <span style="color:#e6db74">&lt;&lt;EOL
 </span><span style="color:#e6db74">Alias /projects /var/www/projects&lt;/p&gt;
 </span><span style="color:#e6db74">&lt;p&gt;&lt;Location /projects&gt;&lt;br /&gt;
@@ -3412,17 +3442,15 @@ cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/proj
 </span><span style="color:#e6db74">Options +ExecCGI&lt;br /&gt;
 </span><span style="color:#e6db74">AddHandler cgi-script .cgi .pl&lt;br /&gt;
 </span><span style="color:#e6db74">&lt;/Directory&gt;&lt;br /&gt;
-</span><span style="color:#e6db74">EOL</span></code></pre></div></p></li>
-
-<li><p>Ensure that list.cgi and convert.cgi have execute permission enabled.</p></li>
+</span><span style="color:#e6db74">EOL</span></code></pre></div></p>
+</li>
+<li>
+<p>Ensure that list.cgi and convert.cgi have execute permission enabled.</p>
+</li>
 </ol>
-
 <p>those script requires the ff. perl module</p>
-
 <p>perl-HTML-Entities-Numbered (centos 5.6 base repo)</p>
-
 <p>perl-Log-Log4perl (rpmforge)</p>
-
 <p>perl-CGI</p>
 ]]></content>
         </item>
@@ -3445,7 +3473,7 @@ cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/proj
             
             <guid>/p46/</guid>
             <description>UserParameter=system.smartd[*],sudo smartctl -A $1| grep $2| tail -1| cut -c 88-|cut -f1 -d&amp;#34; &amp;#34; zabbix ALL=NOPASSWD: /usr/sbin/smartctl </description>
-            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>system.smartd<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>,sudo smartctl -A $1| grep $2| tail -1| cut -c <span style="color:#ae81ff">88</span>-|cut -f1 -d<span style="color:#e6db74">&#34; &#34;</span>
+            <content type="html"><![CDATA[<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>system.smartd<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>,sudo smartctl -A $1| grep $2| tail -1| cut -c 88-|cut -f1 -d<span style="color:#e6db74">&#34; &#34;</span>
 
 zabbix ALL<span style="color:#f92672">=</span>NOPASSWD: /usr/sbin/smartctl</code></pre></div>
 ]]></content>
@@ -3458,46 +3486,51 @@ zabbix ALL<span style="color:#f92672">=</span>NOPASSWD: /usr/sbin/smartctl</code
             
             <guid>/p44/</guid>
             <description>add elrepo to your repositories
- yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
- lsmod | grep coretemp # coretemp should be loaded by now
- download latest lm_sensors 3.20 source, compile and install
- edit /etc/init.d/lm_sensors entry
-from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
- chkconfig lm_sensors on
- done
-modinfo it87 modinfo coretemp
-  optional
- add the ff. to your zabbix_agent.conf</description>
+  yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+  lsmod | grep coretemp # coretemp should be loaded by now
+  download latest lm_sensors 3.20 source, compile and install
+  edit /etc/init.d/lm_sensors entry from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+  chkconfig lm_sensors on
+  done modinfo it87 modinfo coretemp
+  optional</description>
             <content type="html"><![CDATA[<ol>
-<li><p>add elrepo to your repositories</p></li>
-
-<li><p>yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.</p></li>
-
-<li><p>lsmod | grep coretemp # coretemp should be loaded by now</p></li>
-
-<li><p>download latest lm_sensors 3.20 source, compile and install</p></li>
-
-<li><p>edit /etc/init.d/lm_sensors entry<br />
+<li>
+<p>add elrepo to your repositories</p>
+</li>
+<li>
+<p>yum &ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.</p>
+</li>
+<li>
+<p>lsmod | grep coretemp # coretemp should be loaded by now</p>
+</li>
+<li>
+<p>download latest lm_sensors 3.20 source, compile and install</p>
+</li>
+<li>
+<p>edit /etc/init.d/lm_sensors entry
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  from : PSENSORS<span style="color:#f92672">=</span>/usr/bin/sensors
-  to: PSENSORS<span style="color:#f92672">=</span>/usr/local/bin/sensors</code></pre></div></p></li>
-
-<li><p>chkconfig lm_sensors on</p></li>
-
-<li><p>done<br />
+  to: PSENSORS<span style="color:#f92672">=</span>/usr/local/bin/sensors</code></pre></div></p>
+</li>
+<li>
+<p>chkconfig lm_sensors on</p>
+</li>
+<li>
+<p>done
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  modinfo it87
   
-  modinfo coretemp</code></pre></div></p></li>
+  modinfo coretemp</code></pre></div></p>
+</li>
 </ol>
-
 <p>optional</p>
-
 <ol>
-<li><p>add the ff. to your zabbix_agent.conf<br />
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>sensors<span style="color:#f92672">[</span><span style="color:#ae81ff">\*</span><span style="color:#f92672">]</span>,/usr/local/bin/sensors | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | head -$2 | tail -1 | awk <span style="color:#e6db74">&#34;{print </span>$<span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;}&#34;</span> | sed <span style="color:#e6db74">&#39;s/[-!@#\$%^&amp;\*()°+a-zA-Z]//g&#39;</span></code></pre></div></p></li>
-
-<li><p>add the ff to your sensors3.conf under the chip it87 entry</p></li>
+<li>
+<p>add the ff. to your zabbix_agent.conf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">UserParameter<span style="color:#f92672">=</span>sensors<span style="color:#f92672">[</span><span style="color:#ae81ff">\*</span><span style="color:#f92672">]</span>,/usr/local/bin/sensors | grep <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | head -$2 | tail -1 | awk <span style="color:#e6db74">&#34;{print </span>$<span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;}&#34;</span> | sed <span style="color:#e6db74">&#39;s/[-!@#\$%^&amp;\*()°+a-zA-Z]//g&#39;</span></code></pre></div></p>
+</li>
+<li>
+<p>add the ff to your sensors3.conf under the chip it87 entry</p>
+</li>
 </ol>
-
 <p>label fan1 &ldquo;CPU Fan&rdquo;</p>
 ]]></content>
         </item>
@@ -3514,13 +3547,9 @@ sudo apt-get update
 sudo apt-get install thunderbird
 sudo apt-get install firefox</description>
             <content type="html"><![CDATA[<p>to get the latest versions of firefox and thunderbird for ubuntu do the ff</p>
-
 <p>sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa</p>
-
 <p>sudo apt-get update</p>
-
 <p>sudo apt-get install thunderbird</p>
-
 <p>sudo apt-get install firefox</p>
 ]]></content>
         </item>
@@ -3534,7 +3563,6 @@ sudo apt-get install firefox</description>
             <description>hardware drivers
 http://elrepo.org</description>
             <content type="html"><![CDATA[<p>hardware drivers</p>
-
 <p><a href="http://elrepo.org">http://elrepo.org</a></p>
 ]]></content>
         </item>
@@ -3545,14 +3573,11 @@ http://elrepo.org</description>
             <pubDate>Wed, 26 May 2010 03:33:52 +0000</pubDate>
             
             <guid>/p31/</guid>
-            <description>Compile NUT from source
-  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
+            <description>Compile NUT from source  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
 vi /etc/udev/rules.d/52-nut-usbups.rules # This file is generated and installed by the Network UPS Tools package.</description>
             <content type="html"><![CDATA[<ol>
-<li>Compile NUT from source<br />
-<br /></li>
+<li>Compile NUT from source</li>
 </ol>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
 groupadd nut;adduser -g nut ups
   
@@ -3575,9 +3600,7 @@ chmod <span style="color:#ae81ff">0660</span> /dev/ttyS0;chown root:nut /dev/tty
 cat &gt;/etc/udev/rules.d/99-my.rules <span style="color:#e6db74">&lt;&lt;EOL
 </span><span style="color:#e6db74">SUBSYSTEM==&#34;tty&#34;, KERNEL==&#34;ttyS0&#34;, OWNER=&#34;root&#34;, GROUP=&#34;nut&#34;
 </span><span style="color:#e6db74">EOL</span></code></pre></div>
-
 <p>For APC UPS BR550I or BR550GI use the ff.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/udev/rules.d/52-nut-usbups.rules
 <span style="color:#75715e"># This file is generated and installed by the Network UPS Tools package.</span>
 ACTION!<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;add&#34;</span>, GOTO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_end&#34;</span>
@@ -3589,16 +3612,12 @@ LABEL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-us
 <span style="color:#75715e">#  various models  - usbhid-ups</span>
 ATTR<span style="color:#f92672">{</span>idVendor<span style="color:#f92672">}==</span><span style="color:#e6db74">&#34;051d&#34;</span>, ATTR<span style="color:#f92672">{</span>idProduct<span style="color:#f92672">}==</span><span style="color:#e6db74">&#34;0002&#34;</span>, MODE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;664&#34;</span>, GROUP<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut&#34;</span>
 LABEL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nut-usbups_rules_end&#34;</span></code></pre></div>
-
 <p>Prepare upsd.conf upsmon.conf ups.conf upssched.conf upsd.users</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chown root:nut *.conf upsd.users
   
 chmod <span style="color:#ae81ff">0640</span> *.conf upsd.users
   </code></pre></div>
-
 <p>add the following to /etc/init.d/halt</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">LD_LIBRARY_PATH<span style="color:#f92672">=</span>/ups/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH
 <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>test -f /etc/killpower<span style="color:#f92672">)</span>
@@ -3622,9 +3641,7 @@ export LD_LIBRARY_PATH
         sleep <span style="color:#ae81ff">20</span>
 <span style="color:#66d9ef">fi</span>
   </code></pre></div>
-
 <p>Add upsd upsmon startup scripts to /etc/rc.local</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
 cat &gt;/ups/etc/alerthandler <span style="color:#e6db74">&lt;&lt;EOL
 </span><span style="color:#e6db74">#! /bin/sh
@@ -3644,18 +3661,16 @@ cat &gt;/ups/etc/alerthandler <span style="color:#e6db74">&lt;&lt;EOL
 
 chmod <span style="color:#ae81ff">0760</span> /ups/etc/alerthandler;chown root:nut /ups/etc/alerthandler
   </code></pre></div>
-
 <p>TEST</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ fuser /dev/ttyS0 <span style="color:#75715e"># should produce no output</span>
   
 $ upsdrvctl start
   
 <span style="color:#75715e"># Output:</span>
   
-Network UPS Tools - UPS driver controller <span style="color:#ae81ff">2</span>.4.3
+Network UPS Tools - UPS driver controller 2.4.3
   
-Network UPS Tools - Megatec protocol driver <span style="color:#ae81ff">1</span>.6 <span style="color:#f92672">(</span><span style="color:#ae81ff">2</span>.4.3<span style="color:#f92672">)</span>
+Network UPS Tools - Megatec protocol driver 1.6 <span style="color:#f92672">(</span>2.4.3<span style="color:#f92672">)</span>
   
 Megatec protocol UPS detected.
   
@@ -3663,11 +3678,11 @@ $ upsd
   
 <span style="color:#75715e"># Output:</span>
   
-Network UPS Tools upsd <span style="color:#ae81ff">2</span>.4.3
+Network UPS Tools upsd 2.4.3
   
-listening on <span style="color:#ae81ff">127</span>.0.0.1 port <span style="color:#ae81ff">3493</span>
+listening on 127.0.0.1 port <span style="color:#ae81ff">3493</span>
   
-listening on <span style="color:#ae81ff">192</span>.168.1.145 port <span style="color:#ae81ff">3493</span>
+listening on 192.168.1.145 port <span style="color:#ae81ff">3493</span>
   
 Connected to UPS <span style="color:#f92672">[</span>myups<span style="color:#f92672">]</span>: megatec-myups
   
@@ -3676,7 +3691,7 @@ $ upsc myups@localhost
   
 <span style="color:#75715e"># Output:</span>
   
-battery.charge: <span style="color:#ae81ff">100</span>.0
+battery.charge: 100.0
   
 ...
   
@@ -3696,13 +3711,9 @@ to update PHP:
 remove rhel packages:
 rpm -qa | grep php yum shell remove php-gd php-cli php-odbc php-mbstring php-pdo php php-xml php-common php-ldap php-mysql php-imap install php52-gd php52-cli php52-odbc php52-mbstring php52-pdo php52 php52-xml php52-common php52-ldap php52-mysql php52-imap php52-mcrypt transaction solve transaction run </description>
             <content type="html"><![CDATA[<p>website: <a href="http://iuscommunity.org/">http://iuscommunity.org/</a></p>
-
 <p>download: epel-release-* ; ius-release-*</p>
-
 <p>to update PHP:</p>
-
 <p>remove rhel packages:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
 rpm -qa | grep php
 
@@ -3728,9 +3739,7 @@ transaction run</code></pre></div>
 [OpenStreetMap][1]
  </description>
             <content type="html"><![CDATA[<p>I just recently joined Openstreetmap.org.ph and now Im totally addicted to it. visit Puerto Princesa using the following links</p>
-
 <p>[OpenStreetMap][1]</p>
-
 
 
 
@@ -3768,11 +3777,9 @@ transaction run</code></pre></div>
   most annoying interfacing i ever done, panay debugging ng serial port.</description>
             <content type="html"><![CDATA[<p>GSM Controller</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/WyJUUdvFfWM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/WyJUUdvFfWM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
 
 <p>most annoying interfacing i ever done, panay debugging ng serial port.</p>
 ]]></content>
@@ -3791,20 +3798,14 @@ Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring
 uses PORTB interrupts for BB detection.</description>
             <content type="html"><![CDATA[<p>DIY airsoft .6mm BB chronometer</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/XNTe6BPNWYQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/XNTe6BPNWYQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Tech specs:</p>
-
 <p>PIC16F877a 20Mhz</p>
-
 <p>Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring</p>
-
 <p>uses PORTB interrupts for BB detection.</p>
-
 
 
 
@@ -3857,22 +3858,18 @@ uses PORTB interrupts for BB detection.</description>
             <pubDate>Thu, 14 May 2009 23:49:31 +0000</pubDate>
             
             <guid>/p1/</guid>
-            <description>Welcome to my blogblogblog. This is what i do when there&amp;#8217;s nothing to do.
+            <description>Welcome to my blogblogblog. This is what i do when there’s nothing to do.
   Nikko V2.0. tech specs:
 PIC16F877a 20Mhz
 Mission in life: to follow wall.</description>
-            <content type="html"><![CDATA[<p>Welcome to my blogblogblog. This is what i do when there&#8217;s nothing to do.</p>
-
+            <content type="html"><![CDATA[<p>Welcome to my blogblogblog. This is what i do when there’s nothing to do.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/XXpG8QJSHTM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/XXpG8QJSHTM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Nikko V2.0. tech specs:</p>
-
 <p>PIC16F877a 20Mhz</p>
-
 <p>Mission in life: to follow wall.</p>
 ]]></content>
         </item>

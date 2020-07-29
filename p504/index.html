@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="core">
+<meta name="description"
+    content="Buid zap tool. link
+  Install Ruckus Speedlflex on Node #1 and #2.
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
+ 
+  
+    On the control(laptop), run zap client
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/p504/" />
+
+
+<title>
+    
+    Ruckus Zap and Speedflex test setup :: Tech notes and other stuff 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Ruckus Zap and Speedflex test setup">
+<meta itemprop="description" content="Buid zap tool. link
+  Install Ruckus Speedlflex on Node #1 and #2.
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
+ 
+  
+    On the control(laptop), run zap client
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192.">
+<meta itemprop="datePublished" content="2020-07-29T10:31:19+08:00" />
+<meta itemprop="dateModified" content="2020-07-29T10:31:19+08:00" />
+<meta itemprop="wordCount" content="284">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ruckus Zap and Speedflex test setup"/>
+<meta name="twitter:description" content="Buid zap tool. link
+  Install Ruckus Speedlflex on Node #1 and #2.
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
+ 
+  
+    On the control(laptop), run zap client
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192."/>
+
+
+
+<meta property="article:section" content="Networks" />
+
+<meta property="article:published_time" content="2020-07-29 10:31:19 &#43;0800 PST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello world</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/p504/">Ruckus Zap and Speedflex test setup</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='300'
+  srcset='
+  
+    /p504/images/ruckus_zap_speedflex_hu82f07cb017ee57daa8bc3cb82be16371_20828_500x0_resize_q75_box.jpeg 500w
+  
+  
+  
+  '
+  
+    src="/p504/images/ruckus_zap_speedflex.jpeg" 
+  
+  alt="">
+
+<ol>
+<li>
+<p>Buid zap tool. <a href="/p217/">link</a></p>
+</li>
+<li>
+<p>Install Ruckus Speedlflex on Node #1 and #2.</p>
+</li>
+<li>
+<p>Test basic connectivity between Node #1 and #2 using the app Speedflex itself
+<figure class="grid two" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='(min-width: 35em) 1024px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p504/images/Node1_SpeedFlex.jpg" 
+  
+  alt="Node #1 configuration">
+
+  <p>.</p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='(min-width: 35em) 1024px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p504/images/Node2_SpeedFlex.jpg" 
+  
+  alt="Node #2 configuration">
+
+  <figcaption>
+    <p></p>
+  </figcaption>
+
+    <figcaption>
+      <p></p>
+  </figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>On the control(laptop), run zap client</p>
+</li>
+</ol>
+<pre><code>$ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4
+./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved.
+Built Jul 29 2020 at 10:29:36
+Engaging default options -p50000 -n1000 -l1472 -q0x0
+
+    0: 192.168.1.3-&gt;192.168.1.4    233=rx   0=dr   0=oo   0=rp   233=rx in    51.7ms    53.0mbps    53.0 | 53.0 53.0 53.0 53.0 53.0 53.0
+    1: 192.168.1.3-&gt;192.168.1.4    546=rx   0=dr   0=oo   0=rp   313=rx in    50.3ms    73.2mbps    63.1 | 73.2 53.0 53.0 53.0 53.0 53.0
+    2: 192.168.1.3-&gt;192.168.1.4    628=rx   0=dr   0=oo   0=rp    82=rx in    59.6ms    16.2mbps    47.5 | 73.2 53.0 16.2 16.2 16.2 16.2
+    3: 192.168.1.3-&gt;192.168.1.4    769=rx   0=dr   0=oo   0=rp   141=rx in    68.1ms    24.4mbps    41.7 | 73.2 24.4 16.2 16.2 16.2 16.2
+    4: 192.168.1.3-&gt;192.168.1.4   1081=rx   0=dr   0=oo   0=rp   312=rx in    50.7ms    72.5mbps    47.9 | 73.2 53.0 16.2 16.2 16.2 16.2
+    5: 192.168.1.3-&gt;192.168.1.4   1337=rx   0=dr   0=oo   0=rp   256=rx in    50.3ms    59.9mbps    49.9 | 73.2 53.0 16.2 16.2 16.2 16.2
+    6: 192.168.1.3-&gt;192.168.1.4   1547=rx   0=dr   0=oo   0=rp   210=rx in    51.2ms    48.3mbps    49.6 | 73.2 53.0 16.2 16.2 16.2 16.2
+    7: 192.168.1.3-&gt;192.168.1.4   1790=rx   0=dr   0=oo   0=rp   243=rx in    71.9ms    39.8mbps    48.4 | 73.2 48.3 16.2 16.2 16.2 16.2
+    8: 192.168.1.3-&gt;192.168.1.4   1909=rx   0=dr   0=oo   0=rp   119=rx in    50.8ms    27.6mbps    46.1 | 73.2 48.3 16.2 16.2 16.2 16.2
+    9: 192.168.1.3-&gt;192.168.1.4   2097=rx   0=dr   0=oo   0=rp   188=rx in    85.8ms    25.8mbps    44.1 | 73.2 39.8 16.2 16.2 16.2 16.2
+   10: 192.168.1.3-&gt;192.168.1.4   2104=rx   0=dr   0=oo   0=rp     7=rx in    80.1ms     1.0mbps    40.2 | 73.2 39.8 16.2  1.0  1.0  1.0
+   11: 192.168.1.3-&gt;192.168.1.4   2127=rx   0=dr   0=oo   0=rp    23=rx in    96.3ms     2.8mbps    37.0 | 73.2 27.6  2.8  1.0  1.0  1.0
+</code></pre><ol start="5">
+<li>How to analyze result
+<a href="http://www.enterprisenetworkingplanet.com/netos/article.php/3861171/Zap-Provides-Open-Source-Wireless-Testing.htm">http://www.enterprisenetworkingplanet.com/netos/article.php/3861171/Zap-Provides-Open-Source-Wireless-Testing.htm</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes='300'
+  srcset='
+  
+    /p504/images/zap-output_hu98df212ca25fa4e5a6c4fcba2c811379_72519_500x0_resize_q75_box.jpg 500w
+  
+  
+  
+  '
+  
+    src="/p504/images/zap-output.jpg" 
+  
+  alt="">
+
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

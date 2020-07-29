@@ -22,7 +22,7 @@ libattr1-1:2.4.46-8ubuntu2
 libspice-client-glib-2.0-8
 libspice-client-gtk-3.0-4
 wget https://launchpad.net/~dnjl/&#43;archive/build/&#43;build/4077605/&#43;files/virt-viewer_0.5.4-3~raring0_amd64.deb
-Viewing remote KVM Guest with usb redirection using Ubuntu 13." />
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enable universe sources" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/p287/" />
@@ -41,7 +41,7 @@ Viewing remote KVM Guest with usb redirection using Ubuntu 13." />
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -51,8 +51,7 @@ Viewing remote KVM Guest with usb redirection using Ubuntu 13." />
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="KVM notes">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="KVM notes">
 <meta itemprop="description" content="For host machine- Centos 6.3 64:
 KVM installation. http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server
 http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/
@@ -68,11 +67,9 @@ libattr1-1:2.4.46-8ubuntu2
 libspice-client-glib-2.0-8
 libspice-client-gtk-3.0-4
 wget https://launchpad.net/~dnjl/&#43;archive/build/&#43;build/4077605/&#43;files/virt-viewer_0.5.4-3~raring0_amd64.deb
-Viewing remote KVM Guest with usb redirection using Ubuntu 13.">
-
-
-<meta itemprop="datePublished" content="2013-01-28T07:24:13&#43;00:00" />
-<meta itemprop="dateModified" content="2013-01-28T07:24:13&#43;00:00" />
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enable universe sources">
+<meta itemprop="datePublished" content="2013-01-28T07:24:13+00:00" />
+<meta itemprop="dateModified" content="2013-01-28T07:24:13+00:00" />
 <meta itemprop="wordCount" content="234">
 
 
@@ -95,7 +92,7 @@ libattr1-1:2.4.46-8ubuntu2
 libspice-client-glib-2.0-8
 libspice-client-gtk-3.0-4
 wget https://launchpad.net/~dnjl/&#43;archive/build/&#43;build/4077605/&#43;files/virt-viewer_0.5.4-3~raring0_amd64.deb
-Viewing remote KVM Guest with usb redirection using Ubuntu 13."/>
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enable universe sources"/>
 
 
 
@@ -167,32 +164,18 @@ Viewing remote KVM Guest with usb redirection using Ubuntu 13."/>
             
 
             <div class="post-content">
-                
-
-<p>For host machine- Centos 6.3 64:</p>
-
+                <p>For host machine- Centos 6.3 64:</p>
 <h2 id="kvm-installation">KVM installation.</h2>
-
 <p><a href="http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server">http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server</a></p>
-
 <p><a href="http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/">http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/</a></p>
-
 <p><a href="http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/">http://vitobotta.com/setting-up-kvm-lvm-virtual-machine-host/</a></p>
-
 <h2 id="using-spice-with-libvirt-kvm">Using Spice with LibVirt KVM</h2>
-
 <p><a href="http://wiki.centos.org/HowTos/Spice-libvirt">http://wiki.centos.org/HowTos/Spice-libvirt</a></p>
-
 <h2 id="viewing-remote-kvm-guest-with-usb-redirection-linux-mint-maya-64">Viewing remote KVM Guest with usb redirection (linux mint maya 64):</h2>
-
 <p>Option 1:</p>
-
 <p><a href="https://launchpad.net/~bderzhavets/+archive/lib-usbredir73">https://launchpad.net/~bderzhavets/+archive/lib-usbredir73</a></p>
-
 <p>Option 2:</p>
-
 <p>Compile spice:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://downloads.us.xiph.org/releases/celt/celt-0.5.1.3.tar.gz
   
 wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configure --prefix<span style="color:#f92672">=</span>/usr
@@ -200,49 +183,34 @@ wget http://spice-space.org/download/libcacard/libcacard-0.1.2.tar.bz2 ./configu
 http://spice-space.org/download/gtk/spice-gtk-0.16.tar.bz2 ./configure --enable-usbredir<span style="color:#f92672">=</span>yes --with-python<span style="color:#f92672">=</span>yes
   
 http://spice-space.org/download/releases/spice-protocol-0.12.2.tar.gz</code></pre></div>
-
-<h2 id="install-virt-viewer-5-4-3">install virt-viewer 5.4-3.</h2>
-
+<h2 id="install-virt-viewer-54-3">install virt-viewer 5.4-3.</h2>
 <p>deb <a href="http://ubuntu.mirror.cambrium.nl/ubuntu/">http://ubuntu.mirror.cambrium.nl/ubuntu/</a> raring main universe</p>
-
 <p>libacl1.2.2.51-8</p>
-
 <p>libattr1-1:2.4.46-8ubuntu2</p>
-
 <p>libspice-client-glib-2.0-8</p>
-
 <p>libspice-client-gtk-3.0-4</p>
-
 <p>wget <a href="https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb">https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb</a></p>
-
-<h2 id="viewing-remote-kvm-guest-with-usb-redirection-using-ubuntu-13-04-live-cd">Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD):</h2>
-
+<h2 id="viewing-remote-kvm-guest-with-usb-redirection-using-ubuntu-1304live-cd">Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD):</h2>
 <p>enable universe sources</p>
-
 <pre><code>sudo apt-get update
 sudo apt-get install libapparmor1_2.8 libgtk-vnc-2.0 libgvnc-1.0 libspice-client-glib-2.0 libspice-client-gtk-3.0 libusbredirhost1 libusbredirparser0 libvirt0
-</code></pre>
-
-<p>now ubuntu 13.04 does have virt-viewer-0.5.4-1 at universe, but this version could not connect to spice type graphics.</p>
-
-<p>it seems that the binary remote-viewer is not linked libspice-client-glib-2.0. That is why I&#8217;ll be using this version virt-viewer_0.5.4-3~raring0_i386.deb from <a href="https://launchpad.net/~dnjl/+archive/virtualization">https://launchpad.net/~dnjl/+archive/virtualization</a>.</p>
-
+</code></pre><p>now ubuntu 13.04 does have virt-viewer-0.5.4-1 at universe, but this version could not connect to spice type graphics.</p>
+<p>it seems that the binary remote-viewer is not linked libspice-client-glib-2.0. That is why I’ll be using this version virt-viewer_0.5.4-3~raring0_i386.deb from <a href="https://launchpad.net/~dnjl/+archive/virtualization">https://launchpad.net/~dnjl/+archive/virtualization</a>.</p>
 <pre><code>wget https://launchpad.net/~dnjl/+archive/build/+build/4077606/+files/virt-viewer_0.5.4-3~raring0_i386.deb
 sudo dpkg -i virt-viewer_0.5.4-3~raring0_i386.deb
-</code></pre>
-
-<p>Note:</p>
-
+</code></pre><p>Note:</p>
 <ul>
-<li><p>both option has USB redirection.</p></li>
-
-<li><p>as of 02/04/13 linux mint virt-viewer from standard repo does not have usb-redirection suppport.</p></li>
-
-<li><p>virt-manager from <a href="http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz">http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz</a> has problem with glibc that why I looked for an updated version</p></li>
+<li>
+<p>both option has USB redirection.</p>
+</li>
+<li>
+<p>as of 02/04/13 linux mint virt-viewer from standard repo does not have usb-redirection suppport.</p>
+</li>
+<li>
+<p>virt-manager from <a href="http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz">http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-0.5.4.tar.gz</a> has problem with glibc that why I looked for an updated version</p>
+</li>
 </ul>
-
-<h2 id="install-kvm-guest-lvm-via-kvm">Install kvm guest(LVM) via KVM</h2>
-
+<h2 id="install-kvm-guestlvm-via-kvm">Install kvm guest(LVM) via KVM</h2>
 <pre><code>mkdir /var/www/html/centos
   
 mount -t iso9660 -o loop CentOS-6.3-x86_64-bin-DVD1.iso /var/www/html/centos
@@ -257,10 +225,7 @@ virt-install \
   --disk=/dev/volgrp\_kvm\_guest1/var \
   --vnc --noautoconsole \
   --location http://myserver/centos
-</code></pre>
-
-<h2 id="install-kvm-guest-image-via-iso">Install KVM guest(image) via ISO</h2>
-
+</code></pre><h2 id="install-kvm-guestimage-via-iso">Install KVM guest(image) via ISO</h2>
 <pre><code>virt-install \
   --name=pfsense2 \
   --cpuset=2 \
@@ -271,7 +236,6 @@ virt-install \
   --vnc --noautoconsole --livecd \
   --cdrom /var/lib/libvirt/images/pfsense.iso
 </code></pre>
-
             </div>
         </article>
 
@@ -316,7 +280,7 @@ virt-install \
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

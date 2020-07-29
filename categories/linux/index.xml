@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Tech notes and other stuff</title>
@@ -6,10 +6,22 @@
     <description>Recent content in Linux on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2020 00:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:10:00 +0800</lastBuildDate>
     
 	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Benchmark cache buster</title>
+      <link>/p503/</link>
+      <pubDate>Sat, 18 Apr 2020 00:10:00 +0800</pubDate>
+      
+      <guid>/p503/</guid>
+      <description>Allows ab to bypass or invalidate cdn/web cache by passing random parameters
+Shortcut using docker https://github.com/j3ffrw/httpd/tree/cache_buster/2.4/alpine
+Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
+ Build openssl  wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1e.tar.gz tar xvzf openssl-1.1.1e.tar.gz cd openssl-1.1.1e mkdir /opt/ssl ./config --prefix=/opt/ssl --openssldir=/opt/ssl no-ssl2 shared zlib make -j4 make install Test openssl  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl version -a echo &amp;quot;&amp;quot; | LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ssl/lib /opt/ssl/bin/openssl s_client -connect www.google.com:443 Build httpd 2.4.43  wget https://downloads.apache.org//httpd/httpd-2.4.43.tar.gz tar xvzf httpd-2.</description>
+    </item>
     
     <item>
       <title>Migrating wordpress to Hugo</title>
@@ -18,13 +30,8 @@
       
       <guid>/p502/</guid>
       <description>Use https://github.com/SchumacherFM/wordpress-to-hugo-exporter
- Convert posts to page bundle
-https://gohugo.io/content-management/page-bundles/
-cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done  Cleanup each post, convert image reference to shortcode equivalent
-vim search and replace snippets
-%s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g  Deploy at last.
-https://gohugo.io/hosting-and-deployment/hosting-on-github/
-  References:</description>
+  Convert posts to page bundle https://gohugo.io/content-management/page-bundles/
+  cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done Cleanup each post, convert image reference to shortcode equivalent vim search and replace snippets  %s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g Deploy at last. https://gohugo.io/hosting-and-deployment/hosting-on-github/  References:</description>
     </item>
     
     <item>
@@ -33,10 +40,8 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
       <pubDate>Fri, 27 Apr 2018 15:10:00 +0000</pubDate>
       
       <guid>/p501/</guid>
-      <description>Generate fingerprint per key
-while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
- Match fingerprint on /var/log/secure
-AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
+      <description>Generate fingerprint per key while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
+  Match fingerprint on /var/log/secure AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
     </item>
     
     <item>
@@ -49,12 +54,7 @@ AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp
 mkdir ~/backup; cd ~/backup sfdisk -d /dev/sdx &amp;gt; sfdisk_dump fdisk -l /dev/sda &amp;gt; fdisk_listing LVM metadata backup
 vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup
 LUKS header
- locate partition(s) with luks
-using blkid
-fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done
-or
-using cryptsetup
-fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do cryptsetup isLuks $line; if [ $?</description>
+  locate partition(s) with luks using blkid fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do blkid -p $line | grep crypto | cut -d: -f1; done or using cryptsetup fdisk -l 2&amp;gt;&amp;amp;1 | cut -d&#39; &#39; -f1 | grep &amp;quot;\/dev&amp;quot; | while read line; do cryptsetup isLuks $line; if [ $?</description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
       
       <guid>/p371/</guid>
       <description>Nvidia:
-sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF  check the output of dmesg if the ff shows
+sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF check the output of dmesg if the ff shows
 bbswitch: device 0000:01:00.0 is in use by driver &#39;nvidia&#39;, refusing OFF
 if it does contain the above message, find which application using it and kill it. Then try turning it off again.
 sudo lsof -n -w -t /dev/nvidia*</description>
@@ -117,16 +117,16 @@ sudo lsof -n -w -t /dev/nvidia*</description>
       
       <guid>/p366/</guid>
       <description>IPMI:
- Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
- Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
- Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
- Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
- Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
- Set Username and password.
- Press Esc key and select Save option.
+  Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
+  Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
+  Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
+  Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
+  Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
+  Set Username and password.
+  Press Esc key and select Save option.
   BIOS:
- Enter Dell&amp;rsquo;s BIOS. (F2)
- Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
+  Enter Dell&amp;rsquo;s BIOS. (F2)
+  Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -150,7 +150,7 @@ libattr1-1:2.4.46-8ubuntu2
 libspice-client-glib-2.0-8
 libspice-client-gtk-3.0-4
 wget https://launchpad.net/~dnjl/+archive/build/+build/4077605/+files/virt-viewer_0.5.4-3~raring0_amd64.deb
-Viewing remote KVM Guest with usb redirection using Ubuntu 13.</description>
+Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enable universe sources</description>
     </item>
     
     <item>
@@ -172,11 +172,9 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
       <pubDate>Fri, 27 Jul 2012 17:27:29 +0000</pubDate>
       
       <guid>/p185/</guid>
-      <description>find certain strings in files on certain folders
-  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
+      <description>find certain strings in files on certain folders  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
 find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
- search for top talkers using tshark
-  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
+ search for top talkers using tshark  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
  chmod multiples files mix with directory.</description>
     </item>
     
@@ -208,16 +206,16 @@ find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
 a52:
 ./configure --enable-shared=PKGS
 faad2:
-autoreconf -vif ./configure  faac:
-./bootstrap ./configure --without-mp4v2 --prefix=/usr  lamemp3:
+autoreconf -vif ./configure faac:
+./bootstrap ./configure --without-mp4v2 --prefix=/usr lamemp3:
 ./configure --prefix=/usr
 yasm:
 .configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
 x264:
-git clone git://git.videolan.org/x264.git ./configure --enable-shared --prefix=/usr make fprofiled make install  xvidcore:
+git clone git://git.videolan.org/x264.git ./configure --enable-shared --prefix=/usr make fprofiled make install xvidcore:
 .configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
 ffmpeg:
-svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --enable-gpl --enable-postproc --enable-nonfree --enable-postproc \ --enable-avfilter --enable-pthreads --enable-libxvid \ --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay  </description>
+svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --enable-gpl --enable-postproc --enable-nonfree --enable-postproc \ --enable-avfilter --enable-pthreads --enable-libxvid \ --enable-libx264 --enable-libmp3lame --enable-libfaac --disable-ffserver --disable-ffplay </description>
     </item>
     
     <item>
@@ -226,18 +224,12 @@ svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --
       <pubDate>Wed, 23 May 2012 06:38:52 +0000</pubDate>
       
       <guid>/p145/</guid>
-      <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer.
-http://www.elrepo.org/people/pschaff/dud/
- the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file.
-gunzip DUP_el6_i686_20120402.iso.gz
- Create a temp folder.
-mkdir initrd_update
- make a copy of that uncompressed file to the folder you have made
-cp DUP_el6_i686_20120402.iso initrd_update/dd.img
- enter that folder
-cd initrd_update
- run the ff. command
-find . | cpio --quiet -o -H newc | gzip -9 &amp;gt; .</description>
+      <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer. &amp;lt;br &amp;gt;http://www.elrepo.org/people/pschaff/dud/
+  the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file. &amp;lt;br &amp;gt;gunzip DUP_el6_i686_20120402.iso.gz
+  Create a temp folder. &amp;lt;br &amp;gt;mkdir initrd_update
+  make a copy of that uncompressed file to the folder you have made &amp;lt;br &amp;gt;cp DUP_el6_i686_20120402.iso initrd_update/dd.img
+  enter that folder &amp;lt;br &amp;gt;cd initrd_update
+  run the ff.</description>
     </item>
     
     <item>
@@ -266,7 +258,7 @@ special characters like # and . should have a \ suffix.
 tar -cv folder | gpg -e -r recipientGpgKey -o output.tar.gpg
 to decompress the above file:(prepare recipientGpgKey passphrase )
 gpg --output output.tar --decrypt output.tar.gpg
-you must specify &amp;#8211;secret-keyring pathtokeyring if secret key is not available on the machine</description>
+you must specify –secret-keyring pathtokeyring if secret key is not available on the machine</description>
     </item>
     
     <item>
@@ -306,7 +298,7 @@ import and signed both keys, you will need to enter the correct passphrase when 
       
       <guid>/p69/</guid>
       <description>remove pl2303 and usb_storage driver
-rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt; 
+rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt;
 then reinsert huawei modem again</description>
     </item>
     
@@ -326,11 +318,10 @@ then reinsert huawei modem again</description>
       
       <guid>/p64/</guid>
       <description>Download doc_browser http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip
- Extract contents to a directory named projects/docbrowser
- Create the ff. doc.conf inside apache conf.d
-cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
- Ensure that list.cgi and convert.cgi have execute permission enabled.
-  those script requires the ff. perl module</description>
+  Extract contents to a directory named projects/docbrowser
+  Create the ff. doc.conf inside apache conf.d cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
+  Ensure that list.cgi and convert.cgi have execute permission enabled.
+  those script requires the ff.</description>
     </item>
     
     <item>
@@ -358,16 +349,13 @@ cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/proj
       
       <guid>/p44/</guid>
       <description>add elrepo to your repositories
- yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
- lsmod | grep coretemp # coretemp should be loaded by now
- download latest lm_sensors 3.20 source, compile and install
- edit /etc/init.d/lm_sensors entry
-from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
- chkconfig lm_sensors on
- done
-modinfo it87 modinfo coretemp
-  optional
- add the ff. to your zabbix_agent.conf</description>
+  yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
+  lsmod | grep coretemp # coretemp should be loaded by now
+  download latest lm_sensors 3.20 source, compile and install
+  edit /etc/init.d/lm_sensors entry from : PSENSORS=/usr/bin/sensors to: PSENSORS=/usr/local/bin/sensors
+  chkconfig lm_sensors on
+  done modinfo it87 modinfo coretemp
+  optional</description>
     </item>
     
     <item>
@@ -399,8 +387,7 @@ http://elrepo.org</description>
       <pubDate>Wed, 26 May 2010 03:33:52 +0000</pubDate>
       
       <guid>/p31/</guid>
-      <description>Compile NUT from source
-  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
+      <description>Compile NUT from source  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
 vi /etc/udev/rules.d/52-nut-usbups.rules # This file is generated and installed by the Network UPS Tools package.</description>
     </item>
     

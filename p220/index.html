@@ -30,7 +30,7 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -40,18 +40,15 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="Problem logging in from Netbootdisk into smb share after using Samba v3.5.10">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Problem logging in from Netbootdisk into smb share after using Samba v3.5.10">
 <meta itemprop="description" content="Problem:
 accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.
 increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33
 *ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser
 On the client side, Netbootdisk on my instance, it is saying that my password is invalid.">
-
-
-<meta itemprop="datePublished" content="2012-11-13T05:46:40&#43;00:00" />
-<meta itemprop="dateModified" content="2012-11-13T05:46:40&#43;00:00" />
-<meta itemprop="wordCount" content="276">
+<meta itemprop="datePublished" content="2012-11-13T05:46:40+00:00" />
+<meta itemprop="dateModified" content="2012-11-13T05:46:40+00:00" />
+<meta itemprop="wordCount" content="275">
 
 
 
@@ -135,37 +132,23 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
 
             <div class="post-content">
                 <p>Problem:</p>
-
 <p>accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.</p>
-
 <p>increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33</p>
-
 <p>*ntlm_password_check: Lanman passwords NOT PERMITTED for user myuser</p>
-
 <p>On the client side, Netbootdisk on my instance, it is saying that my password is invalid. But on Windows desktop I was able to log in just fine.</p>
-
-<p>comparing the output of <code>testparm -v</code> on both version shows that samba 3.5.8 change some default settings from lower version if it were not specified on your smb.conf. Particularly the lanman auth was set to No by default which cause the above Lanman passwords NOT PERMITTED &#8230; error.</p>
-
+<p>comparing the output of <code>testparm -v</code> on both version shows that samba 3.5.8 change some default settings from lower version if it were not specified on your smb.conf. Particularly the lanman auth was set to No by default which cause the above Lanman passwords NOT PERMITTED … error.</p>
 <p>lower version: lanman auth = Yes</p>
-
-<p>-</p>
-
+<ul>
+<li></li>
+</ul>
 <p>newer version: lanman auth = No</p>
-
 <p>After entering lanman auth = Yes into smb.conf</p>
-
 <p>The error changed to</p>
-
 <p>*ntlm_password_check: NO LanMan password set for user myuser (and no NT password supplied)</p>
-
 <p>after fiddling around with the other default settings I was still stuck with that error.Then I decided to issue again the command</p>
-
 <p><code>smbpasswd -a myuser</code></p>
-
 <p>and this solve my problem I was now able to login into samba 3.5.10 from Netbootdisk like before.</p>
-
 <p>It seems that smbpasswd will not create a LanMan password if the lanman auth setting was left on its own and you have to reissue that smbpasswd command in case you decided to change lanman auth to Yes it later on.</p>
-
 <p>Not sure if it were in the release notes I did not bother to read them maybe I should have.</p>
 
             </div>
@@ -212,7 +195,7 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

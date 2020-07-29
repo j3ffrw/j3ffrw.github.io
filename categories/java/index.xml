@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Tech notes and other stuff</title>
@@ -18,18 +18,13 @@
       
       <guid>/p201/</guid>
       <description>Purpose:
- Provides a GUI Frontend for Ruckus amazing Zap tool
- Visualize Zap tool results using charts.
+  Provides a GUI Frontend for Ruckus amazing Zap tool
+  Visualize Zap tool results using charts.
   Feature:
- Generate CDF graph from zap result file.
- Save graph to image file
-  Requirements:
- jre6 or higher
- Ruckus zap tool
-  Download zperf archive: zPerf
+ Generate CDF graph from zap result file. Save graph to image file  Requirements:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
 How to use:
- Extract zperf archive.
- Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
+ Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
     </item>
     
   </channel>

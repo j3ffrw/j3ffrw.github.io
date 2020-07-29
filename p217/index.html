@@ -7,13 +7,9 @@
 <meta name="author"
     content="core">
 <meta name="description"
-    content="Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
-Mac
-Windows
-For Linux: you have to compile from source. Open terminal and execute the following commands
-svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
- Run zapd on both PC/Laptop,you should see something like the following.
-zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer." />
+    content="Update: on 64bit OS edit Makefile after source checkout and remove -m32
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+  Run zapd on both PC/Laptop,you should see something like the following." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/p217/" />
@@ -32,7 +28,7 @@ zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 20
 
 
 
-<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
 
 
 
@@ -42,33 +38,22 @@ zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 20
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="Ruckus zap tool installation and testing">
-<meta itemprop="description" content="Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
-Mac
-Windows
-For Linux: you have to compile from source. Open terminal and execute the following commands
-svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;&amp; make install
- Run zapd on both PC/Laptop,you should see something like the following.
-zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer.">
-
-
-<meta itemprop="datePublished" content="2012-11-08T18:31:19&#43;00:00" />
-<meta itemprop="dateModified" content="2012-11-08T18:31:19&#43;00:00" />
-<meta itemprop="wordCount" content="155">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Ruckus zap tool installation and testing">
+<meta itemprop="description" content="Update: on 64bit OS edit Makefile after source checkout and remove -m32
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;&amp; make install
+  Run zapd on both PC/Laptop,you should see something like the following.">
+<meta itemprop="datePublished" content="2012-11-08T18:31:19+00:00" />
+<meta itemprop="dateModified" content="2012-11-08T18:31:19+00:00" />
+<meta itemprop="wordCount" content="173">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ruckus zap tool installation and testing"/>
-<meta name="twitter:description" content="Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
-Mac
-Windows
-For Linux: you have to compile from source. Open terminal and execute the following commands
-svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;&amp; make install
- Run zapd on both PC/Laptop,you should see something like the following.
-zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer."/>
+<meta name="twitter:description" content="Update: on 64bit OS edit Makefile after source checkout and remove -m32
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;&amp; make install
+  Run zapd on both PC/Laptop,you should see something like the following."/>
 
 
 
@@ -140,32 +125,36 @@ zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 20
             
 
             <div class="post-content">
-                <ol>
-<li><p>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.<br />
-<a href="http://theruckusroom.typepad.com/files/zap_mac_20100111.zip" title="mac">Mac</a><br />
-<a href="http://theruckusroom.typepad.com/files/zap_install_20100413.zip" title="Windows">Windows</a><br />
-For Linux: you have to compile from source. Open terminal and execute the following commands<br />
+                <p>Update: on 64bit OS edit Makefile after source checkout and remove -m32</p>
+<ol>
+<li>
+<p>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
+<a href="http://theruckusroom.typepad.com/files/zap_mac_20100111.zip" title="mac">Mac</a>
+<a href="http://theruckusroom.typepad.com/files/zap_install_20100413.zip" title="Windows">Windows</a>
+For Linux: you have to compile from source. Open terminal and execute the following commands
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only
+<span style="color:#75715e"># or</span>
+git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only
 cd zapwireless-read-only
-make <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div></p></li>
-
-<li><p>Run zapd on both PC/Laptop,you should see something like the following.</p>
-
+make <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div></p>
+</li>
+<li>
+<p>Run zapd on both PC/Laptop,you should see something like the following.</p>
+</li>
+</ol>
 <pre><code>zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc.
       
 Built Oct 13 2012 at 11:12:20
       
 Zapd service started
-</code></pre></li>
-
-<li><p>To test zap run the following command on either computer.<br />
-<code>zap -sIpOf1stComputer -dIpOf2ndComputer</code><br />
-Zap should run for a number of seconds and you should see something like the following output.</p>
-
+</code></pre><ol start="3">
+<li>To test zap run the following command on either computer.
+<code>zap -sIpOf1stComputer -dIpOf2ndComputer</code>
+Zap should run for a number of seconds and you should see something like the following output.</li>
+</ol>
 <pre><code>0: 192.168.1.247-&gt;192.168.1.18 403=rx 0=dr 0=oo 0=rp 403=rx in 50.1ms 94.7mbps 94.7 | 94.7 94.7 94.7 94.7 94.7 94.7 
-</code></pre></li>
-
-<li><p>If all goes well then zap tool has been properly installed. If not check your firewall if its blocking Zap tool. Also don&#8217;t forget to read Zap&#8217;s tool Manual regarding changing windows registry to enable TOS bit modification</p></li>
+</code></pre><ol start="4">
+<li>If all goes well then zap tool has been properly installed. If not check your firewall if its blocking Zap tool. Also don’t forget to read Zap’s tool Manual regarding changing windows registry to enable TOS bit modification</li>
 </ol>
 
             </div>
@@ -212,7 +201,7 @@ Zap should run for a number of seconds and you should see something like the fol
 
 
 
-<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
 
 
 

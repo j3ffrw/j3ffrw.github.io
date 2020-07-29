@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Tech notes and other stuff</title>
@@ -21,7 +21,7 @@
 www.circuit-help.com.ph
 www.innovationph.com/
 www.relixtechnologies.com/ http://www.tipidpc.com/useritems.php?username=relixtech
-www.gadgetpinas.ph http://www.tipidpc.com/useritems.php?username=SOMASEGAR (Arduino&amp;#8217;s and raspberry pi)
+www.gadgetpinas.ph http://www.tipidpc.com/useritems.php?username=SOMASEGAR (Arduino’s and raspberry pi)
 http://www.dynamodo.com
 http://nipahut.com.ph/index.html
 http://ph.element14.com/
@@ -38,11 +38,10 @@ http://www.dynamodo.com/</description>
       <guid>/p404/</guid>
       <description>What better things to do during election day than fixing things up.
 List of things to fix:
- Canon EF-S 18-55mm 3.6-5.6 IS stock lens &amp;#8211; problem: auto focus kaput
- Quantaray LD 70-300mm &amp;#8211; problem: auto focus kaput.
+  Canon EF-S 18-55mm 3.6-5.6 IS stock lens – problem: auto focus kaput
+  Quantaray LD 70-300mm – problem: auto focus kaput.
   Let&amp;rsquo;s start off with quantaray.
-This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.
-The cause of the problem was that the gear&amp;rsquo;s upper tooth on the right were all strip, I don&amp;rsquo;t know what cause this, since the lens is not mine and was borrowed from my uncle.</description>
+This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</description>
     </item>
     
     <item>
@@ -58,8 +57,8 @@ GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT=&amp;ldquo;quiet splash acpi_backlight=vendor&amp;rdquo;
-GRUB_CMDLINE_LINUX=&amp;ldquo;&amp;rdquo;</description>
+GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash acpi_backlight=vendor&amp;rdquo;
+GRUB_CMDLINE_LINUX=&amp;rdquo;&amp;rdquo;</description>
     </item>
     
     <item>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="core">
+<meta name="description"
+    content="from http://stackoverflow.com/questions/3121655/using-netbeans-desktop-applications-status-bar
+@Action public void myTaskButtonAction() { // this action is called from a menu item or a button startMyTaskAction(); } @Action public Task startMyTaskAction() { // this sets up the Task and TaskMonitor StartMyTask task = new StartMyTask(org.jdesktop.application.Application.getInstance()); ApplicationContext C = getApplication().getContext(); TaskMonitor M = C.getTaskMonitor(); TaskService S = C.getTaskService(); S.execute(task); M.setForegroundTask(task); return task; } private class StartMyTask extends Task&amp;amp;lt;Void, Void&amp;amp;gt; { // this is the Task StartMyTask(org.jdesktop.application.Application app) { super(app); } @Override protected Void doInBackground() { try { // specific code for your task // this code shows progress bar with status message for a few seconds setMessage(&amp;#34;starting up&amp;#34;);// status message for(int progress=0; progress&amp;amp;lt;100; progress &#43;= (int)(Math." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/p438/" />
+
+
+<title>
+    
+    Using Netbeans Desktop App status bar :: Tech notes and other stuff 
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Using Netbeans Desktop App status bar">
+<meta itemprop="description" content="from http://stackoverflow.com/questions/3121655/using-netbeans-desktop-applications-status-bar
+@Action public void myTaskButtonAction() { // this action is called from a menu item or a button startMyTaskAction(); } @Action public Task startMyTaskAction() { // this sets up the Task and TaskMonitor StartMyTask task = new StartMyTask(org.jdesktop.application.Application.getInstance()); ApplicationContext C = getApplication().getContext(); TaskMonitor M = C.getTaskMonitor(); TaskService S = C.getTaskService(); S.execute(task); M.setForegroundTask(task); return task; } private class StartMyTask extends Task&amp;lt;Void, Void&amp;gt; { // this is the Task StartMyTask(org.jdesktop.application.Application app) { super(app); } @Override protected Void doInBackground() { try { // specific code for your task // this code shows progress bar with status message for a few seconds setMessage(&#34;starting up&#34;);// status message for(int progress=0; progress&amp;lt;100; progress &#43;= (int)(Math.">
+
+
+<meta itemprop="datePublished" content="2013-06-08T06:25:16&#43;00:00" />
+<meta itemprop="dateModified" content="2013-06-08T06:25:16&#43;00:00" />
+<meta itemprop="wordCount" content="154">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Netbeans Desktop App status bar"/>
+<meta name="twitter:description" content="from http://stackoverflow.com/questions/3121655/using-netbeans-desktop-applications-status-bar
+@Action public void myTaskButtonAction() { // this action is called from a menu item or a button startMyTaskAction(); } @Action public Task startMyTaskAction() { // this sets up the Task and TaskMonitor StartMyTask task = new StartMyTask(org.jdesktop.application.Application.getInstance()); ApplicationContext C = getApplication().getContext(); TaskMonitor M = C.getTaskMonitor(); TaskService S = C.getTaskService(); S.execute(task); M.setForegroundTask(task); return task; } private class StartMyTask extends Task&amp;lt;Void, Void&amp;gt; { // this is the Task StartMyTask(org.jdesktop.application.Application app) { super(app); } @Override protected Void doInBackground() { try { // specific code for your task // this code shows progress bar with status message for a few seconds setMessage(&#34;starting up&#34;);// status message for(int progress=0; progress&amp;lt;100; progress &#43;= (int)(Math."/>
+
+
+
+<meta property="article:section" content="Uncategorized" />
+
+<meta property="article:published_time" content="2013-06-08 06:25:16 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello world</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/p438/">Using Netbeans Desktop App status bar</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>from <a href="http://stackoverflow.com/questions/3121655/using-netbeans-desktop-applications-status-bar">http://stackoverflow.com/questions/3121655/using-netbeans-desktop-applications-status-bar</a></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">@Action
+public void myTaskButtonAction<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> // this action is called from a menu item or a button
+    startMyTaskAction<span style="color:#f92672">()</span>;
+<span style="color:#f92672">}</span>
+@Action
+public Task startMyTaskAction<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> // this sets up the Task and TaskMonitor
+    StartMyTask task <span style="color:#f92672">=</span> new StartMyTask<span style="color:#f92672">(</span>org.jdesktop.application.Application.getInstance<span style="color:#f92672">())</span>;
+
+    ApplicationContext C <span style="color:#f92672">=</span> getApplication<span style="color:#f92672">()</span>.getContext<span style="color:#f92672">()</span>;
+    TaskMonitor M <span style="color:#f92672">=</span> C.getTaskMonitor<span style="color:#f92672">()</span>;
+    TaskService S <span style="color:#f92672">=</span> C.getTaskService<span style="color:#f92672">()</span>;
+    S.execute<span style="color:#f92672">(</span>task<span style="color:#f92672">)</span>;
+    M.setForegroundTask<span style="color:#f92672">(</span>task<span style="color:#f92672">)</span>;
+
+    <span style="color:#66d9ef">return</span> task;
+<span style="color:#f92672">}</span>
+
+private class StartMyTask extends Task&amp;lt;Void, Void&amp;gt; <span style="color:#f92672">{</span> // this is the Task
+    StartMyTask<span style="color:#f92672">(</span>org.jdesktop.application.Application app<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        super<span style="color:#f92672">(</span>app<span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span>
+
+    @Override
+    protected Void doInBackground<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        try <span style="color:#f92672">{</span>
+            // specific code <span style="color:#66d9ef">for</span> your task
+            // this code shows progress bar with status message <span style="color:#66d9ef">for</span> a few seconds
+            setMessage<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;starting up&#34;</span><span style="color:#f92672">)</span>;// status message
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>int progress<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; progress&amp;lt;<span style="color:#ae81ff">100</span>; progress <span style="color:#f92672">+=</span> <span style="color:#f92672">(</span>int<span style="color:#f92672">)(</span>Math.random<span style="color:#f92672">()</span>*10<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                setProgress<span style="color:#f92672">(</span>progress<span style="color:#f92672">)</span>; // progress bar <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>-100<span style="color:#f92672">)</span>
+                setMessage<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;prog: &#34;</span>+progress<span style="color:#f92672">)</span>; // status message
+                try <span style="color:#f92672">{</span>
+                    Thread.sleep<span style="color:#f92672">((</span>long<span style="color:#f92672">)</span><span style="color:#ae81ff">500</span><span style="color:#f92672">)</span>; // sleep 500ms
+                <span style="color:#f92672">}</span> catch <span style="color:#f92672">(</span>InterruptedException ignore<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+            setMessage<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;done&#34;</span><span style="color:#f92672">)</span>;// status message
+        <span style="color:#f92672">}</span>
+        catch<span style="color:#f92672">(</span>java.lang.Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            //specific code <span style="color:#66d9ef">for</span> exceptions
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">return</span> null;
+    <span style="color:#f92672">}</span>
+
+    protected void succeeded<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

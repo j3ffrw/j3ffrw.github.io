@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networks on Tech notes and other stuff</title>
@@ -6,10 +6,25 @@
     <description>Recent content in Networks on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2013 11:27:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 10:31:19 +0800</lastBuildDate>
     
 	<atom:link href="/categories/networks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ruckus Zap and Speedflex test setup</title>
+      <link>/p504/</link>
+      <pubDate>Wed, 29 Jul 2020 10:31:19 +0800</pubDate>
+      
+      <guid>/p504/</guid>
+      <description>Buid zap tool. link
+  Install Ruckus Speedlflex on Node #1 and #2.
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
+ 
+  
+    On the control(laptop), run zap client
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192.</description>
+    </item>
     
     <item>
       <title>Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.</title>
@@ -33,16 +48,16 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
       
       <guid>/p366/</guid>
       <description>IPMI:
- Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
- Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
- Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
- Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
- Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
- Set Username and password.
- Press Esc key and select Save option.
+  Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
+  Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
+  Configure &amp;ldquo;IPMI LAN Channel&amp;rdquo;, choose either static or dynamic.
+  Set &amp;ldquo;VLAN Enable&amp;rdquo; to &amp;ldquo;Off&amp;rdquo;.
+  Set &amp;ldquo;Administrator Account&amp;rdquo; to &amp;ldquo;Enable&amp;rdquo;
+  Set Username and password.
+  Press Esc key and select Save option.
   BIOS:
- Enter Dell&amp;rsquo;s BIOS. (F2)
- Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
+  Enter Dell&amp;rsquo;s BIOS. (F2)
+  Configure &amp;ldquo;Serial Communication&amp;rdquo; to be &amp;ldquo;On with Console Redirection via COM2&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -51,13 +66,9 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
       <pubDate>Thu, 08 Nov 2012 18:31:19 +0000</pubDate>
       
       <guid>/p217/</guid>
-      <description>Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website.
-Mac
-Windows
-For Linux: you have to compile from source. Open terminal and execute the following commands
-svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
- Run zapd on both PC/Laptop,you should see something like the following.
-zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 2012 at 11:12:20 Zapd service started  To test zap run the following command on either computer.</description>
+      <description>Update: on 64bit OS edit Makefile after source checkout and remove -m32
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+  Run zapd on both PC/Laptop,you should see something like the following.</description>
     </item>
     
     <item>
@@ -67,18 +78,13 @@ zapd version 1.83, Copyright (C) 2004-2009 Ruckus Wireless, Inc. Built Oct 13 20
       
       <guid>/p201/</guid>
       <description>Purpose:
- Provides a GUI Frontend for Ruckus amazing Zap tool
- Visualize Zap tool results using charts.
+  Provides a GUI Frontend for Ruckus amazing Zap tool
+  Visualize Zap tool results using charts.
   Feature:
- Generate CDF graph from zap result file.
- Save graph to image file
-  Requirements:
- jre6 or higher
- Ruckus zap tool
-  Download zperf archive: zPerf
+ Generate CDF graph from zap result file. Save graph to image file  Requirements:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
 How to use:
- Extract zperf archive.
- Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
+ Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
     </item>
     
     <item>

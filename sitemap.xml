@@ -1,29 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
+    <lastmod>2020-07-29T10:31:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
+    <lastmod>2020-07-29T10:31:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-07-29T10:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/networks/</loc>
+    <lastmod>2020-07-29T10:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/p504/</loc>
+    <lastmod>2020-07-29T10:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/p503/</loc>
+    <lastmod>2020-04-18T00:10:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/linux/</loc>
-    <lastmod>2020-01-05T00:10:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-04-18T00:10:00+08:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +52,6 @@
   <url>
     <loc>/categories/embedded-systems/</loc>
     <lastmod>2014-01-01T04:31:26+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -55,7 +67,6 @@
   <url>
     <loc>/categories/uncategorized/</loc>
     <lastmod>2013-12-21T18:25:03+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -69,13 +80,12 @@
   </url>
   
   <url>
-    <loc>/categories/windows/</loc>
+    <loc>/p452/</loc>
     <lastmod>2013-07-22T10:51:36+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/p452/</loc>
+    <loc>/categories/windows/</loc>
     <lastmod>2013-07-22T10:51:36+00:00</lastmod>
   </url>
   
@@ -87,12 +97,6 @@
   <url>
     <loc>/p404/</loc>
     <lastmod>2013-05-15T06:57:28+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/networks/</loc>
-    <lastmod>2013-05-02T11:27:16+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -121,13 +125,12 @@
   </url>
   
   <url>
-    <loc>/categories/programming/</loc>
+    <loc>/p363/</loc>
     <lastmod>2013-03-21T09:01:16+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/p363/</loc>
+    <loc>/categories/programming/</loc>
     <lastmod>2013-03-21T09:01:16+00:00</lastmod>
   </url>
   
@@ -179,7 +182,6 @@
   <url>
     <loc>/categories/java/</loc>
     <lastmod>2012-11-08T11:11:29+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -300,7 +302,6 @@
   <url>
     <loc>/categories/mapping/</loc>
     <lastmod>2009-08-17T17:51:09+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -330,7 +331,6 @@
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
