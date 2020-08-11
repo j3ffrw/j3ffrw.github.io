@@ -4,20 +4,19 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author"
-    content="core">
-<meta name="description"
-    content="#include &amp;lt;string.au3&amp;gt; #include &amp;lt;Array.au3&amp;gt; #Include &amp;lt;File.au3&amp;gt; #Include &amp;lt;FF.au3&amp;gt; #include &amp;lt;Date.au3&amp;gt; Global $Paused HotKeySet(&amp;#34;{PAUSE}&amp;#34;, &amp;#34;TogglePause&amp;#34;) HotKeySet(&amp;#34;{ESC}&amp;#34;, &amp;#34;Terminate&amp;#34;) $emailList=&amp;#34;emaillist.csv&amp;#34; $fowardEmailto=&amp;#34;myemail@core.piehosting.com&amp;#34; $cpanelEmailForwardingPage=&amp;#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&amp;#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&amp;#34;Not Connected &amp;#34; &amp;amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&amp;#34;error&amp;#34;,&amp;#34;File does not exist or cant be read&amp;#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &amp;#34;&amp;#34;, &amp;#34;size: &amp;#34; &amp;amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &amp;lt;&amp;gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &amp;#34;@&amp;#34;) ConsoleWrite(&amp;#34;email: &amp;#34; &amp;amp; $email &amp;amp; @CRLF) ConsoleWrite(&amp;#34;name: &amp;#34; &amp;amp; $temp1[1] &amp;amp; @CRLF) ConsoleWrite(&amp;#34;domain: &amp;#34; &amp;amp; $temp1[2] &amp;amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &amp;#34;email&amp;#34;, &amp;#34;id&amp;#34;) ; Enter email domain on select dropdown box $test2=&amp;#39;//select[@name=&amp;#34;domain&amp;#34;]//option[@value=&amp;#34;&amp;#39; &amp;amp; $temp1[2] &amp;amp; &amp;#39;&amp;#34;]&amp;#39;  _FFXPath($test2, &amp;#39;selected=true&amp;#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &amp;#34;fwdemail&amp;#34;, &amp;#34;id&amp;#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&amp;#39;Script is &amp;#34;Paused&amp;#34;&amp;#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc " />
+<meta name="author" content="core">
+<meta name="description" content="#include &amp;lt;string.au3&amp;gt; #include &amp;lt;Array.au3&amp;gt; #Include &amp;lt;File.au3&amp;gt; #Include &amp;lt;FF.au3&amp;gt; #include &amp;lt;Date.au3&amp;gt; Global $Paused HotKeySet(&amp;#34;{PAUSE}&amp;#34;, &amp;#34;TogglePause&amp;#34;) HotKeySet(&amp;#34;{ESC}&amp;#34;, &amp;#34;Terminate&amp;#34;) $emailList=&amp;#34;emaillist.csv&amp;#34; $fowardEmailto=&amp;#34;myemail@core.piehosting.com&amp;#34; $cpanelEmailForwardingPage=&amp;#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&amp;#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&amp;#34;Not Connected &amp;#34; &amp;amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&amp;#34;error&amp;#34;,&amp;#34;File does not exist or cant be read&amp;#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &amp;#34;&amp;#34;, &amp;#34;size: &amp;#34; &amp;amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &amp;lt;&amp;gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &amp;#34;@&amp;#34;) ConsoleWrite(&amp;#34;email: &amp;#34; &amp;amp; $email &amp;amp; @CRLF) ConsoleWrite(&amp;#34;name: &amp;#34; &amp;amp; $temp1[1] &amp;amp; @CRLF) ConsoleWrite(&amp;#34;domain: &amp;#34; &amp;amp; $temp1[2] &amp;amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &amp;#34;email&amp;#34;, &amp;#34;id&amp;#34;) ; Enter email domain on select dropdown box $test2=&amp;#39;//select[@name=&amp;#34;domain&amp;#34;]//option[@value=&amp;#34;&amp;#39; &amp;amp; $temp1[2] &amp;amp; &amp;#39;&amp;#34;]&amp;#39;  _FFXPath($test2, &amp;#39;selected=true&amp;#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &amp;#34;fwdemail&amp;#34;, &amp;#34;id&amp;#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&amp;#39;Script is &amp;#34;Paused&amp;#34;&amp;#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc " />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
 <link rel="canonical" href="/p363/" />
 
 
-<title>
-    
-    add multiple email forwarders using AutoIt :: Tech notes and other stuff 
-    
-</title>
+    <title>
+        
+            add multiple email forwarders using AutoIt :: Tech notes and other stuff 
+        
+    </title>
 
 
 
@@ -26,17 +25,14 @@
 
 
 
-<link rel="stylesheet" href="/main.min.16d60143b50f3c64d846008954e06bf568fb18de4ea608c045060affbf09b965.css">
+<link rel="stylesheet" href="/main.c3fe27e92b6124f861772199e0f500b64d9ffa4a7aac1a03096ccc3b84471484.css">
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="/favicon.ico">
-<meta name="theme-color" content="#252627"><meta itemprop="name" content="add multiple email forwarders using AutoIt">
+
+
+
+<meta itemprop="name" content="add multiple email forwarders using AutoIt">
 <meta itemprop="description" content="#include &lt;string.au3&gt; #include &lt;Array.au3&gt; #Include &lt;File.au3&gt; #Include &lt;FF.au3&gt; #include &lt;Date.au3&gt; Global $Paused HotKeySet(&#34;{PAUSE}&#34;, &#34;TogglePause&#34;) HotKeySet(&#34;{ESC}&#34;, &#34;Terminate&#34;) $emailList=&#34;emaillist.csv&#34; $fowardEmailto=&#34;myemail@core.piehosting.com&#34; $cpanelEmailForwardingPage=&#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&#34;Not Connected &#34; &amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&#34;error&#34;,&#34;File does not exist or cant be read&#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &#34;&#34;, &#34;size: &#34; &amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &lt;&gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &#34;@&#34;) ConsoleWrite(&#34;email: &#34; &amp; $email &amp; @CRLF) ConsoleWrite(&#34;name: &#34; &amp; $temp1[1] &amp; @CRLF) ConsoleWrite(&#34;domain: &#34; &amp; $temp1[2] &amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &#34;email&#34;, &#34;id&#34;) ; Enter email domain on select dropdown box $test2=&#39;//select[@name=&#34;domain&#34;]//option[@value=&#34;&#39; &amp; $temp1[2] &amp; &#39;&#34;]&#39;  _FFXPath($test2, &#39;selected=true&#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &#34;fwdemail&#34;, &#34;id&#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&#39;Script is &#34;Paused&#34;&#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc ">
 <meta itemprop="datePublished" content="2013-03-21T09:01:16+00:00" />
 <meta itemprop="dateModified" content="2013-03-21T09:01:16+00:00" />
@@ -45,15 +41,21 @@
 
 
 <meta itemprop="keywords" content="" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="add multiple email forwarders using AutoIt"/>
 <meta name="twitter:description" content="#include &lt;string.au3&gt; #include &lt;Array.au3&gt; #Include &lt;File.au3&gt; #Include &lt;FF.au3&gt; #include &lt;Date.au3&gt; Global $Paused HotKeySet(&#34;{PAUSE}&#34;, &#34;TogglePause&#34;) HotKeySet(&#34;{ESC}&#34;, &#34;Terminate&#34;) $emailList=&#34;emaillist.csv&#34; $fowardEmailto=&#34;myemail@core.piehosting.com&#34; $cpanelEmailForwardingPage=&#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&#34;Not Connected &#34; &amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&#34;error&#34;,&#34;File does not exist or cant be read&#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &#34;&#34;, &#34;size: &#34; &amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &lt;&gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &#34;@&#34;) ConsoleWrite(&#34;email: &#34; &amp; $email &amp; @CRLF) ConsoleWrite(&#34;name: &#34; &amp; $temp1[1] &amp; @CRLF) ConsoleWrite(&#34;domain: &#34; &amp; $temp1[2] &amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &#34;email&#34;, &#34;id&#34;) ; Enter email domain on select dropdown box $test2=&#39;//select[@name=&#34;domain&#34;]//option[@value=&#34;&#39; &amp; $temp1[2] &amp; &#39;&#34;]&#39;  _FFXPath($test2, &#39;selected=true&#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &#34;fwdemail&#34;, &#34;id&#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&#39;Script is &#34;Paused&#34;&#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc "/>
 
 
 
-<meta property="article:section" content="Programming" />
 
-<meta property="article:published_time" content="2013-03-21 09:01:16 &#43;0000 &#43;0000" />
+
+    <meta property="article:section" content="Programming" />
+
+
+
+    <meta property="article:published_time" content="2013-03-21 09:01:16 &#43;0000 &#43;0000" />
+
 
 
 
@@ -72,7 +74,11 @@
         
             <span class="logo__mark">></span>
             <span class="logo__text">hello world</span>
-            <span class="logo__cursor"></span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
         
     </div>
 </a>
@@ -93,7 +99,7 @@
                 </span>
             
 
-            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
@@ -209,6 +215,96 @@ Func <span style="color:#a6e22e">Terminate</span><span style="color:#f92672">()<
         <div class="post-info">
   			</div>
 
+	
+	   
+	  
+                <section class="post-comments">
+  <h3>Comments</h3>
+
+  
+  
+
+  
+
+
+  
+    <p>Nothing yet.</p>
+  
+
+  <section class="comment_form">
+  <a id="comment-form"></a>
+  <h3>Say something</h3>
+
+  <form class="post-new-comment" method="POST" action="https://j3ffrw-staticman.herokuapp.com/v2/entry/j3ffrw/myblog/master/comments">
+    <input type="hidden" name="options[redirect]" value="/p363/#post-submitted">
+    <input type="hidden" name="options[redirectError]" value="/p363/#post-error">
+    <input type="hidden" name="options[entryId]" value="index">
+    <input type="hidden" name="options[slug]" value="/p363/">
+    <input type="hidden" name="options[origin]" value="/p363/">
+    <input type="hidden" name="options[parent]" value="index">
+    <input type="hidden" name="fields[reply_to]" value="">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcYnr0ZAAAAADxhs5RVBYgBtTjNwYeWS6wyQFSa">
+    <input type="hidden" name="options[reCaptcha][secret]" value="EDmOTYVxxozsK8RhVo8L7M3IBQH1LvH4vKEo72hdPuK1dhAM68bEWrOgSt6IWlk7Bfd1d3SZBauGXc2uJ2WtDDja&#43;ecZvjubU2zV0URya3HMInXshcfOPKmjRWmi5u7oxzNLV4Ap9Ox&#43;oTTjnk6Bfdx3YTIhP7g0QqGtl3yW&#43;xDsLUpnb4DYR&#43;IcgWySQ3oFHUGJZzHZq6e/zDB7NOA&#43;TnzGlMjXsMzHoQXBit8brdfZLGyAt5ky&#43;pHji&#43;QNYO2q7wQtEJICFuG&#43;bZlHcm&#43;&#43;rH4FYLJ9MZ8bzF5Gyrnbf5UBhB84bJe&#43;ZHnm2fdrNc4m&#43;ZvHCLu5fL7AYXrA15DWDynqtMLrDHBKG8PEKS0rOHggG9PVB5hKr1GTW3EZlHE1SsoidJDQB7MJ1sJwYdTxo53BfZ55Oxp5H2Pg28NvZFKhWpqbQZ2rLUYHSqZPSW/CvJt0ZwxFsDFH5ePbnFhFU6VWoVOmqeybCJ9qhDR0Ai&#43;URjFMH/5f9mtVpZpEYPjcFoSeBvi46P8d5m&#43;QUUYweBijZ5PSQ&#43;&#43;1xaaguus9zQUguScJ5cMkiVpkZnUMvPde5lO8G1IrcoQ6uWzePVYKTI/FBDnTOic3EgB4VoZonYYqS0OTPiecEC2QLnNnkS48j5YfiAtTunu1tchemfXdmZ0ntHU3zC&#43;a2oZqkVoe0J8=">
+
+    <fieldset>
+      <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
+    </fieldset>
+
+    <fieldset>
+      <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
+    </fieldset>
+
+    <fieldset>
+      <textarea name="fields[body]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="notify-me">
+        <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
+        Send me an email when someone comments on this post.
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="g-recaptcha" data-sitekey="6LcYnr0ZAAAAADxhs5RVBYgBtTjNwYeWS6wyQFSa" data-callback="enableBtn"></div>
+
+      <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
+    </fieldset>
+
+  </form>
+
+  <script async src='https://www.google.com/recaptcha/api.js' ></script>
+
+
+  <script type="text/javascript">
+    document.getElementById("submit_button").disabled = true;
+  </script>
+
+  <script type="text/javascript">
+    function enableBtn(){
+       document.getElementById("submit_button").disabled = false;
+      }
+  </script>
+
+  <div id="post-submitted" class="dialog">
+    <h3>Thank you</h3>
+    <p>Your post has been submitted and will be published once it has been approved.</p>
+    
+    <p><a href="#" class="btn">OK</a></p>
+  </div>
+
+  <div id="post-error" class="dialog">
+    <h3>OOPS!</h3>
+    <p>Your post has not been submitted.  Please return to the page and try again.  Thank You!</p>
+    <p><a href="#" class="btn">OK</a></p>
+  </div>
+
+</section>
+
+
+</section>
+
+          
         
     </main>
 
@@ -220,19 +316,14 @@ Func <span style="color:#a6e22e">Terminate</span><span style="color:#f92672">()<
         <div class="footer__content">
             <span>&copy; 2020</span>
             
-            <span></span>
+            
             <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
     <div class="footer__inner">
         <div class="footer__content">
-
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
         </div>
     </div>
 </footer>
@@ -245,7 +336,7 @@ Func <span style="color:#a6e22e">Terminate</span><span style="color:#f92672">()<
 
 
 
-<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
 
 
 
