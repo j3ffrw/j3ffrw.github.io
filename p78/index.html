@@ -31,6 +31,10 @@ import and signed both keys, you will need to enter the correct passphrase when 
 <link rel="stylesheet" href="/main.c3fe27e92b6124f861772199e0f500b64d9ffa4a7aac1a03096ccc3b84471484.css">
 
 
+    
+        <link rel="stylesheet" type="text/css" href="/css/dan_custom_post_comment.css">
+    
+
 
 
 
@@ -176,45 +180,56 @@ Command&gt; save</code></pre></div>
 	   
 	  
                 <section class="post-comments">
-  <h3>Comments</h3>
 
   
   
-
+  
+    
   
 
-
   
-    <p>Nothing yet.</p>
+    
+    
+      <h3></h3>
+    
+  
+    
+    
   
 
   <section class="comment_form">
+  
+  
+  
+    
+  
+
   <a id="comment-form"></a>
   <h3>Say something</h3>
 
-  <form class="post-new-comment" method="POST" action="https://j3ffrw-staticman.herokuapp.com/v2/entry/j3ffrw/myblog/master/comments">
+  <form class="js-form form" method="POST" action="https://j3ffrw-staticman.herokuapp.com/v2/entry/j3ffrw/myblog/master/comments">
     <input type="hidden" name="options[redirect]" value="/p78/#post-submitted">
     <input type="hidden" name="options[redirectError]" value="/p78/#post-error">
-    <input type="hidden" name="options[entryId]" value="index">
+    <input type="hidden" name="options[entryId]" value="p78">
     <input type="hidden" name="options[slug]" value="/p78/">
     <input type="hidden" name="options[origin]" value="/p78/">
-    <input type="hidden" name="options[parent]" value="index">
+    <input type="hidden" name="options[parent]" value="p78">
     <input type="hidden" name="fields[reply_to]" value="">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcYnr0ZAAAAADxhs5RVBYgBtTjNwYeWS6wyQFSa">
     <input type="hidden" name="options[reCaptcha][secret]" value="EDmOTYVxxozsK8RhVo8L7M3IBQH1LvH4vKEo72hdPuK1dhAM68bEWrOgSt6IWlk7Bfd1d3SZBauGXc2uJ2WtDDja&#43;ecZvjubU2zV0URya3HMInXshcfOPKmjRWmi5u7oxzNLV4Ap9Ox&#43;oTTjnk6Bfdx3YTIhP7g0QqGtl3yW&#43;xDsLUpnb4DYR&#43;IcgWySQ3oFHUGJZzHZq6e/zDB7NOA&#43;TnzGlMjXsMzHoQXBit8brdfZLGyAt5ky&#43;pHji&#43;QNYO2q7wQtEJICFuG&#43;bZlHcm&#43;&#43;rH4FYLJ9MZ8bzF5Gyrnbf5UBhB84bJe&#43;ZHnm2fdrNc4m&#43;ZvHCLu5fL7AYXrA15DWDynqtMLrDHBKG8PEKS0rOHggG9PVB5hKr1GTW3EZlHE1SsoidJDQB7MJ1sJwYdTxo53BfZ55Oxp5H2Pg28NvZFKhWpqbQZ2rLUYHSqZPSW/CvJt0ZwxFsDFH5ePbnFhFU6VWoVOmqeybCJ9qhDR0Ai&#43;URjFMH/5f9mtVpZpEYPjcFoSeBvi46P8d5m&#43;QUUYweBijZ5PSQ&#43;&#43;1xaaguus9zQUguScJ5cMkiVpkZnUMvPde5lO8G1IrcoQ6uWzePVYKTI/FBDnTOic3EgB4VoZonYYqS0OTPiecEC2QLnNnkS48j5YfiAtTunu1tchemfXdmZ0ntHU3zC&#43;a2oZqkVoe0J8=">
 
     <fieldset>
-      <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
+      <input name="fields[name]" type="text" class="post-comment-field" placeholder="">
     </fieldset>
 
     <fieldset>
-      <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
+      <input name="fields[email]" type="email" class="post-comment-field" placeholder="">
     </fieldset>
 
     <fieldset>
-      <textarea name="fields[body]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>
+      <textarea name="fields[body]" class="post-comment-field" placeholder="" rows="10"></textarea>
     </fieldset>
-
+    
     <fieldset>
       <div class="notify-me">
         <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
@@ -226,6 +241,7 @@ Command&gt; save</code></pre></div>
       <div class="g-recaptcha" data-sitekey="6LcYnr0ZAAAAADxhs5RVBYgBtTjNwYeWS6wyQFSa" data-callback="enableBtn"></div>
 
       <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
+      <input type="reset" class="post-comment-field btn btn-info" value="Reset">
     </fieldset>
 
   </form>
@@ -236,27 +252,29 @@ Command&gt; save</code></pre></div>
   <script type="text/javascript">
     document.getElementById("submit_button").disabled = true;
   </script>
-
+  
   <script type="text/javascript">
     function enableBtn(){
        document.getElementById("submit_button").disabled = false;
       }
   </script>
-
-  <div id="post-submitted" class="dialog">
-    <h3>Thank you</h3>
-    <p>Your post has been submitted and will be published once it has been approved.</p>
-    
-    <p><a href="#" class="btn">OK</a></p>
-  </div>
-
-  <div id="post-error" class="dialog">
-    <h3>OOPS!</h3>
-    <p>Your post has not been submitted.  Please return to the page and try again.  Thank You!</p>
-    <p><a href="#" class="btn">OK</a></p>
-  </div>
-
+  
 </section>
+
+<div id="post-submitted" class="dialog">
+  <h3>Thank you</h3>
+  <p>Your post has been submitted and will be published once it has been approved.</p>
+  
+  <p><a href="#" class="btn">OK</a></p>
+</div>
+
+<div id="post-error" class="dialog">
+  <h3>OOPS!</h3>
+  <p>Your post has not been submitted.  Please return to the page and try again.  Thank You!</p>
+  <p>If this error persists, please open an issue by <a href="https://github.com/j3ffrw/myblog/issues"> clicking here</a>.</p>
+  <p><a href="#" class="btn">OK</a></p>
+</div> 
+
 
 
 </section>
