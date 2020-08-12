@@ -5,8 +5,31 @@
         <description>Recent content on Tech notes and other stuff</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Jul 2020 10:31:19 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 12 Aug 2020 10:31:19 +0800</lastBuildDate>
         <atom:link href="https://j3ffrw.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Integrate staticman to a hugo themes</title>
+            <link>https://j3ffrw.github.io/p505/</link>
+            <pubDate>Wed, 12 Aug 2020 10:31:19 +0800</pubDate>
+            
+            <guid>https://j3ffrw.github.io/p505/</guid>
+            <description>Setup up backend related stuff: github, heruko, staticman(backend) https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html#configuring-staticmanyml
+Integrate staticman frontend to a hugo themes: post(single) https://dancwilliams.com/hugo-staticman-nested-replies-and-email-notifications/#
+Note: things note covered above.
+ include the counterpart of staticman &amp;ldquo;path&amp;rdquo; to config.yml  [data] comments = &amp;quot;data/comments/{options.entryId}&amp;quot; </description>
+            <content type="html"><![CDATA[<p>Setup up backend related stuff: github, heruko, staticman(backend)
+<a href="https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html#configuring-staticmanyml">https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html#configuring-staticmanyml</a></p>
+<p>Integrate staticman frontend to a hugo themes: post(single)
+<a href="https://dancwilliams.com/hugo-staticman-nested-replies-and-email-notifications/#">https://dancwilliams.com/hugo-staticman-nested-replies-and-email-notifications/#</a></p>
+<p>Note: things note covered above.</p>
+<ol>
+<li>include the counterpart of staticman &ldquo;path&rdquo; to config.yml</li>
+</ol>
+<pre><code>[data]
+  comments = &quot;data/comments/{options.entryId}&quot;
+</code></pre>]]></content>
+        </item>
         
         <item>
             <title>Ruckus Zap and Speedflex test setup</title>
