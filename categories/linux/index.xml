@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Tech notes and other stuff</title>
-    <link>/categories/linux/</link>
+    <link>https://j3ffrw.github.io/categories/linux/</link>
     <description>Recent content in Linux on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Apr 2020 00:10:00 +0800</lastBuildDate>
     
-	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://j3ffrw.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache Benchmark cache buster</title>
-      <link>/p503/</link>
+      <link>https://j3ffrw.github.io/p503/</link>
       <pubDate>Sat, 18 Apr 2020 00:10:00 +0800</pubDate>
       
-      <guid>/p503/</guid>
+      <guid>https://j3ffrw.github.io/p503/</guid>
       <description>Allows ab to bypass or invalidate cdn/web cache by passing random parameters
 Shortcut using docker https://github.com/j3ffrw/httpd/tree/cache_buster/2.4/alpine
 Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
@@ -25,10 +25,10 @@ Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
     
     <item>
       <title>Migrating wordpress to Hugo</title>
-      <link>/p502/</link>
+      <link>https://j3ffrw.github.io/p502/</link>
       <pubDate>Sun, 05 Jan 2020 00:10:00 +0000</pubDate>
       
-      <guid>/p502/</guid>
+      <guid>https://j3ffrw.github.io/p502/</guid>
       <description>Use https://github.com/SchumacherFM/wordpress-to-hugo-exporter
   Convert posts to page bundle https://gohugo.io/content-management/page-bundles/
   cd content/posts find . -maxdepth 1 -type f | grep -v index | while read line; do echo $line; mkdir ${line%%\.md}; mv $line ${line%%\.md}/index.md;done Cleanup each post, convert image reference to shortcode equivalent vim search and replace snippets  %s/^M//g %s/&amp;amp;gt;/&amp;gt;/g %s/&amp;amp;lt;/&amp;lt;/g %s/\\_/_/g %s/&amp;amp;#8217;/&#39;/g %s/&amp;amp;#8211;/-/g %s/&amp;lt;\/p&amp;gt;//g %s/&amp;lt;p&amp;gt;//g %s/&amp;lt;/pre&amp;gt;//g %s/&amp;amp;#8220;/&amp;quot;/g %s/&amp;amp;#8221;/&amp;quot;/g %s/&amp;lt;br\ \/&amp;gt;//g Deploy at last. https://gohugo.io/hosting-and-deployment/hosting-on-github/  References:</description>
@@ -36,20 +36,20 @@ Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
     
     <item>
       <title>Determine w/c ssh public key was used to login</title>
-      <link>/p501/</link>
+      <link>https://j3ffrw.github.io/p501/</link>
       <pubDate>Fri, 27 Apr 2018 15:10:00 +0000</pubDate>
       
-      <guid>/p501/</guid>
+      <guid>https://j3ffrw.github.io/p501/</guid>
       <description>Generate fingerprint per key while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; .ssh/authorized_keys
   Match fingerprint on /var/log/secure AUTHORIZED_FP=`while read l; do [[ -n $l &amp;amp;&amp;amp; ${l###} = $l ]] &amp;amp;&amp;amp; ssh-keygen -l -f /dev/stdin &amp;lt;&amp;lt;&amp;lt;$l; done &amp;lt; /home/centos/.ssh/authorized_keys 2&amp;gt;/dev/null | grep RSA` sudo cat /var/log/secure |grep &amp;#34;Accepted publickey&amp;#34; | while read line; do AUDIT_MESSAGE=`echo $line | awk -F&amp;#34; &amp;#34; &amp;#39;{print $1 &amp;#34; &amp;#34; $2 &amp;#34; &amp;#34; $3 &amp;#34; from &amp;#34; $11 &amp;#34; FP: &amp;#34; $16}&amp;#39;` AUDIT_FP=`echo $AUDIT_MESSAGE | awk -F&amp;#34; &amp;#34; &amp;#39;{print $7}&amp;#39;` #echo &amp;#34;$AUDIT_FP&amp;#34; MATCHED=`printf &amp;#34;$AUTHORIZED_FP&amp;#34; | grep -n $AUDIT_FP` if [[ &amp;#34;$?</description>
     </item>
     
     <item>
       <title>Things to backup in linux after installation</title>
-      <link>/p460/</link>
+      <link>https://j3ffrw.github.io/p460/</link>
       <pubDate>Sat, 02 Nov 2013 04:46:11 +0000</pubDate>
       
-      <guid>/p460/</guid>
+      <guid>https://j3ffrw.github.io/p460/</guid>
       <description>Partition
 mkdir ~/backup; cd ~/backup sfdisk -d /dev/sdx &amp;gt; sfdisk_dump fdisk -l /dev/sda &amp;gt; fdisk_listing LVM metadata backup
 vgcfgbackup; cp /etc/lvm/backup/vg_groupname ~/backup
@@ -59,20 +59,20 @@ LUKS header
     
     <item>
       <title>convert a bootable ISO-13346 (UDF) to ISO-9660</title>
-      <link>/p452/</link>
+      <link>https://j3ffrw.github.io/p452/</link>
       <pubDate>Mon, 22 Jul 2013 10:51:36 +0000</pubDate>
       
-      <guid>/p452/</guid>
+      <guid>https://j3ffrw.github.io/p452/</guid>
       <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR when using an iso file to install a guest OS(Windows 7)
 mkdir -p isos/mountp cp udfimage.iso isos cd isos geteltorito udfimage.iso &amp;amp;gt; boot.bin mount -o loop -t auto udfimage.iso mountp cp -r mountp udfimagecontents cp boot.bin udfimagecontents mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents reference: http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</description>
     </item>
     
     <item>
       <title>generating(self-signed) and enabling SSL in Apache</title>
-      <link>/p443/</link>
+      <link>https://j3ffrw.github.io/p443/</link>
       <pubDate>Wed, 19 Jun 2013 03:55:08 +0000</pubDate>
       
-      <guid>/p443/</guid>
+      <guid>https://j3ffrw.github.io/p443/</guid>
       <description>#generate SSL cert for apache
 openssl version
 OpenSSL 1.0.0-fips 29 Mar 2010
@@ -84,10 +84,10 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
     
     <item>
       <title>Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.</title>
-      <link>/p385/</link>
+      <link>https://j3ffrw.github.io/p385/</link>
       <pubDate>Thu, 02 May 2013 11:27:16 +0000</pubDate>
       
-      <guid>/p385/</guid>
+      <guid>https://j3ffrw.github.io/p385/</guid>
       <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
@@ -99,10 +99,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     
     <item>
       <title>Disable discreet VGA card in linux mint</title>
-      <link>/p371/</link>
+      <link>https://j3ffrw.github.io/p371/</link>
       <pubDate>Thu, 28 Mar 2013 10:31:19 +0000</pubDate>
       
-      <guid>/p371/</guid>
+      <guid>https://j3ffrw.github.io/p371/</guid>
       <description>Nvidia:
 sudo rmmod nvidia sudo tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt;OFF check the output of dmesg if the ff shows
 bbswitch: device 0000:01:00.0 is in use by driver &#39;nvidia&#39;, refusing OFF
@@ -112,10 +112,10 @@ sudo lsof -n -w -t /dev/nvidia*</description>
     
     <item>
       <title>Dell T110 IPMI 2.0 SOL with CentOS 6.3</title>
-      <link>/p366/</link>
+      <link>https://j3ffrw.github.io/p366/</link>
       <pubDate>Fri, 22 Mar 2013 11:20:20 +0000</pubDate>
       
-      <guid>/p366/</guid>
+      <guid>https://j3ffrw.github.io/p366/</guid>
       <description>IPMI:
   Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
   Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
@@ -131,10 +131,10 @@ sudo lsof -n -w -t /dev/nvidia*</description>
     
     <item>
       <title>KVM notes</title>
-      <link>/p287/</link>
+      <link>https://j3ffrw.github.io/p287/</link>
       <pubDate>Mon, 28 Jan 2013 07:24:13 +0000</pubDate>
       
-      <guid>/p287/</guid>
+      <guid>https://j3ffrw.github.io/p287/</guid>
       <description>For host machine- Centos 6.3 64:
 KVM installation. http://www.howtoforge.com/virtualization-with-kvm-on-a-centos-6.0-server
 http://blog.mattbrock.co.uk/2012/02/12/virtualisation-with-kvm-and-lvm-on-centos-6-via-the-command-line/
@@ -155,10 +155,10 @@ Viewing remote KVM Guest with usb redirection using Ubuntu 13.04(live CD): enabl
     
     <item>
       <title>Problem logging in from Netbootdisk into smb share after using Samba v3.5.10</title>
-      <link>/p220/</link>
+      <link>https://j3ffrw.github.io/p220/</link>
       <pubDate>Tue, 13 Nov 2012 05:46:40 +0000</pubDate>
       
-      <guid>/p220/</guid>
+      <guid>https://j3ffrw.github.io/p220/</guid>
       <description>Problem:
 accounts created by smbpasswd -a does not work with samba-3.5.10-125.el6.x86_64 though it was working fine on a previous version I was using, samba-3.0.33-3.38.el5_8. Both ship with centos 5.8 and centos 6.3 respectively.
 increasing log level = 3 shows the following error on samba 3.5.10 which where not on 3.0.33
@@ -168,10 +168,10 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
     
     <item>
       <title>Scripts, scripts and scripts.</title>
-      <link>/p185/</link>
+      <link>https://j3ffrw.github.io/p185/</link>
       <pubDate>Fri, 27 Jul 2012 17:27:29 +0000</pubDate>
       
-      <guid>/p185/</guid>
+      <guid>https://j3ffrw.github.io/p185/</guid>
       <description>find certain strings in files on certain folders  find . -type f ! -exec grep -q &#39;@olddomain.com&#39; {} \; -exec grep -q &#39;olddomain.com&#39; {} \; -print
 find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
  search for top talkers using tshark  tshark -r output.cap -T fields -e ip.src &amp;quot;tcp.flags.syn==1 &amp;amp;&amp;amp; tcp.flags.ack==0&amp;quot; | sort | uniq -c | sort -rn | head
@@ -180,28 +180,28 @@ find . -type f | xargs egrep -Hn &#39;@olddomain.com&#39;
     
     <item>
       <title>Sending mysql commands with backticks via pssh</title>
-      <link>/p180/</link>
+      <link>https://j3ffrw.github.io/p180/</link>
       <pubDate>Mon, 23 Jul 2012 02:10:28 +0000</pubDate>
       
-      <guid>/p180/</guid>
+      <guid>https://j3ffrw.github.io/p180/</guid>
       <description>pssh -h servers -i &#39;echo &amp;quot;select * from \`tablename with space\`&amp;quot; | mysql -uusername -ppass database&#39;</description>
     </item>
     
     <item>
       <title>when certs are revoke</title>
-      <link>/p166/</link>
+      <link>https://j3ffrw.github.io/p166/</link>
       <pubDate>Tue, 17 Jul 2012 02:08:50 +0000</pubDate>
       
-      <guid>/p166/</guid>
+      <guid>https://j3ffrw.github.io/p166/</guid>
       <description>Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port Re-using SSL/TLS context Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port LZO compression initialized Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS\_ERROR: BIO read tls\_read\_plaintext error: error:140890B2:SSL routines:SSL3\_GET\_CLIENT\_CERTIFICATE:no certificate returned Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS object -&amp;gt; incoming plaintext read error Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS handshake failed </description>
     </item>
     
     <item>
       <title>compiling ffmpeg on centos 6</title>
-      <link>/p164/</link>
+      <link>https://j3ffrw.github.io/p164/</link>
       <pubDate>Sat, 02 Jun 2012 10:45:10 +0000</pubDate>
       
-      <guid>/p164/</guid>
+      <guid>https://j3ffrw.github.io/p164/</guid>
       <description>requirements: libtool for faad2
 a52:
 ./configure --enable-shared=PKGS
@@ -220,10 +220,10 @@ svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --
     
     <item>
       <title>PXE booting CENTOS 6 on Atheros Atl1e using Driver Update Disk</title>
-      <link>/p145/</link>
+      <link>https://j3ffrw.github.io/p145/</link>
       <pubDate>Wed, 23 May 2012 06:38:52 +0000</pubDate>
       
-      <guid>/p145/</guid>
+      <guid>https://j3ffrw.github.io/p145/</guid>
       <description>Download pschaff&amp;rsquo;s driver disk from elrepo, select architecture that match your installer. &amp;lt;br &amp;gt;http://www.elrepo.org/people/pschaff/dud/
   the file you&amp;rsquo;ve downloaded should end with &amp;lsquo;.gz&amp;rsquo;. Uncompress that file. &amp;lt;br &amp;gt;gunzip DUP_el6_i686_20120402.iso.gz
   Create a temp folder. &amp;lt;br &amp;gt;mkdir initrd_update
@@ -234,10 +234,10 @@ svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg cd ffmpeg ./configure --
     
     <item>
       <title>using sed in bash scripts</title>
-      <link>/p139/</link>
+      <link>https://j3ffrw.github.io/p139/</link>
       <pubDate>Mon, 21 May 2012 03:40:54 +0000</pubDate>
       
-      <guid>/p139/</guid>
+      <guid>https://j3ffrw.github.io/p139/</guid>
       <description># Inserting a text on a specified line number ex. insert a text in line number 8 sed command &amp;ldquo;8i&amp;rdquo;
 -e &#39;8i\# PC-Check 7\.03 with net support&#39;
 special characters like # and . should have a \ suffix.
@@ -250,10 +250,10 @@ special characters like # and . should have a \ suffix.
     
     <item>
       <title>gpg notes</title>
-      <link>/p124/</link>
+      <link>https://j3ffrw.github.io/p124/</link>
       <pubDate>Tue, 08 May 2012 11:03:09 +0000</pubDate>
       
-      <guid>/p124/</guid>
+      <guid>https://j3ffrw.github.io/p124/</guid>
       <description>compress multiple files and encrypt using gpg
 tar -cv folder | gpg -e -r recipientGpgKey -o output.tar.gpg
 to decompress the above file:(prepare recipientGpgKey passphrase )
@@ -263,10 +263,10 @@ you must specify –secret-keyring pathtokeyring if secret key is not available 
     
     <item>
       <title>Fwknopd with SPA, Part 2.</title>
-      <link>/p78/</link>
+      <link>https://j3ffrw.github.io/p78/</link>
       <pubDate>Sat, 15 Oct 2011 10:41:28 +0000</pubDate>
       
-      <guid>/p78/</guid>
+      <guid>https://j3ffrw.github.io/p78/</guid>
       <description>View both keys with gpg --list-keys $ gpg --list-keys pub 1024D/AAAAAAAA 2008-03-07 uid test fwknop &amp;lt;username-test@example.com&amp;gt; sub 2048g/DDDDDDDD 2008-03-07 Export both keys from remote and local terminals. gpg -a --export AAAAAAAA &amp;gt; remote.asc gpg -a --export BBBBBBBB &amp;gt; local.asc where AAAAAAAA is the remote key id and BBBBBBBB is the local key id.
 securely transfer remote.asc to local terminal.
 securely transfer local.asc to remote terminal.
@@ -275,28 +275,28 @@ import and signed both keys, you will need to enter the correct passphrase when 
     
     <item>
       <title>fwknopd with SPA Part.1</title>
-      <link>/p76/</link>
+      <link>https://j3ffrw.github.io/p76/</link>
       <pubDate>Sat, 15 Oct 2011 10:29:57 +0000</pubDate>
       
-      <guid>/p76/</guid>
+      <guid>https://j3ffrw.github.io/p76/</guid>
       <description>Generate gpg keys on both remote and local terminal : `gpg --gen-key` Please select what kind of key you want: Select (1) DSA and Elgamal (default) What keysize do you want? (2048) Choose default 2048(just press enter) Key is valid for? (0) press enter key does not expire Is this correct? (y/N) press y Real name: enter key name e.g: term-Gpg Email address: enter email... Comment: optional press enter if none Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?</description>
     </item>
     
     <item>
       <title>installing oflademo on red5</title>
-      <link>/p72/</link>
+      <link>https://j3ffrw.github.io/p72/</link>
       <pubDate>Fri, 16 Sep 2011 08:54:04 +0000</pubDate>
       
-      <guid>/p72/</guid>
+      <guid>https://j3ffrw.github.io/p72/</guid>
       <description>wget http://trac.red5.org/downloads/1_0/red5-1.0.0-RC1.tar.gz tar xvzf red5-1.0.0-RC1.tar.gz cd red5-1.0.0/webapps/ mkdir oflaDemo cd oflaDemo wget http://red5.googlecode.com/svn-history/r3990/snapshots/oflaDemo-r3989-java6.war unzip oflaDemo-r3989-java6.war cd ../.. ./red5.sh </description>
     </item>
     
     <item>
       <title>Kernel not loading usbserial on Huawei modems</title>
-      <link>/p69/</link>
+      <link>https://j3ffrw.github.io/p69/</link>
       <pubDate>Wed, 14 Sep 2011 10:29:30 +0000</pubDate>
       
-      <guid>/p69/</guid>
+      <guid>https://j3ffrw.github.io/p69/</guid>
       <description>remove pl2303 and usb_storage driver
 rmmod pl2303&amp;lt;br /&amp;gt; rmmod usb_storage&amp;lt;br /&amp;gt;
 then reinsert huawei modem again</description>
@@ -304,19 +304,19 @@ then reinsert huawei modem again</description>
     
     <item>
       <title>Common AT commands</title>
-      <link>/p67/</link>
+      <link>https://j3ffrw.github.io/p67/</link>
       <pubDate>Mon, 12 Sep 2011 05:08:38 +0000</pubDate>
       
-      <guid>/p67/</guid>
+      <guid>https://j3ffrw.github.io/p67/</guid>
       <description>Read all SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGL=&amp;#34;ALL&amp;#34; Read single sms in text mode: AT+CMGF=1 # (set TEXT MODE) AT+CMGR=1 # (location index) Delete single sms: AT+CMGD=1 # (location index) Sending SMS in text mode: AT+CMGF=1 (set TEXT MODE) AT+CMGS=&amp;#34;0912xxxyyyy&amp;#34; &amp;gt; test message Press Ctrl+z Press Enter Read Sim Number: AT+CPBS=&amp;#34;ON&amp;#34; AT+CPBR=1 +CPBR: 1,&amp;#34;+63948xxxyyyy&amp;#34;,145,&amp;#34;&amp;#34;; </description>
     </item>
     
     <item>
       <title>Setup apache to handle Eric Blue’s Document Browser 1.0</title>
-      <link>/p64/</link>
+      <link>https://j3ffrw.github.io/p64/</link>
       <pubDate>Mon, 29 Aug 2011 08:39:54 +0000</pubDate>
       
-      <guid>/p64/</guid>
+      <guid>https://j3ffrw.github.io/p64/</guid>
       <description>Download doc_browser http://eric-blue.com/projects/docbrowser/doc_browser_1_0.zip
   Extract contents to a directory named projects/docbrowser
   Create the ff. doc.conf inside apache conf.d cat &amp;gt;/etc/apache/conf.d &amp;lt;&amp;lt;EOL Alias /projects /var/www/projects&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Location /projects&amp;gt;&amp;lt;br /&amp;gt; Order allow,deny&amp;lt;br /&amp;gt; Allow from all&amp;lt;br /&amp;gt; &amp;lt;/Location&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;Directory /var/www/projects&amp;gt;&amp;lt;br /&amp;gt; Options +ExecCGI&amp;lt;br /&amp;gt; AddHandler cgi-script .cgi .pl&amp;lt;br /&amp;gt; &amp;lt;/Directory&amp;gt;&amp;lt;br /&amp;gt; EOL
@@ -326,28 +326,28 @@ then reinsert huawei modem again</description>
     
     <item>
       <title>Allow normal user to run smartd in pfsense 1.2.3</title>
-      <link>/p60/</link>
+      <link>https://j3ffrw.github.io/p60/</link>
       <pubDate>Fri, 19 Aug 2011 10:10:52 +0000</pubDate>
       
-      <guid>/p60/</guid>
+      <guid>https://j3ffrw.github.io/p60/</guid>
       <description>chmod 4555 /usr/local/sbin/smartctl</description>
     </item>
     
     <item>
       <title>SMARTD on zabbix</title>
-      <link>/p46/</link>
+      <link>https://j3ffrw.github.io/p46/</link>
       <pubDate>Sun, 12 Dec 2010 12:43:17 +0000</pubDate>
       
-      <guid>/p46/</guid>
+      <guid>https://j3ffrw.github.io/p46/</guid>
       <description>UserParameter=system.smartd[*],sudo smartctl -A $1| grep $2| tail -1| cut -c 88-|cut -f1 -d&amp;#34; &amp;#34; zabbix ALL=NOPASSWD: /usr/sbin/smartctl </description>
     </item>
     
     <item>
       <title>lm_sensors 3.20 w/ coretemp using CENTOS 5.5 on GA-G31M-E2SL w/ it8718 chip</title>
-      <link>/p44/</link>
+      <link>https://j3ffrw.github.io/p44/</link>
       <pubDate>Sun, 12 Dec 2010 07:07:46 +0000</pubDate>
       
-      <guid>/p44/</guid>
+      <guid>https://j3ffrw.github.io/p44/</guid>
       <description>add elrepo to your repositories
   yum &amp;ndash;enablerepo=elrepo install kmod-coretemp # this will install lm_sensor 2.10.8 as its dependencies.
   lsmod | grep coretemp # coretemp should be loaded by now
@@ -360,10 +360,10 @@ then reinsert huawei modem again</description>
     
     <item>
       <title>Mozilla’s ubuntu ppa’s</title>
-      <link>/p36/</link>
+      <link>https://j3ffrw.github.io/p36/</link>
       <pubDate>Sat, 26 Jun 2010 03:39:18 +0000</pubDate>
       
-      <guid>/p36/</guid>
+      <guid>https://j3ffrw.github.io/p36/</guid>
       <description>to get the latest versions of firefox and thunderbird for ubuntu do the ff
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
 sudo apt-get update
@@ -373,30 +373,30 @@ sudo apt-get install firefox</description>
     
     <item>
       <title>Elrepo</title>
-      <link>/p35/</link>
+      <link>https://j3ffrw.github.io/p35/</link>
       <pubDate>Wed, 26 May 2010 03:35:25 +0000</pubDate>
       
-      <guid>/p35/</guid>
+      <guid>https://j3ffrw.github.io/p35/</guid>
       <description>hardware drivers
 http://elrepo.org</description>
     </item>
     
     <item>
       <title>NUT</title>
-      <link>/p31/</link>
+      <link>https://j3ffrw.github.io/p31/</link>
       <pubDate>Wed, 26 May 2010 03:33:52 +0000</pubDate>
       
-      <guid>/p31/</guid>
+      <guid>https://j3ffrw.github.io/p31/</guid>
       <description>Compile NUT from source  groupadd nut;adduser -g nut ups yum install gd-devel libusb-devel ./configure --with-user=ups --with-group=nut --with-usb --with-cgi --prefix=/ups --localstatedir=/ups/var --with-pidpath=/ups/var/state/ups --with-statepath=/ups/var/state/ups --enable-static make make install cd /ups;mkdir -p /ups/var/state/ups;chmod 0770 /ups/var/state/ups;chown root:nut /ups/var/state/ups copy libz.so to /ups/lib copy libz.a to /ups/lib chmod 0660 /dev/ttyS0;chown root:nut /dev/ttyS0 cat &amp;gt;/etc/udev/rules.d/99-my.rules &amp;lt;&amp;lt;EOL SUBSYSTEM==&amp;#34;tty&amp;#34;, KERNEL==&amp;#34;ttyS0&amp;#34;, OWNER=&amp;#34;root&amp;#34;, GROUP=&amp;#34;nut&amp;#34; EOL For APC UPS BR550I or BR550GI use the ff.
 vi /etc/udev/rules.d/52-nut-usbups.rules # This file is generated and installed by the Network UPS Tools package.</description>
     </item>
     
     <item>
       <title>ius repo</title>
-      <link>/p28/</link>
+      <link>https://j3ffrw.github.io/p28/</link>
       <pubDate>Wed, 26 May 2010 02:28:57 +0000</pubDate>
       
-      <guid>/p28/</guid>
+      <guid>https://j3ffrw.github.io/p28/</guid>
       <description>website: http://iuscommunity.org/
 download: epel-release-* ; ius-release-*
 to update PHP:

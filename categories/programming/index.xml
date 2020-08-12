@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Tech notes and other stuff</title>
-    <link>/categories/programming/</link>
+    <link>https://j3ffrw.github.io/categories/programming/</link>
     <description>Recent content in Programming on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Mar 2013 09:01:16 +0000</lastBuildDate>
     
-	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://j3ffrw.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>add multiple email forwarders using AutoIt</title>
-      <link>/p363/</link>
+      <link>https://j3ffrw.github.io/p363/</link>
       <pubDate>Thu, 21 Mar 2013 09:01:16 +0000</pubDate>
       
-      <guid>/p363/</guid>
+      <guid>https://j3ffrw.github.io/p363/</guid>
       <description>#include &amp;lt;string.au3&amp;gt; #include &amp;lt;Array.au3&amp;gt; #Include &amp;lt;File.au3&amp;gt; #Include &amp;lt;FF.au3&amp;gt; #include &amp;lt;Date.au3&amp;gt; Global $Paused HotKeySet(&amp;#34;{PAUSE}&amp;#34;, &amp;#34;TogglePause&amp;#34;) HotKeySet(&amp;#34;{ESC}&amp;#34;, &amp;#34;Terminate&amp;#34;) $emailList=&amp;#34;emaillist.csv&amp;#34; $fowardEmailto=&amp;#34;myemail@core.piehosting.com&amp;#34; $cpanelEmailForwardingPage=&amp;#34;https://yourcpanel.com:2082/cpsess8672753610/frontend/x3/mail/addfwd.html&amp;#34; _FFConnect() if _FFIsConnected() Then ; do nothing Else ConsoleWrite(&amp;#34;Not Connected &amp;#34; &amp;amp; @CRLF) EndIf ; check file if it exist $file = FileOpen($emailList,0) if $file=-1 Then MsgBox(0,&amp;#34;error&amp;#34;,&amp;#34;File does not exist or cant be read&amp;#34;) Exit EndIf ; open file containing emails and put contents to an array Dim $aRecords _FileReadToArray($emailList,$aRecords) MsgBox(0, &amp;#34;&amp;#34;, &amp;#34;size: &amp;#34; &amp;amp; $aRecords[0]) For $x=1 to $aRecords[0] _FFOpenURL($cpanelEmailForwardingPage) If($aRecords[$x] &amp;lt;&amp;gt; $fowardEmailto) Then writeForwarder($aRecords[$x]) EndIf Next Exit Func writeForwarder($email) $temp1 = StringSplit($email, &amp;#34;@&amp;#34;) ConsoleWrite(&amp;#34;email: &amp;#34; &amp;amp; $email &amp;amp; @CRLF) ConsoleWrite(&amp;#34;name: &amp;#34; &amp;amp; $temp1[1] &amp;amp; @CRLF) ConsoleWrite(&amp;#34;domain: &amp;#34; &amp;amp; $temp1[2] &amp;amp; @CRLF) ; Enter email on field _FFSetValue($temp1[1], &amp;#34;email&amp;#34;, &amp;#34;id&amp;#34;) ; Enter email domain on select dropdown box $test2=&amp;#39;//select[@name=&amp;#34;domain&amp;#34;]//option[@value=&amp;#34;&amp;#39; &amp;amp; $temp1[2] &amp;amp; &amp;#39;&amp;#34;]&amp;#39;  _FFXPath($test2, &amp;#39;selected=true&amp;#39;, 9) ; Enter emaill address to forward email _FFSetValue($fowardEmailto, &amp;#34;fwdemail&amp;#34;, &amp;#34;id&amp;#34;) ; submit fom _FFFormSubmit() ;Sleep(2000) EndFunc Func TogglePause() $Paused = NOT $Paused While $Paused Sleep(100) ToolTip(&amp;#39;Script is &amp;#34;Paused&amp;#34;&amp;#39;,0,0) WEnd EndFunc Func Terminate() Exit 0 EndFunc </description>
     </item>
     
     <item>
       <title>Tower of hanoi v.1</title>
-      <link>/p333/</link>
+      <link>https://j3ffrw.github.io/p333/</link>
       <pubDate>Thu, 21 Feb 2013 10:30:08 +0000</pubDate>
       
-      <guid>/p333/</guid>
+      <guid>https://j3ffrw.github.io/p333/</guid>
       <description>v.1 using iterative solution
 todo:
 v.2 shorten code.

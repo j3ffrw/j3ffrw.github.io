@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networks on Tech notes and other stuff</title>
-    <link>/categories/networks/</link>
+    <link>https://j3ffrw.github.io/categories/networks/</link>
     <description>Recent content in Networks on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jul 2020 10:31:19 +0800</lastBuildDate>
     
-	<atom:link href="/categories/networks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://j3ffrw.github.io/categories/networks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ruckus Zap and Speedflex test setup</title>
-      <link>/p504/</link>
+      <link>https://j3ffrw.github.io/p504/</link>
       <pubDate>Wed, 29 Jul 2020 10:31:19 +0800</pubDate>
       
-      <guid>/p504/</guid>
+      <guid>https://j3ffrw.github.io/p504/</guid>
       <description>Buid zap tool. link
   Install Ruckus Speedlflex on Node #1 and #2.
   Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
@@ -28,10 +28,10 @@
     
     <item>
       <title>Pfsense &#43; Freeradius &#43; dd-wrt WPA2 Enterprise.</title>
-      <link>/p385/</link>
+      <link>https://j3ffrw.github.io/p385/</link>
       <pubDate>Thu, 02 May 2013 11:27:16 +0000</pubDate>
       
-      <guid>/p385/</guid>
+      <guid>https://j3ffrw.github.io/p385/</guid>
       <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
@@ -43,10 +43,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     
     <item>
       <title>Dell T110 IPMI 2.0 SOL with CentOS 6.3</title>
-      <link>/p366/</link>
+      <link>https://j3ffrw.github.io/p366/</link>
       <pubDate>Fri, 22 Mar 2013 11:20:20 +0000</pubDate>
       
-      <guid>/p366/</guid>
+      <guid>https://j3ffrw.github.io/p366/</guid>
       <description>IPMI:
   Enter Dell&amp;rsquo;s IPMI server management configuration utility. (Ctrl+E)
   Set &amp;ldquo;IPMI over LAN&amp;rdquo; to &amp;ldquo;On&amp;rdquo;.
@@ -62,10 +62,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     
     <item>
       <title>Ruckus zap tool installation and testing</title>
-      <link>/p217/</link>
+      <link>https://j3ffrw.github.io/p217/</link>
       <pubDate>Thu, 08 Nov 2012 18:31:19 +0000</pubDate>
       
-      <guid>/p217/</guid>
+      <guid>https://j3ffrw.github.io/p217/</guid>
       <description>Update: on 64bit OS edit Makefile after source checkout and remove -m32
   Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
   Run zapd on both PC/Laptop,you should see something like the following.</description>
@@ -73,10 +73,10 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
     
     <item>
       <title>zPerf 1.0 (wip)</title>
-      <link>/p201/</link>
+      <link>https://j3ffrw.github.io/p201/</link>
       <pubDate>Thu, 08 Nov 2012 11:11:29 +0000</pubDate>
       
-      <guid>/p201/</guid>
+      <guid>https://j3ffrw.github.io/p201/</guid>
       <description>Purpose:
   Provides a GUI Frontend for Ruckus amazing Zap tool
   Visualize Zap tool results using charts.
@@ -89,10 +89,10 @@ How to use:
     
     <item>
       <title>when certs are revoke</title>
-      <link>/p166/</link>
+      <link>https://j3ffrw.github.io/p166/</link>
       <pubDate>Tue, 17 Jul 2012 02:08:50 +0000</pubDate>
       
-      <guid>/p166/</guid>
+      <guid>https://j3ffrw.github.io/p166/</guid>
       <description>Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port Re-using SSL/TLS context Jul 17 09:59:23 localhost openvpn[6247]: XX.xx.XX.xx:port LZO compression initialized Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS\_ERROR: BIO read tls\_read\_plaintext error: error:140890B2:SSL routines:SSL3\_GET\_CLIENT\_CERTIFICATE:no certificate returned Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS object -&amp;gt; incoming plaintext read error Jul 17 09:59:41 localhost openvpn[6247]: XX.xx.XX.xx:port TLS Error: TLS handshake failed </description>
     </item>
     

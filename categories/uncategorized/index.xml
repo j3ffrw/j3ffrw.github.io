@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Tech notes and other stuff</title>
-    <link>/categories/uncategorized/</link>
+    <link>https://j3ffrw.github.io/categories/uncategorized/</link>
     <description>Recent content in Uncategorized on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Dec 2013 18:25:03 +0000</lastBuildDate>
     
-	<atom:link href="/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://j3ffrw.github.io/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Online Electronics Shop/Seller in the Philippines</title>
-      <link>/p479/</link>
+      <link>https://j3ffrw.github.io/p479/</link>
       <pubDate>Sat, 21 Dec 2013 18:25:03 +0000</pubDate>
       
-      <guid>/p479/</guid>
+      <guid>https://j3ffrw.github.io/p479/</guid>
       <description>www.e-gizmo.com
 www.circuit-help.com.ph
 www.innovationph.com/
@@ -32,10 +32,10 @@ http://www.dynamodo.com/</description>
     
     <item>
       <title>Election day fixing day.</title>
-      <link>/p404/</link>
+      <link>https://j3ffrw.github.io/p404/</link>
       <pubDate>Wed, 15 May 2013 06:57:28 +0000</pubDate>
       
-      <guid>/p404/</guid>
+      <guid>https://j3ffrw.github.io/p404/</guid>
       <description>What better things to do during election day than fixing things up.
 List of things to fix:
   Canon EF-S 18-55mm 3.6-5.6 IS stock lens – problem: auto focus kaput
@@ -46,10 +46,10 @@ This one seems to have gear problem since when it tries to drive the focus you c
     
     <item>
       <title>Enable brightness function keys</title>
-      <link>/p370/</link>
+      <link>https://j3ffrw.github.io/p370/</link>
       <pubDate>Thu, 28 Mar 2013 10:48:03 +0000</pubDate>
       
-      <guid>/p370/</guid>
+      <guid>https://j3ffrw.github.io/p370/</guid>
       <description>insert acpi_backlight=vendor option into grub.
 update-grub2
 GRUB_DEFAULT=0
@@ -63,20 +63,20 @@ GRUB_CMDLINE_LINUX=&amp;rdquo;&amp;rdquo;</description>
     
     <item>
       <title>make gopenvpn icon show in ubuntu 11.04 and up</title>
-      <link>/p322/</link>
+      <link>https://j3ffrw.github.io/p322/</link>
       <pubDate>Tue, 19 Feb 2013 11:40:04 +0000</pubDate>
       
-      <guid>/p322/</guid>
+      <guid>https://j3ffrw.github.io/p322/</guid>
       <description>gsettings set com.canonical.Unity.Panel systray-whitelist &amp;quot;[&#39;JavaEmbeddedFrame&#39;, &#39;Mumble&#39;, &#39;Wine&#39;, &#39;Skype&#39;, &#39;gopenvpn&#39;]&amp;quot;
 also allow user to sudo gopenvpn and openvpn.</description>
     </item>
     
     <item>
       <title>allow httpd to access fuse mounted folders</title>
-      <link>/p316/</link>
+      <link>https://j3ffrw.github.io/p316/</link>
       <pubDate>Fri, 08 Feb 2013 09:36:27 +0000</pubDate>
       
-      <guid>/p316/</guid>
+      <guid>https://j3ffrw.github.io/p316/</guid>
       <description>Centos 6.3 selinux does not have httpd_use_fusefs in its database here&amp;rsquo;s a quick fix instead of turning off selinux totally.
 https://docs.fedoraproject.org/en-US/Fedora/11/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Fixing_Problems-Allowing_Access_audit2allow.html
 here&amp;rsquo;s a good reference about selinux management:
@@ -85,10 +85,10 @@ http://tag1consulting.com/blog/stop-disabling-selinux</description>
     
     <item>
       <title>KVM Spice USB-redirection quick speed test</title>
-      <link>/p295/</link>
+      <link>https://j3ffrw.github.io/p295/</link>
       <pubDate>Mon, 04 Feb 2013 09:51:46 +0000</pubDate>
       
-      <guid>/p295/</guid>
+      <guid>https://j3ffrw.github.io/p295/</guid>
       <description>Bare Metal: Write: 22.8MBs Read: 22.0MBs
 Host to Guest: Write: 6.46MBs Read: 6.36MBs
 Remote to Guest: Write: 5.00MBs Read: 4.92MBs * via remote-viewer</description>
@@ -96,10 +96,10 @@ Remote to Guest: Write: 5.00MBs Read: 4.92MBs * via remote-viewer</description>
     
     <item>
       <title>my pfsense notes</title>
-      <link>/p275/</link>
+      <link>https://j3ffrw.github.io/p275/</link>
       <pubDate>Thu, 24 Jan 2013 07:43:33 +0000</pubDate>
       
-      <guid>/p275/</guid>
+      <guid>https://j3ffrw.github.io/p275/</guid>
       <description>working folder of ntop, nut, dhcp:
 /var/db
 config folder of openvpn, ntp, dns(resolv), snmp, syslog
