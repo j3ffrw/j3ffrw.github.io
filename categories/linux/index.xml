@@ -91,7 +91,7 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
       <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &amp;ndash; 1.6.7 pfsense package
 Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>

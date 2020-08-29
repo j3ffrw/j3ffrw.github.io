@@ -6,10 +6,20 @@
     <description>Recent content on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2020 10:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2020 10:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AC Cleaning</title>
+      <link>https://j3ffrw.github.io/p505/</link>
+      <pubDate>Sat, 29 Aug 2020 10:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/p505/</guid>
+      <description>Now normally I would hire a professional(someone who does this for a living) as its more cheaper than paying my self on a per hour basis. But with this coronavirus spreading around in my area, the risk of having infected is greater than what I would be losing financially. I heard that you need at leask Php 500K to get treated.
+Cleaning your AC unit should be done at once or twice a year specially if its used daily.</description>
+    </item>
     
     <item>
       <title>Integrate staticman to a hugo themes</title>
@@ -31,11 +41,11 @@ Note: things note covered above.
       <guid>https://j3ffrw.github.io/p504/</guid>
       <description>Buid zap tool. link
   Install Ruckus Speedlflex on Node #1 and #2.
-  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
- 
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself  .
+  
   
     On the control(laptop), run zap client
-  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192.</description>
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved.</description>
     </item>
     
     <item>
@@ -78,7 +88,7 @@ Details of building Apache Benchmarch(httpd) from source Linux Mint 19.1
       
       <guid>https://j3ffrw.github.io/p485/</guid>
       <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
-Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
+ Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
 Arduino Uno to Xbee
   Parallax XBee USB Adapter Board
 http://www.parallax.com/product/32400
@@ -113,7 +123,7 @@ http://www.dynamodo.com/</description>
       <pubDate>Sun, 24 Nov 2013 13:12:31 +0000</pubDate>
       
       <guid>https://j3ffrw.github.io/p470/</guid>
-      <description> </description>
+      <description>  </description>
     </item>
     
     <item>
@@ -164,8 +174,8 @@ LoadModule ssl_module modules/mod_ssl.so Listen 443 SSLPassPhraseDialog builtin 
 List of things to fix:
   Canon EF-S 18-55mm 3.6-5.6 IS stock lens – problem: auto focus kaput
   Quantaray LD 70-300mm – problem: auto focus kaput.
-  Let&amp;rsquo;s start off with quantaray.
-This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</description>
+   Let&amp;rsquo;s start off with quantaray.
+ This one seems to have gear problem since when it tries to drive the focus you could only hear the motor whirl freely.</description>
     </item>
     
     <item>
@@ -177,7 +187,7 @@ This one seems to have gear problem since when it tries to drive the focus you c
       <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &amp;ndash; 1.6.7 pfsense package
 Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>
@@ -681,7 +691,8 @@ rpm -qa | grep php yum shell remove php-gd php-cli php-odbc php-mbstring php-pdo
   Tech specs:
 PIC16F877a 20Mhz
 Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring
-uses PORTB interrupts for BB detection.</description>
+uses PORTB interrupts for BB detection.
+ </description>
     </item>
     
     <item>

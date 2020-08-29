@@ -8,7 +8,7 @@
 <meta name="description" content="Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &amp;ndash; 1.6.7 pfsense package
 Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt." />
@@ -46,7 +46,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt." />
 <meta itemprop="description" content="Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &ndash; 1.6.7 pfsense package
 Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt.">
@@ -63,7 +63,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt.">
 <meta name="twitter:description" content="Here&rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &ndash; 1.6.7 pfsense package
 Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
@@ -179,6 +179,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -190,6 +191,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/WPA2-pfsense.png" 
   
   alt="">
+</figure>
 
 <p>Requirements:</p>
 <p>Pfsense &ndash; for this demonstration i was using 2.1-BETA1</p>
@@ -231,6 +233,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -244,6 +247,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A1.CreateCA.png" 
   
   alt="">
+</figure>
 
 
 
@@ -272,6 +276,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -285,6 +290,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A2.CASummarry.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 <li>
@@ -316,6 +322,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -329,6 +336,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A3.CreateServerCert.png" 
   
   alt="">
+</figure>
 
 
 
@@ -357,6 +365,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -370,6 +379,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/A4.CertificateSummary.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 </ol>
@@ -407,6 +417,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -418,6 +429,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/B1.CreateUser.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 <li>
@@ -449,6 +461,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -462,6 +475,7 @@ Wifi Access point &ndash; buffalo whz-hp-g300nh2 running on ddwrt."/>
     src="/p385/B2.CreateNASClient.png" 
   
   alt="">
+</figure>
 
 On the screenshot below I also added several entries which I use for troubleshooting and testing freeradius. For this demonstration we only need the 10.0.1.150
 
@@ -491,6 +505,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -504,6 +519,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B3.NASClientSummary.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 <li>
@@ -535,6 +551,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -548,6 +565,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B4.CreateInterface.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 <li>
@@ -579,6 +597,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -592,6 +611,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/B5.ConfigureEAP.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 </ol>
@@ -623,6 +643,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -636,6 +657,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/C1.AccessPointWPA2.png" 
   
   alt="">
+</figure>
 </p>
 <p>D. Import of CA.crt to Windows 7</p>
 <ol>
@@ -671,6 +693,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
 
 
 
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
 <img 
   sizes="(min-width: 35em) 1200px, 100vw"
   srcset='
@@ -684,6 +707,7 @@ On the screenshot below I also added several entries which I use for troubleshoo
     src="/p385/D1.importCaCrt.png" 
   
   alt="">
+</figure>
 </p>
 </li>
 </ol>

@@ -18,7 +18,7 @@
       
       <guid>https://j3ffrw.github.io/p485/</guid>
       <description>Here&amp;rsquo;s an alternative way of hooking up your xbee to your computer using your existing Max32 or any 3.3V arduino-compatible boards.
-Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
+ Xbee to Max32 DOUT ------ 1(TX0) DIN ------ 0(RX0) VCC ------ 3.3V GND ------ GND RST to GND ( This is to deactivate the max32 mcu) Ref:
 Arduino Uno to Xbee
   Parallax XBee USB Adapter Board
 http://www.parallax.com/product/32400
@@ -34,7 +34,7 @@ http://www.digilentinc.com/Data/Products/CHIPKIT-MAX32/chipKIT%20Max32_bysa_sch.
       <pubDate>Sun, 24 Nov 2013 13:12:31 +0000</pubDate>
       
       <guid>https://j3ffrw.github.io/p470/</guid>
-      <description> </description>
+      <description>  </description>
     </item>
     
     <item>
@@ -78,7 +78,8 @@ Status: * Decoding part &amp;ndash; done.
   Tech specs:
 PIC16F877a 20Mhz
 Demo using my Classic Army SLR105 A1 w/ Guarder SP120 spring
-uses PORTB interrupts for BB detection.</description>
+uses PORTB interrupts for BB detection.
+ </description>
     </item>
     
     <item>

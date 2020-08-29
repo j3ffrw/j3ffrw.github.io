@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2020 10:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2020 10:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DIY</title>
+      <link>https://j3ffrw.github.io/categories/diy/</link>
+      <pubDate>Sat, 29 Aug 2020 10:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/categories/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Housekeeping</title>
+      <link>https://j3ffrw.github.io/categories/housekeeping/</link>
+      <pubDate>Sat, 29 Aug 2020 10:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/categories/housekeeping/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Networks</title>

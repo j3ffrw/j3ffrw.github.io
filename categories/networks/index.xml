@@ -31,11 +31,11 @@ Note: things note covered above.
       <guid>https://j3ffrw.github.io/p504/</guid>
       <description>Buid zap tool. link
   Install Ruckus Speedlflex on Node #1 and #2.
-  Test basic connectivity between Node #1 and #2 using the app Speedflex itself .
- 
+  Test basic connectivity between Node #1 and #2 using the app Speedflex itself  .
+  
   
     On the control(laptop), run zap client
-  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved. Built Jul 29 2020 at 10:29:36 Engaging default options -p50000 -n1000 -l1472 -q0x0 0: 192.</description>
+  $ ./bin/linux/zap -s192.168.1.3 -d192.168.1.4 ./bin/linux/zap version 1.83, Copyright ( C ) 2004-2009 Ruckus Wireless, Inc. All Rights Reserved.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ Note: things note covered above.
       <description>Here&amp;rsquo;s a simple setup to demonstrate WPA2-ENT authentication using a Username/Password pair.
 This blog will be mostly screenshot with little description on what it does, since there are lots of explanation being offered on the web. check my references at the end of this post.
 Network diagram:
-Requirements:
+ Requirements:
 Pfsense &amp;ndash; for this demonstration i was using 2.1-BETA1
 Freeradius &amp;ndash; 1.6.7 pfsense package
 Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</description>
