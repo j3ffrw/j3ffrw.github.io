@@ -5,8 +5,134 @@
         <description>Recent content on Tech notes and other stuff</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 29 Aug 2020 10:31:19 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 31 Aug 2020 10:31:19 +0800</lastBuildDate>
         <atom:link href="https://j3ffrw.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Formating Miniware DS213 v1.22 8MB Storage</title>
+            <link>https://j3ffrw.github.io/p507/</link>
+            <pubDate>Mon, 31 Aug 2020 10:31:19 +0800</pubDate>
+            
+            <guid>https://j3ffrw.github.io/p507/</guid>
+            <description>I initially tried to format the DS213 v1.22 built-in 8MB storage on my linux machine but the files ended up unreadable after saving a few screenshots and CSV. The first method I tried was from the official forum. http://www.minidso.com/forum.php?mod=viewthread&amp;amp;tid=3342&amp;amp;highlight=format,
+sudo dd of=/dev/sda if=/dev/zero status=progress sudo mkfs.fat -F 12 /dev/sda mkdir -p /tmp/p sudo mount /dev/sda /tmp/p -t msdos -o &amp;quot;fat=12&amp;quot; This essentially formats it to FAT12 but the files are unreadable or corrup once mounted.</description>
+            <content type="html"><![CDATA[<p>I initially tried to format the DS213 v1.22 built-in 8MB storage on my linux machine but the files ended up unreadable after saving a few screenshots and CSV. The first method I tried was from the official forum.
+<a href="http://www.minidso.com/forum.php?mod=viewthread&amp;tid=3342&amp;highlight=format,">http://www.minidso.com/forum.php?mod=viewthread&amp;tid=3342&amp;highlight=format,</a></p>
+<pre><code>sudo dd of=/dev/sda if=/dev/zero status=progress
+sudo mkfs.fat -F 12 /dev/sda
+mkdir -p /tmp/p
+sudo mount /dev/sda /tmp/p -t msdos -o &quot;fat=12&quot;
+</code></pre><p>This essentially formats it to FAT12 but the files are unreadable or corrup once mounted.</p>
+<pre><code>sudo mkfs.fat -F 12 /dev/sda
+mkfs.fat 4.1 (2017-01-24)
+sudo file -s /dev/sda
+/dev/sda: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID &quot;mkfs.fat&quot;, Bytes/sector 4096, sectors/cluster 4, root entries 512, sectors 2048 (volumes &lt;=32 MB), Media descriptor 0xf8, sectors/FAT 1, sectors/track 16, heads 1, serial number 0x6abdcee4, unlabeled, FAT (12 bit)
+</code></pre><p>Searching for a similar issue in the forums suggested to use Win 7 which I did try and that somehow worked. I used Win 7 to format the DS213 storage to FAT(Default) and selecting &ldquo;Quick Format&rdquo;
+<a href="http://www.minidso.com/forum.php?mod=viewthread&amp;tid=2079&amp;page=1#pid5441">http://www.minidso.com/forum.php?mod=viewthread&amp;tid=2079&amp;page=1#pid5441</a></p>
+<p>Checking back on linux to see how the storage was formatted showed that the sectors per cluster was set to one (1).</p>
+<pre><code>sudo file -s /dev/sda
+/dev/sdb: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID &quot;MSDOS5.0&quot;, Bytes/sector 4096, root entries 512, sectors 2048 (volumes &lt;=32 MB), Media descriptor 0xf8, sectors/FAT 1, sectors/track 1, heads 1, reserved 0x1, serial number 0x8e66a5cc, unlabeled, FAT (12 bit)
+</code></pre><p>So to make formating of DS213 work in linux and make the files readable was to override mkfs.fat sector per cluster option to one.</p>
+<pre><code>sudo mkfs.fat -F 12 -s1 /dev/sda
+mkfs.fat 4.1 (2017-01-24)
+sudo file -s /dev/sda
+/dev/sda: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID &quot;mkfs.fat&quot;, Bytes/sector 4096, root entries 512, sectors 2048 (volumes &lt;=32 MB), Media descriptor 0xf8, sectors/FAT 1, sectors/track 16, heads 1, serial number 0x998edf48, unlabeled, FAT (12 bit)
+</code></pre><p>Sample screenshots made within DS213
+<figure class="grid two" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+<img 
+  sizes='(min-width: 35em) 400px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p507/image000.jpg" 
+  
+  alt="">
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+<img 
+  sizes='(min-width: 35em) 400px, 100vw'
+  srcset='
+  
+  
+  
+  '
+  
+    src="/p507/image001.jpg" 
+  
+  alt="">
+</figure>
+
+  <figcaption>
+    <p></p>
+  </figcaption>
+
+    <figcaption>
+      <p></p>
+  </figcaption>
+</figure>
+</p>
+]]></content>
+        </item>
         
         <item>
             <title>AC Cleaning</title>
