@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2020 10:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 10:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>automotive</title>
+      <link>https://j3ffrw.github.io/categories/automotive/</link>
+      <pubDate>Tue, 01 Sep 2020 10:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/categories/automotive/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>electronics</title>
