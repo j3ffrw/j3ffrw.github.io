@@ -6,10 +6,21 @@
     <description>Recent content on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2020 00:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make KSGER safe</title>
+      <link>https://j3ffrw.github.io/posts/2020-11-13-make_ksger_safe/</link>
+      <pubDate>Fri, 13 Nov 2020 00:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/posts/2020-11-13-make_ksger_safe/</guid>
+      <description>Since this unit comes in different version and configuration you&amp;rsquo;ll need to make sure which of the changes apply to your unit.
+This steps were performed on the the following configuration of Ksger T12 Soldering station.
+ Hardware Version 2.1S PSU version v2.</description>
+    </item>
     
     <item>
       <title>DIY solder fume extractor</title>
@@ -70,8 +81,7 @@ Note: things note covered above.
       <pubDate>Wed, 29 Jul 2020 10:31:19 +0800</pubDate>
       
       <guid>https://j3ffrw.github.io/p504/</guid>
-      <description>Buid zap tool. link
-  Install Ruckus Speedlflex on Node #1 and #2.
+      <description>Buid zap tool. link    Install Ruckus Speedlflex on Node #1 and #2.
   Test basic connectivity between Node #1 and #2 using the app Speedflex itself  .
   
   
@@ -176,7 +186,7 @@ LUKS header
       <pubDate>Mon, 22 Jul 2013 10:51:36 +0000</pubDate>
       
       <guid>https://j3ffrw.github.io/p452/</guid>
-      <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR when using an iso file to install a guest OS(Windows 7)
+      <description>this is useful when you virtualbox is complaining about VBOX_E_IPRT_ERROR  when using an iso file to install a guest OS(Windows 7)
 mkdir -p isos/mountp cp udfimage.iso isos cd isos geteltorito udfimage.iso &amp;amp;gt; boot.bin mount -o loop -t auto udfimage.iso mountp cp -r mountp udfimagecontents cp boot.bin udfimagecontents mkisofs -udf -b boot.bin -no-emul-boot -hide boot.bin -relaxed-filenames -joliet-long -D -o newimage.iso udfimagecontents reference: http://poppleit.com/how-to-edit-windows-7-install-dvd-extract-boot-image-and-create-iso-04-04-2011/</description>
     </item>
     
@@ -406,7 +416,7 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
       
       <guid>https://j3ffrw.github.io/p217/</guid>
       <description>Update: on 64bit OS edit Makefile after source checkout and remove -m32
-  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac  Windows  For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
   Run zapd on both PC/Laptop,you should see something like the following.</description>
     </item>
     
@@ -421,8 +431,7 @@ On the client side, Netbootdisk on my instance, it is saying that my password is
   Visualize Zap tool results using charts.
   Feature:
  Generate CDF graph from zap result file. Save graph to image file  Requirements:
- jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
-How to use:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf  How to use:
  Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
     </item>
     

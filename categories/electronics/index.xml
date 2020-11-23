@@ -6,10 +6,21 @@
     <description>Recent content in electronics on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2020 00:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make KSGER safe</title>
+      <link>https://j3ffrw.github.io/posts/2020-11-13-make_ksger_safe/</link>
+      <pubDate>Fri, 13 Nov 2020 00:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/posts/2020-11-13-make_ksger_safe/</guid>
+      <description>Since this unit comes in different version and configuration you&amp;rsquo;ll need to make sure which of the changes apply to your unit.
+This steps were performed on the the following configuration of Ksger T12 Soldering station.
+ Hardware Version 2.1S PSU version v2.</description>
+    </item>
     
     <item>
       <title>DIY solder fume extractor</title>

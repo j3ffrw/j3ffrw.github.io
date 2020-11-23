@@ -29,8 +29,7 @@ Note: things note covered above.
       <pubDate>Wed, 29 Jul 2020 10:31:19 +0800</pubDate>
       
       <guid>https://j3ffrw.github.io/p504/</guid>
-      <description>Buid zap tool. link
-  Install Ruckus Speedlflex on Node #1 and #2.
+      <description>Buid zap tool. link    Install Ruckus Speedlflex on Node #1 and #2.
   Test basic connectivity between Node #1 and #2 using the app Speedflex itself  .
   
   
@@ -79,7 +78,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
       
       <guid>https://j3ffrw.github.io/p217/</guid>
       <description>Update: on 64bit OS edit Makefile after source checkout and remove -m32
-  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac Windows For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
+  Install Ruckus Zap tool on both PC/Laptop, installers can be found Ruckus website. Mac  Windows  For Linux: you have to compile from source. Open terminal and execute the following commands svn checkout http://zapwireless.googlecode.com/svn/trunk/ zapwireless-read-only # or git clone https://github.com/ryanchapman/zapwireless.git zapwireless-read-only cd zapwireless-read-only make &amp;amp;&amp;amp; make install
   Run zapd on both PC/Laptop,you should see something like the following.</description>
     </item>
     
@@ -94,8 +93,7 @@ Wifi Access point &amp;ndash; buffalo whz-hp-g300nh2 running on ddwrt.</descript
   Visualize Zap tool results using charts.
   Feature:
  Generate CDF graph from zap result file. Save graph to image file  Requirements:
- jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
-How to use:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf  How to use:
  Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
     </item>
     

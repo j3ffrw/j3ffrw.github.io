@@ -22,8 +22,7 @@
   Visualize Zap tool results using charts.
   Feature:
  Generate CDF graph from zap result file. Save graph to image file  Requirements:
- jre6 or higher Ruckus zap tool  Download zperf archive: zPerf
-How to use:
+ jre6 or higher Ruckus zap tool  Download zperf archive: zPerf  How to use:
  Extract zperf archive. Under zperf/bin/ folder, there are the three files, run/use the appropriate file for your OS, zperf - linux, zperf.</description>
     </item>
     
