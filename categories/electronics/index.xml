@@ -6,10 +6,20 @@
     <description>Recent content in electronics on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 00:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 00:31:19 +0800</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LRTimelapse timer free Max</title>
+      <link>https://j3ffrw.github.io/p511/</link>
+      <pubDate>Sun, 15 Nov 2020 00:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/p511/</guid>
+      <description>Here&amp;rsquo;s my assemby guide for LRTimelapse timer free Max a intervalometer on steriods. Were to get one. Contact Hans/Sheeba at forum.lrtimelapse.com  Hardware versions There are several hardware version(free) of this
+ The first free timer LRTimelapse timer free  , based on Arduino Uno and common LCD/button shield LRTimelapse Pro Timer free Max, based on MEGA 2560 mini and common LCD/button shield LRTimelapse Pro Timer free Max 2, using MEGA 2560 mini and TFT display configured in landscape layout LRTimelapse Pro Timer free Max 3, using MEGA 2560 mini and TFT display configured in portrait layout.</description>
+    </item>
     
     <item>
       <title>Make KSGER safe</title>
