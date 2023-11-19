@@ -6,10 +6,40 @@
     <description>Recent content on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2020 00:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Initial setup of Mikrotik Chateau 5G</title>
+      <link>https://j3ffrw.github.io/p514/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://j3ffrw.github.io/p514/</guid>
+      <description>Initial setup of Mikrotik Chateau 5G in preparation for Terraform management Notes on intial router settings:
+ default IP address is 192.168.88.1 both wireless and LAN ports 1 to 5 are assigned to same bridge. LTE modem is assigned as WAN port.  Things to configure  Admin credential Hostname Default wifi password Web console https Updating RouterOS and LTE modem firmware without a SIM card attached  Admin credential  After a config reset accessing the router webconsole or ssh you will be asked to give a password for admin Upload your ssh public key and assigned it to admin.</description>
+    </item>
+    
+    <item>
+      <title>Replace Tuya WB3s base IR blaster with ESP-12F</title>
+      <link>https://j3ffrw.github.io/p513/</link>
+      <pubDate>Thu, 01 Dec 2022 00:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/p513/</guid>
+      <description>After acquiring another Tuya compatible IR blaster from the same brand/seller I found out that they no longer use an ESP chip. Instead they&amp;rsquo;ve opted to use Tuya&amp;rsquo;s WB3s chip. This is not compatible with ESPHome(at the time of this writing).
+Luckily this module is a chip for chip replacement of most ESP8266 module like ESP-12F    wb3s chip
+   Removal of WB3s module. I used bismuth to help me in the desoldering.</description>
+    </item>
+    
+    <item>
+      <title>Flashing Generic Tuya IR Blasters with ESPHome</title>
+      <link>https://j3ffrw.github.io/p512/</link>
+      <pubDate>Thu, 01 Sep 2022 00:31:19 +0800</pubDate>
+      
+      <guid>https://j3ffrw.github.io/p512/</guid>
+      <description>Recently I had a need for a cheap IR Blaster for Home Assistant climate integration that doesn&amp;rsquo;t require a cloud to work. After a lengthy google search I found others were able to use a generic round Tuya IR blaster by reflashing them with ESPHome which suites my need. So I decided to get one for Php 390 in one of ecommerce site in my place. This one has a esp8266 chip.</description>
+    </item>
     
     <item>
       <title>LRTimelapse timer free Max</title>

@@ -6,15 +6,24 @@
     <description>Recent content in Categories on Tech notes and other stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2020 00:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://j3ffrw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>networking</title>
+      <link>https://j3ffrw.github.io/categories/networking/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://j3ffrw.github.io/categories/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>electronics</title>
       <link>https://j3ffrw.github.io/categories/electronics/</link>
-      <pubDate>Sun, 15 Nov 2020 00:31:19 +0800</pubDate>
+      <pubDate>Thu, 01 Dec 2022 00:31:19 +0800</pubDate>
       
       <guid>https://j3ffrw.github.io/categories/electronics/</guid>
       <description></description>

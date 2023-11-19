@@ -1,0 +1,183 @@
+' {$STAMP BS2e, measurePulse.bse}
+' {$PBASIC 2.5}
+
+
+irPulse VAR Word
+irPulse2 VAR Word
+i VAR Word
+k VAR Word
+j VAR Byte
+temp VAR Byte
+temp1 VAR Byte
+startIndex VAR Byte
+endIndex VAR Byte
+startLowMin VAR Word
+startLowMax VAR Word
+startHighMin VAR Word
+startHighMax VAR Word
+bitCount VAR Byte
+lowThreshold VAR Word
+highThreshold VAR Word
+
+' alias for sorting and swapping values at scratchpad ram
+lowestIndex VAR temp
+cntr2 VAR temp1
+currentLowestValue VAR startLowMin
+
+lowThreshold = 280
+highThreshold = 828
+
+startLowMin = 65535
+startLowMax = 0
+
+startHighMin = 65535
+startHighMax = 0
+
+
+
+' pulses to gather for determining start bit pulse width
+' = # of key sample * 2 - 1
+pulseNumber CON 29
+
+MAIN:
+
+  GOSUB MEASURE_START_PULSE
+
+  DEBUG "Skip pulse histogram:[Y/n] "
+
+  DEBUGIN j
+
+  DEBUG CR
+
+  IF j = "n" OR j = "N" THEN  GOSUB GET_HISTOGRAM
+
+  'GOSUB DECODE
+  RUN 1
+
+END
+
+
+' press any key several times to get range of  start pulse.
+
+MEASURE_START_PULSE:
+
+  DEBUG "press several random keys ", DEC (pulseNumber+1)/2  ," times at least 1 second apart",CR
+
+  startLowMin = 65535
+  startLowMax = 0
+
+  startHighMin = 65535
+  startHighMax = 0
+
+  FOR i = 0 TO 14
+
+    LOOP1:
+
+    IF IN13 = 1 THEN
+      GOTO LOOP1
+    ENDIF
+
+    RCTIME 13, 0, irPulse  ' measure duration of low state(IR ON)
+    RCTIME 13, 1, irPulse2 ' measure duration of high state(IR OFF)
+
+    IF irPulse = 1 THEN
+     GOTO LOOP1
+    ENDIF
+
+    IF irPulse < startLowMin THEN startLowMin = irPulse
+
+    IF irPulse > startLowMax THEN startLowMax = irPulse
+
+    IF irPulse2 < startHighMin THEN startHighMin = irPulse2
+
+    IF irPulse2 > startHighMax THEN startHighMax = irPulse2
+
+    DEBUG DEC i+1, " of 15, "
+    PAUSE 200
+
+  NEXT
+
+  DEBUG CR,"Start pulse range: uS", CR, "LOW Min: ", DEC (startLowMin/18)*360/10, " Max: ", DEC (startLowMax/18)*360/10, CR
+  DEBUG "High Min: ", DEC (startHighMin/18)*360/10, " Max: ", DEC (startHighMax/18)*360/10, CR
+
+RETURN
+
+
+' swaps values located at startIndex and endIndex
+SWAP:
+      GET startIndex, Word irPulse
+      GET endIndex, Word irPulse2
+      k = irPulse
+      PUT startIndex, Word irPulse2
+      PUT endIndex, Word k
+RETURN
+
+
+' parameters:
+' startIndex = starting index to look for the lowest value
+' endIndex = ending index
+' returns:
+' lowestIndex = index of lowest value
+' currentLowestValue = lowest value found
+GET_MIN:
+  ' assume current index is lowest value
+  GET startIndex, Word currentLowestValue
+  lowestIndex = startIndex
+
+  ' start searching starting on next location
+  FOR i = startIndex+2 TO endIndex STEP 2
+    GET i, Word irPulse
+    IF irPulse < currentLowestValue THEN
+      lowestIndex = i
+      currentLowestValue = irPulse
+    ENDIF
+  NEXT
+RETURN
+
+
+
+GET_HISTOGRAM:
+
+  DEBUG "press a random key repeatedly", CR
+
+  FOR i = 0 TO 62
+    PUT i, 0
+  NEXT
+
+  LOOP4:
+
+  IF IN13 = 1 THEN
+    GOTO LOOP4
+  ENDIF
+
+  RCTIME 13, 0, irPulse
+
+  IF irPulse < startLowMin OR irPulse > startLowMax THEN
+     GOTO LOOP4
+  ENDIF
+
+  RCTIME 13, 1, irPulse2
+
+  FOR i = 0 TO 999
+    PULSIN 13, 1, irPulse
+
+    j= irPulse / 18
+
+    IF j > 62 THEN
+      j=62
+    ENDIF
+
+    GET  j, temp
+
+    PUT j, temp + 1
+
+  NEXT
+
+  FOR j = 0 TO 62
+    GET  j, temp
+    IF temp > 0 THEN
+      DEBUG DEC j, ": Width units ",9,DEC j*18,9,"Width us ",9, DEC (j*360)/10,"-",DEC ((j*360)/10)+36,9,DEC temp,CR
+    ENDIF
+  NEXT
+
+RETURN

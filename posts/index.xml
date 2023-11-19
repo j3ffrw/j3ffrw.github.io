@@ -5,8 +5,320 @@
         <description>Recent content on Tech notes and other stuff</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 15 Nov 2020 00:31:19 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://j3ffrw.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Initial setup of Mikrotik Chateau 5G</title>
+            <link>https://j3ffrw.github.io/p514/</link>
+            <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+            
+            <guid>https://j3ffrw.github.io/p514/</guid>
+            <description>Initial setup of Mikrotik Chateau 5G in preparation for Terraform management Notes on intial router settings:
+ default IP address is 192.168.88.1 both wireless and LAN ports 1 to 5 are assigned to same bridge. LTE modem is assigned as WAN port.  Things to configure  Admin credential Hostname Default wifi password Web console https Updating RouterOS and LTE modem firmware without a SIM card attached  Admin credential  After a config reset accessing the router webconsole or ssh you will be asked to give a password for admin Upload your ssh public key and assigned it to admin.</description>
+            <content type="html"><![CDATA[<p>Initial setup of Mikrotik Chateau 5G in preparation for Terraform management
+Notes on intial router settings:</p>
+<ul>
+<li>default IP address is 192.168.88.1</li>
+<li>both wireless and LAN ports 1 to 5 are assigned to same bridge.</li>
+<li>LTE modem is assigned as WAN port.</li>
+</ul>
+<h1 id="things-to-configure">Things to configure</h1>
+<ol>
+<li>Admin credential</li>
+<li>Hostname</li>
+<li>Default wifi password</li>
+<li>Web console https</li>
+<li>Updating RouterOS and LTE modem firmware without a SIM card attached</li>
+</ol>
+<h2 id="admin-credential">Admin credential</h2>
+<ol>
+<li>After a config reset accessing the router webconsole or ssh you will be asked to give a password for admin</li>
+<li>Upload your ssh public key and assigned it to admin.</li>
+</ol>
+<pre><code># on your local machine's terminal
+scp ~/.ssh/key.pub admin@192.168.88.1:./
+# on Mikrotik terminal
+/user/ssh-keys/ import public-key-file=key.pub key-owner=admin user=admin
+</code></pre><h2 id="set-router-hostname">Set router hostname</h2>
+<p><code>/system/identity/set name=yourRouterHostname</code></p>
+<h2 id="configure-default-ssid-passwords-24g5g">Configure default SSID passwords (2.4G/5G)</h2>
+<ol>
+<li>By default both 2.4G and 5G SSID uses the same &ldquo;default&rdquo; security profile.</li>
+</ol>
+<p>Note: from @rextended <a href="https://forum.mikrotik.com/viewtopic.php?t=183221">https://forum.mikrotik.com/viewtopic.php?t=183221</a></p>
+<pre><code>All special characters must be put inside quotes, or, for one reason or another, cause errors.
+Some chracters must be escaped
+&quot; if used as character, and not for contain a string, must be escaped like \&quot;
+$ if used as character, and not for start a variable or function name, must be escaped like \$
+? on RouterOS 6.x Terminal must be escaped with \ like \? (stored script inside scirpt, scheduler, dhcp, ppp profiles, etc. , do not need to escape the ? )
+\ the \ is the escape symbol, for use \ as character instead, escape it like \\
+</code></pre><pre><code>/interface/wireless/security-profiles/set default wpa2-pre-shared-key=&quot;yourWifiSecuredPassword&quot; authentication-types=&quot;wpa2-psk&quot; mode=&quot;dynamic-keys&quot;
+</code></pre><h2 id="configure-webconsole-https">Configure webconsole HTTPS</h2>
+<ol>
+<li>Upload server ca bundle and server key</li>
+</ol>
+<pre><code># on your local machine's terminal
+scp server_ca-bundle.pem admin@192.168.88.1:./  # cert must contain full chain/bundle server,intermediate-ca,root-ca
+scp server.key admin@192.168.88.1:./
+</code></pre><ol start="2">
+<li>Import certificates and assign to www-ssl service</li>
+</ol>
+<pre><code>/certificate/ import name=yourCertificateName
+/ip/service/ set www-ssl certificate=yourCertificateName disabled=no
+</code></pre><h2 id="updating-rourteros7-and-lte-modem-firmware-without-a-sim-card">Updating RourterOS7 and LTE modem firmware without a SIM card</h2>
+<p>This creates a new bridge where one of the LAN ports can be assigned to it and obtain IP from upstream modem/router</p>
+<ol>
+<li>Create bridge</li>
+</ol>
+<pre><code>/interface/bridge/add name=yourBridgeName comment=&quot;bridge for ethernet WAN&quot;
+</code></pre><ol start="2">
+<li>Assign LAN port No. 5 into newly created bridge.</li>
+</ol>
+<pre><code>/interface/bridge/port/ set 4 interface=ether5 bridge=yourBridgeName
+</code></pre><ol start="3">
+<li>Add a dhcp client and assign it to newly created bridge</li>
+</ol>
+<pre><code>/ip/dhcp-client/add interface=yourBridgeName
+</code></pre><ol start="4">
+<li>Once port 5 have acquired an IP from upstream modem/router. You can perform the upgrade as directed by the official guide</li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Replace Tuya WB3s base IR blaster with ESP-12F</title>
+            <link>https://j3ffrw.github.io/p513/</link>
+            <pubDate>Thu, 01 Dec 2022 00:31:19 +0800</pubDate>
+            
+            <guid>https://j3ffrw.github.io/p513/</guid>
+            <description>After acquiring another Tuya compatible IR blaster from the same brand/seller I found out that they no longer use an ESP chip. Instead they&amp;rsquo;ve opted to use Tuya&amp;rsquo;s WB3s chip. This is not compatible with ESPHome(at the time of this writing).
+Luckily this module is a chip for chip replacement of most ESP8266 module like ESP-12F    wb3s chip
+   Removal of WB3s module. I used bismuth to help me in the desoldering.</description>
+            <content type="html"><![CDATA[<p>After acquiring another Tuya compatible IR blaster from the same brand/seller I found out that they no longer use an ESP chip.
+Instead they&rsquo;ve opted to use Tuya&rsquo;s WB3s chip. This is not compatible with ESPHome(at the time of this writing).</p>
+<p>Luckily this module is a chip for chip replacement of most ESP8266 module like ESP-12F
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/wb3s_irblaster.jpg" alt="wb3s chip"/>
+    </div>
+    <a href="wb3s_irblaster.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>wb3s chip</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+<p>Removal of WB3s module. I used bismuth to help me in the desoldering.
+Bismuth lowers the melting temperature of existing solder when mixed.
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/blank_irblaster.jpg" alt="wb3s removed"/>
+    </div>
+    <a href="blank_irblaster.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>wb3s removed</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+<p>Soldering of ESP12-F and associated pull-up resistor on GPIO_0 and GPIO_2 with pull-down resistor on GPIO_15 <a href="https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/" target="_blank">
+  1
+</a>
+
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/transplant_esp12f_attempt1.jpg" alt="ESP-12F"/>
+    </div>
+    <a href="transplant_esp12f_attempt1.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>ESP-12F</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+<p>Intial attempt on programming ESP-12F failed as the chip doesn&rsquo;t seem to respond when attempting to download the esphome firwmware.
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/prog_esp12f_attempt1b.jpg" alt="ESP-12F"/>
+    </div>
+    <a href="prog_esp12f_attempt1b.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>ESP-12F</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+<p>After troubleshooting the tx and rx pin had to be isolated from the board as it prevents programming.
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/blankout_txrx.jpg" alt="capton tape on tx/rx pads"/>
+    </div>
+    <a href="blankout_txrx.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>capton tape on tx/rx pads</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+<p>Re-soldering back ESP-12F, I didn&rsquo;t resolder back the pull-up resistor as it doesn&rsquo;t seem to affect the boot up anyway.
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/final.jpg" alt="ESP-12F"/>
+    </div>
+    <a href="final.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>ESP-12F</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p513/finalb.jpg" alt="ESP-12F"/>
+    </div>
+    <a href="finalb.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>ESP-12F</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Flashing Generic Tuya IR Blasters with ESPHome</title>
+            <link>https://j3ffrw.github.io/p512/</link>
+            <pubDate>Thu, 01 Sep 2022 00:31:19 +0800</pubDate>
+            
+            <guid>https://j3ffrw.github.io/p512/</guid>
+            <description>Recently I had a need for a cheap IR Blaster for Home Assistant climate integration that doesn&amp;rsquo;t require a cloud to work. After a lengthy google search I found others were able to use a generic round Tuya IR blaster by reflashing them with ESPHome which suites my need. So I decided to get one for Php 390 in one of ecommerce site in my place. This one has a esp8266 chip.</description>
+            <content type="html"><![CDATA[<p>Recently I had a need for a cheap IR Blaster for Home Assistant climate integration that doesn&rsquo;t require a cloud to work.
+After a lengthy google search I found others were able to use a generic round Tuya IR blaster by reflashing them
+with ESPHome which suites my need. So I decided to get one for Php 390 in one of ecommerce site in my place.
+This one has a esp8266 chip.</p>
+<p>One advantage on going this route instead of creating your own one lets say base on a wemos d1 is that you already have a nice case w/
+a superb IR filtering plus a bunch of LED array complete with supporting circuitry so you can focus on
+high level integration stuff.</p>
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/p512/esp_irblaster.jpg" alt="esp8266 chip"/>
+    </div>
+    <a href="esp_irblaster.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>esp8266 chip</p>
+      </figcaption>
+  </figure>
+</div>
+
+<h1 id="tools-needed">Tools needed.</h1>
+<ol>
+<li>USB to 3.3V Serial adapter</li>
+<li>5 pcs test leads with needle tip</li>
+<li>3rd hand(s) for holding the test leads</li>
+</ol>
+<p>To reflash the ESP chip you need to find the ff pads/pins in the IR blaster.</p>
+<ol>
+<li>TX</li>
+<li>RX</li>
+<li>GND</li>
+<li>3.3V</li>
+<li>GPIO0</li>
+</ol>
+<p>Wiring usb-to-serial adapter.
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/p512/serial_to_esp.jpg');">
+      <img itemprop="thumbnail" src="/p512/serial_to_esp.jpg" />
+    </div>
+    <a href="serial_to_esp.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+ 
+
+
+
+
+<div class="box" style="max-width:400px">
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/p512/prog_esp.jpg');">
+      <img itemprop="thumbnail" src="/p512/prog_esp.jpg" />
+    </div>
+    <a href="prog_esp.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+ 
+
+</div>
+</p>
+<p>Flashing with ESPHome Web.</p>
+<ol>
+<li>Plug your usb-to-serial adapter to your PC/laptop. It would show up as port /dev/ttyUSB#</li>
+<li>visit <a href="https://web.esphome.io/?dashboard_wizard">https://web.esphome.io/?dashboard_wizard</a> using Google Chrome or Chromium browser</li>
+<li>Press Connect and select your usb-to-serial adapter port.</li>
+<li>Press &ldquo;Prepare For Adoption&rdquo;. This would take several minutes to finish.</li>
+<li>Once flashing is done, unplug the usb-to-serial adapter and disconnect GPIO0 from GND.</li>
+</ol>
+<p>Configure ESPHome wifi</p>
+<ol>
+<li>Plug your usb-to-serial adapter back your PC/laptop to power up the IR blaster.</li>
+<li>Wait for 10 seconds for ESPhome to boot up. Esphome will create a wifi AP with a captive portal.</li>
+<li>From your PC/laptop scan your wifi for SSID &lsquo;esphome-web-######&rsquo;. Connect to that SSID.</li>
+<li>Visit http://192.168.4.1 to configure ESPHome to connect to your IOT specific wifi network for security, as they say it&rsquo;s the S in IOT.</li>
+<li>At this point your ESPHome IR blaster is will be discoverable in ESPHome Dashboard or from Home Assistant.</li>
+</ol>
+]]></content>
+        </item>
         
         <item>
             <title>LRTimelapse timer free Max</title>
